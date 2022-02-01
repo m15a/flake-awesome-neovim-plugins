@@ -1597,6 +1597,19 @@
       license = with licenses; [ mit ];
     };
   };
+  kmonad-vim = buildVimPluginFrom2Nix {
+    pname = "kmonad-vim";
+    version = "2021-05-17";
+    src = fetchurl {
+      url = "https://github.com/kmonad/kmonad-vim/archive/e09bea67ea18feb4f5d12173e70ce556128012bc.tar.gz";
+      sha256 = "00x55mv4h9jqjjbcl74j4722gakqzid0168749lgwz832w6hmmvp";
+    };
+    meta = with lib; {
+      description = "Vim editing support for kmonad config files";
+      homepage = "https://github.com/kmonad/kmonad-vim";
+      license = with licenses; [ gpl3Only ];
+    };
+  };
   vacuumline-nvim = buildVimPluginFrom2Nix {
     pname = "vacuumline-nvim";
     version = "2021-08-11";

@@ -227,6 +227,7 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [kazhala/close-buffers.nvim](https://github.com/kazhala/close-buffers.nvim) | 2021-11-14 | `close-buffers-nvim` |
 | [kdheepak/monochrome.nvim](https://github.com/kdheepak/monochrome.nvim) | 2021-07-14 | `monochrome-nvim` |
 | [klen/nvim-config-local](https://github.com/klen/nvim-config-local) | 2021-12-29 | `nvim-config-local` |
+| [kmonad/kmonad-vim](https://github.com/kmonad/kmonad-vim) | 2021-05-17 | `kmonad-vim` |
 | [konapun/vacuumline.nvim](https://github.com/konapun/vacuumline.nvim) | 2021-08-11 | `vacuumline-nvim` |
 | [nvim-orgmode/orgmode](https://github.com/nvim-orgmode/orgmode) | 2022-01-27 | `orgmode` |
 | [kvrohit/substrata.nvim](https://github.com/kvrohit/substrata.nvim) | 2022-01-20 | `substrata-nvim` |
