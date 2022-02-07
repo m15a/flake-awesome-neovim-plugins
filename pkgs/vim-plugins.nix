@@ -854,6 +854,19 @@
       homepage = "https://github.com/clojure-vim/jazz.nvim";
     };
   };
+  coc-svelte = buildVimPluginFrom2Nix {
+    pname = "coc-svelte";
+    version = "2021-11-27";
+    src = fetchurl {
+      url = "https://github.com/coc-extensions/coc-svelte/archive/5743da35da727ce8bf8a8b9733ee7ff61d476b4e.tar.gz";
+      sha256 = "1pz9ichdx9w7jw61xbc9xnh9gczchqnbaq9mhndnv8zaf4fspfmc";
+    };
+    meta = with lib; {
+      description = "svelte support for (Neo)Vim";
+      homepage = "https://github.com/coc-extensions/coc-svelte";
+      license = with licenses; [ mit ];
+    };
+  };
   nvim-biscuits = buildVimPluginFrom2Nix {
     pname = "nvim-biscuits";
     version = "2021-11-12";
@@ -1059,6 +1072,18 @@
       license = with licenses; [ mit ];
     };
   };
+  vim-svelte = buildVimPluginFrom2Nix {
+    pname = "vim-svelte";
+    version = "2022-01-15";
+    src = fetchurl {
+      url = "https://github.com/evanleck/vim-svelte/archive/3a37f2a2414fa4c20c70e67e978977c1e2a43187.tar.gz";
+      sha256 = "1dvizc1qp6kicgjz0jm8dispj105gii5z29dsqv3zw1dz9iwcv02";
+    };
+    meta = with lib; {
+      description = "Vim syntax highlighting and indentation for Svelte 3 components";
+      homepage = "https://github.com/evanleck/vim-svelte";
+    };
+  };
   feline-nvim = buildVimPluginFrom2Nix {
     pname = "feline-nvim";
     version = "2021-12-28";
@@ -1133,6 +1158,18 @@
       description = "nvim plugin to toggle comments on and off";
       homepage = "https://github.com/gennaro-tedesco/nvim-commaround";
       license = with licenses; [ mit ];
+    };
+  };
+  copilot-vim = buildVimPluginFrom2Nix {
+    pname = "copilot-vim";
+    version = "2021-12-07";
+    src = fetchurl {
+      url = "https://github.com/github/copilot.vim/archive/c01314840b94da0b9767b52f8a4bbc579214e509.tar.gz";
+      sha256 = "1z3cml8xypavc3lwf47xpfh844sabc4g5q66zs2hy7n5nj76ks6c";
+    };
+    meta = with lib; {
+      description = "Neovim plugin for GitHub Copilot";
+      homepage = "https://github.com/github/copilot.vim";
     };
   };
   firenvim = buildVimPluginFrom2Nix {
@@ -1261,6 +1298,19 @@
     meta = with lib; {
       description = "Vim files and plugins for Hy";
       homepage = "https://github.com/hylang/vim-hy";
+    };
+  };
+  coc-tailwindcss = buildVimPluginFrom2Nix {
+    pname = "coc-tailwindcss";
+    version = "2020-08-19";
+    src = fetchurl {
+      url = "https://github.com/iamcco/coc-tailwindcss/archive/5f41aa1feb36e39b95ccd83be6a37ee8c475f9fb.tar.gz";
+      sha256 = "1i8a3pabywsamf78kj95480dsid25p0rx4w2b3jafb4pzak6jjdz";
+    };
+    meta = with lib; {
+      description = "tailwindcss class name completion for (neo)vim";
+      homepage = "https://github.com/iamcco/coc-tailwindcss";
+      license = with licenses; [ mit ];
     };
   };
   fzf-lua = buildVimPluginFrom2Nix {
@@ -1658,6 +1708,19 @@
       description = "A dark theme for vim based on vim-monotonic and chrome's dark reader";
       homepage = "https://github.com/ldelossa/vimdark";
       license = with licenses; [ mit ];
+    };
+  };
+  vim-svelte-plugin = buildVimPluginFrom2Nix {
+    pname = "vim-svelte-plugin";
+    version = "2021-11-29";
+    src = fetchurl {
+      url = "https://github.com/leafOfTree/vim-svelte-plugin/archive/8b2325b51c7b62493484f0547ff55620af3276ab.tar.gz";
+      sha256 = "02gmgcj7azk75ibcl6jys94mf8ngjrk1wbmm9h96z65bgb7qpl96";
+    };
+    meta = with lib; {
+      description = "Vim syntax and indent plugin for .svelte files";
+      homepage = "https://github.com/leafOfTree/vim-svelte-plugin";
+      license = with licenses; [ unlicense ];
     };
   };
   spellsitter-nvim = buildVimPluginFrom2Nix {
@@ -2444,6 +2507,18 @@
       license = with licenses; [ mit ];
     };
   };
+  coc-tailwind-intellisense = buildVimPluginFrom2Nix {
+    pname = "coc-tailwind-intellisense";
+    version = "2021-09-07";
+    src = fetchurl {
+      url = "https://github.com/rodrigore/coc-tailwind-intellisense/archive/129fbd9dc33f6f7d3daa5e1e0b98dc4352f30290.tar.gz";
+      sha256 = "1l1zyvxvg5qmr29h1sl1divy6m0m4s7a18rhx8fxn8wdqx7y35wx";
+    };
+    meta = with lib; {
+      description = "Coc.nvim extension for Tailwind CSS IntelliSense ";
+      homepage = "https://github.com/rodrigore/coc-tailwind-intellisense";
+    };
+  };
   rose-pine = buildVimPluginFrom2Nix {
     pname = "rose-pine";
     version = "2022-02-04";
@@ -2763,6 +2838,19 @@
       description = "A comment toggler for Neovim, written in Lua";
       homepage = "https://github.com/terrortylor/nvim-comment";
       license = with licenses; [ mit ];
+    };
+  };
+  vim-workspace = buildVimPluginFrom2Nix {
+    pname = "vim-workspace";
+    version = "2021-11-25";
+    src = fetchurl {
+      url = "https://github.com/thaerkh/vim-workspace/archive/c26b473f9b073f24bacecd38477f44c5cd1f5a62.tar.gz";
+      sha256 = "073j8fprmrx5qvssqkmc7l9660y77cplbvf826nyjxvr03vhay4i";
+    };
+    meta = with lib; {
+      description = "📑 Automated Vim session management with file auto-save and persistent undo history";
+      homepage = "https://github.com/thaerkh/vim-workspace";
+      license = with licenses; [ asl20 ];
     };
   };
   nvim-deus = buildVimPluginFrom2Nix {
