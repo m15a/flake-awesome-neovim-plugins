@@ -2853,6 +2853,19 @@
       license = with licenses; [ asl20 ];
     };
   };
+  tailwindcss-colors-nvim = buildVimPluginFrom2Nix {
+    pname = "tailwindcss-colors-nvim";
+    version = "2021-12-24";
+    src = fetchurl {
+      url = "https://github.com/themaxmarchuk/tailwindcss-colors.nvim/archive/ccb5be2f84673c1a0ef90a0c0a76733e85e5265b.tar.gz";
+      sha256 = "0f109vnqbd364x5zrgbr3v9mxl9b5qn5vf8p7kw0mlkr92rina8g";
+    };
+    meta = with lib; {
+      description = "Highlights Tailwind CSS class names when @tailwindcss/language-server is connected";
+      homepage = "https://github.com/themaxmarchuk/tailwindcss-colors.nvim";
+      license = with licenses; [ mit ];
+    };
+  };
   nvim-deus = buildVimPluginFrom2Nix {
     pname = "nvim-deus";
     version = "2021-08-26";
