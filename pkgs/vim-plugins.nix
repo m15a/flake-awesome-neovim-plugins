@@ -2148,6 +2148,19 @@
       license = with licenses; [ mit ];
     };
   };
+  telescope-media-files-nvim = buildVimPluginFrom2Nix {
+    pname = "telescope-media-files-nvim";
+    version = "2021-10-21";
+    src = fetchurl {
+      url = "https://github.com/nvim-telescope/telescope-media-files.nvim/archive/513e4ee385edd72bf0b35a217b7e39f84b6fe93c.tar.gz";
+      sha256 = "1wqarqbbj2xc8p496s6k9cg3vsippwpvdqd4438rfnb31cd74ypa";
+    };
+    meta = with lib; {
+      description = "Telescope extension to preview media files using Ueberzug";
+      homepage = "https://github.com/nvim-telescope/telescope-media-files.nvim";
+      license = with licenses; [ mit ];
+    };
+  };
   vn-night-nvim = buildVimPluginFrom2Nix {
     pname = "vn-night-nvim";
     version = "2021-07-24";

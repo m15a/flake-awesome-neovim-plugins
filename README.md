@@ -270,6 +270,7 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) | 2022-02-01 | `Comment-nvim` |
 | [numToStr/Navigator.nvim](https://github.com/numToStr/Navigator.nvim) | 2021-11-18 | `Navigator-nvim` |
 | [nvim-telescope/telescope-bibtex.nvim](https://github.com/nvim-telescope/telescope-bibtex.nvim) | 2022-02-05 | `telescope-bibtex-nvim` |
+| [nvim-telescope/telescope-media-files.nvim](https://github.com/nvim-telescope/telescope-media-files.nvim) | 2021-10-21 | `telescope-media-files-nvim` |
 | [nxvu699134/vn-night.nvim](https://github.com/nxvu699134/vn-night.nvim) | 2021-07-24 | `vn-night-nvim` |
 | [nyngwang/NeoRoot.lua](https://github.com/nyngwang/NeoRoot.lua) | 2022-01-24 | `NeoRoot-lua` |
 | [ojroques/nvim-hardline](https://github.com/ojroques/nvim-hardline) | 2022-02-01 | `nvim-hardline` |
