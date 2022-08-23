@@ -131,7 +131,7 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [NFrid/due.nvim](https://github.com/NFrid/due.nvim) | 2022-04-15 | `due-nvim` |
 | [NMAC427/guess-indent.nvim](https://github.com/NMAC427/guess-indent.nvim) | 2022-07-17 | `guess-indent-nvim` |
 | [NTBBloodbath/cheovim](https://github.com/NTBBloodbath/cheovim) | 2021-08-25 | `cheovim` |
-| [NTBBloodbath/doom-one.nvim](https://github.com/NTBBloodbath/doom-one.nvim) | 2022-08-12 | `doom-one-nvim` |
+| [NTBBloodbath/doom-one.nvim](https://github.com/NTBBloodbath/doom-one.nvim) | 2022-08-23 | `doom-one-nvim` |
 | [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua) | 2022-08-14 | `nvim-colorizer-lua` |
 | [PHSix/nvim-hybrid](https://github.com/PHSix/nvim-hybrid) | 2022-01-22 | `nvim-hybrid` |
 | [Pocco81/AbbrevMan.nvim](https://github.com/Pocco81/AbbrevMan.nvim) | 2021-07-15 | `AbbrevMan-nvim` |
@@ -283,7 +283,7 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [konapun/vacuumline.nvim](https://github.com/konapun/vacuumline.nvim) | 2022-03-13 | `vacuumline-nvim` |
 | [kvrohit/rasmus.nvim](https://github.com/kvrohit/rasmus.nvim) | 2022-06-21 | `rasmus-nvim` |
 | [kyazdani42/blue-moon](https://github.com/kyazdani42/blue-moon) | 2022-07-18 | `blue-moon` |
-| [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround) | 2022-08-18 | `nvim-surround` |
+| [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround) | 2022-08-23 | `nvim-surround` |
 | [lalitmee/cobalt2.nvim](https://github.com/lalitmee/cobalt2.nvim) | 2022-08-22 | `cobalt2-nvim` |
 | [lcheylus/overlength.nvim](https://github.com/lcheylus/overlength.nvim) | 2022-08-10 | `overlength-nvim` |
 | [ldelossa/gh.nvim](https://github.com/ldelossa/gh.nvim) | 2022-08-23 | `gh-nvim` |
@@ -344,7 +344,7 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [ojroques/nvim-hardline](https://github.com/ojroques/nvim-hardline) | 2022-06-18 | `nvim-hardline` |
 | [ojroques/nvim-lspfuzzy](https://github.com/ojroques/nvim-lspfuzzy) | 2022-05-22 | `nvim-lspfuzzy` |
 | [olexsmir/gopher.nvim](https://github.com/olexsmir/gopher.nvim) | 2022-07-11 | `gopher-nvim` |
-| [olimorris/persisted.nvim](https://github.com/olimorris/persisted.nvim) | 2022-08-22 | `persisted-nvim` |
+| [olimorris/persisted.nvim](https://github.com/olimorris/persisted.nvim) | 2022-08-23 | `persisted-nvim` |
 | [olivercederborg/poimandres.nvim](https://github.com/olivercederborg/poimandres.nvim) | 2022-08-19 | `poimandres-nvim` |
 | [onsails/lspkind.nvim](https://github.com/onsails/lspkind.nvim) | 2022-04-18 | `lspkind-nvim` |
 | [p00f/cphelper.nvim](https://github.com/p00f/cphelper.nvim) | 2022-07-26 | `cphelper-nvim` |

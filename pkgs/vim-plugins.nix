@@ -373,10 +373,10 @@
   };
   doom-one-nvim = buildVimPluginFrom2Nix {
     pname = "doom-one-nvim";
-    version = "2022-08-12";
+    version = "2022-08-23";
     src = fetchurl {
-      url = "https://github.com/NTBBloodbath/doom-one.nvim/archive/287f9be3e46a711598ad817946f4a05090d01e3d.tar.gz";
-      sha256 = "0jfh49f1rfw6n9bs7bjv8wm5d4bn9j5w81s31p0k4piwzl5pizr9";
+      url = "https://github.com/NTBBloodbath/doom-one.nvim/archive/2ac4b8f3bc0c89661f85f384b445dc47dd63201b.tar.gz";
+      sha256 = "0pmjyhw7fb2d6s01gknhs4lmn0hldkj704jqdbciak05phx1g92p";
     };
     meta = with lib; {
       description = "doom-emacs' doom-one Lua port for Neovim";
@@ -603,8 +603,8 @@
     pname = "drex-nvim";
     version = "2022-08-23";
     src = fetchurl {
-      url = "https://github.com/TheBlob42/drex.nvim/archive/6b7bd049b6feef3a5390b381f39a28f0a926e07a.tar.gz";
-      sha256 = "0wwhmqaqnq4gmw08lxv44kl1rwifgrywwz6mkbbx5jfr2zhg9px8";
+      url = "https://github.com/TheBlob42/drex.nvim/archive/2d895a0a78702bd055bd12cbca55f028158f0cd3.tar.gz";
+      sha256 = "08cx8laa5bb7ai7a52s01ynm6lvdjxaa5pr47pm18r27lm6zh904";
     };
     meta = with lib; {
       description = "Another directory/file explorer for Neovim written in Lua ";
@@ -2308,10 +2308,10 @@
   };
   nvim-surround = buildVimPluginFrom2Nix {
     pname = "nvim-surround";
-    version = "2022-08-18";
+    version = "2022-08-23";
     src = fetchurl {
-      url = "https://github.com/kylechui/nvim-surround/archive/22a25192ed98a937efe48b93c192a352d197c7e3.tar.gz";
-      sha256 = "15q54518mlid1fzp3rrgfdg7bbw8vqn339755y5w346khn1838ij";
+      url = "https://github.com/kylechui/nvim-surround/archive/ce01942a8f5d9e170493a67235568fe294cbb83d.tar.gz";
+      sha256 = "1giaaxh9l36nd6w67j6bpxh6kvkmgz87jl7k695qnv65wxwakxl6";
     };
     meta = with lib; {
       description = "Add/change/delete surrounding delimiter pairs with ease. Written with :heart: in Lua";
@@ -3088,10 +3088,10 @@
   };
   persisted-nvim = buildVimPluginFrom2Nix {
     pname = "persisted-nvim";
-    version = "2022-08-22";
+    version = "2022-08-23";
     src = fetchurl {
-      url = "https://github.com/olimorris/persisted.nvim/archive/e994852d86c9166370a2975969887ff2a6d884af.tar.gz";
-      sha256 = "0hpmlh6h425a0ra8kv0yzi2dl3xyd9f6zaaz30mw1qm911flzcnr";
+      url = "https://github.com/olimorris/persisted.nvim/archive/321ba423671b7350366e70d859a994fbf595d0fd.tar.gz";
+      sha256 = "04bqq3n4kqf14xjjs5jn7rsng1glwbw4cy0sld1rk6vrs2ic66ak";
     };
     meta = with lib; {
       description = "💾 Simple session management for Neovim with git branching, autosave/autoload and Telescope support";
