@@ -304,7 +304,6 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [m4xshen/autoclose.nvim](https://github.com/m4xshen/autoclose.nvim) | 2022-08-23 | `autoclose-nvim` |
 | [madskjeldgaard/reaper-nvim](https://github.com/madskjeldgaard/reaper-nvim) | 2021-01-29 | `reaper-nvim` |
 | [matbme/JABS.nvim](https://github.com/matbme/JABS.nvim) | 2022-07-06 | `JABS-nvim` |
-| [m4xshen/autoclose.nvim](https://github.com/m4xshen/autoclose.nvim) | 2022-08-23 | `autoclose-nvim` |
 | [mcauley-penney/tidy.nvim](https://github.com/mcauley-penney/tidy.nvim) | 2022-07-21 | `tidy-nvim` |
 | [mcchrish/zenbones.nvim](https://github.com/mcchrish/zenbones.nvim) | 2022-08-07 | `zenbones-nvim` |
 | [meliora-theme/neovim](https://github.com/meliora-theme/neovim) | 2022-08-13 | `neovim` |
