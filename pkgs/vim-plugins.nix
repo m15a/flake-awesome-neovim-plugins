@@ -2572,19 +2572,6 @@
       license = with licenses; [ gpl3Only ];
     };
   };
-  autoclose-nvim = buildVimPluginFrom2Nix {
-    pname = "autoclose-nvim";
-    version = "2022-08-23";
-    src = fetchurl {
-      url = "https://github.com/m4xshen/autoclose.nvim/archive/fdc5e8510d21981bdfa0ffbc812bef409f847f8a.tar.gz";
-      sha256 = "1r2i4xn4jxqn6d8m27ydagj9ijg1xhmhjvjqwxq5y9bp04b2x1va";
-    };
-    meta = with lib; {
-      description = "A minimalist autoclose plugin for Neovim written in Lua";
-      homepage = "https://github.com/m4xshen/autoclose.nvim";
-      license = with licenses; [ mit ];
-    };
-  };
   tidy-nvim = buildVimPluginFrom2Nix {
     pname = "tidy-nvim";
     version = "2022-07-21";
