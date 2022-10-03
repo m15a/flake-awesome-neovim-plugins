@@ -250,7 +250,6 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [glepnir/indent-guides.nvim](https://github.com/glepnir/indent-guides.nvim) | 2021-03-26 | `indent-guides-nvim` |
 | [glepnir/prodoc.nvim](https://github.com/glepnir/prodoc.nvim) | 2022-08-20 | `prodoc-nvim` |
 | [h-hg/fcitx.nvim](https://github.com/h-hg/fcitx.nvim) | 2022-06-25 | `fcitx-nvim` |
-| [henriquehbr/ataraxis.lua](https://github.com/henriquehbr/ataraxis.lua) | 2022-07-31 | `ataraxis-lua` |
 | [sourcehut:henriquehbr/ataraxis.lua](https://sr.ht/~henriquehbr/ataraxis.lua/) | 2022-07-31 | `ataraxis-lua` |
 | [sourcehut:henriquehbr/nvim-startup.lua](https://sr.ht/~henriquehbr/nvim-startup.lua/) | 2022-07-31 | `nvim-startup-lua` |
 | [hkupty/iron.nvim](https://github.com/hkupty/iron.nvim) | 2022-09-30 | `iron-nvim` |
