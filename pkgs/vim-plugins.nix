@@ -1247,10 +1247,10 @@
   };
   catppuccin = buildVimPluginFrom2Nix {
     pname = "catppuccin";
-    version = "2022-10-01";
+    version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/catppuccin/nvim/archive/167ecd3ee31d254390862fb90ad91492a469366e.tar.gz";
-      sha256 = "0w02nrcbf6vsjagmh1x2xnk3xnwkv38ijz5r3wxff3n6f4dg64zw";
+      url = "https://github.com/catppuccin/nvim/archive/a111e8075101c0ac8be79f293e8c5181efa06402.tar.gz";
+      sha256 = "0ci8j6qfr5pa6g6kf74s85fwcb1r4dpsx0z5qvkkiz49qmlp0vd0";
     };
     meta = with lib; {
       description = "🍨 Soothing pastel theme for Neovim";
@@ -1988,10 +1988,10 @@
   };
   jaq-nvim = buildVimPluginFrom2Nix {
     pname = "jaq-nvim";
-    version = "2022-07-15";
+    version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/is0n/jaq-nvim/archive/051842d30357100e397dc6e904f813841c8edcb7.tar.gz";
-      sha256 = "19k8004c841h52b6y71m6xnh7d294a1zaagwyqjdrxl0x6kqvna1";
+      url = "https://github.com/is0n/jaq-nvim/archive/88466efc1e2843617901cb9e427f4fea6afb0dcd.tar.gz";
+      sha256 = "0bz94ilmq8mcc8jwbp0b1fmnf3lr2cbk1b0ksl4cipifx10rq36r";
     };
     meta = with lib; {
       description = "⚙️ Just Another Quickrun Plugin for Neovim in Lua";
@@ -2335,10 +2335,10 @@
   };
   nvim-ufo = buildVimPluginFrom2Nix {
     pname = "nvim-ufo";
-    version = "2022-10-01";
+    version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/kevinhwang91/nvim-ufo/archive/c64c26c0f1a4129dbc201313f823b0b6936fee0e.tar.gz";
-      sha256 = "0q9s660103rqcsjixgc0znf295aj4zignnqlbvz7as384ch1s5vn";
+      url = "https://github.com/kevinhwang91/nvim-ufo/archive/6f9b7a43539a9b420aee9d16a637bcb51fbb64f8.tar.gz";
+      sha256 = "0yx07bzhas3s9kvsmxvlqdbysx33s95fnjadjymhnnbdnsmkzaqk";
     };
     meta = with lib; {
       description = "Not UFO in the sky, but an ultra fold in Neovim";
@@ -2529,8 +2529,8 @@
     pname = "sherbet-nvim";
     version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/lewpoly/sherbet.nvim/archive/d97e6eb31e03cd5375fad0ae4f1fea0df0f5d4aa.tar.gz";
-      sha256 = "070gbvs6l345f1xkivqdfqnjp395qygh35snv45fny5wf9zh7p73";
+      url = "https://github.com/lewpoly/sherbet.nvim/archive/fc23323143a7f4604951f36e6762a36c38105d6a.tar.gz";
+      sha256 = "1j8wdlh50yjagr7qm1hsafnk5xifnd2g2wvyl5qgqq4agjj8j3mg";
     };
     meta = with lib; {
       description = "Neovim colorscheme written in Lua";
@@ -3217,10 +3217,10 @@
   };
   ofirkai-nvim = buildVimPluginFrom2Nix {
     pname = "ofirkai-nvim";
-    version = "2022-09-25";
+    version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/ofirgall/ofirkai.nvim/archive/49bb5406986c3ceaf10ab9f11bd0c5fcd7fa198a.tar.gz";
-      sha256 = "09sh4vis10nhqsc7k5y62836q0czyxyfkg5hjilc4f8bp9xz9klh";
+      url = "https://github.com/ofirgall/ofirkai.nvim/archive/8d2404898cc27dc09376f814e6f5a2bade3f609b.tar.gz";
+      sha256 = "1rsmld74g1n282acv12629p0jx9z1682k8zpa1vhxn13337avm5r";
     };
     meta = with lib; {
       description = "Color scheme for neovim, based on SublimeText 4 monokai";
@@ -3794,8 +3794,8 @@
     pname = "Abstract-cs";
     version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/Abstract-IDE/Abstract-cs/archive/7b9087312bdbc437835e36f62c08eee92da609a3.tar.gz";
-      sha256 = "1h8r0vy3i0sx5bf9hmna1bgpir2wyikgb47dp9mhjq65vmyw8v9a";
+      url = "https://github.com/Abstract-IDE/Abstract-cs/archive/f48ad34e910c73b3fcd8ed6237fdb3e3c7e2db89.tar.gz";
+      sha256 = "0imfzf79wzhviy8az92y464f6llcx24qfpygypa858g4blzcxmid";
     };
     meta = with lib; {
       description = "Colorscheme for (neo)vim written in lua, specially made for roshnivim with Tree-sitter support";
@@ -3985,8 +3985,8 @@
     pname = "nlsp-settings-nvim";
     version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/tamago324/nlsp-settings.nvim/archive/019ea0b4b903a55d5608f7fee47e7498be7df528.tar.gz";
-      sha256 = "1wxx84xciaa3jkh8wyl9jzfyxwxk0i79g0swb7ng21yjsll3xa7a";
+      url = "https://github.com/tamago324/nlsp-settings.nvim/archive/8556dea892c60e9a36f0fba358c7fda8f492ad15.tar.gz";
+      sha256 = "02kwjqz43whgjz39ahhd5qb7vf5q2fqmck8wbfhcfrcw6k6vlfvj";
     };
     meta = with lib; {
       description = "A plugin for setting Neovim LSP with JSON or YAML files";
@@ -4022,10 +4022,10 @@
   };
   vgit-nvim = buildVimPluginFrom2Nix {
     pname = "vgit-nvim";
-    version = "2022-05-29";
+    version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/tanvirtin/vgit.nvim/archive/ee9081c304b44509b2f4267f1f7addc303f9fb9b.tar.gz";
-      sha256 = "1246gw73i00ax5wy1wcmy24j9404rvf9zbf8z96b0mxaaci03h39";
+      url = "https://github.com/tanvirtin/vgit.nvim/archive/9179aba32bfbdf5e4acdbaf57a550838d932e140.tar.gz";
+      sha256 = "0pkdrp4nfxwgflsgdxk5scj3yvsxk78y7i6rgbmyzz47x29bgm5a";
     };
     meta = with lib; {
       description = "Visual git plugin for Neovim";
@@ -4217,8 +4217,8 @@
     pname = "ccc-nvim";
     version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/uga-rosa/ccc.nvim/archive/0a8a6f1b42dd3c8031fe5d96cc835998169e1ac9.tar.gz";
-      sha256 = "13g9cy4dypdh0dn89wz6vl7134lrk6siln952g99j1cd4w5lczfq";
+      url = "https://github.com/uga-rosa/ccc.nvim/archive/dfa68ded0561430755bb4f469e5658df780ecbcb.tar.gz";
+      sha256 = "0hy7sgva5psw0k1hq78ijkixksxxp0pygv6yz1a6b29mkxd5ha7z";
     };
     meta = with lib; {
       description = "Super powerful color picker / colorizer plugin";
@@ -4243,8 +4243,8 @@
     pname = "mason-nvim";
     version = "2022-10-02";
     src = fetchurl {
-      url = "https://github.com/williamboman/mason.nvim/archive/59e6feeba9e07fd8228e20ed919d38b62af1d212.tar.gz";
-      sha256 = "0pmaz4wzlkv4k7vbi12baiif6zb08g03740rqfdax8yj46jg8mjs";
+      url = "https://github.com/williamboman/mason.nvim/archive/c2002d7a6b5a72ba02388548cfaf420b864fbc12.tar.gz";
+      sha256 = "1gn1pl6mhxds2dkz4vc6p0nxrxdxq71jmwm2amyhym39ic43vxna";
     };
     meta = with lib; {
       description = "Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters";
