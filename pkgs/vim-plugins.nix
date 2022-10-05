@@ -931,10 +931,10 @@
   };
   debugprint-nvim = buildVimPluginFrom2Nix {
     pname = "debugprint-nvim";
-    version = "2022-09-20";
+    version = "2022-10-04";
     src = fetchurl {
-      url = "https://github.com/andrewferrier/debugprint.nvim/archive/da9d9cc62c87d146fdb402bc6c40c3b033b6b34f.tar.gz";
-      sha256 = "14igsqhf6fqjqqrpj9267fmngmxs0mmz0rvl2j9gli8y8v0ybdwa";
+      url = "https://github.com/andrewferrier/debugprint.nvim/archive/5b52d8f1e2a173322c537156b9b2f127c73071ee.tar.gz";
+      sha256 = "02vg6ggignhmw6awq958g4r419lmgw70jzcs5h69sbnjj0w24sgm";
     };
     meta = with lib; {
       description = "Debugging in NeoVim the print() way!";
@@ -943,10 +943,10 @@
   };
   textobj-diagnostic-nvim = buildVimPluginFrom2Nix {
     pname = "textobj-diagnostic-nvim";
-    version = "2022-08-14";
+    version = "2022-10-04";
     src = fetchurl {
-      url = "https://github.com/andrewferrier/textobj-diagnostic.nvim/archive/38abb6fd3c20770d92462a69b0c6b57fc74959bc.tar.gz";
-      sha256 = "0jj1j4ryfb19izxa1dbb6fv3ipy6981mws4ggkrqahyq18fpjybl";
+      url = "https://github.com/andrewferrier/textobj-diagnostic.nvim/archive/48eb61f466763247b3b7c182bab2701522bc7de4.tar.gz";
+      sha256 = "06np75381lxvjiplmwcr31ksbb6lk76adczgcfna67gp13hskmmg";
     };
     meta = with lib; {
       description = "NeoVim text object that finds diagnostics";
@@ -1311,10 +1311,10 @@
   };
   one-monokai-nvim = buildVimPluginFrom2Nix {
     pname = "one-monokai-nvim";
-    version = "2022-08-27";
+    version = "2022-10-05";
     src = fetchurl {
-      url = "https://github.com/cpea2506/one_monokai.nvim/archive/effc75b63b415b8ca5bc328aba33eae279bb12f3.tar.gz";
-      sha256 = "102dd0zv9zj36n1k41fsxs4b31n3xr3910asw3da4flmcas1cfnl";
+      url = "https://github.com/cpea2506/one_monokai.nvim/archive/a4b24921d35b50da769020598a0238bb199d891a.tar.gz";
+      sha256 = "0ij0ikvdsk5s520sqhlyv0xgrb98ys0kffp5jl2319k3b3ar81ky";
     };
     meta = with lib; {
       description = "One Monokai theme for Neovim";
@@ -2297,10 +2297,10 @@
   };
   nvim-juliana = buildVimPluginFrom2Nix {
     pname = "nvim-juliana";
-    version = "2022-09-28";
+    version = "2022-10-04";
     src = fetchurl {
-      url = "https://github.com/kaiuri/nvim-juliana/archive/7269255c3ab0f2d4f9b5a447cbc8ffaf0d9e74b8.tar.gz";
-      sha256 = "173pzr8w54anbdrd8l3rwhma1rw9bg59z9lyk6n14v1al9ixaj48";
+      url = "https://github.com/kaiuri/nvim-juliana/archive/ff0e435cc2cbfe4fe090b616d2f2d27009e10aae.tar.gz";
+      sha256 = "1zg41pfyh5xgy5qkpjs0lxrhhbd4hgj2ylm9sa8vmfg7b5qfyqfr";
     };
     meta = with lib; {
       description = "Port of Sublime's Mariana Theme to Neovim for short attention span devs";
@@ -2591,8 +2591,8 @@
     pname = "github-colors";
     version = "2022-10-04";
     src = fetchurl {
-      url = "https://github.com/lourenci/github-colors/archive/2389d920190733b6347f8578171fa20fce1bf2c5.tar.gz";
-      sha256 = "1mwqvf906hmcvg6i5adqzh5s0995xda8fvklrmff8k1v0cg09sih";
+      url = "https://github.com/lourenci/github-colors/archive/d9b9cd13e18b6ecd468bf97c5f065be3f7334e09.tar.gz";
+      sha256 = "09n4bq603pp0yx06dhslirks67m593gm3j7alv2c0adh5x2zl0hz";
     };
     meta = with lib; {
       description = "Yet another GitHub colorscheme";
@@ -3473,10 +3473,10 @@
   };
   guihua-lua = buildVimPluginFrom2Nix {
     pname = "guihua-lua";
-    version = "2022-10-01";
+    version = "2022-10-04";
     src = fetchurl {
-      url = "https://github.com/ray-x/guihua.lua/archive/baebba3ba0e621eb04f5ac32a946935fdf5f5b87.tar.gz";
-      sha256 = "0c8vi8xwj71i0fxlg8sa58wqqlv5qn8abl813vypxnviz2wyjdwa";
+      url = "https://github.com/ray-x/guihua.lua/archive/bc5361d88571b375b17a4e7d9a3cbd5381d19b6f.tar.gz";
+      sha256 = "1x9lq2sq7vam5acyzi8whwh4ymj2j902xi7nb1v7xpv4mmgcr80p";
     };
     meta = with lib; {
       description = "A GUI library for Neovim plugin developers";
@@ -4228,10 +4228,10 @@
   };
   ccc-nvim = buildVimPluginFrom2Nix {
     pname = "ccc-nvim";
-    version = "2022-10-04";
+    version = "2022-10-05";
     src = fetchurl {
-      url = "https://github.com/uga-rosa/ccc.nvim/archive/81dd97874eb63ac719c372bdeb1cd15d9ddcca15.tar.gz";
-      sha256 = "1c9z8zjsbl8cw0m915q8rq08yfbnww9cli1d6nagm8jl6i75xzc2";
+      url = "https://github.com/uga-rosa/ccc.nvim/archive/814a7f560e364f92077f579d4fc25826e9717a9b.tar.gz";
+      sha256 = "16rbb2x0g8g3w4sikr71washk9y5yjgh4cbhw1mrm4mghm6kkisv";
     };
     meta = with lib; {
       description = "Super powerful color picker / colorizer plugin";
