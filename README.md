@@ -288,7 +288,6 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [kdheepak/monochrome.nvim](https://github.com/kdheepak/monochrome.nvim) | 2021-07-14 | `monochrome-nvim` |
 | [keaising/im-select.nvim](https://github.com/keaising/im-select.nvim) | 2022-07-31 | `im-select-nvim` |
 | [kevinhwang91/nvim-ufo](https://github.com/kevinhwang91/nvim-ufo) | 2022-10-03 | `nvim-ufo` |
-| [kkharji/lspsaga.nvim](https://github.com/kkharji/lspsaga.nvim) | 2022-08-20 | `lspsaga-nvim` |
 | [kkharji/sqlite.lua](https://github.com/kkharji/sqlite.lua) | 2022-10-01 | `sqlite-lua` |
 | [klen/nvim-test](https://github.com/klen/nvim-test) | 2022-06-05 | `nvim-test` |
 | [kmonad/kmonad-vim](https://github.com/kmonad/kmonad-vim) | 2022-03-20 | `kmonad-vim` |
