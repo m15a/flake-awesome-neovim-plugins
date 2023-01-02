@@ -1337,19 +1337,6 @@
       license = with licenses; [ mit ];
     };
   };
-  vim-nightfly-colors = buildVimPluginFrom2Nix {
-    pname = "vim-nightfly-colors";
-    version = "2022-12-28";
-    src = fetchurl {
-      url = "https://github.com/bluz71/vim-nightfly-colors/archive/3ca232533b2bd58cc486552e9f4a9da7f7458bdd.tar.gz";
-      sha256 = "11nfahggmik5clxr33x4avhjn1jhwzcbbhk095lyvp6z4fhjsygn";
-    };
-    meta = with lib; {
-      description = "A dark midnight theme for classic Vim & modern Neovim";
-      homepage = "https://github.com/bluz71/vim-nightfly-colors";
-      license = with licenses; [ mit ];
-    };
-  };
   nvim-gomove = buildVimPluginFrom2Nix {
     pname = "nvim-gomove";
     version = "2022-07-19";
@@ -3097,19 +3084,6 @@
     meta = with lib; {
       description = "🪨 A collection of contrast-based Vim/Neovim colorschemes";
       homepage = "https://github.com/mcchrish/zenbones.nvim";
-      license = with licenses; [ mit ];
-    };
-  };
-  mellifluous-nvim = buildVimPluginFrom2Nix {
-    pname = "mellifluous-nvim";
-    version = "2022-12-28";
-    src = fetchurl {
-      url = "https://github.com/ramojus/mellifluous.nvim/archive/119f01c6dfc3b16fcca18127c01adb63d6907553.tar.gz";
-      sha256 = "1zskk4hy02mk8fl4yh3mpqhzvlc05695vpijr6wf3k5lxs0vrd02";
-    };
-    meta = with lib; {
-      description = "Pleasant and productive colorscheme for Neovim";
-      homepage = "https://github.com/ramojus/mellifluous.nvim";
       license = with licenses; [ mit ];
     };
   };

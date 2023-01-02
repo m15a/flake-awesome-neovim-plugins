@@ -207,7 +207,6 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [bkegley/gloombuddy](https://github.com/bkegley/gloombuddy) | 2021-04-16 | `gloombuddy` |
 | [bluz71/vim-moonfly-colors](https://github.com/bluz71/vim-moonfly-colors) | 2022-12-28 | `vim-moonfly-colors` |
 | [bluz71/vim-nightfly-colors](https://github.com/bluz71/vim-nightfly-colors) | 2022-12-28 | `vim-nightfly-colors` |
-| [bluz71/vim-nightfly-colors](https://github.com/bluz71/vim-nightfly-colors) | 2022-12-28 | `vim-nightfly-colors` |
 | [booperlv/nvim-gomove](https://github.com/booperlv/nvim-gomove) | 2022-07-19 | `nvim-gomove` |
 | [brendalf/mix.nvim](https://github.com/brendalf/mix.nvim) | 2022-08-22 | `mix-nvim` |
 | [brenoprata10/nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors) | 2022-09-28 | `nvim-highlight-colors` |
@@ -345,7 +344,6 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [matbme/JABS.nvim](https://github.com/matbme/JABS.nvim) | 2022-12-13 | `JABS-nvim` |
 | [mcauley-penney/tidy.nvim](https://github.com/mcauley-penney/tidy.nvim) | 2022-09-17 | `tidy-nvim` |
 | [mcchrish/zenbones.nvim](https://github.com/mcchrish/zenbones.nvim) | 2022-10-22 | `zenbones-nvim` |
-| [ramojus/mellifluous.nvim](https://github.com/ramojus/mellifluous.nvim) | 2022-12-28 | `mellifluous-nvim` |
 | [mawkler/modicator.nvim](https://github.com/mawkler/modicator.nvim) | 2022-11-30 | `modicator-nvim` |
 | [mfussenegger/nvim-treehopper](https://github.com/mfussenegger/nvim-treehopper) | 2022-12-20 | `nvim-treehopper` |
 | [michaelb/sniprun](https://github.com/michaelb/sniprun) | 2022-12-28 | `sniprun` |
