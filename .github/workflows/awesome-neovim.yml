@@ -3,7 +3,7 @@ name: Fetch new plugins from awesome-neovim
 on:
   schedule:
     - cron: "22 19 * * 2,5"
-
+  workflow_dispatch:
 jobs:
   fetch-new-plugins:
     runs-on: ubuntu-latest
