@@ -19,7 +19,7 @@ on:
       - 'LICENSE'
       - '**.md'
       - '**.txt'
-
+  workflow_dispatch:
 jobs:
   check-builds:
     runs-on: ubuntu-latest
