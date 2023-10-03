@@ -11,6 +11,7 @@ on:
   schedule:
     - cron: "5 14 * * 0,4"
   workflow_dispatch:
+permissions: write-all
 jobs:
   update-plugins:
     runs-on: ubuntu-latest
