@@ -11,13 +11,8 @@ jobs:
     name: Fetch new plugins from awesome-neovim
     steps:
       - uses: actions/checkout@v3
-      - uses: cachix/install-nix-action@v17
-        with:
-          extra_nix_config: |
-            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      - uses: cachix/install-nix-action@v20
       - run: nix run .#update-vim-plugins -- awesome-neovim
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'maintenance: auto fetch awesome neovim plugins'
