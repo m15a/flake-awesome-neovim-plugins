@@ -254,7 +254,6 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [bkegley/gloombuddy](https://github.com/bkegley/gloombuddy) | 2021-04-16 | `gloombuddy` |
 | [bluz71/vim-moonfly-colors](https://github.com/bluz71/vim-moonfly-colors) | 2023-10-01 | `vim-moonfly-colors` |
 | [bluz71/vim-nightfly-colors](https://github.com/bluz71/vim-nightfly-colors) | 2023-10-01 | `vim-nightfly-colors` |
-| [bluz71/vim-nightfly-colors](https://github.com/bluz71/vim-nightfly-colors) | 2023-10-01 | `vim-nightfly-colors` |
 | [booperlv/nvim-gomove](https://github.com/booperlv/nvim-gomove) | 2022-07-19 | `nvim-gomove` |
 | [brendalf/mix.nvim](https://github.com/brendalf/mix.nvim) | 2022-08-22 | `mix-nvim` |
 | [brenoprata10/nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors) | 2023-07-27 | `nvim-highlight-colors` |
