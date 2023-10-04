@@ -206,7 +206,6 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [Zeioth/dooku.nvim](https://github.com/Zeioth/dooku.nvim) | 2023-09-01 | `dooku-nvim` |
 | [Zeioth/markmap.nvim](https://github.com/Zeioth/markmap.nvim) | 2023-09-12 | `markmap-nvim` |
 | [ZhiyuanLck/smart-pairs](https://github.com/ZhiyuanLck/smart-pairs) | 2022-03-22 | `smart-pairs` |
-| [aPeoplesCalendar/apc.nvim](https://github.com/aPeoplesCalendar/apc.nvim) | 2023-09-27 | `apc-nvim` |
 | [aaronhallaert/advanced-git-search.nvim](https://github.com/aaronhallaert/advanced-git-search.nvim) | 2023-08-07 | `advanced-git-search-nvim` |
 | [abecodes/tabout.nvim](https://github.com/abecodes/tabout.nvim) | 2023-03-29 | `tabout-nvim` |
 | [ada0l/obsidian](https://github.com/ada0l/obsidian) | 2023-08-11 | `obsidian` |
@@ -411,7 +410,6 @@ You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the p
 | [ldelossa/gh.nvim](https://github.com/ldelossa/gh.nvim) | 2023-04-26 | `gh-nvim` |
 | [ldelossa/vimdark](https://github.com/ldelossa/vimdark) | 2022-03-20 | `vimdark` |
 | [leafOfTree/vim-svelte-plugin](https://github.com/leafOfTree/vim-svelte-plugin) | 2023-05-04 | `vim-svelte-plugin` |
-| [lewis6991/pckr.nvim](https://github.com/lewis6991/pckr.nvim) | 2023-09-22 | `pckr-nvim` |
 | [lewpoly/sherbet.nvim](https://github.com/lewpoly/sherbet.nvim) | 2022-12-17 | `sherbet-nvim` |
 | [liangxianzhe/nap.nvim](https://github.com/liangxianzhe/nap.nvim) | 2023-09-10 | `nap-nvim` |
 | [linrongbin16/fzfx.nvim](https://github.com/linrongbin16/fzfx.nvim) | 2023-10-03 | `fzfx-nvim` |

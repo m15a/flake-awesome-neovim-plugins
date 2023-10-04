@@ -3944,19 +3944,6 @@
       license = with licenses; [ unlicense ];
     };
   };
-  pckr-nvim = buildVimPluginFrom2Nix {
-    pname = "pckr-nvim";
-    version = "2023-09-22";
-    src = fetchurl {
-      url = "https://github.com/lewis6991/pckr.nvim/archive/6f0959b2b44762d3fde050812415e78abc2f24a1.tar.gz";
-      sha256 = "0rn66afg87mqa13y9p4qglfdc7rj6nqvp6j93kaj7ghd0ikkh120";
-    };
-    meta = with lib; {
-      description = "Spiritual successor of https://github.com/wbthomason/packer.nvim";
-      homepage = "https://github.com/lewis6991/pckr.nvim";
-      license = with licenses; [ mit ];
-    };
-  };
   sherbet-nvim = buildVimPluginFrom2Nix {
     pname = "sherbet-nvim";
     version = "2022-12-17";
