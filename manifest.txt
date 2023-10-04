@@ -64,10 +64,6 @@ NvChad/nvim-colorizer.lua
 Olical/nfnl
 OscarCreator/rsync.nvim
 PHSix/nvim-hybrid
-Pocco81/AbbrevMan.nvim
-Pocco81/AutoSave.nvim
-Pocco81/DAPInstall.nvim
-Pocco81/HighStr.nvim
 Pocco81/auto-save.nvim::AutoSave
 Pocco81/dap-buddy.nvim
 Pocco81/high-str.nvim
@@ -100,7 +96,6 @@ Wansmer/symbol-usage.nvim
 Wansmer/treesj
 Weissle/easy-action
 Weissle/persistent-breakpoints.nvim
-WhoIsSethDaniel/mason-tool-installer.nvim
 XXiaoA/ns-textobject.nvim
 Xuyuanp/yanil
 Zeioth/compiler.nvim
@@ -209,7 +204,6 @@ desdic/telescope-rooter.nvim
 dinhhuy258/sfm.nvim
 dmmulroy/tsc.nvim
 dpayne/CodeGPT.nvim
-dracula/vim
 dracula/vim::dracula
 drybalka/tree-climber.nvim
 ecthelionvi/NeoColumn.nvim
@@ -221,7 +215,6 @@ elihunter173/dirbuf.nvim
 ellisonleao/carbon-now.nvim
 ellisonleao/glow.nvim
 ellisonleao/nvim-plugin-template
-embark-theme/vim
 embark-theme/vim::embark-theme
 emileferreira/nvim-strict
 epwalsh/obsidian.nvim
@@ -245,12 +238,11 @@ gennaro-tedesco/nvim-possession
 ggandor/leap.nvim
 ghillb/cybu.nvim
 glacambre/firenvim
+nvimdev/lspsaga.nvim
 gnikdroy/projections.nvim
 gorbit99/codewindow.nvim
 gsuuon/llm.nvim
 h-hg/fcitx.nvim
-sourcehut:henriquehbr/ataraxis.lua
-sourcehut:henriquehbr/nvim-startup.lua
 hinell/duplicate.nvim
 hinell/lsp-timeout.nvim
 hinell/move.nvim
@@ -286,7 +278,6 @@ jghauser/papis.nvim
 jim-at-jibba/ariake-vim-colors
 jim-fx/sudoku.nvim
 jinzhongjia/LspUI.nvim
-jinzhongjia/PS_manager.nvim
 johann2357/nvim-smartbufs
 jose-elias-alvarez/null-ls.nvim
 jose-elias-alvarez/typescript.nvim
@@ -363,8 +354,6 @@ nanotee/sqls.nvim
 nanozuki/tabby.nvim
 natecraddock/workspaces.nvim
 neanias/everforest-nvim
-sourcehut:nedia/auto-format.nvim
-sourcehut:nedia/auto-save.nvim
 nekonako/xresources-nvim
 nguyenvukhang/nvim-toggler
 nikvdp/neomux
@@ -395,7 +384,6 @@ nvim-treesitter/nvim-treesitter-context
 nvim-zh/colorful-winsep.nvim
 nvimdev/dashboard-nvim
 nvimdev/indentmini.nvim
-nvimdev/lspsaga.nvim
 nvimdev/zephyr-nvim
 nxvu699134/vn-night.nvim
 nyngwang/NeoNoName.lua
@@ -443,7 +431,6 @@ ray-x/sad.nvim
 ray-x/starry.nvim
 ray-x/web-tools.nvim
 rebelot/heirline.nvim
-sourcehut:reggie/licenses.nvim
 renerocksai/telekasten.nvim
 rgroli/other.nvim
 rhysd/vim-gfm-syntax
@@ -507,8 +494,8 @@ svermeulen/vimpeccable
 svrana/neosolarized.nvim
 sychen52/smart-term-esc.nvim
 t-troebst/perfanno.nvim
-tamago324/lir-git-status.nvim
 tamago324/nlsp-settings.nvim
+tamago324/lir-git-status.nvim
 tamton-aquib/staline.nvim
 tanvirtin/monokai.nvim
 tanvirtin/vgit.nvim
@@ -526,7 +513,6 @@ tjdevries/express_line.nvim
 tjdevries/gruvbuddy.nvim
 tjdevries/vlog.nvim
 tmillr/sos.nvim
-tomasky/bookmarks.nvim
 tomasky/bookmarks.nvim::bookmarks-nvim-2
 tomiis4/BufferTabs.nvim
 tomiis4/hypersonic.nvim
@@ -540,8 +526,9 @@ uga-rosa/ccc.nvim
 utilyre/barbecue.nvim
 utilyre/sentiment.nvim
 vigoux/complementree.nvim
-williamboman/mason-lspconfig.nvim
+WhoIsSethDaniel/mason-tool-installer.nvim
 williamboman/mason.nvim
+williamboman/mason-lspconfig.nvim
 williamboman/nvim-lsp-installer
 willothy/moveline.nvim
 willothy/nvim-cokeline
