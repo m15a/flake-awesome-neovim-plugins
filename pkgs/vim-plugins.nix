@@ -4274,19 +4274,6 @@
       license = with licenses; [ mit ];
     };
   };
-  mellifluous-nvim = buildVimPluginFrom2Nix {
-    pname = "mellifluous-nvim";
-    version = "2023-09-14";
-    src = fetchurl {
-      url = "https://github.com/ramojus/mellifluous.nvim/archive/8c1e6b6c86c0f5d1327fd128d5a9080391e5997e.tar.gz";
-      sha256 = "1cfazlwsfyf0zgr6drq1qq4lz04308m7z7h95y9yxqdqcqqqfqj5";
-    };
-    meta = with lib; {
-      description = "Pleasant and productive colorscheme for Neovim";
-      homepage = "https://github.com/ramojus/mellifluous.nvim";
-      license = with licenses; [ mit ];
-    };
-  };
   modicator-nvim = buildVimPluginFrom2Nix {
     pname = "modicator-nvim";
     version = "2023-08-25";
