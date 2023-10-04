@@ -6778,19 +6778,6 @@
       license = with licenses; [ mit ];
     };
   };
-  nvim-cokeline = buildVimPluginFrom2Nix {
-    pname = "nvim-cokeline";
-    version = "2023-10-03";
-    src = fetchurl {
-      url = "https://github.com/willothy/nvim-cokeline/archive/90d728627d13097733a17d6abafc343a78d1bd71.tar.gz";
-      sha256 = "1bv3av0f6rnvbkj6wvsz37b8iv6q3w9wbd52bfx0l5kszfxc79wb";
-    };
-    meta = with lib; {
-      description = ":nose: A Neovim bufferline for people with addictive personalities";
-      homepage = "https://github.com/willothy/nvim-cokeline";
-      license = with licenses; [ mit ];
-    };
-  };
   veil-nvim = buildVimPluginFrom2Nix {
     pname = "veil-nvim";
     version = "2023-04-01";
