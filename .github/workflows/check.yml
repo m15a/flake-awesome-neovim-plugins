@@ -20,7 +20,6 @@ on:
       - '**.md'
       - '**.txt'
   workflow_dispatch:
-permissions: write-all
 jobs:
   check-builds:
     runs-on: ubuntu-latest
