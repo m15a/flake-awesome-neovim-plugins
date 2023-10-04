@@ -1329,19 +1329,6 @@
       license = with licenses; [ mit ];
     };
   };
-  apc-nvim = buildVimPluginFrom2Nix {
-    pname = "apc-nvim";
-    version = "2023-09-27";
-    src = fetchurl {
-      url = "https://github.com/aPeoplesCalendar/apc.nvim/archive/6d4efebf9cbd4d284afd5b3421108bd9ed25c9c0.tar.gz";
-      sha256 = "1npkb8z6szhqhzs8c71zlvxs053i77f12gyxk7zp6f8w20fmdcyy";
-    };
-    meta = with lib; {
-      description = "Plugin providing \"A People's Calendar\" for Neovim, written in lua";
-      homepage = "https://github.com/aPeoplesCalendar/apc.nvim";
-      license = with licenses; [ mit ];
-    };
-  };
   advanced-git-search-nvim = buildVimPluginFrom2Nix {
     pname = "advanced-git-search-nvim";
     version = "2023-08-07";
