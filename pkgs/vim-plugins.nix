@@ -1329,19 +1329,6 @@
       license = with licenses; [ mit ];
     };
   };
-  apc-nvim = buildVimPluginFrom2Nix {
-    pname = "apc-nvim";
-    version = "2023-09-27";
-    src = fetchurl {
-      url = "https://github.com/aPeoplesCalendar/apc.nvim/archive/6d4efebf9cbd4d284afd5b3421108bd9ed25c9c0.tar.gz";
-      sha256 = "1npkb8z6szhqhzs8c71zlvxs053i77f12gyxk7zp6f8w20fmdcyy";
-    };
-    meta = with lib; {
-      description = "Plugin providing \"A People's Calendar\" for Neovim, written in lua";
-      homepage = "https://github.com/aPeoplesCalendar/apc.nvim";
-      license = with licenses; [ mit ];
-    };
-  };
   advanced-git-search-nvim = buildVimPluginFrom2Nix {
     pname = "advanced-git-search-nvim";
     version = "2023-08-07";
@@ -3955,19 +3942,6 @@
       description = "Vim syntax and indent plugin for .svelte files";
       homepage = "https://github.com/leafOfTree/vim-svelte-plugin";
       license = with licenses; [ unlicense ];
-    };
-  };
-  pckr-nvim = buildVimPluginFrom2Nix {
-    pname = "pckr-nvim";
-    version = "2023-09-22";
-    src = fetchurl {
-      url = "https://github.com/lewis6991/pckr.nvim/archive/6f0959b2b44762d3fde050812415e78abc2f24a1.tar.gz";
-      sha256 = "0rn66afg87mqa13y9p4qglfdc7rj6nqvp6j93kaj7ghd0ikkh120";
-    };
-    meta = with lib; {
-      description = "Spiritual successor of https://github.com/wbthomason/packer.nvim";
-      homepage = "https://github.com/lewis6991/pckr.nvim";
-      license = with licenses; [ mit ];
     };
   };
   sherbet-nvim = buildVimPluginFrom2Nix {
