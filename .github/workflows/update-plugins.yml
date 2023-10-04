@@ -25,6 +25,7 @@ jobs:
       - run: nix run .#update-vim-plugins -- update --all
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          SOURCEHUT_TOKEN: ${{ secrets.SOURCEHUT_TOKEN }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'maintenance: auto update plugins'
