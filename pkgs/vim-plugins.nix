@@ -4855,10 +4855,10 @@
   };
   luarocks-tag-release = buildVimPluginFrom2Nix {
     pname = "luarocks-tag-release";
-    version = "2023-10-03";
+    version = "2023-10-04";
     src = fetchurl {
-      url = "https://github.com/nvim-neorocks/luarocks-tag-release/archive/003ae14ee1f43a28dce390921b065e613a6c2fc0.tar.gz";
-      sha256 = "0bqhiranfk0h97f2aj456bnkkm7imiklamn8p1bnhj3747n0a6mz";
+      url = "https://github.com/nvim-neorocks/luarocks-tag-release/archive/51462f7c0c8835457bf11d93cd360d8d0c59cb1f.tar.gz";
+      sha256 = "03dfgaz84p69xy73c4fdpzvck71vxrsm9812r5ha74wd7lm3gl15";
     };
     meta = with lib; {
       description = "GitHub workflow for automatically generating Luarocks releases from tags and running busted tests";
