@@ -7079,18 +7079,6 @@
       license = with licenses; [ mpl20 ];
     };
   };
-  nvim-window = buildVimPluginFrom2Nix {
-    pname = "nvim-window";
-    version = "2022-03-23";
-    src = fetchurl {
-      url = "https://gitlab.com/api/v4/projects/yorickpeterse%2Fnvim-window/repository/archive.tar.gz?sha=dd0a6b230003ef35524853d71e5413f88fd2ba74";
-      sha256 = "0q745ynvk6pmv5ndi8hykwm09mc9z9ib52dipa3fsz3jmi4gmm7m";
-    };
-    meta = with lib; {
-      description = "Moved to https://github.com/yorickpeterse/nvim-window";
-      homepage = "https://gitlab.com/yorickpeterse/nvim-window";
-    };
-  };
   themery-nvim = buildVimPluginFrom2Nix {
     pname = "themery-nvim";
     version = "2023-09-24";
