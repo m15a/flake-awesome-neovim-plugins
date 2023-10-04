@@ -844,8 +844,8 @@
       homepage = "https://github.com/PHSix/nvim-hybrid";
     };
   };
-  auto-save-nvim = buildVimPluginFrom2Nix {
-    pname = "auto-save-nvim";
+  AutoSave = buildVimPluginFrom2Nix {
+    pname = "AutoSave";
     version = "2022-11-01";
     src = fetchurl {
       url = "https://github.com/pocco81/auto-save.nvim/archive/979b6c82f60cfa80f4cf437d77446d0ded0addf0.tar.gz";
