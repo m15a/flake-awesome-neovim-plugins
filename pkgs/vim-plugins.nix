@@ -6571,8 +6571,8 @@
       license = with licenses; [ mit ];
     };
   };
-  bookmarks-nvim = buildVimPluginFrom2Nix {
-    pname = "bookmarks-nvim";
+  bookmarks-nvim-2 = buildVimPluginFrom2Nix {
+    pname = "bookmarks-nvim-2";
     version = "2023-07-06";
     src = fetchurl {
       url = "https://github.com/tomasky/bookmarks.nvim/archive/e51023c89512aec01158be69510547e54b1a4948.tar.gz";
