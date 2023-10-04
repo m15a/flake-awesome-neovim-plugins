@@ -200,7 +200,8 @@ let
     cmp-tmux
     kanagawa-nvim
     litee-nvim
-    lua-dev-nvim
+    # lua-dev-nvim
+    #neodev-nvim
     mini-nvim
     nvim-ts-autotag
     # onedark-nvim is an alias to onedark-pro-nvim.

@@ -844,8 +844,8 @@
       homepage = "https://github.com/PHSix/nvim-hybrid";
     };
   };
-  auto-save-nvim = buildVimPluginFrom2Nix {
-    pname = "auto-save-nvim";
+  AutoSave = buildVimPluginFrom2Nix {
+    pname = "AutoSave";
     version = "2022-11-01";
     src = fetchurl {
       url = "https://github.com/pocco81/auto-save.nvim/archive/979b6c82f60cfa80f4cf437d77446d0ded0addf0.tar.gz";
@@ -1941,19 +1941,6 @@
       license = with licenses; [ mit ];
     };
   };
-  vim-nightfly-colors = buildVimPluginFrom2Nix {
-    pname = "vim-nightfly-colors";
-    version = "2023-10-01";
-    src = fetchurl {
-      url = "https://github.com/bluz71/vim-nightfly-colors/archive/60d7e7749c21dec4e77c70672c3882dc5653d02c.tar.gz";
-      sha256 = "01syhbskqldhdbqmp582xcj1yg5gaz8wpwak54i0sm3514g0fc6z";
-    };
-    meta = with lib; {
-      description = "A dark midnight theme for modern Neovim & classic Vim";
-      homepage = "https://github.com/bluz71/vim-nightfly-colors";
-      license = with licenses; [ mit ];
-    };
-  };
   nvim-gomove = buildVimPluginFrom2Nix {
     pname = "nvim-gomove";
     version = "2022-07-19";
@@ -2649,8 +2636,8 @@
       license = with licenses; [ gpl3Only ];
     };
   };
-  vim = buildVimPluginFrom2Nix {
-    pname = "vim";
+  dracula = buildVimPluginFrom2Nix {
+    pname = "dracula";
     version = "2023-08-30";
     src = fetchurl {
       url = "https://github.com/dracula/vim/archive/b2cc39273abbb6b38a3d173d2a5d8c2d1c79fc19.tar.gz";
@@ -2790,8 +2777,8 @@
       license = with licenses; [ mit ];
     };
   };
-  vim = buildVimPluginFrom2Nix {
-    pname = "vim";
+  embark-theme = buildVimPluginFrom2Nix {
+    pname = "embark-theme";
     version = "2023-04-21";
     src = fetchurl {
       url = "https://github.com/embark-theme/vim/archive/0e2c7d36b766dcebba2d8a3a0639784446dea086.tar.gz";
@@ -4287,19 +4274,6 @@
       license = with licenses; [ mit ];
     };
   };
-  mellifluous-nvim = buildVimPluginFrom2Nix {
-    pname = "mellifluous-nvim";
-    version = "2023-09-14";
-    src = fetchurl {
-      url = "https://github.com/ramojus/mellifluous.nvim/archive/8c1e6b6c86c0f5d1327fd128d5a9080391e5997e.tar.gz";
-      sha256 = "1cfazlwsfyf0zgr6drq1qq4lz04308m7z7h95y9yxqdqcqqqfqj5";
-    };
-    meta = with lib; {
-      description = "Pleasant and productive colorscheme for Neovim";
-      homepage = "https://github.com/ramojus/mellifluous.nvim";
-      license = with licenses; [ mit ];
-    };
-  };
   modicator-nvim = buildVimPluginFrom2Nix {
     pname = "modicator-nvim";
     version = "2023-08-25";
@@ -4751,8 +4725,8 @@
       license = with licenses; [ gpl3Only ];
     };
   };
-  nvim-cokeline = buildVimPluginFrom2Nix {
-    pname = "nvim-cokeline";
+  cokeline = buildVimPluginFrom2Nix {
+    pname = "cokeline";
     version = "2023-10-03";
     src = fetchurl {
       url = "https://github.com/willothy/nvim-cokeline/archive/90d728627d13097733a17d6abafc343a78d1bd71.tar.gz";
@@ -6239,10 +6213,10 @@
   };
   conform-nvim = buildVimPluginFrom2Nix {
     pname = "conform-nvim";
-    version = "2023-10-03";
+    version = "2023-10-04";
     src = fetchurl {
-      url = "https://github.com/stevearc/conform.nvim/archive/1511ae2ab68ad985dd1b3764ce17af7f0355019c.tar.gz";
-      sha256 = "1axjj8m7mmib4fycl6zxqaniqbv4rpf914xnh6si5bkriafd2zq3";
+      url = "https://github.com/stevearc/conform.nvim/archive/ce427b03b9cc428ee7a64cb77487ed19efec202d.tar.gz";
+      sha256 = "1w0mrh5cfcfy9yaw57dcl9cpssw458lsq9p3jsax103zkgvd8nny";
     };
     meta = with lib; {
       description = "Lightweight yet powerful formatter plugin for Neovim";
@@ -6375,6 +6349,19 @@
     meta = with lib; {
       description = "A plugin for setting Neovim LSP with JSON or YAML files";
       homepage = "https://github.com/tamago324/nlsp-settings.nvim";
+      license = with licenses; [ mit ];
+    };
+  };
+  lir-git-status-nvim = buildVimPluginFrom2Nix {
+    pname = "lir-git-status-nvim";
+    version = "2023-04-19";
+    src = fetchurl {
+      url = "https://github.com/tamago324/lir-git-status.nvim/archive/4d574f6a9e6d7ce3fe6cccb87a601fb72fb0404d.tar.gz";
+      sha256 = "060vicjgsw6ldqxhagi3h4ckfd314zl0qbh1l45swxzqf4abd4s2";
+    };
+    meta = with lib; {
+      description = "Git status integration of lir.nvim";
+      homepage = "https://github.com/tamago324/lir-git-status.nvim";
       license = with licenses; [ mit ];
     };
   };
@@ -6597,8 +6584,8 @@
       license = with licenses; [ mit ];
     };
   };
-  bookmarks-nvim = buildVimPluginFrom2Nix {
-    pname = "bookmarks-nvim";
+  bookmarks-nvim-2 = buildVimPluginFrom2Nix {
+    pname = "bookmarks-nvim-2";
     version = "2023-07-06";
     src = fetchurl {
       url = "https://github.com/tomasky/bookmarks.nvim/archive/e51023c89512aec01158be69510547e54b1a4948.tar.gz";
@@ -6765,6 +6752,19 @@
       license = with licenses; [ bsd3 ];
     };
   };
+  mason-tool-installer-nvim = buildVimPluginFrom2Nix {
+    pname = "mason-tool-installer-nvim";
+    version = "2023-09-23";
+    src = fetchurl {
+      url = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim/archive/83dcddb6477f9ba5db98971ef27bd18bdca921b4.tar.gz";
+      sha256 = "1m6hsfv6iw5z8ma27y7vidlrm8mfjw9sdbn9xwvbssfg6qjp52ym";
+    };
+    meta = with lib; {
+      description = "Install and upgrade third party tools automatically";
+      homepage = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim";
+      license = with licenses; [ mit ];
+    };
+  };
   mason-nvim = buildVimPluginFrom2Nix {
     pname = "mason-nvim";
     version = "2023-09-10";
@@ -6775,6 +6775,19 @@
     meta = with lib; {
       description = "Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters";
       homepage = "https://github.com/williamboman/mason.nvim";
+      license = with licenses; [ asl20 ];
+    };
+  };
+  mason-lspconfig-nvim = buildVimPluginFrom2Nix {
+    pname = "mason-lspconfig-nvim";
+    version = "2023-10-02";
+    src = fetchurl {
+      url = "https://github.com/williamboman/mason-lspconfig.nvim/archive/e2705063f395b44f676cd26596a11007a2cbd3bd.tar.gz";
+      sha256 = "0b5a96fx5jg2cr1shzsslmnjg4r7am2w543gj4z2clwrgzgkn9kr";
+    };
+    meta = with lib; {
+      description = "Extension to mason.nvim that makes it easier to use lspconfig with mason.nvim";
+      homepage = "https://github.com/williamboman/mason-lspconfig.nvim";
       license = with licenses; [ asl20 ];
     };
   };
@@ -7116,18 +7129,6 @@
       description = "Easily jump between NeoVim windows";
       homepage = "https://github.com/yorickpeterse/nvim-window";
       license = with licenses; [ mpl20 ];
-    };
-  };
-  nvim-window = buildVimPluginFrom2Nix {
-    pname = "nvim-window";
-    version = "2022-03-23";
-    src = fetchurl {
-      url = "https://gitlab.com/api/v4/projects/yorickpeterse%2Fnvim-window/repository/archive.tar.gz?sha=dd0a6b230003ef35524853d71e5413f88fd2ba74";
-      sha256 = "0q745ynvk6pmv5ndi8hykwm09mc9z9ib52dipa3fsz3jmi4gmm7m";
-    };
-    meta = with lib; {
-      description = "Moved to https://github.com/yorickpeterse/nvim-window";
-      homepage = "https://gitlab.com/yorickpeterse/nvim-window";
     };
   };
   themery-nvim = buildVimPluginFrom2Nix {

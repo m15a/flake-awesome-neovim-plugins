@@ -64,7 +64,7 @@ NvChad/nvim-colorizer.lua
 Olical/nfnl
 OscarCreator/rsync.nvim
 PHSix/nvim-hybrid
-Pocco81/auto-save.nvim
+Pocco81/auto-save.nvim::AutoSave
 Pocco81/dap-buddy.nvim
 Pocco81/high-str.nvim
 RRethy/nvim-treesitter-textsubjects
@@ -150,7 +150,6 @@ bfredl/nvim-miniyank
 bkegley/gloombuddy
 bluz71/vim-moonfly-colors
 bluz71/vim-nightfly-colors
-bluz71/vim-nightfly-guicolors
 booperlv/nvim-gomove
 brendalf/mix.nvim
 brenoprata10/nvim-highlight-colors
@@ -205,7 +204,7 @@ desdic/telescope-rooter.nvim
 dinhhuy258/sfm.nvim
 dmmulroy/tsc.nvim
 dpayne/CodeGPT.nvim
-dracula/vim
+dracula/vim::dracula
 drybalka/tree-climber.nvim
 ecthelionvi/NeoColumn.nvim
 ecthelionvi/NeoComposer.nvim
@@ -216,7 +215,7 @@ elihunter173/dirbuf.nvim
 ellisonleao/carbon-now.nvim
 ellisonleao/glow.nvim
 ellisonleao/nvim-plugin-template
-embark-theme/vim
+embark-theme/vim::embark-theme
 emileferreira/nvim-strict
 epwalsh/obsidian.nvim
 esensar/nvim-dev-container
@@ -333,7 +332,6 @@ matbme/JABS.nvim
 maxmx03/FluoroMachine.nvim
 mcauley-penney/tidy.nvim
 mcchrish/zenbones.nvim
-meliora-theme/neovim
 melkster/modicator.nvim
 mfussenegger/nvim-ts-hint-textobject
 mg979/tabline.nvim
@@ -369,7 +367,7 @@ niuiic/multiple-session.nvim
 niuiic/part-edit.nvim
 niuiic/translate.nvim
 nkakouros-original/numbers.nvim
-noib3/cokeline.nvim
+noib3/cokeline.nvim::cokeline
 noib3/nvim-compleet
 norcalli/nvim-base16.lua
 notomo/cmdbuf.nvim
@@ -497,6 +495,7 @@ svrana/neosolarized.nvim
 sychen52/smart-term-esc.nvim
 t-troebst/perfanno.nvim
 tamago324/nlsp-settings.nvim
+tamago324/lir-git-status.nvim
 tamton-aquib/staline.nvim
 tanvirtin/monokai.nvim
 tanvirtin/vgit.nvim
@@ -514,7 +513,7 @@ tjdevries/express_line.nvim
 tjdevries/gruvbuddy.nvim
 tjdevries/vlog.nvim
 tmillr/sos.nvim
-tomasky/bookmarks.nvim
+tomasky/bookmarks.nvim::bookmarks-nvim-2
 tomiis4/BufferTabs.nvim
 tomiis4/hypersonic.nvim
 topaxi/gh-actions.nvim
@@ -527,7 +526,9 @@ uga-rosa/ccc.nvim
 utilyre/barbecue.nvim
 utilyre/sentiment.nvim
 vigoux/complementree.nvim
+WhoIsSethDaniel/mason-tool-installer.nvim
 williamboman/mason.nvim
+williamboman/mason-lspconfig.nvim
 williamboman/nvim-lsp-installer
 willothy/moveline.nvim
 willothy/nvim-cokeline
@@ -555,7 +556,6 @@ yazeed1s/oh-lucy.nvim
 yonlu/omni.vim
 gitlab:yorickpeterse/nvim-pqf
 yorickpeterse/nvim-window
-gitlab:yorickpeterse/nvim-window
 zaldih/themery.nvim
 zbirenbaum/copilot-cmp
 zbirenbaum/neodim
