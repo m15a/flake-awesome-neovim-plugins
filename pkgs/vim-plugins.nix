@@ -2636,7 +2636,7 @@
       license = with licenses; [ gpl3Only ];
     };
   };
-  vim = buildVimPluginFrom2Nix {
+  dracula = buildVimPluginFrom2Nix {
     pname = "vim";
     version = "2023-08-30";
     src = fetchurl {
@@ -2777,7 +2777,7 @@
       license = with licenses; [ mit ];
     };
   };
-  vim = buildVimPluginFrom2Nix {
+  embark = buildVimPluginFrom2Nix {
     pname = "vim";
     version = "2023-04-21";
     src = fetchurl {
