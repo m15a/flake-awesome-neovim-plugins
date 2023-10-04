@@ -25,7 +25,7 @@ jobs:
       - run: nix run .#update-vim-plugins -- update --all
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-          SOURCEHUT_TOKEN: ${{ secrets.SOURCEHUT_TOKEN }}
+          SOURCEHUT_TOKEN: ${{ secrets.SOURCEHUT_TOKEN }} # requires legacy OAuth credentials, not OAuth 2.0
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'maintenance: auto update plugins'
