@@ -8,14 +8,9 @@
       url = "github:edolstra/flake-compat";
       flake = false;
     };
-    fennel-tools = {
-      url = "github:m15a/flake-fennel-tools";
-      inputs.flake-utils.follows = "flake-utils";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, flake-utils, fennel-tools, ... }:
+  outputs = { self, nixpkgs, flake-utils, ... }:
     {
       overlays = rec {
         vim-extra-plugins = import ./nix/overlay.nix;
@@ -25,35 +20,24 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          overlays = [
-            fennel-tools.overlays.default
-            self.overlays.default
-          ];
-        };
-
-        fennel = pkgs.fennel-unstable-luajit.override {
-          lua = pkgs.luajit.withPackages (ps: with ps; [ http cjson ]);
+          overlays = [ self.overlays.default ];
         };
       in rec {
         packages = flake-utils.lib.filterPackages system pkgs.vimExtraPlugins;
 
         checks = packages;
 
-        devShells.default = pkgs.mkShell {
-          packages = with pkgs;
-            [
-              jq
-              nix-prefetch-git
-              fennel
-              fennel.lua
-              fennel-ls-unstable
-              fnlfmt-unstable
-              nixfmt
-            ] ++ (with fennel.lua.pkgs; [
-              http
-              cjson
-              readline
-            ]);
-        };
+        devShells.default =
+          let lua = pkgs.luajit.withPackages (ps: with ps; [ http cjson ]);
+          in pkgs.mkShell {
+            packages = [
+              pkgs.jq
+              pkgs.nix-prefetch-git
+              lua
+              lua.pkgs.fennel
+              pkgs.fennel-ls
+              pkgs.nixfmt
+            ] ++ (with lua.pkgs; [ http cjson readline ]);
+          };
       });
 }
