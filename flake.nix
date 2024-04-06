@@ -28,7 +28,10 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          overlays = [ self.overlays.default ];
+          overlays = [
+            self.overlays.default
+            (import ./nix/ci.nix)
+          ];
         };
       in
       rec {
@@ -36,31 +39,16 @@
 
         checks = packages;
 
-        devShells.default =
-          let
-            lua = pkgs.luajit.withPackages (
-              ps: with ps; [
-                http
-                cjson
-              ]
-            );
-          in
-          pkgs.mkShell {
-            packages =
-              [
-                pkgs.jq
-                pkgs.nix-prefetch-git
-                lua
-                lua.pkgs.fennel
-                pkgs.fennel-ls
-                pkgs.nixfmt-rfc-style
-              ]
-              ++ (with lua.pkgs; [
-                http
-                cjson
-                readline
-              ]);
+        devShells = {
+          inherit (pkgs) ci-update;
+          default = pkgs.mkShell {
+            inputsFrom = [ pkgs.ci-update ];
+            packages = [
+              pkgs.fennel-ls
+              pkgs.nixfmt-rfc-style
+            ];
           };
+        };
       }
     );
 }
