@@ -18,9 +18,21 @@ let
           inherit (pluginInfo) description;
         } // lib.optionalAttrs (builtins.hasAttr "homepage" pluginInfo) {
           inherit (pluginInfo) homepage;
-        } // lib.optionalAttrs (builtins.hasAttr "license" pluginInfo) {
-          license = lib.getLicenseFromSpdxId pluginInfo.license;
-        };
+        } // lib.optionalAttrs (builtins.hasAttr "license" pluginInfo
+          # trace: warning: getLicenseFromSpdxId: No license matches
+          # the given SPDX ID: NOASSERTION
+          && pluginInfo.license != "NOASSERTION") {
+            license =
+              # trace: warning: getLicenseFromSpdxId: No license matches
+              # the given SPDX ID: AGPL-3.0
+              #
+              # NOTE: cannot determine which is correct:
+              #
+              # if pluginInfo.license == "AGPL-3.0" then
+              #   lib.licenses.agpl3Only? or agpl3Plus?
+              # else
+                lib.getLicenseFromSpdxId pluginInfo.license;
+          };
       };
     };
 
