@@ -1,38 +1,20 @@
-name: Check builds in nixpkgs-unstable
+name: Check
 
 on:
-  pull_request:
-    paths-ignore:
-      - '.github/**'
-      - '.gitignore'
-      - '.previous-update.json'
-      - 'LICENSE'
-      - '**.md'
-      - '**.txt'
   push:
-    branches:
-      - main
-    paths-ignore:
-      - '.github/**'
-      - '.gitignore'
-      - '.previous-update.json'
-      - 'LICENSE'
-      - '**.md'
-      - '**.txt'
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  check-builds:
+  check:
     runs-on: ubuntu-latest
-    name: Check builds in nixpkgs-unstable
     steps:
-      - uses: actions/checkout@v3
-      - uses: cachix/install-nix-action@v17
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v26
         with:
-          extra_nix_config: |
-            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-      - uses: cachix/cachix-action@v10
-        with:
-          name: nixpkgs-vim-extra-plugins
-          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-      - run: |
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: DeterminateSystems/magic-nix-cache-action@v4
+      - name: Check flake and packages
+        run: |
           nix flake check --update-input nixpkgs
