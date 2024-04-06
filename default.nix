@@ -5,4 +5,5 @@ let
     url = "https://github.com/edolstra/flake-compat/archive/${rev}.tar.gz";
     sha256 = narHash;
   };
-in (import flake-compat { src = ./.; }).defaultNix
+in
+(import flake-compat { src = ./.; }).defaultNix
