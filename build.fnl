@@ -453,8 +453,8 @@ in which site, owner, and repo information are extracted."
 (fn hub.get-all-info [self {: owner : repo : ref}]
   (case-try (self:get-repo-info {: owner : repo})
     repo-info
-    (let [ref (or ref repo-info.default_branch)] 
-      (self:get-latest-commit-info {: owner : repo : ref}))
+    (self:get-latest-commit-info {: owner : repo
+                                  :ref (or ref repo-info.default_branch)})
     latest-commit-info
     (doto (merge! repo-info latest-commit-info)
       (tset :default_branch nil)
