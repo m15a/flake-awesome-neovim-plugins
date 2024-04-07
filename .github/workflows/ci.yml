@@ -19,3 +19,7 @@ jobs:
       - name: Check flake and packages
         run: |
           nix flake check --update-input nixpkgs
+
+      - name: Check format
+        run: |
+          nix develop .#ci-check-format -c bash -c 'pre-commit run --all-files'
