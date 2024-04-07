@@ -17,12 +17,12 @@ let
         inherit pname version;
         src = final.fetchurl { inherit (pluginInfo) url sha256; };
         meta =
-          lib.optionalAttrs (builtins.hasAttr "description" pluginInfo) { inherit (pluginInfo) description; }
-          // lib.optionalAttrs (builtins.hasAttr "homepage" pluginInfo) { inherit (pluginInfo) homepage; }
+          lib.optionalAttrs (pluginInfo ? "description") { inherit (pluginInfo) description; }
+          // lib.optionalAttrs (pluginInfo ? "homepage") { inherit (pluginInfo) homepage; }
           //
             lib.optionalAttrs
               (
-                builtins.hasAttr "license" pluginInfo
+                pluginInfo ? "license"
                 # trace: warning: getLicenseFromSpdxId: No license matches
                 # the given SPDX ID: NOASSERTION
                 && pluginInfo.license != "NOASSERTION"
