@@ -13,7 +13,7 @@ final: prev:
   ci-update = final.mkShell {
     packages = [
       final.nix
-      final.jq
+      final.jq.bin
       (final.luajit.withPackages (
         ps: with ps; [
           http
