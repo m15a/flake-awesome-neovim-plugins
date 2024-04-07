@@ -1,6 +1,10 @@
-# nixpkgs-vim-extra-plugins
+# flake-vim-extra-plugins
 
 Nix flake of miscellaneous Vim/Neovim plugins.
+
+[![CI][b1]][b2]
+[b1]: https://img.shields.io/github/actions/workflow/status/m15a/flake-vim-extra-plugins/ci.yml?style=flat-square&logo=github&label=CI
+[b2]: https://github.com/m15a/flake-vim-extra-plugins/actions/workflows/ci.yml
 
 ## Table of contents
 
