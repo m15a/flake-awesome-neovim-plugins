@@ -425,9 +425,11 @@ in which site, owner, and repo information are extracted."
           (case (self:get (self.latest-commit-info-uri-path owner repo ref))
             info (let [info (self.preprocess/latest-commit-info info)]
                    (if (and cache (= cache.rev info.rev))
-                       (doto info
-                         (tset :sha256 cache.sha256)
-                         (tset :time (os.time)))
+                       (let [cache (doto cache
+                                     (tset :time (os.time)))]
+                         (case (json.object->file cache cache-path)
+                           true cache
+                           (_ msg) (error msg)))
                        (let [url (self.tarball-uri owner repo info.rev)]
                          (log "update sha256 hash: " owner "/" repo
                               (unpack (if ref ["/" ref] [])))
