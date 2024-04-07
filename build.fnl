@@ -402,8 +402,8 @@ in which site, owner, and repo information are extracted."
   (assert/type :string repo)
   (let [cache-path (self:repo-info-cache-path owner repo)
         cache (json.file->object cache-path)]
-    (or (when (and cache (not (too-old? cache.time (- (* 7 24) 1))))
-          cache)
+    (if (and cache (not (too-old? cache.time (- (* 7 24) 1))))
+        cache
         (do
           (log "query " self.name " repo: " owner "/" repo)
           (self:query-repo-info {: owner : repo})))))
@@ -417,8 +417,8 @@ in which site, owner, and repo information are extracted."
   (assert/method self :tarball-uri)
   (let [cache-path (self:latest-commit-info-cache-path owner repo ref)
         cache (json.file->object cache-path)]
-    (or (when (and cache (not (too-old? cache.time)))
-          cache)
+    (if (and cache (not (too-old? cache.time)))
+        cache
         (do
           (log "query " self.name " latest commit: " owner "/" repo
                (unpack (if ref ["/" ref] [])))
