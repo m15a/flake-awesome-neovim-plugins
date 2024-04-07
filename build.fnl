@@ -390,11 +390,11 @@ in which site, owner, and repo information are extracted."
              (_ msg) (error msg)))
     (_ msg) (log.error/nil msg)))
 
-(fn too-old? [time ?days]
-  (assert/optional-type :number ?days)
+(fn too-old? [time ?hours]
+  (assert/optional-type :number ?hours)
   (case (type time)
-    :number (let [days (or ?days 1)]
-              (< time (- (os.time) (* days 24 60 60))))
+    :number (let [hours (or ?hours 23)]
+              (< time (- (os.time) (* hours 60 60))))
     _ true))
 
 (fn hub.get-repo-info [self {: owner : repo}]
@@ -402,7 +402,7 @@ in which site, owner, and repo information are extracted."
   (assert/type :string repo)
   (let [cache-path (self:repo-info-cache-path owner repo)
         cache (json.file->object cache-path)]
-    (or (when (and cache (not (too-old? cache.time 7)))
+    (or (when (and cache (not (too-old? cache.time (- (* 7 24) 1))))
           cache)
         (do
           (log "query " self.name " repo: " owner "/" repo)
