@@ -14,6 +14,6 @@ repos:
         files: ^.*\.nix$
       - id: nixfmt
         name: Format Nix files
-        entry: nixfmt
+        entry: nixfmt --width=80
         language: system
         files: ^.*\.nix$

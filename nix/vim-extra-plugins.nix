@@ -17,8 +17,12 @@ let
         inherit pname version;
         src = final.fetchurl { inherit (pluginInfo) url sha256; };
         meta =
-          lib.optionalAttrs (pluginInfo ? "description") { inherit (pluginInfo) description; }
-          // lib.optionalAttrs (pluginInfo ? "homepage") { inherit (pluginInfo) homepage; }
+          lib.optionalAttrs (pluginInfo ? "description") {
+            inherit (pluginInfo) description;
+          }
+          // lib.optionalAttrs (pluginInfo ? "homepage") {
+            inherit (pluginInfo) homepage;
+          }
           //
             lib.optionalAttrs
               (
