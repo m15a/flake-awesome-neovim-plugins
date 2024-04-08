@@ -28,5 +28,5 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          file_pattern: 'data/*.json'
+          file_pattern: 'data/*.json README.md'
           commit_message: "auto: update vim plugins"

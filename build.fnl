@@ -6,6 +6,7 @@
 ;;;;
 ;;;; - nix-prefetch-url: to compute tarball sha256 hash,
 ;;;; - jq: to format JSON outputs.
+;;;; - sed: to update the number of Awesome Neovim plugins in README.md
 
 (local unpack (or table.unpack _G.unpack))
 (local {: view} (require :fennel))
@@ -44,6 +45,10 @@
   (let [out io.stderr]
     (out:write "build.fnl: [WARNING] " ...)
     (out:write "\n")))
+
+(fn log.warn/nil [...]
+  (log.warn ...)
+  nil)
 
 (fn log.error [...]
   (let [out io.stderr]
@@ -545,6 +550,20 @@ in which site, owner, and repo information are extracted."
     {:rev commit.id :timestamp commit.timestamp}))
 
 ;;; ==========================================================================
+;;; Editing README.md
+;;; ==========================================================================
+
+(fn update-awesome-neovim-plugins-number [awesome-neovim-stats]
+  (assert/type :table awesome-neovim-stats)
+  (case (. awesome-neovim-stats :total)
+    n (let [file "README.md"
+            expr (.. "/^\\[b3]:/s|-[[:digit:]]+-|-" n "-|")]
+        (case (os.execute (.. "sed -Ei " file " -e '" expr "'"))
+          0 true
+          _ (log.warn/nil "failed to execute sed")))
+    _ (log.warn "something wrong with awesome-neovim stats!")))
+
+;;; ==========================================================================
 ;;; Commands
 ;;; ==========================================================================
 
@@ -577,6 +596,7 @@ in which site, owner, and repo information are extracted."
 
     (do
       (log "fetched extra plugins info: " (view extra-stats))
+      (update-awesome-neovim-plugins-number awesome-neovim-stats)
       (each [name stats (pairs {:awesome-neovim awesome-neovim-stats
                                 :nixpkgs nixpkgs-stats
                                 :extra extra-stats})]
