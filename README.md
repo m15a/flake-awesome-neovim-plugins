@@ -7,7 +7,7 @@ Nix flake of Awesome Neovim plugins.
 
 [b1]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/ci.yml?style=flat-square&logo=github&label=CI
 [b2]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/ci.yml
-[b3]: https://img.shields.io/badge/Awesome_Neovim-848-57A143
+[b3]: https://img.shields.io/badge/Awesome_Neovim_plugins-848-57A143
 
 ## Description
 
@@ -19,7 +19,7 @@ collection.
 [Nix flake]: https://nixos.wiki/wiki/Flakes
 
 Packages are automatically updated once every day using GitHub Actions.
-This is done by parsing the `README.md` and collect all plugins
+This is done by parsing the `README.md` and collecting all plugins
 manifested therein.
 
 Since these packages are automatically generated, some of them could be
@@ -66,7 +66,7 @@ Use it as you normally do, like so:
 
 ### How to add a new plugin
 
-Send a pull request to [Awesome Neovim] in which you favorite plugin
+Send a pull request to [Awesome Neovim] in which your favorite plugin
 is registered in its `README.md`.
 
 ### How to remove a plugin

@@ -46,6 +46,10 @@
     (out:write "build.fnl: [WARNING] " ...)
     (out:write "\n")))
 
+(fn log.warn/nil [...]
+  (log.warn ...)
+  nil)
+
 (fn log.error [...]
   (let [out io.stderr]
     (out:write "build.fnl: [ERROR] " ...)
@@ -554,7 +558,7 @@ in which site, owner, and repo information are extracted."
   (case (. awesome-neovim-stats :total)
     n (let [file "README.md"
             expr (.. "/^\\[b3]:/s|-[[:digit:]]+-|-" n "-|")]
-        (case (os.execute (.. "sed -Ei " file " " expr))
+        (case (os.execute (.. "sed -Ei " file " -e '" expr "'"))
           0 true
           _ (log.warn/nil "failed to execute sed")))
     _ (log.warn "something wrong with awesome-neovim stats!")))
