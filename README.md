@@ -1,6 +1,6 @@
-# flake-vim-extra-plugins
+# flake-awesome-neovim-plugins
 
-Nix flake of miscellaneous Vim/Neovim plugins.
+Nix flake of Awesome Neovim plugins.
 
 [![CI][b1]][b2]
 
