@@ -12,10 +12,9 @@ and this project adheres to [Semantic Versioning][2].
 
 ### Changed
 
-- **Refactor all the stuff**: it now updates only plugins manifested at
-  [Awesome Neovim] for now. Extracting non-Neovim plugins from any neat
-  site that manifests them, and a custom mechanism to manifest plugins
-  here would be future tasks.
+- **Refactor all the stuff**:
+  It now focuses on [Awesome Neovim] and provides only all the plugins
+  manifested there.
 
 [Awesome Neovim]: https://github.com/rockerBOO/awesome-neovim
 
@@ -25,6 +24,6 @@ and this project adheres to [Semantic Versioning][2].
 
 [sourcehut]: https://sr.ht/
 
-[Unreleased]: https://github.com/m15a/flake-vim-extra-plugins/tree/HEAD
+[Unreleased]: https://github.com/m15a/flake-awesome-neovim-plugins/tree/HEAD
 
 <!-- vim:set tw=72 spell nowrap: -->

@@ -23,7 +23,7 @@ let
         unruly-worker = true;
       };
 
-  # Add licenses if missing or incorrect in ./data/plugins-info/extra.json.
+  # Add licenses if missing or incorrect in ./data/plugins-info/awesome-neovim.json.
   overrideLicense =
     self: super:
     lib.mapAttrs (
@@ -49,7 +49,7 @@ let
   overrideOthers = self: super: { };
 in
 {
-  vimExtraPlugins = prev.vimExtraPlugins.extend (
+  awesomeNeovimPlugins = prev.awesomeNeovimPlugins.extend (
     lib.composeManyExtensions [
       overrideBroken
       overrideLicense
