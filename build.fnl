@@ -552,6 +552,7 @@ in which site, owner, and repo information are extracted."
   (case-try (awesome-neovim.get-plugins-info)
     (awesome-neovim-plugins-info awesome-neovim-stats)
 
+    ;; Irrelevant but I'm curious about the statistics.
     (nixpkgs.get-plugins-info)
     (nixpkgs-plugins-info nixpkgs-stats)
 
@@ -561,7 +562,7 @@ in which site, owner, and repo information are extracted."
                                              p.site))
           stats (merge! freqs total)]
       (set stats.time (os.time))
-      (values (icollect [_ plugin-info (stablepairs plugins-info)]
+      (values (icollect [_ plugin-info (stablepairs awesome-neovim-plugins-info)]
                (doto plugin-info
                  (merge! (case plugin-info.site
                            :github.com
@@ -572,7 +573,7 @@ in which site, owner, and repo information are extracted."
                            (sourcehut:get-all-info plugin-info)
                            _ {}))))
               stats))
-    (extra-plugins-info extra-stats)
+    (awesome-neovim-plugins-info extra-stats)
 
     (do
       (log "fetched extra plugins info: " (view extra-stats))
@@ -581,8 +582,8 @@ in which site, owner, and repo information are extracted."
                                 :extra extra-stats})]
         (json.object->file stats
                            (.. "data/stats/" name "/" stats.time ".json")))
-      (json.object->file/exit extra-plugins-info
-                              "data/plugins-info/extra.json"))
+      (json.object->file/exit awesome-neovim-plugins-info
+                              "data/plugins-info/awesome-neovim.json"))
 
     (catch _ (os.exit false))))
 

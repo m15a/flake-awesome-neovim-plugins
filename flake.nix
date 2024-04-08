@@ -19,8 +19,8 @@
     }:
     {
       overlays = rec {
-        vim-extra-plugins = import ./nix/overlay.nix;
-        default = vim-extra-plugins;
+        awesome-neovim-plugins = import ./nix/overlay.nix;
+        default = awesome-neovim-plugins;
       };
     }
     // flake-utils.lib.eachDefaultSystem (
@@ -35,7 +35,7 @@
         };
       in
       rec {
-        packages = flake-utils.lib.filterPackages system pkgs.vimExtraPlugins;
+        packages = flake-utils.lib.filterPackages system pkgs.awesomeNeovimPlugins;
 
         checks = packages;
 

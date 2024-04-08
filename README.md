@@ -1,11 +1,11 @@
-# flake-vim-extra-plugins
+# flake-awesome-neovim-plugins
 
-Nix flake of miscellaneous Vim/Neovim plugins.
+Nix flake of Awesome Neovim plugins.
 
 [![CI][b1]][b2]
 
-[b1]: https://img.shields.io/github/actions/workflow/status/m15a/flake-vim-extra-plugins/ci.yml?style=flat-square&logo=github&label=CI
-[b2]: https://github.com/m15a/flake-vim-extra-plugins/actions/workflows/ci.yml
+[b1]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/ci.yml?style=flat-square&logo=github&label=CI
+[b2]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/ci.yml
 
 ## Table of contents
 
@@ -37,30 +37,29 @@ So you should be careful if you want to use them.
 
 ### In flake
 
-The overlay simply adds extra Vim plugins into `pkgs.vimExtraPlugins`.
+The overlay simply adds Awesome Neovim plugins into `pkgs.awesomeNeovimPlugins`.
 Use it as you normally do, like
 
 ```nix
 {
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
-    vim-extra-plugins.url = "github:m15a/nixpkgs-vim-extra-plugins";
+    awesome-neovim-plugins.url = "github:m15a/flake-awesome-neovim-plugins";
   };
-  outputs = { self, nixpkgs, flake-utils, vim-extra-plugins, ... }:
+  outputs = { self, nixpkgs, flake-utils, awesome-neovim-plugins, ... }:
   flake-utils.lib.eachDefaultSystem (system:
   let
     pkgs = import nixpkgs {
       inherit system;
-      overlays = [ vim-extra-plugins.overlays.default ];
+      overlays = [ awesome-neovim-plugins.overlays.default ];
     };
   in {
     packages = {
       my-neovim = pkgs.neovim.override {
         configure = {
-          packages.example = with pkgs.vimExtraPlugins; {
+          packages.example = with pkgs.awesomeNeovimPlugins; {
             start = [
               lspactions
-              vim-hy
             ];
           };
         };
@@ -77,7 +76,7 @@ It is handy to use `builtins.getFlake`, which was [introduced in Nix 2.4][1]. Fo
 ```nix
 with import <nixpkgs> {
   overlays = [
-    (builtins.getFlake "github:m15a/nixpkgs-vim-extra-plugins").overlays.default
+    (builtins.getFlake "github:m15a/flake-awesome-neovim-plugins").overlays.default
   ];
 };
 ```
@@ -88,7 +87,7 @@ For Nix <2.4, use `builtins.fetchTarball` instead.
 with import <nixpkgs> {
   overlays = [
     (import (builtins.fetchTarball {
-      url = "https://github.com/m15a/nixpkgs-vim-extra-plugins/archive/main.tar.gz";
+      url = "https://github.com/m15a/flake-awesome-neovim-plugins/archive/main.tar.gz";
     })).overlays.default
   ];
 };
@@ -96,7 +95,7 @@ with import <nixpkgs> {
 
 ### Via NUR
 
-You can also use it via [NUR][2] at `nur.repos.m15a.vimExtraPlugins`, see [the package list][3].
+You can also use it via [NUR][2] at `nur.repos.m15a.awesomeNeovimPlugins`, see [the package list][3].
 
 [0]: https://github.com/rockerBOO/awesome-neovim
 [1]: https://nixos.org/manual/nix/stable/release-notes/rl-2.4.html?highlight=builtins.getFlake#other-features
@@ -536,7 +535,7 @@ An entry is specified by
   Only GitHub, GitLab, and Sourcehut are supported.
 - `<git-ref>` can be either branch name or commit hash. If omitted,
   the latest commit hash in the default branch will be used.
-- Attribute name of a plugin (`pkgs.vimExtraPlugins.${attr-name}`) is
+- Attribute name of a plugin (`pkgs.awesomeNeovimPlugins.${attr-name}`) is
   automatically determined from `<repo-name>` by default.
   If `<attr-name>` is set in an entry, it will replace the default name.
 

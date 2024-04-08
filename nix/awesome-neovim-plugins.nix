@@ -49,11 +49,11 @@ let
   origin = builtins.listToAttrs (
     map builder (
       lib.filter (builtins.hasAttr "date") (
-        lib.strings.fromJSON (lib.readFile ../data/plugins-info/extra.json)
+        lib.strings.fromJSON (lib.readFile ../data/plugins-info/awesome-neovim.json)
       )
     )
   );
 in
 {
-  vimExtraPlugins = lib.makeExtensible (_: lib.recurseIntoAttrs origin);
+  awesomeNeovimPlugins = lib.makeExtensible (_: lib.recurseIntoAttrs origin);
 }
