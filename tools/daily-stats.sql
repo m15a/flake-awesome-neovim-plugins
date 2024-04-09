@@ -10,21 +10,21 @@ CREATE TABLE stats
 
 INSERT INTO stats
 (UNPIVOT (SELECT 'awesome-neovim' AS source
-               , make_timestamp(time * 1e6 :: INT) AS datetime
+               , make_timestamp(time * 1e6 :: BIGINT) AS datetime
                , *
             FROM 'data/stats/awesome-neovim/*.json')
       ON COLUMNS(* EXCLUDE (source, time, datetime))
     INTO NAME site VALUE plugins)
 UNION
 (UNPIVOT (SELECT 'nixpkgs' AS source
-               , make_timestamp(time * 1e6 :: INT) AS datetime
+               , make_timestamp(time * 1e6 :: BIGINT) AS datetime
                , *
             FROM 'data/stats/nixpkgs/*.json')
       ON COLUMNS(* EXCLUDE (source, time, datetime))
     INTO NAME site VALUE plugins)
 UNION
 (UNPIVOT (SELECT 'extra' AS source
-               , make_timestamp(time * 1e6 :: INT) AS datetime
+               , make_timestamp(time * 1e6 :: BIGINT) AS datetime
                , *
             FROM 'data/stats/extra/*.json')
       ON COLUMNS(* EXCLUDE (source, time, datetime))
