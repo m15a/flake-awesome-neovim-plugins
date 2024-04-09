@@ -44,6 +44,8 @@ let
           auto-save-nvim = mit;
           licenses-nvim = mit;
           lsp-lines-nvim = isc;
+          distinct-nvim = mit;
+          halfspace-nvim = mit;
           vitesse-nvim = mit;
           nvim-cartographer = gpl3Plus;
           nvim-highlite = gpl3Plus;
