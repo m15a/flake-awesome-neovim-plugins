@@ -3,7 +3,16 @@ final: prev:
 let
   inherit (prev) lib;
 
-  repoNameToPName = lib.strings.replaceStrings [ "." ] [ "-" ];
+  repoNameToPName =
+    lib.strings.replaceStrings
+      [
+        "_"
+        "."
+      ]
+      [
+        "-"
+        "-"
+      ];
 
   builder =
     pluginInfo:
