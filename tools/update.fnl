@@ -371,17 +371,27 @@ in which site, owner, and repo information are extracted."
       (body headers) (values (cjson.decode body) headers)
       (_ msg) (values nil msg))))
 
+(fn hub.site [self]
+  (case self.name
+    :github :github.com
+    :gitlab :gitlab.com
+    :sourcehut :git.sr.ht
+    :codeberg :codeberg.org
+    _ (error "unknown hub type")))
+
 (fn hub.repo-info-cache-path [self owner repo]
   (assert/type :string owner)
   (assert/type :string repo)
-  (.. "data/cache/" self.name "/" owner "/" repo "/info.json"))
+  (let [site (self:site)]
+    (.. "data/cache/site=" site "/owner=" owner "/repo=" repo "/info.json")))
 
 (fn hub.latest-commit-info-cache-path [self owner repo ?ref]
   (assert/type :string owner)
   (assert/type :string repo)
   (assert/optional-type :string ?ref)
-  (.. "data/cache/" self.name "/" owner "/" repo "/refs/"
-      (if ?ref (.. ?ref ".json") "default.json")))
+  (let [site (self:site)]
+    (.. "data/cache/site=" site "/owner=" owner "/repo=" repo "/refs/"
+        (if ?ref (.. ?ref ".json") "default.json"))))
 
 (fn hub.query-repo-info [self {: owner : repo}]
   (assert/method self :repo-info-uri-path)
