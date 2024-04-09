@@ -7,7 +7,7 @@ Nix flake of Awesome Neovim plugins.
 
 [b1]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/ci.yml?style=flat-square&logo=github&label=CI
 [b2]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/ci.yml
-[b3]: https://img.shields.io/badge/Awesome_Neovim_plugins-848-57A143
+[b3]: https://img.shields.io/badge/Awesome_Neovim_plugins-848-57A143?style=flat-square
 
 ![Daily stats](./data/stats/plot/daily.png)
 
