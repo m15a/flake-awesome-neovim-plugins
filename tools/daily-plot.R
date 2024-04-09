@@ -20,6 +20,8 @@ df <- df |>
 
 g <- ggplot(df, aes(Date, Plugins, group = Repository, color = Repository)) +
     geom_line() +
+    geom_point() +
+    scale_color_manual(values = c("#5277C3", "#57A143", "#FF5F00")) +
     ylim(c(0, 2e3)) +
     ggtitle("Number of Vim/Neovim plugins contained in each repository")
 
