@@ -47,7 +47,7 @@
               pkgs.ci-check-format
               pkgs.ci-datasci
             ];
-            packages = [ pkgs.fennel-ls ];
+            packages = [ pkgs.fennel-ls ] ++ (with pkgs.luajit.pkgs; [ readline ]);
           };
         };
       }
