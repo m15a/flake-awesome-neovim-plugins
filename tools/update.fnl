@@ -343,7 +343,7 @@ in which site, owner, and repo information are extracted."
 ;;; GitHub, GitLab, etc. meta table
 ;;; ==========================================================================
 
-(local hub {:name "missinghub"
+(local hub {:site "missing.hub"
             :token {:env-var "MISSING_TOKEN"}
             :get-uri-base "api.missing-hub.com/"})
 
@@ -371,27 +371,17 @@ in which site, owner, and repo information are extracted."
       (body headers) (values (cjson.decode body) headers)
       (_ msg) (values nil msg))))
 
-(fn hub.site [self]
-  (case self.name
-    :github :github.com
-    :gitlab :gitlab.com
-    :sourcehut :git.sr.ht
-    :codeberg :codeberg.org
-    _ (error "unknown hub type")))
-
 (fn hub.repo-info-cache-path [self owner repo]
   (assert/type :string owner)
   (assert/type :string repo)
-  (let [site (self:site)]
-    (.. "data/cache/site=" site "/owner=" owner "/repo=" repo "/info.json")))
+  (.. "data/cache/site=" self.site "/owner=" owner "/repo=" repo "/info.json"))
 
 (fn hub.latest-commit-info-cache-path [self owner repo ?ref]
   (assert/type :string owner)
   (assert/type :string repo)
   (assert/optional-type :string ?ref)
-  (let [site (self:site)]
-    (.. "data/cache/site=" site "/owner=" owner "/repo=" repo "/refs/"
-        (if ?ref (.. ?ref ".json") "default.json"))))
+  (.. "data/cache/site=" self.site "/owner=" owner "/repo=" repo "/refs/"
+      (if ?ref (.. ?ref ".json") "default.json")))
 
 (fn hub.query-repo-info [self {: owner : repo}]
   (assert/method self :repo-info-uri-path)
@@ -420,7 +410,7 @@ in which site, owner, and repo information are extracted."
     (if (and cache (not (too-old? cache.time (- (* 7 24) 1))))
         cache
         (do
-          (log "query " self.name " repo: " owner "/" repo)
+          (log "query " self.site " repo: " owner "/" repo)
           (self:query-repo-info {: owner : repo})))))
 
 (fn hub.get-latest-commit-info [self {: owner : repo : ref}]
@@ -435,7 +425,7 @@ in which site, owner, and repo information are extracted."
     (if (and cache (not (too-old? cache.time)))
         cache
         (do
-          (log "query " self.name " latest commit: " owner "/" repo
+          (log "query " self.site " latest commit: " owner "/" repo
                (unpack (if ref ["/" ref] [])))
           (case (self:get (self.latest-commit-info-uri-path owner repo ref))
             info (let [info (self.preprocess/latest-commit-info info)]
@@ -482,7 +472,7 @@ in which site, owner, and repo information are extracted."
 ;;; GitHub query
 ;;; ==========================================================================
 
-(local github (let [self {:name :github
+(local github (let [self {:site :github.com
                           :token {:env-var "GITHUB_TOKEN"}
                           :get-uri-base "api.github.com/"}]
                 (setmetatable self {:__index hub})))
@@ -510,7 +500,7 @@ in which site, owner, and repo information are extracted."
 ;;; GitLab query
 ;;; ==========================================================================
 
-(local gitlab (let [self {:name :gitlab
+(local gitlab (let [self {:site :gitlab.com
                           :token {:env-var "GITLAB_TOKEN"}
                           :get-uri-base "gitlab.com/api/v4/"}]
                 (setmetatable self {:__index hub})))
@@ -537,7 +527,7 @@ in which site, owner, and repo information are extracted."
 ;;; SourceHut query
 ;;; ==========================================================================
 
-(local sourcehut (let [self {:name :sourcehut
+(local sourcehut (let [self {:site :git.sr.ht
                              :token {:env-var "SOURCEHUT_TOKEN"}
                              :get-uri-base "git.sr.ht/api/"}]
                    (setmetatable self {:__index hub})))
