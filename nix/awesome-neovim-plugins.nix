@@ -32,26 +32,18 @@ let
           // lib.optionalAttrs (pluginInfo ? "homepage") {
             inherit (pluginInfo) homepage;
           }
-          //
-            lib.optionalAttrs
-              (
-                pluginInfo ? "license"
-                # trace: warning: getLicenseFromSpdxId: No license matches
-                # the given SPDX ID: NOASSERTION
-                && pluginInfo.license != "NOASSERTION"
-              )
-              {
-                license =
-                  # trace: warning: getLicenseFromSpdxId: No license matches
-                  # the given SPDX ID: AGPL-3.0
-                  #
-                  # NOTE: cannot determine which is correct:
-                  #
-                  # if pluginInfo.license == "AGPL-3.0" then
-                  #   lib.licenses.agpl3Only? or agpl3Plus?
-                  # else
-                  lib.getLicenseFromSpdxId pluginInfo.license;
-              };
+          // lib.optionalAttrs (pluginInfo ? "license") {
+            license =
+              # trace: warning: getLicenseFromSpdxId: No license matches
+              # the given SPDX ID: AGPL-3.0
+              #
+              # NOTE: cannot determine which is correct:
+              #
+              # if pluginInfo.license == "AGPL-3.0" then
+              #   lib.licenses.agpl3Only? or agpl3Plus?
+              # else
+              lib.getLicenseFromSpdxId pluginInfo.license;
+          };
       };
     };
 
