@@ -20,8 +20,10 @@ and this project adheres to [Semantic Versioning][2].
 
 ### Added
 
+- Support for [Codeberg] repositories
 - Support for [sourcehut] repositories
 
+[Codeberg]: https://codeberg.org/
 [sourcehut]: https://sr.ht/
 
 [Unreleased]: https://github.com/m15a/flake-awesome-neovim-plugins/tree/HEAD

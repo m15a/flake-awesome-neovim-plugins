@@ -550,6 +550,34 @@ in which site, owner, and repo information are extracted."
     {:rev commit.id :timestamp commit.timestamp}))
 
 ;;; ==========================================================================
+;;; Codeberg query
+;;; ==========================================================================
+
+(local codeberg (let [self {:site :codeberg.org
+                            :token {:env-var "CODEBERG_TOKEN"}
+                            :get-uri-base "codeberg.org/api/v1/"}]
+                  (setmetatable self {:__index hub})))
+
+(fn codeberg.repo-info-uri-path [owner repo]
+  (.. "repos/" owner "/" repo))
+
+(fn codeberg.latest-commit-info-uri-path [owner repo ref]
+  (.. "repos/" owner "/" repo "/branches/" ref))
+
+(fn codeberg.tarball-uri [owner repo rev]
+  (.. "https://codeberg.org/" owner "/" repo "/archive/" rev ".tar.gz"))
+
+(fn codeberg.preprocess/repo-info
+  [{: default_branch : description : html_url : website}]
+  {: default_branch
+   :description (unless (json.null? description) description)
+   :homepage (or (unless (json.null? website) website)
+                 (unless (json.null? html_url) html_url))})
+
+(fn codeberg.preprocess/latest-commit-info [{: commit}]
+  {:rev commit.id :timestamp commit.timestamp})
+
+;;; ==========================================================================
 ;;; Editing README.md
 ;;; ==========================================================================
 
@@ -589,6 +617,8 @@ in which site, owner, and repo information are extracted."
                          (gitlab:get-all-info plugin-info)
                          (where (or :sr.ht :git.sr.ht))
                          (sourcehut:get-all-info plugin-info)
+                         :codeberg.org
+                         (codeberg:get-all-info plugin-info)
                          _ {}))))
             stats))
   (awesome-neovim-plugins-info extra-stats)
