@@ -32,15 +32,13 @@ UNION
 
 
 CREATE TABLE daily AS
-PIVOT (SELECT date_trunc('day', datetime) AS "date"
-            , source
-            , site
-            , max(plugins) AS plugins
-         FROM stats
-        GROUP BY source, site, date)
-   ON site
-USING max(plugins)
-ORDER BY date, source;
+SELECT date_trunc('day', datetime) AS "date"
+     , source
+     , site
+     , max(plugins) AS plugins
+  FROM stats
+ GROUP BY source, site, date
+ ORDER BY date, source, site;
 
 COPY daily TO 'data/stats/view/daily.csv'
 (HEADER, DELIMITER ',');
