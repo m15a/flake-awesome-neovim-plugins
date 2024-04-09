@@ -36,14 +36,14 @@
 
 (fn %log [_ ...]
   (let [out io.stderr]
-    (out:write "build.fnl: " ...)
+    (out:write "update.fnl: " ...)
     (out:write "\n")))
 
 (local log (setmetatable {} {:__call %log}))
 
 (fn log.warn [...]
   (let [out io.stderr]
-    (out:write "build.fnl: [WARNING] " ...)
+    (out:write "update.fnl: [WARNING] " ...)
     (out:write "\n")))
 
 (fn log.warn/nil [...]
@@ -52,7 +52,7 @@
 
 (fn log.error [...]
   (let [out io.stderr]
-    (out:write "build.fnl: [ERROR] " ...)
+    (out:write "update.fnl: [ERROR] " ...)
     (out:write "\n")))
 
 (fn log.error/nil [...]
@@ -564,54 +564,46 @@ in which site, owner, and repo information are extracted."
     _ (log.warn "something wrong with awesome-neovim stats!")))
 
 ;;; ==========================================================================
-;;; Commands
-;;; ==========================================================================
-
-(fn update-vim-plugins []
-  (case-try (awesome-neovim.get-plugins-info)
-    (awesome-neovim-plugins-info awesome-neovim-stats)
-
-    ;; Irrelevant but I'm curious about the statistics.
-    (nixpkgs.get-plugins-info)
-    (nixpkgs-plugins-info nixpkgs-stats)
-
-    (let [plugins-info (difference awesome-neovim-plugins-info
-                                   nixpkgs-plugins-info)
-          (freqs total) (frequencies/total (icollect [_ p (pairs plugins-info)]
-                                             p.site))
-          stats (merge! freqs total)]
-      (set stats.time (os.time))
-      (values (icollect [_ plugin-info (stablepairs awesome-neovim-plugins-info)]
-               (doto plugin-info
-                 (merge! (case plugin-info.site
-                           :github.com
-                           (github:get-all-info plugin-info)
-                           :gitlab.com
-                           (gitlab:get-all-info plugin-info)
-                           (where (or :sr.ht :git.sr.ht))
-                           (sourcehut:get-all-info plugin-info)
-                           _ {}))))
-              stats))
-    (awesome-neovim-plugins-info extra-stats)
-
-    (do
-      (log "fetched extra plugins info: " (view extra-stats))
-      (update-awesome-neovim-plugins-number awesome-neovim-stats)
-      (each [name stats (pairs {:awesome-neovim awesome-neovim-stats
-                                :nixpkgs nixpkgs-stats
-                                :extra extra-stats})]
-        (json.object->file stats
-                           (.. "data/stats/" name "/" stats.time ".json")))
-      (json.object->file/exit awesome-neovim-plugins-info
-                              "data/plugins-info/awesome-neovim.json"))
-
-    (catch _ (os.exit false))))
-
-;;; ==========================================================================
 ;;; Main
 ;;; ==========================================================================
 
-(case (. arg 1)
-  :update (update-vim-plugins))
+(case-try (awesome-neovim.get-plugins-info)
+  (awesome-neovim-plugins-info awesome-neovim-stats)
+
+  ;; Irrelevant but I'm curious about the statistics.
+  (nixpkgs.get-plugins-info)
+  (nixpkgs-plugins-info nixpkgs-stats)
+
+  (let [plugins-info (difference awesome-neovim-plugins-info
+                                 nixpkgs-plugins-info)
+        (freqs total) (frequencies/total (icollect [_ p (pairs plugins-info)]
+                                           p.site))
+        stats (merge! freqs total)]
+    (set stats.time (os.time))
+    (values (icollect [_ plugin-info (stablepairs awesome-neovim-plugins-info)]
+             (doto plugin-info
+               (merge! (case plugin-info.site
+                         :github.com
+                         (github:get-all-info plugin-info)
+                         :gitlab.com
+                         (gitlab:get-all-info plugin-info)
+                         (where (or :sr.ht :git.sr.ht))
+                         (sourcehut:get-all-info plugin-info)
+                         _ {}))))
+            stats))
+  (awesome-neovim-plugins-info extra-stats)
+
+  (do
+    (log "fetched extra plugins info: " (view extra-stats))
+    (update-awesome-neovim-plugins-number awesome-neovim-stats)
+    (each [name stats (pairs {:awesome-neovim awesome-neovim-stats
+                              :nixpkgs nixpkgs-stats
+                              :extra extra-stats})]
+      (json.object->file stats
+                         (.. "data/stats/" name "/" stats.time ".json")))
+    (json.object->file/exit awesome-neovim-plugins-info
+                            "data/plugins-info/awesome-neovim.json"))
+
+  (catch _ (os.exit false)))
 
 ;; vim: lw+=unless

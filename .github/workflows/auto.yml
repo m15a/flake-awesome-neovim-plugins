@@ -24,7 +24,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.M15A_GITHUB_PAT }}
           SOURCEHUT_TOKEN: ${{ secrets.M15A_SOURCEHUT_PAT }}
         run: |
-          nix develop .#ci-update -c bash -c './build.fnl update'
+          nix develop .#ci-update -c bash -c ./tools/update.fnl
 
       - name: Daily statistics
         run: |
