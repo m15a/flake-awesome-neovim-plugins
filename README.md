@@ -50,7 +50,7 @@ Use it as you normally do, like so:
     };
   in {
     packages = {
-      my-neovim = pkgs.neovim.override {
+      your-neovim = pkgs.neovim.override {
         configure = {
           packages.example = with pkgs.awesomeNeovimPlugins; {
             start = [
@@ -66,15 +66,21 @@ Use it as you normally do, like so:
 
 ## Contributing
 
-### How to add a new plugin
+### Add a new plugin to this flake
 
 Send a pull request to [Awesome Neovim] in which your favorite plugin
-is registered in its `README.md`.
+is registered in their `README.md`. Done? Then, wait until the next
+plugin updating workflow runs.
 
-### How to remove a plugin
+### Remove a plugin from this flake
 
 Again, send a pull request to [Awesome Neovim] in which your plugin
-is removed from its `README.md`.
+is removed from their `README.md`.
+
+### Fix build of a plugin
+
+Send a pull request to this repository in which your fix is applied in
+[`./nix/overrides.nix`](./nix/overrides.nix).
 
 ## License
 

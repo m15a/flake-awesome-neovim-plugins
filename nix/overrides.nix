@@ -26,27 +26,51 @@ let
   # Add licenses if missing or incorrect in ./data/plugins-info/awesome-neovim.json.
   overrideLicense =
     self: super:
-    lib.mapAttrs (
-      attrName: license:
-      super.${attrName}.overrideAttrs (old: {
-        meta = old.meta // {
-          inherit license;
-        };
-      })
-    ) (with lib.licenses; { });
+    lib.mapAttrs
+      (
+        attrName: license:
+        super.${attrName}.overrideAttrs (old: {
+          meta = old.meta // {
+            inherit license;
+          };
+        })
+      )
+      (
+        with lib.licenses;
+        {
+          # Example:
+          #
+          # visual-nvim = gpl3Only;
+        }
+      );
 
   # Add dependencies if needed.
   overrideDependencies =
     self: super:
-    lib.mapAttrs (
-      attrName: dependencies:
-      super.${attrName}.overrideAttrs (_: {
-        inherit dependencies;
-      })
-    ) (with final.vimPlugins; { });
+    lib.mapAttrs
+      (
+        attrName: dependencies:
+        super.${attrName}.overrideAttrs (_: {
+          inherit dependencies;
+        })
+      )
+      (
+        with self;
+        {
+          # Example:
+          #
+          # octo-nvim = [ plenary-nvim telescope-nvim ];
+        }
+      );
 
   # Add other overrides here.
-  overrideOthers = self: super: { };
+  overrideOthers = self: super: {
+    # Example:
+    #
+    # markdown-preview-nvim = super.markdown-preview-nvim.overrideAttrs (_: {
+    #   nativeBuildInputs = [ final.nodejs ];
+    # });
+  };
 in
 {
   awesomeNeovimPlugins = prev.awesomeNeovimPlugins.extend (
