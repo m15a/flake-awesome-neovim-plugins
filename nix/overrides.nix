@@ -38,10 +38,49 @@ let
       (
         with lib.licenses;
         {
-          # Example:
-          #
-          # visual-nvim = gpl3Only;
+          vitesse-nvim = mit;
+          nvim-cartographer = gpl3Plus;
+          nvim-highlite = gpl3Plus;
+          scratch-nvim = gpl3Plus;
+          nvim-colorizer-lua = gpl3Plus;
+          nvim-remote-containers = {
+            fullName = "modified MIT License";
+            free = false;
+            redistributable = false;
+          };
+          nvim-tree-lua = gpl3Plus;
+          oceanic-next = asl20;
+          nvim-base16-lua = mit;
+          arrow-nvim = gpl3Plus;
+          telescope-alternate-nvim = gpl3Plus;
+          mind-nvim = bsd3;
+          quarto-nvim = gpl2Plus;
+          bamboo-nvim = mit;
+          pounce-nvim = asl20;
+          killersheep-nvim = vim;
+          diffview-nvim = gpl3Plus;
+          hop-nvim = bsd3;
+          yawnc-nvim = {
+            fullName = "Do whatever, just give credits where credits are do.";
+            free = true;
+            redistributable = true;
+          };
+          neosolarized-nvim = mit;
+          nvim-deus = gpl3Plus;
         }
+        // (
+          let
+            fossil = {
+              fullName = "FOSSIL | Fair Open-Source Software International License v1.0.2";
+              free = true;
+              redistributable = true;
+            };
+          in
+          {
+            duplicate-nvim = fossil;
+            lsp-timeout-nvim = fossil;
+          }
+        )
       );
 
   # Add dependencies if needed.

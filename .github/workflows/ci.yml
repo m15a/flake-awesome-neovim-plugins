@@ -17,8 +17,10 @@ jobs:
       - uses: DeterminateSystems/magic-nix-cache-action@v4
 
       - name: Check flake and packages
+        env:
+          NIXPKGS_ALLOW_UNFREE: 1
         run: |
-          nix flake check --update-input nixpkgs
+          nix flake check --update-input nixpkgs --impure
 
       - name: Check format
         run: |
