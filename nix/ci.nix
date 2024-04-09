@@ -23,4 +23,18 @@ final: prev:
       ))
     ];
   };
+
+  ci-datasci = final.mkShell {
+    packages =
+      [
+        final.duckdb
+        final.R
+      ]
+      ++ (with final.rPackages; [
+        dplyr
+        ggplot2
+        tibble
+        tidyr
+      ]);
+  };
 }

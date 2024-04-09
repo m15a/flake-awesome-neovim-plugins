@@ -9,6 +9,8 @@ Nix flake of Awesome Neovim plugins.
 [b2]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/ci.yml
 [b3]: https://img.shields.io/badge/Awesome_Neovim_plugins-848-57A143
 
+![Daily stats](./data/stats/plot/daily.png)
+
 ## Description
 
 This repository is a *mirror* of [Awesome Neovim], in a sense that

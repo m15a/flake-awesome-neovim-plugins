@@ -40,11 +40,12 @@
         checks = packages;
 
         devShells = {
-          inherit (pkgs) ci-update ci-check-format;
+          inherit (pkgs) ci-update ci-check-format ci-datasci;
           default = pkgs.mkShell {
             inputsFrom = [
               pkgs.ci-update
               pkgs.ci-check-format
+              pkgs.ci-datasci
             ];
             packages = [ pkgs.fennel-ls ];
           };
