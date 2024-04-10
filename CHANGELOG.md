@@ -13,6 +13,8 @@ used for rolling release. See [FlakeHub document][3] for more details.
 
 ## [Unreleased]
 
+## [0.1.0] - 2024-04-10
+
 ### Changed
 
 - **Refactor all the stuff**:
@@ -30,5 +32,6 @@ used for rolling release. See [FlakeHub document][3] for more details.
 [sourcehut]: https://sr.ht/
 
 [Unreleased]: https://github.com/m15a/flake-awesome-neovim-plugins/tree/HEAD
+[0.1.0]: https://github.com/m15a/flake-awesome-neovim-plugins/tree/v0.1.0
 
 <!-- vim:set tw=72 spell nowrap: -->
