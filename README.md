@@ -4,10 +4,13 @@ Nix flake of Awesome Neovim plugins.
 
 [![CI][b1]][b2]
 [![Awesome Neovim plugins][b3]][Awesome Neovim]
+[![FlakeHub][b4]][b5]
 
 [b1]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/ci.yml?style=flat-square&logo=github&label=CI
 [b2]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/ci.yml
 [b3]: https://img.shields.io/badge/Awesome_Neovim_plugins-848-57A143?style=flat-square
+[b4]: https://img.shields.io/endpoint?url=https://flakehub.com/f/m15a/flake-awesome-neovim-plugins/badge?style=flat-square
+[b5]: https://flakehub.com/flake/m15a/flake-awesome-neovim-plugins
 
 ![Daily stats](./data/stats/plot/daily.png)
 
