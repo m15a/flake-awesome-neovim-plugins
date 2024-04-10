@@ -67,6 +67,14 @@ Use it as you normally do, like so:
 }
 ```
 
+### FlakeHub
+
+Alternatively, you can use this flake via [FlakeHub].
+See instructions at the [FlakeHub page].
+
+[FlakeHub]: https://flakehub.com/
+[FlakeHub page]: https://flakehub.com/flake/m15a/flake-awesome-neovim-plugins
+
 ## Contributing
 
 ### Add a new plugin to this flake
