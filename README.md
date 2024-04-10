@@ -84,6 +84,6 @@ Send a pull request to this repository in which your fix is applied in
 
 ## License
 
-[MIT](LICENSE)
+[BSD 3-Clause](LICENSE)
 
 <!-- vim:set tw=72 spell nowrap: -->
