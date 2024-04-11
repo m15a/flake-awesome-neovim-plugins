@@ -107,6 +107,28 @@ let
           # Example:
           #
           # octo-nvim = [ plenary-nvim telescope-nvim ];
+
+          telescope-nvim = [ plenary-nvim ];
+
+          # Telescope.nvim extensions
+          telescope-alternate-nvim = [ telescope-nvim ];
+          telescope-command-palette-nvim = [ telescope-nvim ];
+          telescope-egrepify-nvim = [ telescope-nvim ];
+          telescope-git-file-history-nvim = [
+            telescope-nvim
+            final.vimPlugins.vim-fugitive
+          ];
+          telescope-import-nvim = [ telescope-nvim ];
+          telescope-lazy-plugins-nvim = [ telescope-nvim ];
+          telescope-repo-nvim = [ telescope-nvim ];
+          telescope-rooter-nvim = [ telescope-nvim ];
+          telescope-tabs = [ telescope-nvim ];
+          telescope-tmuxinator-nvim = [ telescope-nvim ];
+          telescope-undo-nvim = [ telescope-nvim ];
+          telescope-zoxide = [
+            telescope-nvim
+            popup-nvim
+          ];
         }
       );
 

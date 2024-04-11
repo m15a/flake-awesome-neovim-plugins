@@ -13,6 +13,10 @@ used for rolling release. See [FlakeHub document][3] for more details.
 
 ## [Unreleased]
 
+### Fixed
+
+- Dependencies of telescope.nvim and its extensions
+
 ## [0.1.0] - 2024-04-10
 
 ### Changed
