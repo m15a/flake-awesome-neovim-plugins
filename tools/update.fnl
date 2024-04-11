@@ -79,6 +79,13 @@
 ;;;; creating your new account on sourcehut for free. The other services
 ;;;; actually do not require PAT, as the number of GitLab/Codeberg repositories
 ;;;; is only a few.
+;;;;
+;;;; You should set PATs via the following environment variables:
+;;;;
+;;;; - `GITHUB_TOKEN`
+;;;; - `GITLAB_TOKEN`
+;;;; - `SOURCEHUT_TOKEN`
+;;;; - `CODEBERG_TOKEN`
 
 (local unpack (or table.unpack _G.unpack))
 (local {: view} (require :fennel))
