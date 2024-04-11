@@ -1,43 +1,38 @@
 #!/usr/bin/env -S duckdb -batch -no-stdin -init
 
-CREATE TABLE stats
-( source VARCHAR
+CREATE OR REPLACE TABLE stats
+( repository VARCHAR
 , datetime TIMESTAMP
-, time INT
 , site VARCHAR 
 , plugins INT
 );
 
-INSERT INTO stats
-(UNPIVOT (SELECT 'awesome-neovim' AS source
-               , make_timestamp(time * 1e6 :: BIGINT) AS datetime
-               , *
-            FROM 'data/stats/awesome-neovim/*.json')
-      ON COLUMNS(* EXCLUDE (source, time, datetime))
-    INTO NAME site VALUE plugins)
-UNION
-(UNPIVOT (SELECT 'nixpkgs' AS source
-               , make_timestamp(time * 1e6 :: BIGINT) AS datetime
-               , *
-            FROM 'data/stats/nixpkgs/*.json')
-      ON COLUMNS(* EXCLUDE (source, time, datetime))
-    INTO NAME site VALUE plugins)
-UNION
-(UNPIVOT (SELECT 'extra' AS source
-               , make_timestamp(time * 1e6 :: BIGINT) AS datetime
-               , *
-            FROM 'data/stats/extra/*.json')
-      ON COLUMNS(* EXCLUDE (source, time, datetime))
-    INTO NAME site VALUE plugins);
+CREATE OR REPLACE MACRO unpivot_stats(src_name, src_path) AS TABLE
+UNPIVOT (SELECT src_name AS repository
+              , make_timestamp(time * 1e6 :: BIGINT) AS datetime
+              , * EXCLUDE time
+           FROM read_json_auto(src_path))
+     ON COLUMNS(* EXCLUDE (repository, datetime))
+   INTO NAME site VALUE plugins;
 
-CREATE TABLE daily AS
+INSERT INTO stats
+SELECT *
+  FROM unpivot_stats('awesome-neovim', 'data/stats/awesome-neovim/*.json')
+ UNION
+SELECT *
+  FROM unpivot_stats('nixpkgs', 'data/stats/nixpkgs/*.json')
+ UNION
+SELECT *
+  FROM unpivot_stats('extra', 'data/stats/extra/*.json');
+
+CREATE OR REPLACE TABLE daily AS
 SELECT date_trunc('day', datetime) AS "date"
-     , source
+     , repository
      , site
      , max(plugins) AS plugins
   FROM stats
- GROUP BY date, source, site
- ORDER BY date, source, site;
+ GROUP BY date, repository, site
+ ORDER BY date, repository, site;
 
 COPY daily TO 'data/stats/view/daily.csv'
 (HEADER, DELIMITER ',');
