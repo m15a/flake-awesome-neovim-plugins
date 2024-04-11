@@ -1,12 +1,84 @@
 #!/usr/bin/env fennel
 
-;;;; A monolithic script to update Vim/Neovim plugins.
+;;;; BSD 3-Clause License
+;;;; 
+;;;; Copyright (c) 2024 NACAMURA Mitsuhiro
+;;;; 
+;;;; Redistribution and use in source and binary forms, with or without
+;;;; modification, are permitted provided that the following conditions
+;;;; are met:
+;;;; 
+;;;; 1. Redistributions of source code must retain the above copyright
+;;;;    notice, this list of conditions and the following disclaimer.
+;;;; 
+;;;; 2. Redistributions in binary form must reproduce the above copyright
+;;;;    notice, this list of conditions and the following disclaimer in
+;;;;    the documentation and/or other materials provided with the
+;;;;    distribution.
+;;;; 
+;;;; 3. Neither the name of the copyright holder nor the names of its
+;;;;    contributors may be used to endorse or promote products derived
+;;;;    from this software without specific prior written permission.
+;;;; 
+;;;; THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+;;;; "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+;;;; LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+;;;; FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+;;;; COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+;;;; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+;;;; BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+;;;; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+;;;; CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+;;;; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+;;;; ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+;;;; POSSIBILITY OF SUCH DAMAGE.
+
+;;;; # A monolithic script to update repository information.
 ;;;;
-;;;; External dependencies:
+;;;; ## Description
 ;;;;
-;;;; - nix-prefetch-url: to compute tarball sha256 hash,
-;;;; - jq: to format JSON outputs.
-;;;; - sed: to update the number of Awesome Neovim plugins in README.md
+;;;; Using REST API, it queries to code hosting services such as GitHub,
+;;;; and gets information of repositories and their latest commits. The
+;;;; collected data are once stored in `data/cache/`, and based on them
+;;;; the final JSON data `data/plugins-info/*.json` are processed out.
+;;;;
+;;;; The caches have different life time depending on their kind:
+;;;;
+;;;; - data about repositories themselves (e.g., repository description)
+;;;;   are cached for one week, so that it will be updated once every
+;;;;   week; and
+;;;; - data about latest commits (e.g., commit hash) are cached for one
+;;;;   day, so that it will be updated every day.
+;;;;
+;;;; ## Requirements
+;;;;
+;;;; - LuaJIT 2.1+
+;;;; - Lua libraries:
+;;;;    - http 0.3: <https://github.com/daurnimator/lua-http>
+;;;;    - cjson 2.1.0: <https://github.com/mpx/lua-cjson>
+;;;; - Fennel 1.4+ (not sure but it works at least for 1.4.0)
+;;;;
+;;;; It also depends on the following external programs.
+;;;;
+;;;; - `nix-prefetch-url`: to compute tarball sha256 hash,
+;;;; - `jq`: to format JSON outputs, and
+;;;; - `sed`: to update `README.md`.
+;;;;
+;;;; ## Accessing code hosting services
+;;;;
+;;;; This script currently supports:
+;;;;
+;;;; - GitHub
+;;;; - GitLab
+;;;; - sourcehut
+;;;; - Codeberg
+;;;;
+;;;; For using REST API, GitHub personal access token (PAT) is mandatory,
+;;;; since without the token its rate limit is only 60/hour.
+;;;; For sourcehut, a PAT is also required. You can generate it by
+;;;; creating your new account on sourcehut for free. The other services
+;;;; actually do not require PAT, as the number of GitLab/Codeberg repositories
+;;;; is only a few.
 
 (local unpack (or table.unpack _G.unpack))
 (local {: view} (require :fennel))
