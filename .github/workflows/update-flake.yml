@@ -13,7 +13,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.M15A_GITHUB_PAT }}
-          branch: ${{ github.head_ref }}
       - uses: cachix/install-nix-action@v26
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
