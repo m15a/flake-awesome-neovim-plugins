@@ -2,6 +2,7 @@ final: prev:
 
 let
   inherit (final) lib;
+  utils = final.callPackage ./utils.nix { };
 
   # Mark broken packages here.
   overrideBroken =
@@ -109,14 +110,27 @@ let
         )
       );
 
+  # Add Telescope extension dependencies.
+  overrideTelescopeDependencies =
+    self: super:
+    lib.mapAttrs (
+      pluginName: pkg:
+      if utils.looksLikeTelescopeExtension pluginName then
+        pkg.overrideAttrs (old: {
+          dependencies = (old.dependencies or [ ]) ++ [ self.telescope-nvim ];
+        })
+      else
+        pkg
+    ) super;
+
   # Add dependencies if needed.
   overrideDependencies =
     self: super:
     lib.mapAttrs
       (
         pluginName: dependencies:
-        super.${pluginName}.overrideAttrs (_: {
-          inherit dependencies;
+        super.${pluginName}.overrideAttrs (old: {
+          dependencies = (old.dependencies or [ ]) ++ dependencies;
         })
       )
       (
@@ -128,25 +142,9 @@ let
 
           telescope-nvim = [ plenary-nvim ];
 
-          # Telescope.nvim extensions
-          telescope-alternate-nvim = [ telescope-nvim ];
-          telescope-command-palette-nvim = [ telescope-nvim ];
-          telescope-egrepify-nvim = [ telescope-nvim ];
-          telescope-git-file-history-nvim = [
-            telescope-nvim
-            final.vimPlugins.vim-fugitive
-          ];
-          telescope-import-nvim = [ telescope-nvim ];
-          telescope-lazy-plugins-nvim = [ telescope-nvim ];
-          telescope-repo-nvim = [ telescope-nvim ];
-          telescope-rooter-nvim = [ telescope-nvim ];
-          telescope-tabs = [ telescope-nvim ];
-          telescope-tmuxinator-nvim = [ telescope-nvim ];
-          telescope-undo-nvim = [ telescope-nvim ];
-          telescope-zoxide = [
-            telescope-nvim
-            popup-nvim
-          ];
+          # Telescope extensions extra dependencies
+          telescope-git-file-history-nvim = [ final.vimPlugins.vim-fugitive ];
+          telescope-zoxide = [ popup-nvim ];
         }
       );
 
@@ -165,6 +163,7 @@ in
       overrideBroken
       overrideHomepage
       overrideLicense
+      overrideTelescopeDependencies
       overrideDependencies
       overrideMore
     ]

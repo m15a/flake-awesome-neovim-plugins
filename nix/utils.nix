@@ -35,4 +35,9 @@ rec {
         msg = "invalid plugin info: " + showPluginInfo pluginInfo;
       in
       lib.warn msg false;
+
+  looksLikeTelescopeExtension =
+    pluginName:
+    pluginName != "telescope-nvim"
+    && builtins.match "^telescope-.+" pluginName != null;
 }
