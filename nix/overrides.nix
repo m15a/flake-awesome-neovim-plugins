@@ -23,6 +23,24 @@ let
         unruly-worker = true;
       };
 
+  # Add homepage if missing or incorrect.
+  overrideHomepage =
+    self: super:
+    lib.mapAttrs
+      (
+        attrName: homepage:
+        super.${attrName}.overrideAttrs (old: {
+          meta = old.meta // {
+            inherit homepage;
+          };
+        })
+      )
+      {
+        ataraxis-lua = "https://sr.ht/~henriquehbr/ataraxis.lua/";
+        nvim-startup-lua = "https://sr.ht/~henriquehbr/nvim-startup.lua/";
+        lsp-lines-nvim = "https://sr.ht/~whynothugo/lsp_lines.nvim/";
+      };
+
   # Add licenses if missing or incorrect in ./data/plugins-info/awesome-neovim.json.
   overrideLicense =
     self: super:
@@ -145,6 +163,7 @@ in
   awesomeNeovimPlugins = prev.awesomeNeovimPlugins.extend (
     lib.composeManyExtensions [
       overrideBroken
+      overrideHomepage
       overrideLicense
       overrideDependencies
       overrideOthers
