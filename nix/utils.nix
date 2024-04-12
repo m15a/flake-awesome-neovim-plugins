@@ -1,7 +1,7 @@
 { lib }:
 
 rec {
-  repoNameToPName =
+  repoNameToPluginName =
     lib.strings.replaceStrings
       [
         "_"
@@ -13,26 +13,26 @@ rec {
       ];
 
   showPluginInfo =
-    x:
+    pluginInfo:
     let
-      contents = lib.attrsets.mapAttrsToList (k: v: "${k}: ${toString v}") x;
+      contents = lib.attrsets.mapAttrsToList (k: v: "${k}: ${toString v}") pluginInfo;
     in
     "{" + lib.concatStringsSep ", " contents + "}";
 
   isValidPluginInfo =
-    x:
+    pluginInfo:
     if
-      x ? "date"
-      && x ? "owner"
-      && x ? "repo"
-      && x ? "rev"
-      && x ? "sha256"
-      && x ? "url"
+      pluginInfo ? "date"
+      && pluginInfo ? "owner"
+      && pluginInfo ? "repo"
+      && pluginInfo ? "rev"
+      && pluginInfo ? "sha256"
+      && pluginInfo ? "url"
     then
       true
     else
       let
-        msg = "invalid plugin info: " + showPluginInfo x;
+        msg = "invalid plugin info: " + showPluginInfo pluginInfo;
       in
       lib.warn msg false;
 }

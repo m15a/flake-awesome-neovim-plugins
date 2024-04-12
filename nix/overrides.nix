@@ -8,8 +8,8 @@ let
     self: super:
     lib.mapAttrs
       (
-        attrName: broken:
-        super.${attrName}.overrideAttrs (old: {
+        pluginName: broken:
+        super.${pluginName}.overrideAttrs (old: {
           meta = old.meta // {
             inherit broken;
           };
@@ -28,8 +28,8 @@ let
     self: super:
     lib.mapAttrs
       (
-        attrName: homepage:
-        super.${attrName}.overrideAttrs (old: {
+        pluginName: homepage:
+        super.${pluginName}.overrideAttrs (old: {
           meta = old.meta // {
             inherit homepage;
           };
@@ -46,8 +46,8 @@ let
     self: super:
     lib.mapAttrs
       (
-        attrName: license:
-        super.${attrName}.overrideAttrs (old: {
+        pluginName: license:
+        super.${pluginName}.overrideAttrs (old: {
           meta = old.meta // {
             inherit license;
           };
@@ -114,8 +114,8 @@ let
     self: super:
     lib.mapAttrs
       (
-        attrName: dependencies:
-        super.${attrName}.overrideAttrs (_: {
+        pluginName: dependencies:
+        super.${pluginName}.overrideAttrs (_: {
           inherit dependencies;
         })
       )

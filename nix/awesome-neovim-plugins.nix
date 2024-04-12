@@ -14,7 +14,7 @@ let
         sha256
         url
         ;
-      pname = utils.repoNameToPName repo;
+      pname = utils.repoNameToPluginName repo;
     in
     {
       name = pname;
