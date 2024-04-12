@@ -41,7 +41,7 @@ let
         lsp-lines-nvim = "https://sr.ht/~whynothugo/lsp_lines.nvim/";
       };
 
-  # Add licenses if missing or incorrect in ./data/plugins-info/awesome-neovim.json.
+  # Add licenses if missing or incorrect.
   overrideLicense =
     self: super:
     lib.mapAttrs
@@ -150,8 +150,8 @@ let
         }
       );
 
-  # Add other overrides here.
-  overrideOthers = self: super: {
+  # Add overrides more.
+  overrideMore = self: super: {
     # Example:
     #
     # markdown-preview-nvim = super.markdown-preview-nvim.overrideAttrs (_: {
@@ -166,7 +166,7 @@ in
       overrideHomepage
       overrideLicense
       overrideDependencies
-      overrideOthers
+      overrideMore
     ]
   );
 }
