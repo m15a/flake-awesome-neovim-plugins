@@ -20,8 +20,9 @@ used for rolling release. See [FlakeHub document][3] for more details.
   names `a-some-nvim` and `b-some-nvim`, respectively. Note that if a
   plugin has unique repository name, its attribute name will not be
   prefixed.
-- Dependencies of telescope.nvim and its extensions
+- Dependencies of telescope.nvim and its extensions [#108]
 
+[#108]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/108
 [#110]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/110
 
 ## [0.1.0] - 2024-04-10
