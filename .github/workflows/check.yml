@@ -20,7 +20,7 @@ jobs:
         env:
           NIXPKGS_ALLOW_UNFREE: 1
         run: |
-          nix flake check --update-input nixpkgs --impure
+          nix flake check --impure
 
       - name: Check format
         run: |
