@@ -93,8 +93,13 @@ is removed from their `README.md`.
 Send a pull request to this repository in which your fix is applied in
 [`./nix/overrides.nix`](./nix/overrides.nix).
 
-## License
+## Licenses
 
-[BSD 3-Clause](LICENSE)
+Unless otherwise stated, this software is licensed under the
+[BSD 3-clause license](LICENSE).
+
+A part of `./nix/overrides.nix` is modification from the original
+Nixpkgs' code, which is licensed under the MIT license. See the license
+terms in comments in the file.
 
 <!-- vim:set tw=72 spell nowrap: -->

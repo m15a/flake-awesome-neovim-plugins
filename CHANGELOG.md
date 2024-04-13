@@ -13,6 +13,11 @@ used for rolling release. See [FlakeHub document][3] for more details.
 
 ## [Unreleased]
 
+### Added
+
+- nvim-treesitter: Support for passthru attributes `withPlugins`,
+  `withAllGrammars`, etc. [#112]
+
 ### Fixed
 
 - Attribute names of plugins having the same repository name [#110]:
@@ -24,6 +29,7 @@ used for rolling release. See [FlakeHub document][3] for more details.
 
 [#108]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/108
 [#110]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/110
+[#112]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/112
 
 ## [0.1.0] - 2024-04-10
 
