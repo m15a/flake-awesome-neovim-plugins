@@ -14,7 +14,12 @@ let
         sha256
         url
         ;
-      pname = utils.repoNameToPluginName repo;
+
+      owner = utils.fixSourceHutOwner pluginInfo.owner;
+
+      pname = utils.repoNameToPluginName (
+        if isUniqueRepo repo then repo else "${owner}-${repo}"
+      );
     in
     {
       name = pname;
@@ -47,6 +52,9 @@ let
   pluginsInfo = lib.strings.fromJSON (
     lib.readFile ../data/plugins-info/awesome-neovim.json
   );
+
+  isUniqueRepo =
+    repo: lib.lists.length (lib.filter (p: p.repo == repo) pluginsInfo) < 2;
 
   origin = builtins.listToAttrs (
     map builder (lib.filter utils.isValidPluginInfo pluginsInfo)

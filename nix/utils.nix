@@ -12,6 +12,13 @@ rec {
         "-"
       ];
 
+  fixSourceHutOwner =
+    owner:
+    if builtins.match "^~.+" owner != null then
+      lib.strings.substring 1 (-1) owner
+    else
+      owner;
+
   showPluginInfo =
     pluginInfo:
     let
@@ -39,5 +46,5 @@ rec {
   looksLikeTelescopeExtension =
     pluginName:
     pluginName != "telescope-nvim"
-    && builtins.match "^telescope-.+" pluginName != null;
+    && builtins.match "(^|.+-)telescope-.+" pluginName != null;
 }

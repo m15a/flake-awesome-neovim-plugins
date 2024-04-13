@@ -60,7 +60,7 @@ let
           ataraxis-lua = gpl3;
           nvim-startup-lua = mit;
           auto-format-nvim = mit;
-          auto-save-nvim = mit;
+          nedia-auto-save-nvim = mit;
           licenses-nvim = mit;
           lsp-lines-nvim = isc;
           distinct-nvim = mit;
