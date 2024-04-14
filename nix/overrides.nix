@@ -111,7 +111,7 @@ let
       );
 
   # Add Telescope extension dependencies.
-  overrideTelescopeDependencies =
+  overrideTelescopeExtensions =
     self: super:
     lib.mapAttrs (
       pluginName: pkg:
@@ -209,7 +209,7 @@ in
       overrideBroken
       overrideHomepage
       overrideLicense
-      overrideTelescopeDependencies
+      overrideTelescopeExtensions
       overrideDependencies
       overrideMore
     ]
