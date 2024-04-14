@@ -149,19 +149,41 @@ let
         lsp-timeout-nvim = true;
         lsp-format-nvim = true;
         nlsp-settings-nvim = true;
+        go-nvim = true;
       };
 
   # Declare plugins that depend on nvim-treesitter.
   overrideTreesitterConsumers =
     self: super:
-    lib.mapAttrs (
-      pluginName: isConsumer:
-      super.${pluginName}.overrideAttrs (old: {
-        dependencies =
-          (old.dependencies or [ ])
-          ++ lib.optionals isConsumer [ self.nvim-treesitter ];
-      })
-    ) { lspsaga-nvim = true; };
+    lib.mapAttrs
+      (
+        pluginName: isConsumer:
+        super.${pluginName}.overrideAttrs (old: {
+          dependencies =
+            (old.dependencies or [ ])
+            ++ lib.optionals isConsumer [ self.nvim-treesitter ];
+        })
+      )
+      {
+        lspsaga-nvim = true;
+        nvim-trevJ-lua = true;
+        nvcode-color-schemes-vim = true;
+        nvim-ts-context-commentstring = true;
+        treesitter-outer = true;
+        treesitter-utils = true;
+        nvim-treesitter-textsubjects = true;
+        ultimate-autopair-nvim = true;
+        agrolens-nvim = true;
+        nvim-context-vt = true;
+        nvim-treehopper = true;
+        iswap-nvim = true;
+        nvim-treesitter-context = true;
+        nvim-treesitter-textobjects = true;
+        go-nvim = true;
+        nvim-comment-frame = true;
+        nvim-ts-autotag = true;
+        syntax-tree-surfer = true;
+      };
 
   # Add Telescope extension dependencies.
   overrideTelescopeExtensions =
@@ -192,6 +214,7 @@ let
           # Example:
           #
           # octo-nvim = [ telescope-nvim ];
+          agrolens-nvim = [ telescope-nvim ];
 
           nvim-lsputils = [ final.vimPlugins.popfix ];
           lspsaga-nvim = [ nvim-web-devicons ];
@@ -201,6 +224,7 @@ let
           telescope-zoxide = [ popup-nvim ];
 
           codeschool-nvim = [ lush-nvim ];
+          haskell-snippets-nvim = [ LuaSnip ];
         }
       );
 
