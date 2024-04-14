@@ -26,10 +26,12 @@ used for rolling release. See [FlakeHub document][3] for more details.
   plugin has unique repository name, its attribute name will not be
   prefixed.
 - Dependencies of telescope.nvim and its extensions [#108]
+- Dependencies of LSP-related plugins [#115]
 
 [#108]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/108
 [#110]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/110
 [#112]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/112
+[#115]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/115
 
 ## [0.1.0] - 2024-04-10
 
