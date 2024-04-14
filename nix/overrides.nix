@@ -151,6 +151,18 @@ let
         nlsp-settings-nvim = true;
       };
 
+  # Declare plugins that depend on nvim-treesitter.
+  overrideTreesitterConsumers =
+    self: super:
+    lib.mapAttrs (
+      pluginName: isConsumer:
+      super.${pluginName}.overrideAttrs (old: {
+        dependencies =
+          (old.dependencies or [ ])
+          ++ lib.optionals isConsumer [ self.nvim-treesitter ];
+      })
+    ) { lspsaga-nvim = true; };
+
   # Add Telescope extension dependencies.
   overrideTelescopeExtensions =
     self: super:
@@ -182,10 +194,7 @@ let
           # octo-nvim = [ telescope-nvim ];
 
           nvim-lsputils = [ final.vimPlugins.popfix ];
-          lspsaga-nvim = [
-            nvim-treesitter
-            nvim-web-devicons
-          ];
+          lspsaga-nvim = [ nvim-web-devicons ];
 
           # Telescope extensions extra dependencies
           telescope-git-file-history-nvim = [ final.vimPlugins.vim-fugitive ];
@@ -258,6 +267,7 @@ in
       overrideLicense
       overridePlenaryConsumers
       overrideLspConfigConsumers
+      overrideTreesitterConsumers
       overrideTelescopeExtensions
       overrideDependencies
       overrideMore
