@@ -7,6 +7,7 @@ SELECT site
      , owner
      , repo
      , description
+     , 'https://' || site || '/' || owner || '/' || repo AS url
      , homepage
      , license
      , date
