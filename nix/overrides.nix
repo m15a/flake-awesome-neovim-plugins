@@ -110,6 +110,47 @@ let
         )
       );
 
+  # Declare plugins that depend on plenary.nvim.
+  overridePlenaryConsumers =
+    self: super:
+    lib.mapAttrs
+      (
+        pluginName: isConsumer:
+        super.${pluginName}.overrideAttrs (old: {
+          dependencies =
+            (old.dependencies or [ ])
+            ++ lib.optionals isConsumer [ self.plenary-nvim ];
+        })
+      )
+      {
+        flutter-tools-nvim = true;
+        fzf-lsp-nvim = true;
+        luau-lsp-nvim = true;
+        octo-nvim = true;
+        telescope-nvim = true;
+      };
+
+  # Declare plugins that depend on nvim-lspconfig.
+  overrideLspConfigConsumers =
+    self: super:
+    lib.mapAttrs
+      (
+        pluginName: isConsumer:
+        super.${pluginName}.overrideAttrs (old: {
+          dependencies =
+            (old.dependencies or [ ])
+            ++ lib.optionals isConsumer [ self.nvim-lspconfig ];
+        })
+      )
+      {
+        lsp-lines-nvim = true;
+        nvim-lsp-setup = true;
+        nvim-lspupdate = true;
+        lsp-timeout-nvim = true;
+        lsp-format-nvim = true;
+        nlsp-settings-nvim = true;
+      };
+
   # Add Telescope extension dependencies.
   overrideTelescopeExtensions =
     self: super:
@@ -138,13 +179,19 @@ let
         {
           # Example:
           #
-          # octo-nvim = [ plenary-nvim telescope-nvim ];
+          # octo-nvim = [ telescope-nvim ];
 
-          telescope-nvim = [ plenary-nvim ];
+          nvim-lsputils = [ final.vimPlugins.popfix ];
+          lspsaga-nvim = [
+            nvim-treesitter
+            nvim-web-devicons
+          ];
 
           # Telescope extensions extra dependencies
           telescope-git-file-history-nvim = [ final.vimPlugins.vim-fugitive ];
           telescope-zoxide = [ popup-nvim ];
+
+          codeschool-nvim = [ lush-nvim ];
         }
       );
 
@@ -209,6 +256,8 @@ in
       overrideBroken
       overrideHomepage
       overrideLicense
+      overridePlenaryConsumers
+      overrideLspConfigConsumers
       overrideTelescopeExtensions
       overrideDependencies
       overrideMore
