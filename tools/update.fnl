@@ -280,8 +280,7 @@ in which site, owner, and repo information are extracted."
         active-regex "^%s*%-%s+%[[^/]+/[^/]+%]%("
         plugin-regex ["^%s*%-%s+%[[^%]]+%]%(https?://([^/]+)/([^/]+)/([^/#%)]+)"
                       "^%s*%-%s+%[[^%]]+%]%(https?://([^/]+)/([^/#%)]+)"]
-        skip-regex "^%s*##+%s+Preconfigured%s+[Cc]onfiguration"
-        done-regex "^%s*##+%s+External"]
+        done-regex "^%s*##+%s+Preconfigured%s+[Cc]onfiguration"]
     (each [line (readme:gmatch "[^\n]+") &until (= :done state)]
       (match state
         :init (when (line:match "^%s*##+%s+Plugin%s+[Mm]anager")
@@ -295,12 +294,8 @@ in which site, owner, and repo information are extracted."
                           (site repo)
                           (doto plugins-info
                             (table.insert {: site : repo}))))
-                    (line:match skip-regex)
-                    (set state :skip)
                     (line:match done-regex)
-                    (set state :done))
-        :skip (when (line:match "^### Keybinding")
-                (set state :active))))
+                    (set state :done))))
     plugins-info))
 
 (fn awesome-neovim.preprocess [plugins-info]
