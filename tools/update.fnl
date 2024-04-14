@@ -502,10 +502,11 @@ in which site, owner, and repo information are extracted."
 (fn hub.current-commit-info [self {: owner : repo}]
   (assert/type :string owner)
   (assert/type :string repo)
-  (let [key (.. self.site :/ owner :/ repo)
-        {: timestamp : date : rev : url : sha256}
-        (. hub.current-plugins-info key)]
-    {: timestamp : date : rev : url : sha256}))
+  (let [key (.. self.site :/ owner :/ repo)]
+    (case (. hub.current-plugins-info key)
+      any (let [{: timestamp : date : rev : url : sha256} any]
+            {: timestamp : date : rev : url : sha256})
+      _ {})))
 
 (fn hub.get-latest-commit-info [self {: owner : repo : ref}]
   (assert/type :string owner)
