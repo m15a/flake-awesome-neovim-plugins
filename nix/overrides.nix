@@ -110,6 +110,27 @@ let
         )
       );
 
+  # Declare plugins that depend on nvim-lspconfig.
+  overrideLspConfigConsumers =
+    self: super:
+    lib.mapAttrs
+      (
+        pluginName: isConsumer:
+        super.${pluginName}.overrideAttrs (old: {
+          dependencies =
+            (old.dependencies or [ ])
+            ++ lib.optionals isConsumer [ self.nvim-lspconfig ];
+        })
+      )
+      {
+        lsp-lines-nvim = true;
+        nvim-lsp-setup = true;
+        nvim-lspupdate = true;
+        lsp-timeout-nvim = true;
+        lsp-format-nvim = true;
+        nlsp-settings-nvim = true;
+      };
+
   # Add Telescope extension dependencies.
   overrideTelescopeExtensions =
     self: super:
@@ -140,11 +161,22 @@ let
           #
           # octo-nvim = [ plenary-nvim telescope-nvim ];
 
+          nvim-lsputils = [ final.vimPlugins.popfix ];
+          flutter-tools-nvim = [ plenary-nvim ];
+          fzf-lsp-nvim = [ plenary-nvim ];
+          luau-lsp-nvim = [ plenary-nvim ];
+          lspsaga-nvim = [
+            nvim-treesitter
+            nvim-web-devicons
+          ];
+
           telescope-nvim = [ plenary-nvim ];
 
           # Telescope extensions extra dependencies
           telescope-git-file-history-nvim = [ final.vimPlugins.vim-fugitive ];
           telescope-zoxide = [ popup-nvim ];
+
+          codeschool-nvim = [ lush-nvim ];
         }
       );
 
@@ -209,6 +241,7 @@ in
       overrideBroken
       overrideHomepage
       overrideLicense
+      overrideLspConfigConsumers
       overrideTelescopeExtensions
       overrideDependencies
       overrideMore
