@@ -248,11 +248,12 @@ let
 
         withPlugins =
           f:
-          self.nvim-treesitter.overrideAttrs {
+          self.nvim-treesitter.overrideAttrs (old: {
+            name = old.name + "-with-plugins";
             passthru.dependencies = map grammarToPlugin (
               f (final.treesitter.builtGrammars // builtGrammars)
             );
-          };
+          });
 
         withAllGrammars = withPlugins (_: allGrammars);
       };
