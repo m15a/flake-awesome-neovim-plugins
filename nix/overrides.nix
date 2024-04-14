@@ -198,6 +198,28 @@ let
         pkg
     ) super;
 
+  # Declare plugins that depend on telescope.nvim.
+  overrideTelescopeConsumers =
+    self: super:
+    lib.mapAttrs
+      (
+        pluginName: isConsumer:
+        super.${pluginName}.overrideAttrs (old: {
+          dependencies =
+            (old.dependencies or [ ])
+            ++ lib.optionals isConsumer [ self.telescope-nvim ];
+        })
+      )
+      {
+        agrolens-nvim = true;
+        octo-nvim = true;
+        crusj-bookmarks-nvim = true;
+        search-nvim = true;
+        spectacle-nvim = true;
+        telekasten-nvim = true;
+        toggletasks-nvim = true;
+      };
+
   # Add dependencies if needed.
   overrideDependencies =
     self: super:
@@ -211,13 +233,9 @@ let
       (
         with self;
         {
-          # Example:
-          #
-          # octo-nvim = [ telescope-nvim ];
-          agrolens-nvim = [ telescope-nvim ];
-
           nvim-lsputils = [ final.vimPlugins.popfix ];
           lspsaga-nvim = [ nvim-web-devicons ];
+          trouble-nvim = [ nvim-web-devicons ];
 
           # Telescope extensions extra dependencies
           telescope-git-file-history-nvim = [ final.vimPlugins.vim-fugitive ];
@@ -225,6 +243,8 @@ let
 
           codeschool-nvim = [ lush-nvim ];
           haskell-snippets-nvim = [ LuaSnip ];
+          toggletasks-nvim = [ toggleterm-nvim ];
+          vs-tasks-nvim = [ popup-nvim ];
         }
       );
 
@@ -294,6 +314,7 @@ in
       overrideLspConfigConsumers
       overrideTreesitterConsumers
       overrideTelescopeExtensions
+      overrideTelescopeConsumers
       overrideDependencies
       overrideMore
     ]
