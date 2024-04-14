@@ -317,10 +317,17 @@ in which site, owner, and repo information are extracted."
       (values (.. site :/ owner :/ repo) ; drop duplicates
               {: site : owner : repo}))))
 
+(fn awesome-neovim.filter-plugins [plugins-info]
+  "Some repos are actually not Neovim plugins."
+  (collect [id plugin-info (pairs plugins-info)]
+    (when (not= :tree-sitter-just plugin-info.repo)
+      (values id plugin-info))))
+
 (fn awesome-neovim.get-plugins-info []
   (case-try (awesome-neovim.fetch-readme)
     readme (awesome-neovim.parse-readme readme)
     plugins-info (awesome-neovim.preprocess plugins-info)
+    plugins-info (awesome-neovim.filter-plugins plugins-info)
     plugins-info
     (let [(freqs total) (frequencies/total (icollect [_ p (pairs plugins-info)]
                                              p.site))
