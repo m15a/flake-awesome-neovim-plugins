@@ -102,4 +102,15 @@ A part of `./nix/overrides.nix` is modification from the original
 Nixpkgs' code, which is licensed under the MIT license. See the license
 terms in comments in the file.
 
+[`data/plugins-info/awesome-neovim.json`](data/plugins-info/awesome-neovim.json)
+is collected from various code hosting services by using their API.
+Each part of the data has respective copyright and permission to use.
+For more information about the permissible data use and content rights,
+see each service's terms of use:
+
+- [GitHub](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
+- [GitLab](https://handbook.gitlab.com/handbook/legal/api-terms/)
+- [sourcehut](https://man.sr.ht/terms.md)
+- [Codeberg](https://codeberg.org/codeberg/org/src/branch/main/TermsOfUse.md)
+
 <!-- vim:set tw=72 spell nowrap: -->
