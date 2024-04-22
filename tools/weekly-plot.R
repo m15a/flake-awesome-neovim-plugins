@@ -2,6 +2,7 @@
 
 library(dplyr, warn.conflicts = FALSE)
 library(ggplot2)
+library(lubridate, warn.conflicts = FALSE)
 library(readr)
 library(tibble)
 library(tidyr)
@@ -19,6 +20,7 @@ df <- df |>
                "extra" = "In this flake but not in Nixpkgs"))
 df <- df |>
     filter(site == "total") |>
+    filter(wday(date) == 1) |>
     select(Date = date, Repository = repository, Plugins = plugins)
 
 g <- df |>
@@ -33,7 +35,7 @@ g <- df |>
     ylim(c(0, 2e3)) +
     ggtitle("Number of Vim/Neovim plugins contained in each repository")
 
-ggsave("data/stats/plot/daily.png",
+ggsave("data/stats/plot/weekly.png",
     plot = g,
     width=18,
     height = 6,

@@ -33,6 +33,7 @@ final: prev:
       ++ (with final.rPackages; [
         dplyr
         ggplot2
+        lubridate
         readr
         tibble
         tidyr
