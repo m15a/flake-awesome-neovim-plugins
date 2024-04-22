@@ -12,7 +12,7 @@ Nix flake of Awesome Neovim plugins.
 [b4]: https://img.shields.io/endpoint?url=https://flakehub.com/f/m15a/flake-awesome-neovim-plugins/badge&style=flat-square
 [b5]: https://flakehub.com/flake/m15a/flake-awesome-neovim-plugins
 
-![Daily stats](./data/stats/plot/daily.png)
+![Daily stats](data/stats/plot/daily.png)
 
 ## Description
 
@@ -91,18 +91,18 @@ is removed from their `README.md`.
 ### Fix build of a plugin
 
 Send a pull request to this repository in which your fix is applied in
-[`./nix/overrides.nix`](./nix/overrides.nix).
+[`./nix/overrides.nix`](nix/overrides.nix).
 
 ## Licenses
 
 Unless otherwise stated, this software is licensed under the
 [BSD 3-clause license](LICENSE).
 
-A part of `./nix/overrides.nix` is modification from the original
-Nixpkgs' code, which is licensed under the MIT license. See the license
-terms in comments in the file.
+A part of [`./nix/overrides.nix`](nix/overrides.nix) is modification
+from the original Nixpkgs' code, which is licensed under the MIT license.
+See the license terms in comments in the file.
 
-[`data/plugins-info/awesome-neovim.json`](data/plugins-info/awesome-neovim.json)
+[`./data/plugins-info/awesome-neovim.json`](data/plugins-info/awesome-neovim.json)
 is collected from various code hosting services by using their API.
 Each part of the data has respective copyright and permission to use.
 For more information about the permissible data use and content rights,
