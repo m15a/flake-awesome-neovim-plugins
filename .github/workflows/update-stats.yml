@@ -1,0 +1,27 @@
+name: Update statistics
+
+on:
+  schedule:
+    - cron: "3 18 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v26
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: DeterminateSystems/magic-nix-cache-action@v4
+
+      - name: Update statistics
+        run: |
+          nix develop .#ci-datasci -c bash -c ./tools/daily-stats.sql
+          nix develop .#ci-datasci -c bash -c ./tools/weekly-plot.R
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: 'data/stats/*.csv data/stats/*.png'
+          commit_message: "auto: update statistics"

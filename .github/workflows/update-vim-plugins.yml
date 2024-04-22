@@ -25,12 +25,7 @@ jobs:
         run: |
           nix develop .#ci-update -c bash -c ./tools/update.fnl
 
-      - name: Daily statistics
-        run: |
-          nix develop .#ci-datasci -c bash -c ./tools/daily-stats.sql
-          nix develop .#ci-datasci -c bash -c ./tools/weekly-plot.R
-
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          file_pattern: 'data/*.json data/*.csv data/*.png README.md'
+          file_pattern: 'data/*.json README.md'
           commit_message: "auto: update vim plugins"
