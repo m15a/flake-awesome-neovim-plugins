@@ -113,4 +113,9 @@ see each service's terms of use:
 - [sourcehut](https://man.sr.ht/terms.md)
 - [Codeberg](https://codeberg.org/codeberg/org/src/branch/main/TermsOfUse.md)
 
+Datasets and images in [`./data/stats/`](data/stats/) are contributed
+by the same authors declared in the [software license](LICENSE), and
+licensed under the [Creative Commons Attribution-ShareAlike 4.0
+International license](https://creativecommons.org/licenses/by-sa/4.0/).
+
 <!-- vim:set tw=72 spell nowrap: -->
