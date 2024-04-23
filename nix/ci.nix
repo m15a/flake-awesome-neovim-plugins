@@ -1,42 +1,58 @@
-final: prev:
+final: _:
+
+with final;
 
 {
-  ci-check-format = final.mkShell {
-    packages = [
-      final.statix
-      final.deadnix
-      final.nixfmt-rfc-style
-      final.pre-commit
-    ];
-  };
+  devShells = rec {
+    default = mkShell {
+      inputsFrom = [
+        ci-update
+        ci-datasci
+        ci-check-format
+      ];
+      packages = [
+        fennel-ls
+        luajit.pkgs.readline
+      ];
+    };
 
-  ci-update = final.mkShell {
-    packages = [
-      final.nix
-      final.jq.bin
-      (final.luajit.withPackages (
-        ps: with ps; [
-          http
-          cjson
-          fennel
+    ci-check-format = mkShell {
+      packages = [
+        statix
+        deadnix
+        nixfmt-rfc-style
+        pre-commit
+      ];
+    };
+
+    ci-update = mkShell {
+      packages = [
+        nix
+        jq.bin
+        (luajit.withPackages (
+          ps: with ps; [
+            http
+            cjson
+            fennel
+          ]
+        ))
+      ];
+    };
+
+    ci-datasci = mkShell {
+      packages =
+        [
+          duckdb
+          R
         ]
-      ))
-    ];
-  };
-
-  ci-datasci = final.mkShell {
-    packages =
-      [
-        final.duckdb
-        final.R
-      ]
-      ++ (with final.rPackages; [
-        dplyr
-        ggplot2
-        lubridate
-        readr
-        tibble
-        tidyr
-      ]);
+        ++ (with rPackages; [
+          dplyr
+          ggplot2
+          lubridate
+          readr
+          tibble
+          tidyr
+        ]);
+    };
   };
 }

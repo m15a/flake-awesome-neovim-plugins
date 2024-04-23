@@ -17,13 +17,13 @@
       flake-utils,
       ...
     }:
+    let
+      inherit (flake-utils.lib) eachDefaultSystem filterPackages;
+    in
     {
-      overlays = rec {
-        awesome-neovim-plugins = import ./nix/overlay.nix;
-        default = awesome-neovim-plugins;
-      };
+      overlays.default = import ./nix/overlay.nix;
     }
-    // flake-utils.lib.eachDefaultSystem (
+    // eachDefaultSystem (
       system:
       let
         pkgs = import nixpkgs {
@@ -35,21 +35,9 @@
         };
       in
       rec {
-        packages = flake-utils.lib.filterPackages system pkgs.awesomeNeovimPlugins;
-
+        packages = filterPackages system pkgs.awesomeNeovimPlugins;
         checks = packages;
-
-        devShells = {
-          inherit (pkgs) ci-update ci-check-format ci-datasci;
-          default = pkgs.mkShell {
-            inputsFrom = [
-              pkgs.ci-update
-              pkgs.ci-check-format
-              pkgs.ci-datasci
-            ];
-            packages = [ pkgs.fennel-ls ] ++ (with pkgs.luajit.pkgs; [ readline ]);
-          };
-        };
+        inherit (pkgs) devShells;
       }
     );
 }
