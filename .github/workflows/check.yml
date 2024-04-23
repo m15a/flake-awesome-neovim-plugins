@@ -21,7 +21,3 @@ jobs:
           NIXPKGS_ALLOW_UNFREE: 1
         run: |
           nix flake check --impure
-
-      - name: Check format
-        run: |
-          nix develop .#ci-check-format -c bash -c 'pre-commit run --all-files'

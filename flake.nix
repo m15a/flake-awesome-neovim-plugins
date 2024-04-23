@@ -36,7 +36,7 @@
       in
       rec {
         packages = filterPackages system pkgs.awesomeNeovimPlugins;
-        checks = packages;
+        checks = packages // pkgs.checks;
         inherit (pkgs) devShells;
       }
     );
