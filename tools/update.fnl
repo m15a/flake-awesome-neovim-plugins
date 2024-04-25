@@ -494,8 +494,15 @@ in which site, owner, and repo information are extracted."
   (with-cache (self:repo-info-cache-path owner repo)
     (log "query " self.site " repo: " owner "/" repo)
     (case (self:get (self.repo-info-uri-path owner repo))
-      info (doto (self.preprocess/repo-info info)
-             (tset :time (os.time)))
+      info (let [info (self.preprocess/repo-info info)]
+             (when (not= owner info.owner)
+               (log.warn "owner changed: " owner " -> " info.owner)
+               (tset info :owner owner))
+             (when (not= repo info.repo)
+               (log.warn "repo changed: " repo " -> " info.repo)
+               (tset info :repo repo))
+             (doto info
+               (tset :time (os.time))))
       (_ msg) (log.error/nil msg))))
 
 (fn hub.get-tarball-info [self {: owner : repo : rev}]
@@ -578,8 +585,10 @@ in which site, owner, and repo information are extracted."
   (.. "https://github.com/" owner "/" repo "/archive/" rev ".tar.gz"))
 
 (fn github.preprocess/repo-info
-  [{: default_branch : description : homepage : license}]
-  {: default_branch
+  [{: default_branch : description : homepage : license : name : owner}]
+  {:owner owner.login
+   :repo name
+   : default_branch
    :description (unless (json.null? description) description)
    :homepage (unless (json.null? homepage) homepage)
    :license (unless (json.null? license) license.spdx_id)})
@@ -606,8 +615,10 @@ in which site, owner, and repo information are extracted."
   (.. "https://gitlab.com/" owner "/" repo "/-/archive/" rev ".tar.gz"))
 
 (fn gitlab.preprocess/repo-info
-  [{: default_branch : description : web_url}]
-  {: default_branch
+  [{: default_branch : description : web_url : path : namespace}]
+  {:owner namespace.path
+   :repo path
+   : default_branch
    :description (unless (json.null? description) description)
    :homepage (unless (json.null? web_url) web_url)})
 
@@ -633,7 +644,9 @@ in which site, owner, and repo information are extracted."
   (.. "https://git.sr.ht/" owner "/" repo "/archive/" rev ".tar.gz"))
 
 (fn sourcehut.preprocess/repo-info [{: description : owner : name}]
-  {:description (unless (json.null? description) description)
+  {:owner owner.canonical_name
+   :repo name
+   :description (unless (json.null? description) description)
    :homepage (.. "https://git.sr.ht/" owner.canonical_name "/" name)})
 
 (fn sourcehut.preprocess/latest-commit-info [{: results}]
@@ -659,8 +672,10 @@ in which site, owner, and repo information are extracted."
   (.. "https://codeberg.org/" owner "/" repo "/archive/" rev ".tar.gz"))
 
 (fn codeberg.preprocess/repo-info
-  [{: default_branch : description : html_url : website}]
-  {: default_branch
+  [{: default_branch : description : html_url : website : name : owner}]
+  {:owner owner.username
+   :repo name
+   : default_branch
    :description (unless (json.null? description) description)
    :homepage (or (unless (json.null? website) website)
                  (unless (json.null? html_url) html_url))})
