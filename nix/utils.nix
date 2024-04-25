@@ -47,4 +47,11 @@ rec {
     pluginName:
     pluginName != "telescope-nvim"
     && builtins.match "(^|.+-)telescope-.+" pluginName != null;
+
+  isUniqueRepoNameIn =
+    pluginsInfo: repo:
+    lib.lists.length (lib.filter (p: p.repo == repo) pluginsInfo) < 2;
+
+  isMeaningfulRepoName =
+    repo: repo != "vim" && repo != "nvim" && repo != "neovim";
 }

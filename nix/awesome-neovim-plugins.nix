@@ -17,8 +17,12 @@ let
 
       owner = utils.fixSourceHutOwner pluginInfo.owner;
 
+      isGoodRepoName =
+        repo:
+        utils.isUniqueRepoNameIn pluginsInfo repo && utils.isMeaningfulRepoName repo;
+
       pname = utils.repoNameToPluginName (
-        if isUniqueRepo repo then repo else "${owner}-${repo}"
+        if isGoodRepoName repo then repo else "${owner}-${repo}"
       );
     in
     {
@@ -52,9 +56,6 @@ let
   pluginsInfo = lib.strings.fromJSON (
     lib.readFile ../data/plugins-info/awesome-neovim.json
   );
-
-  isUniqueRepo =
-    repo: lib.lists.length (lib.filter (p: p.repo == repo) pluginsInfo) < 2;
 
   origin = builtins.listToAttrs (
     map builder (lib.filter utils.isValidPluginInfo pluginsInfo)
