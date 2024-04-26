@@ -144,7 +144,7 @@ let
       )
       {
         lsp-lines-nvim = true;
-        nvim-lsp-setup = true;
+        lsp-setup-nvim = true;
         nvim-lspupdate = true;
         lsp-timeout-nvim = true;
         lsp-format-nvim = true;
