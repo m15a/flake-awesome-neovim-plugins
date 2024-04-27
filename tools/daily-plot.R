@@ -20,7 +20,7 @@ df <- df |>
                "extra" = "In this flake but not in Nixpkgs"))
 df <- df |>
     filter(site == "total") |>
-    filter(wday(date) == 1) |>
+    filter(wday(date) == 2 | date == max(date)) |>
     select(Date = date, Repository = repository, Plugins = plugins)
 
 g <- df |>
@@ -32,10 +32,12 @@ g <- df |>
     geom_point() +
     geom_text(vjust = -.6, size = 3, show.legend = FALSE) +
     scale_color_manual(values = c("#5277C3", "#57A143", "#FF5F00")) +
+    scale_x_date(breaks = "1 week", minor_breaks = "1 day",
+                 date_labels = "%b %d") +
     ylim(c(0, 2e3)) +
     ggtitle("Number of Vim/Neovim plugins contained in each repository")
 
-ggsave("data/stats/plot/weekly.png",
+ggsave("data/stats/plot/daily.png",
     plot = g,
     width=18,
     height = 6,

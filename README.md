@@ -12,7 +12,7 @@ Nix flake of Awesome Neovim plugins.
 [b4]: https://img.shields.io/endpoint?url=https://flakehub.com/f/m15a/flake-awesome-neovim-plugins/badge&style=flat-square
 [b5]: https://flakehub.com/flake/m15a/flake-awesome-neovim-plugins
 
-![Weekly stats](data/stats/plot/weekly.png)
+![Daily stats](data/stats/plot/daily.png)
 
 ## Description
 
