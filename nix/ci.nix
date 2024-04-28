@@ -50,6 +50,7 @@ rec {
     ci-update = mkShell {
       packages = [
         nix
+        nix-prefetch
         jq.bin
         (luajit.withPackages (
           ps: with ps; [

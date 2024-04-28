@@ -17,6 +17,8 @@ used for rolling release. See [FlakeHub document][3] for more details.
 
 - nvim-treesitter: Support for passthru attributes `withPlugins`,
   `withAllGrammars`, etc. [#112]
+- Support auto-update of extra dependencies such as `cargoSha256`
+  of Rust binary [#127]: `sniprun` as a first example.
 
 ### Fixed
 
@@ -34,6 +36,7 @@ used for rolling release. See [FlakeHub document][3] for more details.
 [#112]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/112
 [#114]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/114
 [#115]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/115
+[#127]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/127
 
 ## [0.1.0] - 2024-04-10
 

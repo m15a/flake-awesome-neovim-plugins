@@ -414,6 +414,13 @@ in which site, owner, and repo information are extracted."
           (pick-values 1 (out:gsub "\n+" ""))
           (values nil "failed to run nix-prefetch-url")))))
 
+(fn nix.prefetch [expr]
+  (with-open [pipe (io.popen (.. "nix-prefetch '" expr "' 2>/dev/null"))]
+    (let [out (pipe:read :*a)]
+      (if (not= "" out)
+          (pick-values 1 (out:gsub "\n+" ""))
+          (values nil "failed to run nix-prefetch")))))
+
 ;;; ==========================================================================
 ;;; Cache REST API query results
 ;;; ==========================================================================
@@ -440,7 +447,8 @@ in which site, owner, and repo information are extracted."
 (local hub {:site "missing.hub"
             :token {:env-var "MISSING_TOKEN"}
             :get-uri-base "api.missing-hub.com/"
-            :current-plugins-info {}})
+            :current-plugins-info {}
+            :extra-fetchers {}})
 
 (fn hub.init-current-plugins-info! [path]
   (case (json.file->object path)
@@ -449,6 +457,14 @@ in which site, owner, and repo information are extracted."
                          key (.. site :/ owner :/ repo)]
                      (tset hub.current-plugins-info key plugin-info)))
     _ (log.error/exit "failed to load current plugins info")))
+
+(fn hub.init-extra-fetchers! [path]
+  (case (json.file->object path)
+    extra-fetchers (each [_ extra-fetcher (ipairs extra-fetchers)]
+                     (let [{: site : owner : repo} extra-fetcher
+                           key (.. site :/ owner :/ repo)]
+                       (tset hub.extra-fetchers key extra-fetcher)))
+    _ (log.error/exit "failed to load extra fetchers")))
 
 (fn hub.get-token [self]
   (if self.token.missing?
@@ -522,6 +538,17 @@ in which site, owner, and repo information are extracted."
             {: timestamp : date : rev : url : sha256})
       _ {})))
 
+(fn hub.extra-fetcher [self {: owner : repo}]
+  (assert/type :string owner)
+  (assert/type :string repo)
+  (let [key (.. self.site :/ owner :/ repo)]
+    (case (. hub.extra-fetchers key)
+      any (doto any
+            (tset :site nil)
+            (tset :owner nil)
+            (tset :repo nil))
+      _ {})))
+
 (fn hub.get-latest-commit-info [self {: owner : repo : ref}]
   (assert/type :string owner)
   (assert/type :string repo)
@@ -539,10 +566,15 @@ in which site, owner, and repo information are extracted."
                        (tset :time (os.time)))
                      (case (self:get-tarball-info {: owner : repo
                                                    :rev latest.rev})
-                       {: url : sha256} (doto latest
-                                          (tset :time (os.time))
-                                          (tset :url url)
-                                          (tset :sha256 sha256))
+                       {: url : sha256}
+                       (let [latest (doto latest
+                                      (tset :time (os.time))
+                                      (tset :url url)
+                                      (tset :sha256 sha256))]
+                         (each [key expr
+                                (pairs (self:extra-fetcher {: owner : repo}))]
+                           (tset latest key (nix.prefetch expr)))
+                         latest)
                        _ current)))
         (_ msg) (log.error/nil msg)))))
 
@@ -705,8 +737,10 @@ in which site, owner, and repo information are extracted."
   (set use-cache? true))
 
 (local plugins-info-path "data/plugins-info/awesome-neovim.json")
+(local extra-fetchers-path "data/plugins-info/extra-fetchers.json")
 
 (hub.init-current-plugins-info! plugins-info-path)
+(hub.init-extra-fetchers! extra-fetchers-path)
 
 (case-try (awesome-neovim.get-plugins-info)
   (awesome-neovim-plugins-info awesome-neovim-stats)
