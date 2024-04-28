@@ -534,8 +534,10 @@ in which site, owner, and repo information are extracted."
   (assert/type :string repo)
   (let [key (.. self.site :/ owner :/ repo)]
     (case (. hub.current-plugins-info key)
-      any (let [{: timestamp : date : rev : url : sha256} any]
-            {: timestamp : date : rev : url : sha256})
+      any (let [{: timestamp : date : rev : url : sha256
+                 : cargoSha256} any]
+            {: timestamp : date : rev : url : sha256
+             : cargoSha256})
       _ {})))
 
 (fn hub.extra-fetcher [self {: owner : repo}]
