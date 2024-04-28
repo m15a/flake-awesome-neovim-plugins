@@ -31,6 +31,11 @@ let
         inherit pname;
         version = "${date}-${lib.strings.substring 0 7 rev}";
         src = final.fetchurl { inherit url sha256; };
+        passthru = lib.optionalAttrs (pluginInfo ? "cargoSha256") {
+          rust = {
+            inherit (pluginInfo) cargoSha256;
+          };
+        };
         meta =
           lib.optionalAttrs (pluginInfo ? "description") {
             inherit (pluginInfo) description;
