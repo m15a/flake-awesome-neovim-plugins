@@ -453,7 +453,11 @@ in which site, owner, and repo information are extracted."
     plugins-info (each [_ plugin-info (ipairs plugins-info)]
                    (let [{: site : owner : repo} plugin-info
                          key (.. site :/ owner :/ repo)]
-                     (tset hub.current-plugins-info key plugin-info)))
+                     (tset hub.current-plugins-info key
+                           (doto plugin-info
+                             (tset :site nil)
+                             (tset :owner nil)
+                             (tset :repo nil)))))
     _ (log.error/exit "failed to load current plugins info")))
 
 (fn hub.init-extra-fetchers! [path]
@@ -461,7 +465,11 @@ in which site, owner, and repo information are extracted."
     extra-fetchers (each [_ extra-fetcher (ipairs extra-fetchers)]
                      (let [{: site : owner : repo} extra-fetcher
                            key (.. site :/ owner :/ repo)]
-                       (tset hub.extra-fetchers key extra-fetcher)))
+                       (tset hub.extra-fetchers key
+                             (doto extra-fetcher
+                               (tset :site nil)
+                               (tset :owner nil)
+                               (tset :repo nil)))))
     _ (log.error/exit "failed to load extra fetchers")))
 
 (fn hub.get-token [self]
@@ -532,10 +540,10 @@ in which site, owner, and repo information are extracted."
   (assert/type :string repo)
   (let [key (.. self.site :/ owner :/ repo)]
     (case (. hub.current-plugins-info key)
-      any (let [{: timestamp : date : rev : url : sha256
-                 : cargoSha256} any]
-            {: timestamp : date : rev : url : sha256
-             : cargoSha256})
+      any (doto any
+            (tset :description nil)
+            (tset :homepage nil)
+            (tset :license nil))
       _ {})))
 
 (fn hub.extra-fetcher [self {: owner : repo}]
@@ -737,47 +745,46 @@ in which site, owner, and repo information are extracted."
   (set use-cache? true))
 
 (local plugins-info-path "data/plugins-info/awesome-neovim.json")
-(local extra-fetchers-path "data/plugins-info/extra-fetchers.json")
-
 (hub.init-current-plugins-info! plugins-info-path)
+
+(local extra-fetchers-path "data/plugins-info/extra-fetchers.json")
 (hub.init-extra-fetchers! extra-fetchers-path)
 
 (case-try (awesome-neovim.get-plugins-info)
-  (awesome-neovim-plugins-info awesome-neovim-stats)
+  (awesome-neovim/plugins-info awesome-neovim/stats)
 
   ;; Irrelevant but I'm curious about the statistics.
   (nixpkgs.get-plugins-info)
-  (nixpkgs-plugins-info nixpkgs-stats)
+  (nixpkgs/plugins-info nixpkgs/stats)
 
-  (let [plugins-info (difference awesome-neovim-plugins-info
-                                 nixpkgs-plugins-info)
+  (let [plugins-info (difference awesome-neovim/plugins-info
+                                 nixpkgs/plugins-info)
         stats (merge! (frequencies/total (icollect [_ p (pairs plugins-info)]
                                            p.site)))]
     (set stats.time (os.time))
-    (values (icollect [_ plugin-info (stablepairs awesome-neovim-plugins-info)]
+    (values (icollect [_ plugin-info (stablepairs awesome-neovim/plugins-info)]
              (doto plugin-info
                (merge! (case plugin-info.site
-                         :github.com
-                         (github:get-all-info plugin-info)
-                         :gitlab.com
-                         (gitlab:get-all-info plugin-info)
-                         (where (or :sr.ht :git.sr.ht))
-                         (sourcehut:get-all-info plugin-info)
-                         :codeberg.org
-                         (codeberg:get-all-info plugin-info)
-                         _ {}))))
+                          :github.com
+                          (github:get-all-info plugin-info)
+                          :gitlab.com
+                          (gitlab:get-all-info plugin-info)
+                          (where (or :sr.ht :git.sr.ht))
+                          (sourcehut:get-all-info plugin-info)
+                          :codeberg.org
+                          (codeberg:get-all-info plugin-info)
+                          _ {}))))
             stats))
-  (awesome-neovim-plugins-info extra-stats)
+  (awesome-neovim/plugins-info extra/stats)
 
   (do
-    (log "fetched extra plugins info: " (view extra-stats))
-    (update-awesome-neovim-plugins-number awesome-neovim-stats)
-    (each [name stats (pairs {:awesome-neovim awesome-neovim-stats
-                              :nixpkgs nixpkgs-stats
-                              :extra extra-stats})]
-      (json.object->file stats
-                         (.. "data/stats/" name "/" stats.time ".json")))
-    (json.object->file/exit awesome-neovim-plugins-info plugins-info-path))
+    (log "fetched extra plugins info: " (view extra/stats))
+    (update-awesome-neovim-plugins-number awesome-neovim/stats)
+    (each [name stats (pairs {:awesome-neovim awesome-neovim/stats
+                              :nixpkgs nixpkgs/stats
+                              :extra extra/stats})]
+      (json.object->file stats (.. "data/stats/" name "/" stats.time ".json")))
+    (json.object->file/exit awesome-neovim/plugins-info plugins-info-path))
 
   (catch _ (os.exit false)))
 
