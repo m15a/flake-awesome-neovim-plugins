@@ -546,17 +546,6 @@ in which site, owner, and repo information are extracted."
             (tset :license nil))
       _ {})))
 
-(fn hub.extra-fetcher [self {: owner : repo}]
-  (assert/type :string owner)
-  (assert/type :string repo)
-  (let [key (.. self.site :/ owner :/ repo)]
-    (case (. hub.extra-fetchers key)
-      any (doto any
-            (tset :site nil)
-            (tset :owner nil)
-            (tset :repo nil))
-      _ {})))
-
 (fn hub.get-latest-commit-info [self {: owner : repo : ref}]
   (assert/type :string owner)
   (assert/type :string repo)
@@ -574,15 +563,11 @@ in which site, owner, and repo information are extracted."
                        (tset :time (os.time)))
                      (case (self:get-tarball-info {: owner : repo
                                                    :rev latest.rev})
-                       {: url : sha256}
-                       (let [latest (doto latest
-                                      (tset :time (os.time))
-                                      (tset :url url)
-                                      (tset :sha256 sha256))]
-                         (each [key expr
-                                (pairs (self:extra-fetcher {: owner : repo}))]
-                           (tset latest key (nix.prefetch expr)))
-                         latest)
+                       {: url : sha256} (doto current
+                                          (merge! latest)
+                                          (tset :time (os.time))
+                                          (tset :url url)
+                                          (tset :sha256 sha256))
                        _ current)))
         (_ msg) (log.error/nil msg)))))
 
@@ -738,6 +723,17 @@ in which site, owner, and repo information are extracted."
     _ (log.warn "something wrong with awesome-neovim stats!")))
 
 ;;; ==========================================================================
+;;; Update extra hashes such as cargoSha256 for Rust binary
+;;; ==========================================================================
+
+(fn update-extra-hashes! [plugins-info]
+  (each [_ plugin-info (ipairs plugins-info)]
+    (let [{: site : owner : repo} plugin-info]
+      (case (. hub.extra-fetchers (.. site :/ owner :/ repo))
+        fetchers (each [key expr (pairs fetchers)]
+                   (tset plugin-info key (nix.prefetch expr)))))))
+
+;;; ==========================================================================
 ;;; Main
 ;;; ==========================================================================
 
@@ -763,8 +759,8 @@ in which site, owner, and repo information are extracted."
                                            p.site)))]
     (set stats.time (os.time))
     (values (icollect [_ plugin-info (stablepairs awesome-neovim/plugins-info)]
-             (doto plugin-info
-               (merge! (case plugin-info.site
+              (doto plugin-info
+                (merge! (case plugin-info.site
                           :github.com
                           (github:get-all-info plugin-info)
                           :gitlab.com
@@ -784,7 +780,12 @@ in which site, owner, and repo information are extracted."
                               :nixpkgs nixpkgs/stats
                               :extra extra/stats})]
       (json.object->file stats (.. "data/stats/" name "/" stats.time ".json")))
-    (json.object->file/exit awesome-neovim/plugins-info plugins-info-path))
+    (case (json.object->file awesome-neovim/plugins-info plugins-info-path)
+      true (do
+             (update-extra-hashes! awesome-neovim/plugins-info)
+             (json.object->file/exit awesome-neovim/plugins-info
+                                     plugins-info-path))
+      (_ msg) (log.error/exit msg)))
 
   (catch _ (os.exit false)))
 
