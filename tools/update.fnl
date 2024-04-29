@@ -329,9 +329,8 @@ in which site, owner, and repo information are extracted."
     plugins-info (awesome-neovim.preprocess plugins-info)
     plugins-info (awesome-neovim.filter-plugins plugins-info)
     plugins-info
-    (let [(freqs total) (frequencies/total (icollect [_ p (pairs plugins-info)]
-                                             p.site))
-          stats (merge! freqs total)]
+    (let [stats (merge! (frequencies/total (icollect [_ p (pairs plugins-info)]
+                                             p.site)))]
       (set stats.time (os.time))
       (log "fetched Awesome Neovim plugins info: " (view stats))
       (values plugins-info stats))
@@ -392,9 +391,8 @@ in which site, owner, and repo information are extracted."
     vim-plugin-names (nixpkgs.parse-vim-plugin-names vim-plugin-names)
     plugins-info (nixpkgs.preprocess plugins-info)
     plugins-info
-    (let [(freqs total) (frequencies/total (icollect [_ p (pairs plugins-info)]
-                                             p.site))
-          stats (merge! freqs total)]
+    (let [stats (merge! (frequencies/total (icollect [_ p (pairs plugins-info)]
+                                             p.site)))]
       (set stats.time (os.time))
       (log "fetched Nixpkgs Vim plugins info: " (view stats))
       (values plugins-info stats))
@@ -753,9 +751,8 @@ in which site, owner, and repo information are extracted."
 
   (let [plugins-info (difference awesome-neovim-plugins-info
                                  nixpkgs-plugins-info)
-        (freqs total) (frequencies/total (icollect [_ p (pairs plugins-info)]
-                                           p.site))
-        stats (merge! freqs total)]
+        stats (merge! (frequencies/total (icollect [_ p (pairs plugins-info)]
+                                           p.site)))]
     (set stats.time (os.time))
     (values (icollect [_ plugin-info (stablepairs awesome-neovim-plugins-info)]
              (doto plugin-info
