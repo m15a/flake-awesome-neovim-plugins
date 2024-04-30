@@ -3,6 +3,6 @@
     "site": "github.com",
     "owner": "michaelb",
     "repo": "sniprun",
-    "cargoSha256": "{ sha256 }: let inherit (import <nixpkgs> {}) system; in (import ./.).packages.${system}.sniprun.rust.cargoDeps.overrideAttrs (_: { cargoSha256 = sha256; })"
+    "cargoSha256": "{ sha256 }: (import ./.).packages.x86_64-linux.sniprun.rust.cargoDeps.overrideAttrs (_: { cargoSha256 = sha256; })"
   }
 ]
