@@ -533,7 +533,7 @@ in which site, owner, and repo information are extracted."
     (log "update sha256 hash: " url)
     (case (nix.prefetch-url url)
       sha256 {: url : sha256}
-      (_ msg) (log.error/nil (.. "failed to get tarball hash: " msg)))))
+      (_ msg) (log.error/nil "failed to get tarball hash: " msg))))
 
 (fn hub.current-commit-info [self {: owner : repo}]
   (assert/type :string owner)
