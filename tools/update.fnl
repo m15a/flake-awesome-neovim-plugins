@@ -730,8 +730,11 @@ in which site, owner, and repo information are extracted."
   (each [_ plugin-info (ipairs plugins-info)]
     (let [{: site : owner : repo} plugin-info]
       (case (. hub.extra-fetchers (.. site :/ owner :/ repo))
-        fetchers (each [key expr (pairs fetchers)]
-                   (tset plugin-info key (nix.prefetch expr)))))))
+        fetchers
+        (each [key expr (pairs fetchers)]
+          (case (nix.prefetch expr)
+            hash (tset plugin-info key hash)
+            (_ msg) (log.error/nil "failed to get hash: " msg)))))))
 
 ;;; ==========================================================================
 ;;; Main
