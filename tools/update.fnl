@@ -735,7 +735,7 @@ in which site, owner, and repo information are extracted."
           (log "extra hash (" key "): " site "/" owner "/" repo)
           (case (nix.prefetch expr)
             hash (tset plugin-info key hash)
-            (_ msg) (log.error/exit msg)))))))
+            (_ msg) (log.error/nil msg)))))))
 
 ;;; ==========================================================================
 ;;; Main
