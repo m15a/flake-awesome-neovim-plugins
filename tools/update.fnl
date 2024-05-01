@@ -732,9 +732,10 @@ in which site, owner, and repo information are extracted."
       (case (. hub.extra-fetchers (.. site :/ owner :/ repo))
         fetchers
         (each [key expr (pairs fetchers)]
+          (log "extra hash for " site " repo: " owner "/" repo)
           (case (nix.prefetch expr)
             hash (tset plugin-info key hash)
-            (_ msg) (log.error/nil "failed to get hash: " msg)))))))
+            (_ msg) (log.error/nil msg)))))))
 
 ;;; ==========================================================================
 ;;; Main
