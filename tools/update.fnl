@@ -514,7 +514,7 @@ in which site, owner, and repo information are extracted."
   (assert/method self :repo-info-uri-path)
   (assert/method self :preprocess/repo-info)
   (with-cache (self:repo-info-cache-path owner repo)
-    (log "query " self.site " repo: " owner "/" repo)
+    (log "query repo: " self.site "/" owner "/" repo)
     (case (self:get (self.repo-info-uri-path owner repo))
       info (let [info (self.preprocess/repo-info info)]
              (when (not= owner info.owner)
@@ -553,7 +553,7 @@ in which site, owner, and repo information are extracted."
   (assert/method self :latest-commit-info-uri-path)
   (assert/method self :preprocess/latest-commit-info)
   (with-cache (self:latest-commit-info-cache-path owner repo ref)
-    (log "query " self.site " latest commit: " owner "/" repo
+    (log "query latest commit: " self.site "/" owner "/" repo
          (unpack (if ref ["/" ref] [])))
     (let [current (self:current-commit-info {: owner : repo})]
       (case (self:get (self.latest-commit-info-uri-path owner repo ref))
@@ -732,7 +732,7 @@ in which site, owner, and repo information are extracted."
       (case (. hub.extra-fetchers (.. site :/ owner :/ repo))
         fetchers
         (each [key expr (pairs fetchers)]
-          (log "extra hash for " site " repo: " owner "/" repo)
+          (log "extra hash (" key "): " site "/" owner "/" repo)
           (case (nix.prefetch expr)
             hash (tset plugin-info key hash)
             (_ msg) (log.error/nil msg)))))))
