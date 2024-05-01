@@ -413,7 +413,7 @@ in which site, owner, and repo information are extracted."
           (values nil "failed to run nix-prefetch-url")))))
 
 (fn nix.prefetch [expr]
-  (with-open [pipe (io.popen (.. "nix-prefetch '" expr "' 2>/dev/null"))]
+  (with-open [pipe (io.popen (.. "nix-prefetch '" expr "'"))]
     (let [out (pipe:read :*a)]
       (if (not= "" out)
           (pick-values 1 (out:gsub "\n+" ""))
@@ -735,7 +735,7 @@ in which site, owner, and repo information are extracted."
           (log "extra hash (" key "): " site "/" owner "/" repo)
           (case (nix.prefetch expr)
             hash (tset plugin-info key hash)
-            (_ msg) (log.error/nil msg)))))))
+            (_ msg) (log.error/exit msg)))))))
 
 ;;; ==========================================================================
 ;;; Main
