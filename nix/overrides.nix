@@ -24,7 +24,6 @@ let
       {
         # Build failed with `E154: Duplicate tag`
         apc-nvim = true;
-        panvimdoc = true;
         pckr-nvim = true;
         unruly-worker = true;
       };

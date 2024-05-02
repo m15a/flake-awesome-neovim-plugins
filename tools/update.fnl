@@ -322,7 +322,8 @@ in which site, owner, and repo information are extracted."
   (collect [id plugin-info (pairs plugins-info)]
     (let [{: repo} plugin-info]
       (when (and (not= :tree-sitter-just repo)
-                 (not= :cheovim repo))
+                 (not= :cheovim repo)
+                 (not= :panvimdoc repo))
         (values id plugin-info)))))
 
 (fn awesome-neovim.get-plugins-info []
