@@ -415,10 +415,10 @@
     "license": "GPL-3.0",
     "owner": "Civitasv",
     "repo": "cmake-tools.nvim",
-    "rev": "1efee7713b6ecd4ba814f7b36b0fe6f62379831d",
-    "sha256": "1bpfif3wnrbn0fy44srhrswfv8m56mbkvfhr9zaixjjgwssc3hal",
+    "rev": "015be0ebb0f16fec7ee58386992083ce33e7af82",
+    "sha256": "18fw16nyrxbfqnnn489nw1aadg6pmvzdxqjc5flmxyfyqihyp8xa",
     "site": "github.com",
-    "url": "https://github.com/Civitasv/cmake-tools.nvim/archive/1efee7713b6ecd4ba814f7b36b0fe6f62379831d.tar.gz"
+    "url": "https://github.com/Civitasv/cmake-tools.nvim/archive/015be0ebb0f16fec7ee58386992083ce33e7af82.tar.gz"
   },
   {
     "date": "2022-12-30",
@@ -887,6 +887,17 @@
     "sha256": "0gm0rasc4rbl9iq4xr7swssw2rihw5hws0cnlw4jh1w5mx5kbr6v",
     "site": "github.com",
     "url": "https://github.com/MarcHamamji/runner.nvim/archive/fb699ec0545ba3cd9ab5167fc3d07831a836574b.tar.gz"
+  },
+  {
+    "date": "2024-05-01",
+    "description": "Plugin to improve viewing Markdown files in Neovim",
+    "license": "MIT",
+    "owner": "MeanderingProgrammer",
+    "repo": "markdown.nvim",
+    "rev": "467c13523153f9b918c86037d0b5f2a37094cb88",
+    "sha256": "1nr9835r53g7g2ncfqdsx06mgf7amsfyqb3z5xvip84mzj0g5rwp",
+    "site": "github.com",
+    "url": "https://github.com/MeanderingProgrammer/markdown.nvim/archive/467c13523153f9b918c86037d0b5f2a37094cb88.tar.gz"
   },
   {
     "date": "2024-04-28",
@@ -2155,14 +2166,14 @@
   },
   {
     "date": "2024-01-10",
-    "description": "Bmessages.nvim better :messages using an auto-updating buffer.",
+    "description": "Bmessages.nvim better :messages window using an auto-updating buffer.",
     "license": "MIT",
     "owner": "ariel-frischer",
     "repo": "bmessages.nvim",
-    "rev": "13e7c9a34377ce799a6da46b5c172ed7ee36e5fd",
-    "sha256": "11cq24iijrdqpqqy5si1abdg38r2dfba3y2l5ln7pi9i5idkpv1k",
+    "rev": "cad159ee584932d1a631ca7c5a2e6e58d3e9981e",
+    "sha256": "0axjyai2xm5gqi8yl7nj89wjjjhi726lkfnik5iy7jxxbaf3yl1v",
     "site": "github.com",
-    "url": "https://github.com/ariel-frischer/bmessages.nvim/archive/13e7c9a34377ce799a6da46b5c172ed7ee36e5fd.tar.gz"
+    "url": "https://github.com/ariel-frischer/bmessages.nvim/archive/cad159ee584932d1a631ca7c5a2e6e58d3e9981e.tar.gz"
   },
   {
     "date": "2024-02-25",
@@ -2270,10 +2281,10 @@
     "license": "Apache-2.0",
     "owner": "b0o",
     "repo": "SchemaStore.nvim",
-    "rev": "3289a23407dbd7b78f49316f3227368ad63b71b6",
-    "sha256": "1iy2sfhj89g0l3mwcd2g96xy9k4dmkn3qhc7ggcdwhij5nh39n5l",
+    "rev": "6af7d312ad66a056666b1dac803517f051e66ffd",
+    "sha256": "0r1d3bxmizz1j0ax9js448xwgvxi7y35h0wfa090y414ll85csmv",
     "site": "github.com",
-    "url": "https://github.com/b0o/SchemaStore.nvim/archive/3289a23407dbd7b78f49316f3227368ad63b71b6.tar.gz"
+    "url": "https://github.com/b0o/SchemaStore.nvim/archive/6af7d312ad66a056666b1dac803517f051e66ffd.tar.gz"
   },
   {
     "date": "2024-04-12",
@@ -2380,10 +2391,10 @@
     "license": "GPL-3.0",
     "owner": "benlubas",
     "repo": "molten-nvim",
-    "rev": "2739a9d58c295b49086eac2f7489ab1b5ba1efd4",
-    "sha256": "0820rs37z6ibivgf4zmycnmh1rmrnynn9x07zp8dxhy4hqv73qia",
+    "rev": "df5ccef3b6fda3582f7746e45327ee031f668826",
+    "sha256": "1qmh8j4cdppy71k7sq4mdwrwjg2w85l7wwl0bv0phiqbzf3rahjp",
     "site": "github.com",
-    "url": "https://github.com/benlubas/molten-nvim/archive/2739a9d58c295b49086eac2f7489ab1b5ba1efd4.tar.gz"
+    "url": "https://github.com/benlubas/molten-nvim/archive/df5ccef3b6fda3582f7746e45327ee031f668826.tar.gz"
   },
   {
     "date": "2023-11-17",
@@ -3310,10 +3321,10 @@
     "license": "MIT",
     "owner": "echasnovski",
     "repo": "mini.nvim",
-    "rev": "5eb6ae150d472dd35d5ecfd933fbef2a187c71dc",
-    "sha256": "0ki8s71573r4zx76hf267wz22h9axvx1vh2xc3i6213s7glcwp0y",
+    "rev": "cc778db72f135fc17db0d6a3e527e61fb7bb38dc",
+    "sha256": "01d9wjyll9vb7hq04afm207j0bvqw5nmqa6ghspszk6y9l1cza2d",
     "site": "github.com",
-    "url": "https://github.com/echasnovski/mini.nvim/archive/5eb6ae150d472dd35d5ecfd933fbef2a187c71dc.tar.gz"
+    "url": "https://github.com/echasnovski/mini.nvim/archive/cc778db72f135fc17db0d6a3e527e61fb7bb38dc.tar.gz"
   },
   {
     "date": "2023-10-17",
@@ -4083,10 +4094,10 @@
     "license": "MIT",
     "owner": "hedyhli",
     "repo": "outline.nvim",
-    "rev": "bdfd2da90e9a7686d00e55afa9f772c4b6809413",
-    "sha256": "0w8wlvsn49sr8xn29c1szg75iicvp8v9fqkwwdzzjn8dzlgqax9d",
+    "rev": "dbd836893fb99cfc33119d7c4abbdb700210f54b",
+    "sha256": "0adz9farlj40h10gdjf10wfsarc28hdf5vbaqa2sskg22kng13kb",
     "site": "github.com",
-    "url": "https://github.com/hedyhli/outline.nvim/archive/bdfd2da90e9a7686d00e55afa9f772c4b6809413.tar.gz"
+    "url": "https://github.com/hedyhli/outline.nvim/archive/dbd836893fb99cfc33119d7c4abbdb700210f54b.tar.gz"
   },
   {
     "date": "2023-12-21",
@@ -4553,10 +4564,10 @@
     "license": "MIT",
     "owner": "jmbuhr",
     "repo": "otter.nvim",
-    "rev": "4e8fe12626b0451e60a2e4e89c1f1d28e7c85e1e",
-    "sha256": "11zz2aq5p08d1pg0y4l387148jdsffzjnab92yn920kps5gkwanv",
+    "rev": "f99c93c4516ef7fb5e6714dea7417793f946ab10",
+    "sha256": "11nnxy5jmzh6y4zs3ifp67aikl61k0i2q7vg08z0cnkv37b4qwbg",
     "site": "github.com",
-    "url": "https://github.com/jmbuhr/otter.nvim/archive/4e8fe12626b0451e60a2e4e89c1f1d28e7c85e1e.tar.gz"
+    "url": "https://github.com/jmbuhr/otter.nvim/archive/f99c93c4516ef7fb5e6714dea7417793f946ab10.tar.gz"
   },
   {
     "date": "2021-06-14",
@@ -5651,10 +5662,10 @@
     "license": "MIT",
     "owner": "mistricky",
     "repo": "codesnap.nvim",
-    "rev": "5c365e03286a9f8a00b7d06cd52c5f5afd203181",
-    "sha256": "0qkmxjhl5vp6cd3khdfrl559vm8q3fp0hqfr5a7db3bw23hprcch",
+    "rev": "00e2156364e97a5285bcea65536fd4a9a05839c8",
+    "sha256": "1nvbqyyb2c0226d516z3ps43kabkxjpzilx5s71v3gwdc45jgv83",
     "site": "github.com",
-    "url": "https://github.com/mistricky/codesnap.nvim/archive/5c365e03286a9f8a00b7d06cd52c5f5afd203181.tar.gz"
+    "url": "https://github.com/mistricky/codesnap.nvim/archive/00e2156364e97a5285bcea65536fd4a9a05839c8.tar.gz"
   },
   {
     "date": "2023-03-01",
@@ -6448,10 +6459,10 @@
     "license": "Apache-2.0",
     "owner": "nvim-treesitter",
     "repo": "nvim-treesitter",
-    "rev": "bbc67f736e22c37c23f2c11a05bfa23b715af30c",
-    "sha256": "1941k8qkklj14vhajg5rhgvrhlbhsvdjnrblhawdxc70mmmsnvkz",
+    "rev": "99d3e799b46f5c2a1fc0d7a42d7ab452de48c067",
+    "sha256": "11y7h9mzcy73xj2mxr9rl7zb827qys0dgdkpk0x20mxqag4mlfxv",
     "site": "github.com",
-    "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/bbc67f736e22c37c23f2c11a05bfa23b715af30c.tar.gz"
+    "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/99d3e799b46f5c2a1fc0d7a42d7ab452de48c067.tar.gz"
   },
   {
     "date": "2024-04-24",
@@ -6535,10 +6546,10 @@
     "license": "MIT",
     "owner": "nvimdev",
     "repo": "indentmini.nvim",
-    "rev": "ff7d4f45c98ff837a763bfd6ecd6487a767cc515",
-    "sha256": "17mzj3i6vkzwrbgri9rrip5sc2cnack6dq2acsma2rhlzla4nbb7",
+    "rev": "505d01e1d48a5db5d1b8de3fbaefa29b31f4681c",
+    "sha256": "07n3npl1w84x9s70jlxri8p6pljaif99ziqcsh0dfv31hlmdi475",
     "site": "github.com",
-    "url": "https://github.com/nvimdev/indentmini.nvim/archive/ff7d4f45c98ff837a763bfd6ecd6487a767cc515.tar.gz"
+    "url": "https://github.com/nvimdev/indentmini.nvim/archive/505d01e1d48a5db5d1b8de3fbaefa29b31f4681c.tar.gz"
   },
   {
     "date": "2024-04-27",
@@ -6858,10 +6869,10 @@
     "license": "BSD-3-Clause",
     "owner": "oxfist",
     "repo": "night-owl.nvim",
-    "rev": "9bdf79e43dc0fb2587b27fba63ad2e424866161c",
-    "sha256": "0w6n5xc3ifrg0zgy3r99d582a8ybqmk2zyjv59xfppsi665sp72h",
+    "rev": "42b85926978c8cba6ed4a57c84a530449e59904b",
+    "sha256": "07wwljmgxij9c6lcfhbm95vcj4ldyfa1bfl8nnk50ij138khfxq5",
     "site": "github.com",
-    "url": "https://github.com/oxfist/night-owl.nvim/archive/9bdf79e43dc0fb2587b27fba63ad2e424866161c.tar.gz"
+    "url": "https://github.com/oxfist/night-owl.nvim/archive/42b85926978c8cba6ed4a57c84a530449e59904b.tar.gz"
   },
   {
     "date": "2023-06-01",
@@ -7020,10 +7031,10 @@
     "license": "MIT",
     "owner": "polirritmico",
     "repo": "telescope-lazy-plugins.nvim",
-    "rev": "e9bafa30eacfd7162382542e195b21c716ecaf46",
-    "sha256": "1xjxjbz83lsddymnslajdla9gyqn12q8j1pkqwgxq086nq19y40d",
+    "rev": "509b943bbe04869a758640790c4c6767fc45b2b6",
+    "sha256": "02iwq4wq6lx3ilfzqimzy6vlbf2ziiyvrrznia8jgygb5kzynq42",
     "site": "github.com",
-    "url": "https://github.com/polirritmico/telescope-lazy-plugins.nvim/archive/e9bafa30eacfd7162382542e195b21c716ecaf46.tar.gz"
+    "url": "https://github.com/polirritmico/telescope-lazy-plugins.nvim/archive/509b943bbe04869a758640790c4c6767fc45b2b6.tar.gz"
   },
   {
     "date": "2024-04-20",
@@ -7053,10 +7064,10 @@
     "license": "MIT",
     "owner": "projekt0n",
     "repo": "github-nvim-theme",
-    "rev": "d92e1143e5aaa0d7df28a26dd8ee2102df2cadd8",
-    "sha256": "1pqbijz5hmv4sgqrjmy1bjm4sg33z2r4qinr32bkrxwm6v48j5kz",
+    "rev": "7b97aa55ef9dabce479f74f86b8c61c1464c9d2e",
+    "sha256": "0nrw7zg63cym67fyxsvdqgdzdp16a4qriihcgjd6zpd5pfsc5pwz",
     "site": "github.com",
-    "url": "https://github.com/projekt0n/github-nvim-theme/archive/d92e1143e5aaa0d7df28a26dd8ee2102df2cadd8.tar.gz"
+    "url": "https://github.com/projekt0n/github-nvim-theme/archive/7b97aa55ef9dabce479f74f86b8c61c1464c9d2e.tar.gz"
   },
   {
     "date": "2024-04-10",
@@ -7564,10 +7575,10 @@
     "description": "🚀 Activate is a plugin installation system for Neovim",
     "owner": "roobert",
     "repo": "activate.nvim",
-    "rev": "361dcf30f7a0563e1f92a2c1fce2b2946ca22f21",
-    "sha256": "113dkxnghg49niriy4j9s90s3swib9glnrrd245lgihaclifqb83",
+    "rev": "5fb93b2ed74ea1ab666fc444a31600d638df9cc9",
+    "sha256": "0aqyqir1w36mlp9c2p4m2jw92dkyihyc3150w6mw9y2smg93abba",
     "site": "github.com",
-    "url": "https://github.com/roobert/activate.nvim/archive/361dcf30f7a0563e1f92a2c1fce2b2946ca22f21.tar.gz"
+    "url": "https://github.com/roobert/activate.nvim/archive/5fb93b2ed74ea1ab666fc444a31600d638df9cc9.tar.gz"
   },
   {
     "date": "2023-01-08",
@@ -7886,10 +7897,10 @@
     "license": "Apache-2.0",
     "owner": "scalameta",
     "repo": "nvim-metals",
-    "rev": "72f47336a4515c75b123611ee1fa6070543a69bf",
-    "sha256": "1cbi1zqqq6d65jvagzxx1pija7pgc4llckyvl9fphqf72jwbwby7",
+    "rev": "c6268555d0b471262af78818f11a086ddf30688b",
+    "sha256": "0ihz6zafidqw9wplzapwknvccscwvz4ixk6gy7jd1n73g9a2wj3l",
     "site": "github.com",
-    "url": "https://github.com/scalameta/nvim-metals/archive/72f47336a4515c75b123611ee1fa6070543a69bf.tar.gz"
+    "url": "https://github.com/scalameta/nvim-metals/archive/c6268555d0b471262af78818f11a086ddf30688b.tar.gz"
   },
   {
     "date": "2024-04-28",
@@ -7897,10 +7908,10 @@
     "license": "MIT",
     "owner": "scottmckendry",
     "repo": "cyberdream.nvim",
-    "rev": "2d23fe29d75279137a3406c14e0098ed34897b69",
-    "sha256": "1zwa9r8dbs8kfvaw7j8wzqnzjqjz87arr63s434896la97khkz6p",
+    "rev": "a9eb003663010322b3acbf41740dd8024f24acb9",
+    "sha256": "17p0ax4qbafpx111mhai5c306xfyrhg004ygwybnxqphkg47vxcp",
     "site": "github.com",
-    "url": "https://github.com/scottmckendry/cyberdream.nvim/archive/2d23fe29d75279137a3406c14e0098ed34897b69.tar.gz"
+    "url": "https://github.com/scottmckendry/cyberdream.nvim/archive/a9eb003663010322b3acbf41740dd8024f24acb9.tar.gz"
   },
   {
     "date": "2022-05-11",
@@ -8105,10 +8116,10 @@
     "license": "MIT",
     "owner": "someone-stole-my-name",
     "repo": "yaml-companion.nvim",
-    "rev": "4de1e1546abc461f62dee02fcac6a02debd6eb9e",
-    "sha256": "0pig67nf1cs13ryacqgnc1rskfp4kkw2m25h1fc7jsfyxbnihgrx",
+    "rev": "d190d6c0852a1b3fd2798cf1529655f7f68655d3",
+    "sha256": "181ghinklqn8vswpim0g8j9y5y3lwn0vqcbfydhycz096ksx7nq1",
     "site": "github.com",
-    "url": "https://github.com/someone-stole-my-name/yaml-companion.nvim/archive/4de1e1546abc461f62dee02fcac6a02debd6eb9e.tar.gz"
+    "url": "https://github.com/someone-stole-my-name/yaml-companion.nvim/archive/d190d6c0852a1b3fd2798cf1529655f7f68655d3.tar.gz"
   },
   {
     "date": "2023-06-25",
@@ -8260,10 +8271,10 @@
     "license": "MIT",
     "owner": "stevearc",
     "repo": "oil.nvim",
-    "rev": "f3a31eba24587bc038592103d8f7e64648292115",
-    "sha256": "0gz6czki6r2zjf2f6swr8z5h3xhssmfajzf6zl0whzq6wp84q97i",
+    "rev": "bcfc0a2e01def5019aa14fac2fc6de20dedb6d3d",
+    "sha256": "0sg38xx1prmnvc827zx013m4inh407zhz5ad08wvlngjc2c2ixbs",
     "site": "github.com",
-    "url": "https://github.com/stevearc/oil.nvim/archive/f3a31eba24587bc038592103d8f7e64648292115.tar.gz"
+    "url": "https://github.com/stevearc/oil.nvim/archive/bcfc0a2e01def5019aa14fac2fc6de20dedb6d3d.tar.gz"
   },
   {
     "date": "2024-04-24",
@@ -8368,10 +8379,10 @@
     "license": "MIT",
     "owner": "tamago324",
     "repo": "nlsp-settings.nvim",
-    "rev": "2421dc3811af0c870ca93dcaf714943339e7ea88",
-    "sha256": "0yrlrjp15gi1z22x9hgy5xiisczq8lf3skbq3c8s595dbl2jfw4n",
+    "rev": "707b43110daf27c1aec8c16c2a92c2cb9a06f8df",
+    "sha256": "0k9in29m50kq5g9zr02l8glsyxrmz83sbhhh46531rmmlg33bvcy",
     "site": "github.com",
-    "url": "https://github.com/tamago324/nlsp-settings.nvim/archive/2421dc3811af0c870ca93dcaf714943339e7ea88.tar.gz"
+    "url": "https://github.com/tamago324/nlsp-settings.nvim/archive/707b43110daf27c1aec8c16c2a92c2cb9a06f8df.tar.gz"
   },
   {
     "date": "2024-03-08",
@@ -8666,6 +8677,17 @@
     "sha256": "117h3izz574h08i0y8gq7zzpm8xp5ax0qy0b0xz0c3si2ca1q2ad",
     "site": "github.com",
     "url": "https://github.com/tris203/hawtkeys.nvim/archive/aeba04a4ccded2aa8c8fb5d74a3bea05a8f89dab.tar.gz"
+  },
+  {
+    "date": "2024-05-01",
+    "description": "💭👀precognition.nvim - Precognition uses virtual text and gutter signs to show available motions.",
+    "license": "MIT",
+    "owner": "tris203",
+    "repo": "precognition.nvim",
+    "rev": "b7a2943d6e6990bb5187a7a2f1dfd7168c1fbc29",
+    "sha256": "1hd1w2smq7mxyn7ysafz9zg9nawp7pml2s2n2bkvhhz9pdnv73w8",
+    "site": "github.com",
+    "url": "https://github.com/tris203/precognition.nvim/archive/b7a2943d6e6990bb5187a7a2f1dfd7168c1fbc29.tar.gz"
   },
   {
     "date": "2023-12-30",
