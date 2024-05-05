@@ -1,4 +1,4 @@
-final: _:
+final: prev:
 
 with final;
 
@@ -49,8 +49,33 @@ rec {
 
     ci-update = mkShell {
       packages = [
-        nix
-        nix-prefetch
+        (prev.nix-prefetch.overrideAttrs (old: {
+          postPatch = ''
+            lib=$out/lib/${old.pname}
+            substituteInPlace src/main.sh \
+              --subst-var-by lib $lib \
+              --subst-var-by version $version
+            substituteInPlace src/tests.sh \
+              --subst-var-by bin $out/bin
+          '';
+          nativeBuildInputs = [ makeWrapper ];
+          buildPhase = "";
+          installPhase = ''
+            install -Dm555 -t $lib src/*.sh
+            install -Dm444 -t $lib lib/*
+            makeWrapper $lib/main.sh $out/bin/${old.pname} \
+              --prefix PATH : ${
+                lib.makeBinPath [
+                  coreutils
+                  gawk
+                  git
+                  gnugrep
+                  gnused
+                  jq.bin
+                ]
+              }
+          '';
+        }))
         jq.bin
         (luajit.withPackages (
           ps: with ps; [
