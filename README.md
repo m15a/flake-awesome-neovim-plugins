@@ -21,7 +21,7 @@ it as a [Nix flake] provides all Neovim plugins in the Awesome Neovim
 collection.
 
 [Awesome Neovim]: https://github.com/rockerBOO/awesome-neovim
-[Nix flake]: https://nixos.wiki/wiki/Flakes
+[Nix flake]: https://wiki.nixos.org/wiki/Flakes
 
 Packages are automatically updated once every day using GitHub Actions.
 This is done by parsing the `README.md` and collecting all plugins
