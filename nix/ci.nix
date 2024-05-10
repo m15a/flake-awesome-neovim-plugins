@@ -50,6 +50,13 @@ rec {
     ci-update = mkShell {
       packages = [
         (prev.nix-prefetch.overrideAttrs (old: {
+          patches = old.patches ++ [
+            (final.fetchpatch {
+              name = "msteen-nix-prefetch-pull-34.patch";
+              url = "https://github.com/msteen/nix-prefetch/pull/34/commits/c5744efd558ba1dd3db7c2bc2152511556d4454a.patch";
+              hash = "sha256-4mpMmF5jb5R2qmTjtw3mXnIYMkPmPQAtWSzGgSH+5R0=";
+            })
+          ];
           postPatch = ''
             lib=$out/lib/${old.pname}
             substituteInPlace src/main.sh \
