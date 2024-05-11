@@ -129,6 +129,7 @@ let
       {
         flutter-tools-nvim = true;
         fzf-lsp-nvim = true;
+        kiwi-nvim = true;
         luau-lsp-nvim = true;
         octo-nvim = true;
         telescope-nvim = true;
