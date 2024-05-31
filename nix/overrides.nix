@@ -25,7 +25,7 @@ let
         # Build failed with `E154: Duplicate tag`
         apc-nvim = true;
         pckr-nvim = true;
-        unruly-worker = true;
+        unruly-worker-nvim = true;
       };
 
   # Add homepage if missing or incorrect.
