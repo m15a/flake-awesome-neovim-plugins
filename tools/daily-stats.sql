@@ -11,7 +11,7 @@ CREATE OR REPLACE MACRO unpivot_stats(src_name, src_path) AS TABLE
 UNPIVOT (SELECT src_name AS repository
               , make_timestamp(time * 1e6 :: BIGINT) AS datetime
               , * EXCLUDE time
-           FROM read_json_auto(src_path))
+           FROM read_json_auto(src_path, union_by_name = true))
      ON COLUMNS(* EXCLUDE (repository, datetime))
    INTO NAME site VALUE plugins;
 
