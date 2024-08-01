@@ -65,7 +65,6 @@ let
           nvim-startup-lua = mit;
           auto-format-nvim = mit;
           nedia-auto-save-nvim = mit;
-          licenses-nvim = mit;
           lsp-lines-nvim = isc;
           distinct-nvim = mit;
           halfspace-nvim = mit;
