@@ -83,7 +83,6 @@ let
           nvim-base16-lua = mit;
           arrow-nvim = gpl3Plus;
           telescope-alternate-nvim = gpl3Plus;
-          mind-nvim = bsd3;
           quarto-nvim = gpl2Plus;
           bamboo-nvim = mit;
           pounce-nvim = asl20;
