@@ -686,6 +686,10 @@ in which site, owner, and repo information are extracted."
                   (let [{: site : owner : repo} plugin
                         known (. *plugins*.data (.. site "/" owner "/" repo))]
                     (doto known
+                      ;; Could be removed in the latest data.
+                      (tset :description nil)
+                      (tset :homepage nil)
+                      (tset :license nil)
                       (merge! plugin
                               (case plugin.site
                                 :github.com (github:plugin plugin)
