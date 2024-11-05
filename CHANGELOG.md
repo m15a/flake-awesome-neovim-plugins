@@ -22,6 +22,7 @@ See [FlakeHub document][3] for more details.
 
 ### Fixed
 
+- `date` field not changed when updating plugin [#135]
 - Attribute names of plugins having the same repository name [#110]:
   For example, `a/some.nvim` and `b/some.nvim` get attribute
   names `a-some-nvim` and `b-some-nvim`, respectively. Note that if a
@@ -37,6 +38,7 @@ See [FlakeHub document][3] for more details.
 [#114]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/114
 [#115]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/115
 [#127]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/127
+[#135]: https://github.com/m15a/flake-awesome-neovim-plugins/pull/135
 
 ## [0.1.0] - 2024-04-10
 

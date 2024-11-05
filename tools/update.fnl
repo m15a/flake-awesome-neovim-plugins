@@ -357,8 +357,8 @@
   (assert/type :string owner)
   (assert/type :string repo)
   (let [key (.. self.site :/ owner :/ repo)
-        {: timestamp : date : rev : url : sha256} (. self.plugins key)]
-    {: timestamp : date : rev : url : sha256}))
+        {: date : rev : url : sha256} (. self.plugins key)]
+    {: date : rev : url : sha256}))
 
 (fn hub.latest-commit [self {: owner : repo : ref}]
   (assert/type :string owner)
@@ -392,7 +392,9 @@
              (tset :default_branch nil)
              (tset :time nil)
              (tset :timestamp nil)
-             (tset :date (or latest.date (timestamp->date latest.timestamp))))
+             (tset :date (if latest.timestamp
+                             (timestamp->date latest.timestamp)
+                             latest.date)))
     (catch _ nil)))
 
 
