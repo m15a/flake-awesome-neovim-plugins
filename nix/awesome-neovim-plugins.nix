@@ -59,7 +59,7 @@ let
     };
 
   pluginsInfo = lib.strings.fromJSON (
-    lib.readFile ../data/plugins-info/awesome-neovim.json
+    lib.readFile ../data/plugins/awesome-neovim.json
   );
 
   origin = builtins.listToAttrs (
