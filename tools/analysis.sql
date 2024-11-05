@@ -1,5 +1,5 @@
 -- Run `duckdb -init tools/analysls.sql` and then you can analyze
--- `data/plugins-info/awesome-neovim.json`.
+-- `data/plugins/awesome-neovim.json`.
 
 DROP TABLE IF EXISTS plugins;
 CREATE TABLE plugins AS
@@ -13,7 +13,7 @@ SELECT site
      , date
      , rev
      , sha256
-  FROM read_json( 'data/plugins-info/awesome-neovim.json'
+  FROM read_json( 'data/plugins/awesome-neovim.json'
                 , columns = { site: 'VARCHAR'
                             , owner: 'VARCHAR'
                             , repo: 'VARCHAR'

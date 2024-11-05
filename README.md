@@ -102,7 +102,7 @@ A part of [`./nix/overrides.nix`](nix/overrides.nix) is modification
 from the original Nixpkgs' code, which is licensed under the MIT license.
 See the license terms in comments in the file.
 
-[`./data/plugins-info/awesome-neovim.json`](data/plugins-info/awesome-neovim.json)
+[`./data/plugins/awesome-neovim.json`](data/plugins/awesome-neovim.json)
 is collected from various code hosting services by using their API.
 Each part of the data has respective copyright and permission to use.
 For more information about the permissible data use and content rights,
