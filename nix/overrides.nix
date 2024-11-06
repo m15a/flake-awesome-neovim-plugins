@@ -312,7 +312,7 @@ let
         rust = rustPlatform.buildRustPackage {
           pname = "sniprun-rust";
           inherit (old) version src;
-          inherit (old.passthru.rust) cargoSha256;
+          inherit (old.passthru.rust) cargoHash;
           buildInputs = lib.optionals stdenv.isDarwin [
             darwin.apple_sdk.frameworks.Security
           ];
