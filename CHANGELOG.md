@@ -22,6 +22,7 @@ See [FlakeHub document][3] for more details.
 
 ### Fixed
 
+- sniprun: Use `cargoHash` instead of deprecated `cargoSha256` [#136]
 - `date` field not changed when updating plugin [#135]
 - Attribute names of plugins having the same repository name [#110]:
   For example, `a/some.nvim` and `b/some.nvim` get attribute
@@ -39,6 +40,7 @@ See [FlakeHub document][3] for more details.
 [#115]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/115
 [#127]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/127
 [#135]: https://github.com/m15a/flake-awesome-neovim-plugins/pull/135
+[#136]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/136
 
 ## [0.1.0] - 2024-04-10
 
