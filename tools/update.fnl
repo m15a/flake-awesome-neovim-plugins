@@ -157,7 +157,7 @@
              (fn mt.error/nil [s ...] (s:error ...) nil)
              (fn mt.error/exit [s ...] (s:error ...) (os.exit false))
              (let [level (case (os.getenv :LOG_LEVEL)
-                           (where n (= :number (type n))) n
+                           (where n (not= nil (tonumber n))) (tonumber n)
                            (where s (= :string (type s)))
                            (if (s:match "^[Dd][Ee][Bb][Uu][Gg]$") 0
                                (s:match "^[Ii][Nn][Ff][Oo]$") 1
