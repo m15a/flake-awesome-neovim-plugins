@@ -102,6 +102,10 @@
      (assert/type ,type? ,x)))
 
 
+(fn clone [tbl]
+  (collect [k v (pairs tbl)]
+    (values k v)))
+
 (fn merge! [tbl* & tbls]
   (each [_ tbl (ipairs tbls)]
     (each [k v (pairs tbl)]
@@ -386,16 +390,21 @@
         (_ msg) (log:error/nil msg)))))
 
 (fn hub.plugin [self {: owner : repo : ref}]
-  (case-try (self:repo {: owner : repo})
-    repo_ (self:latest-commit {: owner : repo :ref (or ref repo_.default_branch)})
-    latest (doto (merge! repo_ latest)
-             (tset :default_branch nil)
-             (tset :time nil)
-             (tset :timestamp nil)
-             (tset :date (if latest.timestamp
-                             (timestamp->date latest.timestamp)
-                             latest.date)))
-    (catch _ nil)))
+  (let [known (doto (clone (. self.plugins (.. self.site "/" owner "/" repo)))
+                ;; Could be removed in the latest data.
+                (tset :description nil)
+                (tset :homepage nil)
+                (tset :license nil))]
+    (case-try (self:repo {: owner : repo})
+      repo_ (self:latest-commit {: owner : repo :ref (or ref repo_.default_branch)})
+      latest (doto (merge! known repo_ latest)
+               (tset :default_branch nil)
+               (tset :time nil)
+               (tset :timestamp nil)
+               (tset :date (if latest.timestamp
+                               (timestamp->date latest.timestamp)
+                               latest.date)))
+      (catch _ nil))))
 
 
 (local github (let [self {:site :github.com
@@ -683,20 +692,12 @@ in which site, owner, and repo information are extracted."
         ;; Irrelevant but I'm curious about the statistics.
         (attach-stats (difference awesome-neovim/plugins nixpkgs/plugins))
         plugins (icollect [_ plugin (stablepairs awesome-neovim/plugins)]
-                  (let [{: site : owner : repo} plugin
-                        known (. *plugins*.data (.. site "/" owner "/" repo))]
-                    (doto known
-                      ;; Could be removed in the latest data.
-                      (tset :description nil)
-                      (tset :homepage nil)
-                      (tset :license nil)
-                      (merge! plugin
-                              (case plugin.site
-                                :github.com (github:plugin plugin)
-                                :gitlab.com (gitlab:plugin plugin)
-                                (where (or :sr.ht :git.sr.ht)) (sourcehut:plugin plugin)
-                                :codeberg.org (codeberg:plugin plugin)
-                                _ {})))))]
+                  (case plugin.site
+                    :github.com (github:plugin plugin)
+                    :gitlab.com (gitlab:plugin plugin)
+                    (where (or :sr.ht :git.sr.ht)) (sourcehut:plugin plugin)
+                    :codeberg.org (codeberg:plugin plugin)
+                    _ {}))]
     (values plugins stats))
   (awesome-neovim/plugins extra/stats)
   (do
