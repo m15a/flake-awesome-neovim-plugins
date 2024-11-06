@@ -304,7 +304,8 @@
   (error "Override hub.preprocess/repo!"))
 
 (fn hub.validate/repo [repo]
-  (unless (and (= :string (type repo.owner))
+  (unless (and (= :string (type repo.site))
+               (= :string (type repo.owner))
                (= :string (type repo.repo))
                (or (= repo.description nil)
                    (= :string (type repo.description)))
@@ -333,7 +334,8 @@
                :expire (* 8 60 60)}
     (log:debug "Cache " self.site " repo: " owner "/" repo)
     (case (self:query (self.repo-query owner repo))
-      data (let [repo_ (self.preprocess/repo data)]
+      data (let [repo_ (doto (self.preprocess/repo data)
+                         (tset :site self.site))]
              (self.validate/repo repo_)
              (when (not= owner repo_.owner)
                (log:warn "Owner changed: "
