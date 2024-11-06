@@ -33,16 +33,16 @@
 ;;;; ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 ;;;; POSSIBILITY OF SUCH DAMAGE.
 
-;;;; # A monolithic script to update repository information.
+;;;; # A script to update Awesome Neovim plugins.
 ;;;;
 ;;;; ## Description
 ;;;;
-;;;; Using REST API, it queries to code hosting services such as GitHub,
-;;;; and gets information of repositories and their latest commits.
-;;;; The results are processed out into `data/plugins/*.json`.
-;;;; For convenience in development, if command line option `--use-cache`
-;;;; is found, fetched data are stored in `data/cache/`. Caches have
-;;;; their life time 23 hours.
+;;;; This script updates `data/plugins/awesome-neovim.json`.
+;;;; It scrapes Awesome Neovim <https://github.com/rockerBOO/awesome-neovim/>
+;;;; and collects Neovim plugins registered therein. After that, using
+;;;; REST APIs of code hosting services, it queries meta data and the
+;;;; latest commits of the Awesome Neovim plugins. The collected data
+;;;; are processed out into `data/plugins/awesome-neovim.json`.
 ;;;;
 ;;;; ## Requirements
 ;;;;
@@ -50,7 +50,7 @@
 ;;;; - Lua libraries:
 ;;;;    - http 0.3: <https://github.com/daurnimator/lua-http>
 ;;;;    - cjson 2.1.0: <https://github.com/mpx/lua-cjson>
-;;;; - Fennel 1.4+ (not sure but it works at least for 1.4.0)
+;;;; - Fennel 1.5+
 ;;;;
 ;;;; It also depends on the following external programs.
 ;;;;
@@ -60,21 +60,21 @@
 ;;;;
 ;;;; ## Accessing code hosting services
 ;;;;
-;;;; This script currently supports:
+;;;; It supports:
 ;;;;
 ;;;; - GitHub
 ;;;; - GitLab
-;;;; - sourcehut
+;;;; - SourceHut
 ;;;; - Codeberg
 ;;;;
 ;;;; For using REST API, GitHub personal access token (PAT) is mandatory,
 ;;;; since without the token its rate limit is only 60/hour.
-;;;; For sourcehut, a PAT is also required. You can generate it by
-;;;; creating your new account on sourcehut for free. The other services
-;;;; actually do not require PAT, as the number of GitLab/Codeberg repositories
-;;;; is only a few.
+;;;; For SourceHut, a PAT is also required. You can generate it by
+;;;; creating your new account on SourceHut for free. The other services
+;;;; actually do not require PAT, as the number of GitLab/Codeberg
+;;;; repositories is sufficiently small.
 ;;;;
-;;;; You should set PATs via the following environment variables:
+;;;; You should set PATs via the environment variables:
 ;;;;
 ;;;; - `GITHUB_TOKEN`
 ;;;; - `GITLAB_TOKEN`
