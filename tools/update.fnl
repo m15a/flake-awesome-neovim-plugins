@@ -348,12 +348,10 @@
              (self.validate/repo repo_)
              (unless (ignore-case-string= owner repo_.owner)
                (log:warn "Owner changed: "
-                         self.site "/{" owner " -> " repo_.owner "}/" repo)
-               (set repo_.owner owner))
+                         self.site "/{" owner " -> " repo_.owner "}/" repo))
              (unless (ignore-case-string= repo repo_.repo)
                (log:warn "Repo changed: "
-                         self.site "/" owner "/{" repo " -> " repo_.repo "}")
-               (set repo_.repo repo))
+                         self.site "/" owner "/{" repo " -> " repo_.repo "}"))
              (doto repo_
                (tset :time (os.time))))
       (_ msg) (log:error/nil msg))))

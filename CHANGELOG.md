@@ -13,6 +13,12 @@ See [FlakeHub document][3] for more details.
 
 ## [Unreleased]
 
+### Changed
+
+- If owner/repo names manifested in Awesome Neovim README (A) are
+  different from those in their repositories (B), previously A was used.
+  Now B takes precedence.
+
 ## [0.2.0] - 2024-11-07
 
 ### Added
