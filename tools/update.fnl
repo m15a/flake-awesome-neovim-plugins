@@ -131,6 +131,15 @@
                       (+ n f))})))
 
 
+(fn ignore-case-string= [s1 s2 ...]
+  (assert/type :string s1)
+  (assert/type :string s2)
+  (and (= (s1:upper) (s2:upper))
+       (case [...]
+         [s3 & ss] (ignore-case-string= s2 s3 (unpack ss))
+         _ true)))
+
+
 (fn file->string [path]
   (case (io.open path)
     file (with-open [file file] (file:read :*a))
@@ -337,11 +346,11 @@
       data (let [repo_ (doto (self.preprocess/repo data)
                          (tset :site self.site))]
              (self.validate/repo repo_)
-             (when (not= owner repo_.owner)
+             (unless (ignore-case-string= owner repo_.owner)
                (log:warn "Owner changed: "
                          self.site "/{" owner " -> " repo_.owner "}/" repo)
                (set repo_.owner owner))
-             (when (not= repo repo_.repo)
+             (unless (ignore-case-string= repo repo_.repo)
                (log:warn "Repo changed: "
                          self.site "/" owner "/{" repo " -> " repo_.repo "}")
                (set repo_.repo repo))
