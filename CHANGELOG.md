@@ -13,6 +13,8 @@ See [FlakeHub document][3] for more details.
 
 ## [Unreleased]
 
+## [0.2.0] - 2024-11-07
+
 ### Added
 
 - nvim-treesitter: Support for passthru attributes `withPlugins`,
@@ -60,7 +62,8 @@ See [FlakeHub document][3] for more details.
 [Codeberg]: https://codeberg.org/
 [sourcehut]: https://sr.ht/
 
-[Unreleased]: https://github.com/m15a/flake-awesome-neovim-plugins/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/m15a/flake-awesome-neovim-plugins/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/m15a/flake-awesome-neovim-plugins/releases/tag/v0.2.0
 [0.1.0]: https://github.com/m15a/flake-awesome-neovim-plugins/releases/tag/v0.1.0
 
 <!-- vim:set tw=72 spell nowrap: -->

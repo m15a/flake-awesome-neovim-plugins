@@ -16,4 +16,5 @@ jobs:
         with:
           name: "m15a/flake-awesome-neovim-plugins"
           rolling: true
+          rolling-minor: 2
           visibility: "public"
