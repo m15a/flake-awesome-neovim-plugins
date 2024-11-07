@@ -63,7 +63,7 @@ See [FlakeHub document][3] for more details.
 [sourcehut]: https://sr.ht/
 
 [Unreleased]: https://github.com/m15a/flake-awesome-neovim-plugins/compare/v0.2.0...HEAD
-[0.2.0]: https://github.com/m15a/flake-awesome-neovim-plugins/releases/tag/v0.2.0
+[0.2.0]: https://github.com/m15a/flake-awesome-neovim-plugins/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/m15a/flake-awesome-neovim-plugins/releases/tag/v0.1.0
 
 <!-- vim:set tw=72 spell nowrap: -->
