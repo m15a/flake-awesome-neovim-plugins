@@ -4,26 +4,31 @@ let
   inherit (prev) lib;
   utils = prev.callPackage ./utils.nix { };
 
-  builder =
-    pluginInfo:
+  hasUniqueRepo = utils.hasUniqueRepoIn plugins;
+
+  pnameOf =
+    plugin:
     let
-      inherit (pluginInfo)
-        date
+      owner = utils.removeSourceHutOwnerTilde plugin.owner;
+      inherit (plugin) repo;
+    in
+    utils.toAttrName (
+      if hasUniqueRepo plugin && utils.hasMeaningfulRepo plugin then
         repo
+      else
+        "${owner}-${repo}"
+    );
+
+  builder =
+    plugin:
+    let
+      inherit (plugin)
+        date
         rev
         sha256
         url
         ;
-
-      owner = utils.fixSourceHutOwner pluginInfo.owner;
-
-      isGoodRepoName =
-        repo:
-        utils.isUniqueRepoNameIn pluginsInfo repo && utils.isMeaningfulRepoName repo;
-
-      pname = utils.repoNameToPluginName (
-        if isGoodRepoName repo then repo else "${owner}-${repo}"
-      );
+      pname = pnameOf plugin;
     in
     {
       name = pname;
@@ -31,39 +36,39 @@ let
         inherit pname;
         version = "${date}-${lib.strings.substring 0 7 rev}";
         src = final.fetchurl { inherit url sha256; };
-        passthru = lib.optionalAttrs (pluginInfo ? "cargoHash") {
+        passthru = lib.optionalAttrs (plugin ? "cargoHash") {
           rust = {
-            inherit (pluginInfo) cargoHash;
+            inherit (plugin) cargoHash;
           };
         };
         meta =
-          lib.optionalAttrs (pluginInfo ? "description") {
-            inherit (pluginInfo) description;
+          lib.optionalAttrs (plugin ? "description") {
+            inherit (plugin) description;
           }
-          // lib.optionalAttrs (pluginInfo ? "homepage") {
-            inherit (pluginInfo) homepage;
+          // lib.optionalAttrs (plugin ? "homepage") {
+            inherit (plugin) homepage;
           }
-          // lib.optionalAttrs (pluginInfo ? "license") {
+          // lib.optionalAttrs (plugin ? "license") {
             license =
               # trace: warning: getLicenseFromSpdxId: No license matches
               # the given SPDX ID: AGPL-3.0
               #
               # NOTE: cannot determine which is correct:
               #
-              # if pluginInfo.license == "AGPL-3.0" then
+              # if plugin.license == "AGPL-3.0" then
               #   lib.licenses.agpl3Only? or agpl3Plus?
               # else
-              lib.getLicenseFromSpdxId pluginInfo.license;
+              lib.getLicenseFromSpdxId plugin.license;
           };
       };
     };
 
-  pluginsInfo = lib.strings.fromJSON (
+  plugins = lib.strings.fromJSON (
     lib.readFile ../data/plugins/awesome-neovim.json
   );
 
   origin = builtins.listToAttrs (
-    map builder (lib.filter utils.isValidPluginInfo pluginsInfo)
+    map builder (lib.filter utils.isValidPlugin plugins)
   );
 in
 {

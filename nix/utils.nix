@@ -1,7 +1,8 @@
 { lib }:
 
 rec {
-  repoNameToPluginName =
+  # Translate string, assuming plugin repo name, to Nix attr name.
+  toAttrName =
     lib.strings.replaceStrings
       [
         "_"
@@ -12,46 +13,55 @@ rec {
         "-"
       ];
 
-  fixSourceHutOwner =
+  # Remove sourcehut owner name's prefix `~` if any.
+  removeSourceHutOwnerTilde =
     owner:
     if builtins.match "^~.+" owner != null then
       lib.strings.substring 1 (-1) owner
     else
       owner;
 
-  showPluginInfo =
-    pluginInfo:
-    let
-      contents = lib.attrsets.mapAttrsToList (k: v: "${k}: ${toString v}") pluginInfo;
-    in
-    "{" + lib.concatStringsSep ", " contents + "}";
+  # Show any Nix value as JSON-like string.
+  show =
+    x:
+    if builtins.typeOf x == "set" then
+      let
+        contents = lib.attrsets.mapAttrsToList (k: v: "${k}: ${show v}") x;
+      in
+      "{ " + lib.concatStringsSep ", " contents + " }"
+    else
+      toString x;
 
-  isValidPluginInfo =
-    pluginInfo:
+  # Check if the given attrset has mandatory plugin attrs.
+  isValidPlugin =
+    plugin:
     if
-      pluginInfo ? "date"
-      && pluginInfo ? "owner"
-      && pluginInfo ? "repo"
-      && pluginInfo ? "rev"
-      && pluginInfo ? "sha256"
-      && pluginInfo ? "url"
+      plugin ? "date"
+      && plugin ? "owner"
+      && plugin ? "repo"
+      && plugin ? "rev"
+      && plugin ? "sha256"
+      && plugin ? "url"
     then
       true
     else
-      let
-        msg = "invalid plugin info: " + showPluginInfo pluginInfo;
-      in
-      lib.warn msg false;
+      lib.warn ("Invalid plugin: " + show plugin) false;
 
+  # If pname has prefix `telescope-`, it should be a telescope extension.
   looksLikeTelescopeExtension =
-    pluginName:
-    pluginName != "telescope-nvim"
-    && builtins.match "(^|.+-)telescope-.+" pluginName != null;
+    pname:
+    pname != "telescope-nvim" && builtins.match "(^|.+-)telescope-.+" pname != null;
 
-  isUniqueRepoNameIn =
-    pluginsInfo: repo:
-    lib.lists.length (lib.filter (p: p.repo == repo) pluginsInfo) < 2;
+  # Some plugins of different owners have an identical repo name.
+  hasUniqueRepoIn =
+    plugins: plugin:
+    let
+      n = lib.lists.length (lib.filter (p: p.repo == plugin.repo) plugins);
+    in
+    if n == 0 then throw "unseen plugin" else n == 1;
 
-  isMeaningfulRepoName =
-    repo: repo != "vim" && repo != "nvim" && repo != "neovim";
+  # Some plugins need their owner name to make meaningful pname;
+  # e.g., catppuccin/nvim.
+  hasMeaningfulRepo =
+    plugin: with plugin; repo != "vim" && repo != "nvim" && repo != "neovim";
 }
