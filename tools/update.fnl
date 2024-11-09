@@ -165,7 +165,7 @@
              (fn mt.error [s ...] (when (<= s.level 3) (s "[ERROR] " ...)))
              (fn mt.error/nil [s ...] (s:error ...) nil)
              (fn mt.error/exit [s ...] (s:error ...) (os.exit false))
-             (let [level (case (os.getenv :LOG_LEVEL)
+             (let [level (case (os.getenv "LOG_LEVEL")
                            (where n (not= nil (tonumber n))) (tonumber n)
                            (where s (= :string (type s)))
                            (if (s:match "^[Dd][Ee][Bb][Uu][Gg]$") 0
@@ -238,14 +238,14 @@
 
 (fn nix.prefetch-url [url]
   (with-open [pipe (io.popen (.. "nix-prefetch-url " url " 2>/dev/null"))]
-    (let [out (pipe:read :*a)]
+    (let [out (pipe:read "*a")]
       (if (not= "" out)
           (pick-values 1 (out:gsub "\n+" ""))
           (values nil "Failed to run nix-prefetch-url")))))
 
 (fn nix.prefetch [expr]
   (with-open [pipe (io.popen (.. "nix-prefetch '" expr "'"))]
-    (let [out (pipe:read :*a)]
+    (let [out (pipe:read "*a")]
       (if (not= "" out)
           (pick-values 1 (out:gsub "\n+" ""))
           (values nil "Failed to run nix-prefetch")))))
@@ -417,7 +417,7 @@
       (catch _ nil))))
 
 
-(local github (let [self {:site :github.com
+(local github (let [self {:site "github.com"
                           :token_ {:env "GITHUB_TOKEN"}
                           :uri-base "api.github.com/"}]
                 (setmetatable self {:__index hub})))
@@ -444,7 +444,7 @@
   {:rev sha :timestamp commit.committer.date})
 
 
-(local gitlab (let [self {:site :gitlab.com
+(local gitlab (let [self {:site "gitlab.com"
                           :token_ {:env "GITLAB_TOKEN"}
                           :uri-base "gitlab.com/api/v4/"}]
                 (setmetatable self {:__index hub})))
@@ -470,7 +470,7 @@
   {:rev commit.id :timestamp commit.committed_date})
 
 
-(local sourcehut (let [self {:site :git.sr.ht
+(local sourcehut (let [self {:site "git.sr.ht"
                              :token_ {:env "SOURCEHUT_TOKEN"}
                              :uri-base "git.sr.ht/api/"}]
                    (setmetatable self {:__index hub})))
@@ -495,7 +495,7 @@
     {:rev commit.id :timestamp commit.timestamp}))
 
 
-(local codeberg (let [self {:site :codeberg.org
+(local codeberg (let [self {:site "codeberg.org"
                             :token_ {:env "CODEBERG_TOKEN"}
                             :uri-base "codeberg.org/api/v1/"}]
                   (setmetatable self {:__index hub})))
@@ -572,14 +572,14 @@ in which site, owner, and repo information are extracted."
 - Authors may enlist their homepage instead of repository URL."
   (collect [_ plugin (ipairs plugins)]
     (let [{: site : owner : repo}
-          (if (= :sr.ht plugin.site)
+          (if (= "sr.ht" plugin.site)
               (doto plugin
-                (tset :site :git.sr.ht))
-              (= :cj.rs plugin.site)
+                (tset :site "git.sr.ht"))
+              (= "cj.rs" plugin.site)
               (doto plugin
-                (tset :site :github.com)
-                (tset :owner :cljoly)
-                (tset :repo :telescope-repo.nvim))
+                (tset :site "github.com")
+                (tset :owner "cljoly")
+                (tset :repo "telescope-repo.nvim"))
               plugin)]
       (values (.. site "/" owner "/" repo) ; drop duplicates
               {: site : owner : repo}))))
@@ -588,9 +588,9 @@ in which site, owner, and repo information are extracted."
   "Some repos are actually not Neovim plugins."
   (collect [id plugin (pairs plugins)]
     (let [{: repo} plugin]
-      (when (and (not= :tree-sitter-just repo)
-                 (not= :cheovim repo)
-                 (not= :panvimdoc repo))
+      (when (and (not= "tree-sitter-just" repo)
+                 (not= "cheovim" repo)
+                 (not= "panvimdoc" repo))
         (values id plugin)))))
 
 (fn awesome-neovim.get-plugins []
@@ -703,10 +703,10 @@ in which site, owner, and repo information are extracted."
         (attach-stats (difference awesome-neovim/plugins nixpkgs/plugins))
         plugins (icollect [_ plugin (stablepairs awesome-neovim/plugins)]
                   (case plugin.site
-                    :github.com (github:plugin plugin)
-                    :gitlab.com (gitlab:plugin plugin)
-                    (where (or :sr.ht :git.sr.ht)) (sourcehut:plugin plugin)
-                    :codeberg.org (codeberg:plugin plugin)
+                    "github.com" (github:plugin plugin)
+                    "gitlab.com" (gitlab:plugin plugin)
+                    (where (or "sr.ht" "git.sr.ht")) (sourcehut:plugin plugin)
+                    "codeberg.org" (codeberg:plugin plugin)
                     _ {}))]
     (values plugins stats))
   (awesome-neovim/plugins extra/stats)
