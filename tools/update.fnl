@@ -369,7 +369,7 @@
 (fn hub.known-commit [self {: owner : repo}]
   (assert/type :string owner)
   (assert/type :string repo)
-  (let [key (.. self.site :/ owner :/ repo)
+  (let [key (.. self.site "/" owner "/" repo)
         {: date : rev : url : sha256} (or (. self.plugins key) {})]
     {: date : rev : url : sha256}))
 
@@ -581,7 +581,7 @@ in which site, owner, and repo information are extracted."
                 (tset :owner :cljoly)
                 (tset :repo :telescope-repo.nvim))
               plugin)]
-      (values (.. site :/ owner :/ repo) ; drop duplicates
+      (values (.. site "/" owner "/" repo) ; drop duplicates
               {: site : owner : repo}))))
 
 (fn awesome-neovim.filter-plugins [plugins]
@@ -631,7 +631,7 @@ in which site, owner, and repo information are extracted."
 
 (fn nixpkgs.preprocess [plugins]
   (collect [_ {: site : owner : repo &as plugin} (ipairs plugins)]
-    (values (.. site :/ owner :/ repo) plugin))) ; drop duplicates
+    (values (.. site "/" owner "/" repo) plugin))) ; drop duplicates
 
 (fn nixpkgs.get-plugins []
   (case-try (nixpkgs.fetch-vim-plugin-names)
