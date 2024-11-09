@@ -570,19 +570,22 @@ in which site, owner, and repo information are extracted."
 
 - Some sourcehut plugins enlist their hub page sr.ht instead of git.sr.ht.
 - Authors may enlist their homepage instead of repository URL."
-  (collect [_ plugin (ipairs plugins)]
-    (let [{: site : owner : repo}
-          (if (= "sr.ht" plugin.site)
-              (doto plugin
-                (tset :site "git.sr.ht"))
-              (= "cj.rs" plugin.site)
-              (doto plugin
-                (tset :site "github.com")
-                (tset :owner "cljoly")
-                (tset :repo "telescope-repo.nvim"))
-              plugin)]
-      (values (.. site "/" owner "/" repo) ; drop duplicates
-              {: site : owner : repo}))))
+  (let [found {}]
+    (collect [_ plugin (ipairs plugins) &into found]
+      (let [{: site : owner : repo} (if (= "sr.ht" plugin.site)
+                                        (doto plugin
+                                          (tset :site "git.sr.ht"))
+                                        (= :cj.rs plugin.site)
+                                        {:site "github.com"
+                                         :owner "cljoly"
+                                         :repo "telescope-repo.nvim"}
+                                        plugin)
+            key (.. site "/" owner "/" repo)]
+        (when (and (. found key)
+                   (not= key "github.com/echasnovski/mini.nvim"))
+          (log:warn "Duplicate entry: " key))
+        (values key {: site : owner : repo})))
+    found))
 
 (fn awesome-neovim.filter-plugins [plugins]
   "Some repos are actually not Neovim plugins."
