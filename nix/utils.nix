@@ -56,7 +56,9 @@ rec {
   hasUniqueRepoIn =
     plugins: plugin:
     let
-      n = lib.lists.length (lib.filter (p: p.repo == plugin.repo) plugins);
+      n = lib.lists.length (
+        lib.filter (p: toAttrName p.repo == toAttrName plugin.repo) plugins
+      );
     in
     if n == 0 then throw "unseen plugin" else n == 1;
 
