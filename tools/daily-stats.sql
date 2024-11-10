@@ -21,12 +21,17 @@ SELECT *
 
 
 CREATE OR REPLACE TABLE daily AS
-SELECT date_trunc('day', datetime) AS "date"
+SELECT date
      , repository
      , site
-     , max(plugins) AS plugins
-  FROM stats
- GROUP BY date, repository, site
+     , plugins
+  FROM (SELECT *
+             , date_trunc('day', datetime) AS date
+             , row_number() OVER (PARTITION BY date, repository, site
+                                      ORDER BY datetime DESC)
+               AS latest_rank
+          FROM stats)
+ WHERE latest_rank = 1
  ORDER BY date, repository, site;
 
 COPY daily TO 'data/stats/view/daily.csv'
