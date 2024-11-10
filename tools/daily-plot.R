@@ -7,24 +7,21 @@ library(readr)
 library(tibble)
 library(tidyr)
 
-daily_stats <- read_csv(
+df <- read_csv(
     file.path("data", "stats", "view", "daily.csv"),
     col_types = c(date = "D", repository = "c", site = "c", plugins = "i")
 ) |>
     filter(site == "total") |>
-    select(date, repository, plugins)
-
-df <- daily_stats |>
+    select(Date = date, Repository = repository, Plugins = plugins) |>
     mutate(
-        repository = repository |>
+        Repository = Repository |>
             ordered(levels = c("nixpkgs", "awesome-neovim", "extra")) |>
             recode(
                 "awesome-neovim" = "Awesome Neovim plugins",
                 "nixpkgs" = "Nixpkgs Vim/Neovim plugins",
                 "extra" = "In this flake but not in Nixpkgs"
             )
-    ) |>
-    select(Date = date, Repository = repository, Plugins = plugins)
+    )
 
 g <- ggplot(df, aes(Date, Plugins, color = Repository)) +
     geom_line() +
