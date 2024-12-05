@@ -19,6 +19,12 @@ See [FlakeHub document][3] for more details.
   different from those in their repositories (B), previously A was used.
   Now B takes precedence.
 
+### Fixed
+
+- GitLab namespace parsing [#138]
+
+[#138]: https://github.com/m15a/flake-awesome-neovim-plugins/issues/138
+
 ## [0.2.0] - 2024-11-07
 
 ### Added
