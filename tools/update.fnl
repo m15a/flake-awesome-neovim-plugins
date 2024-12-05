@@ -546,6 +546,7 @@ in which site, owner, and repo information are extracted."
   (let [plugins []
         active-regex "^%s*%-%s+%[[^/]+/[^/]+%]%("
         plugin-regex ["^%s*%-%s+%[[^%]]+%]%(https?://([^/]+)/([^/]+)/([^/#%)]+)"
+                      "^%s*%-%s+%[[^%]]+%]%(https?://([^/]+)/([^/]+)/([^/]+)/([^/#%)]+)"
                       "^%s*%-%s+%[[^%]]+%]%(https?://([^/]+)/([^/#%)]+)"]
         done-regex "^%s*##+%s+Preconfigured%s+[Cc]onfiguration"]
     (each [line (readme:gmatch "[^\n]+") &until (= :done state)]
@@ -558,9 +559,16 @@ in which site, owner, and repo information are extracted."
                       (doto plugins
                         (table.insert {: site : owner : repo}))
                       _ (case (line:match (. plugin-regex 2))
-                          (site repo)
-                          (doto plugins
-                            (table.insert {: site : repo}))))
+                          ;; GitLab namespace;
+                          ;; see https://docs.gitlab.com/ee/user/namespace/
+                          (site owner/group subgroup repo)
+                          (let [owner (.. owner/group "/" subgroup)]
+                            (doto plugins
+                              (table.insert {: site : owner : repo}))))
+                        _ (case (line:match (. plugin-regex 3))
+                            (site repo)
+                            (doto plugins
+                              (table.insert {: site : repo}))))
                     (line:match done-regex)
                     (set state :done))))
     plugins))
@@ -627,7 +635,7 @@ in which site, owner, and repo information are extracted."
   (icollect [line (vim-plugin-names:gmatch "[^\n]+")]
     (when (line:match "^https://")
       (let [(site owner repo ref alias)
-            (line:match "^https://([^/]+)/([^/]+)/([^/]+)/?,([^,]*),(.*)$")]
+            (line:match "^https://([^/]+)/(.+)/([^/]+)/?,([^,]*),(.*)$")]
         {: site : owner : repo
          :ref (when (and (not= "" ref) (not= :HEAD ref)) ref)
          :alias (when (not= "" alias) alias)}))))
