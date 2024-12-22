@@ -8,6 +8,8 @@
       url = "github:edolstra/flake-compat";
       flake = false;
     };
+    treefmt-nix.url = "github:numtide/treefmt-nix";
+    treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -15,6 +17,7 @@
       self,
       nixpkgs,
       flake-utils,
+      treefmt-nix,
       ...
     }:
     let
@@ -33,10 +36,14 @@
             (import ./nix/ci.nix)
           ];
         };
+        treefmtEval = treefmt-nix.lib.evalModule pkgs ./treefmt.nix;
       in
       rec {
         packages = filterPackages system pkgs.awesomeNeovimPlugins;
-        checks = packages // pkgs.checks;
+        formatter = treefmtEval.config.build.wrapper;
+        checks = packages // {
+          format = treefmtEval.config.build.check self;
+        };
         inherit (pkgs) devShells;
       }
     );
