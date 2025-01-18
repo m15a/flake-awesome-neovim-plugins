@@ -590,7 +590,8 @@ in which site, owner, and repo information are extracted."
                                         plugin)
             key (.. site "/" owner "/" repo)]
         (when (and (. found key)
-                   (not= key "github.com/echasnovski/mini.nvim"))
+                   (not= key "github.com/echasnovski/mini.nvim")
+                   (not= key "github.com/milanglacier/yarepl.nvim"))
           (log:warn "Duplicate entry: " key))
         (values key {: site : owner : repo})))
     found))
