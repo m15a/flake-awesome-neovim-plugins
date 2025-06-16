@@ -20,7 +20,7 @@ jobs:
         run: |
           nix flake update
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v6
         with:
           file_pattern: 'flake.lock'
           commit_message: "auto: update flake lock"
