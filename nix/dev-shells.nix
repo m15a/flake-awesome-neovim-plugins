@@ -7,7 +7,6 @@ rec {
     default = mkShell {
       inputsFrom = [
         ci-update
-        ci-datasci
       ];
       packages = [
         fennel-ls
@@ -60,22 +59,6 @@ rec {
           ]
         ))
       ];
-    };
-
-    ci-datasci = mkShell {
-      packages =
-        [
-          duckdb
-          R
-        ]
-        ++ (with rPackages; [
-          dplyr
-          ggplot2
-          lubridate
-          readr
-          tibble
-          tidyr
-        ]);
     };
   };
 }
