@@ -2,8 +2,8 @@
   description = "Nix flake of Awesome Neovim plugins";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-compat.url = "github:edolstra/flake-compat";
     flake-compat.flake = false;
   };
@@ -11,28 +11,27 @@
   outputs =
     {
       self,
-      nixpkgs,
       flake-utils,
+      nixpkgs,
       ...
     }:
+    let
+      inherit (flake-utils.lib) eachDefaultSystem filterPackages;
+    in
     {
       overlays.default = import ./nix/overlay.nix;
     }
-    // flake-utils.lib.eachDefaultSystem (
+    // eachDefaultSystem (
       system:
       let
         pkgs = import nixpkgs {
           inherit system;
-          overlays = [
-            self.overlays.default
-            (import ./nix/dev-shells.nix)
-          ];
+          overlays = [ self.overlays.default ];
         };
       in
       rec {
-        packages = flake-utils.lib.filterPackages system pkgs.awesomeNeovimPlugins;
+        packages = filterPackages system pkgs.awesomeNeovimPlugins;
         checks = packages;
-        inherit (pkgs) devShells;
       }
     );
 }

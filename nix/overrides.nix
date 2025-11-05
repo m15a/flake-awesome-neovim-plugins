@@ -5,9 +5,8 @@ let
     lib
     stdenv
     darwin
-    rustPlatform
     ;
-  utils = final.callPackage ./utils.nix { };
+  utils = import ./utils.nix { inherit lib; };
 
   # Mark broken packages here.
   overrideBroken =
@@ -305,31 +304,6 @@ let
         withAllGrammars = withPlugins (_: allGrammars);
       };
     });
-
-    sniprun = super.sniprun.overrideAttrs (
-      old:
-      let
-        rust = rustPlatform.buildRustPackage {
-          pname = "sniprun-rust";
-          inherit (old) version src;
-          inherit (old.passthru.rust) cargoHash;
-          buildInputs = lib.optionals stdenv.isDarwin [
-            darwin.apple_sdk.frameworks.Security
-          ];
-          doCheck = false;
-        };
-      in
-      {
-        postPatch = ''
-          sed -Ei lua/sniprun.lua -e '/local binary_path =/,+2c \
-          local binary_path = "${rust}/bin/sniprun"'
-        '';
-        propagatedBuildInputs = [ rust ];
-        passthru = (old.passthru or { }) // {
-          inherit rust;
-        };
-      }
-    );
   };
 in
 {

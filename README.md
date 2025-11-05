@@ -3,12 +3,14 @@
 Nix flake of Awesome Neovim plugins.
 
 [![CI][b1]][b2]
-[![Awesome Neovim plugins][b3]][Awesome Neovim]
+[![Awesome Neovim plugins][an]][Awesome Neovim]
+[![Nixpkgs Vim/Neovim plugins][np]][Nixpkgs]
 [![FlakeHub][b4]][b5]
 
 [b1]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/check.yml?style=flat-square&logo=github&label=CI
 [b2]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/check.yml
-[b3]: https://img.shields.io/badge/Awesome_Neovim_plugins-1029-57A143?style=flat-square
+[an]: https://img.shields.io/badge/Awesome_Neovim_plugins-1029-57A143?style=flat-square
+[np]: https://img.shields.io/badge/Nixpkgs_Vim_plugins-1029-57A143?style=flat-square
 [b4]: https://img.shields.io/endpoint?url=https://flakehub.com/f/m15a/flake-awesome-neovim-plugins/badge&style=flat-square
 [b5]: https://flakehub.com/flake/m15a/flake-awesome-neovim-plugins
 
@@ -21,6 +23,7 @@ it as a [Nix flake] provides all Neovim plugins in the Awesome Neovim
 collection.
 
 [Awesome Neovim]: https://github.com/rockerBOO/awesome-neovim
+[Nixpkgs]: https://github/NixOS/nixpkgs
 [Nix flake]: https://wiki.nixos.org/wiki/Flakes
 
 Packages are automatically updated once every day using GitHub Actions.

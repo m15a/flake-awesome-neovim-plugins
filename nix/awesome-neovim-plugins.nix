@@ -2,7 +2,7 @@ final: prev:
 
 let
   inherit (prev) lib;
-  utils = prev.callPackage ./utils.nix { };
+  utils = import ./utils.nix { inherit lib; };
 
   hasUniqueRepo = utils.hasUniqueRepoIn plugins;
 
@@ -36,11 +36,6 @@ let
         inherit pname;
         version = "${date}-${lib.strings.substring 0 7 rev}";
         src = final.fetchurl { inherit url sha256; };
-        passthru = lib.optionalAttrs (plugin ? "cargoHash") {
-          rust = {
-            inherit (plugin) cargoHash;
-          };
-        };
         meta =
           lib.optionalAttrs (plugin ? "description") {
             inherit (plugin) description;
@@ -64,7 +59,7 @@ let
     };
 
   plugins = lib.strings.fromJSON (
-    lib.readFile ../data/plugins/awesome-neovim.json
+    lib.readFile ../data/awesome-neovim-plugins.json
   );
 
   origin = builtins.listToAttrs (
