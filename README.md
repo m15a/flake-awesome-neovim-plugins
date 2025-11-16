@@ -5,14 +5,11 @@ Nix flake of Awesome Neovim plugins.
 [![CI][b1]][b2]
 [![Awesome Neovim plugins][an]][Awesome Neovim]
 [![Nixpkgs Vim/Neovim plugins][np]][Nixpkgs]
-[![FlakeHub][b4]][b5]
 
 [b1]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/check.yml?style=flat-square&logo=github&label=CI
 [b2]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/check.yml
 [an]: https://img.shields.io/badge/Awesome_Neovim_plugins-1029-57A143?style=flat-square
 [np]: https://img.shields.io/badge/Nixpkgs_Vim_plugins-1029-57A143?style=flat-square
-[b4]: https://img.shields.io/endpoint?url=https://flakehub.com/f/m15a/flake-awesome-neovim-plugins/badge&style=flat-square
-[b5]: https://flakehub.com/flake/m15a/flake-awesome-neovim-plugins
 
 ![Daily stats](data/stats/plot/daily.png)
 
@@ -69,14 +66,6 @@ Use it as you normally do, like so:
   });
 }
 ```
-
-### FlakeHub
-
-Alternatively, you can use this flake via [FlakeHub].
-See instructions at the [FlakeHub page].
-
-[FlakeHub]: https://flakehub.com/
-[FlakeHub page]: https://flakehub.com/flake/m15a/flake-awesome-neovim-plugins
 
 ## Contributing
 
