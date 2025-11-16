@@ -9,7 +9,7 @@ This repository provides Nix packages for Neovim plugins listed in the
 [Awesome Neovim]: https://github.com/rockerBOO/awesome-neovim
 [status]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/check.yml?style=flat-square&logo=github&label=status
 [check]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/check.yml
-[nplugins]: https://img.shields.io/badge/Awesome_Neovim_plugins-1029-57A143?style=flat-square
+[NPLUGINS]: https://img.shields.io/badge/Awesome_Neovim_plugins-1029-57A143?style=flat-square
 
 The packages are automatically updated daily by parsing the `README.md`
 of the [Awesome Neovim] repository and extracting all the plugins listed
