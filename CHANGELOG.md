@@ -11,6 +11,8 @@ number is not noted here since it will be used for rolling release.
 
 ## [Unreleased]
 
+## [0.3.0] - 2025-11-16
+
 ### Changed
 
 - If owner/repo names manifested in Awesome Neovim README (A) are
@@ -79,7 +81,8 @@ number is not noted here since it will be used for rolling release.
 [Codeberg]: https://codeberg.org/
 [sourcehut]: https://sr.ht/
 
-[Unreleased]: https://github.com/m15a/flake-awesome-neovim-plugins/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/m15a/flake-awesome-neovim-plugins/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/m15a/flake-awesome-neovim-plugins/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/m15a/flake-awesome-neovim-plugins/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/m15a/flake-awesome-neovim-plugins/releases/tag/v0.1.0
 
