@@ -13,12 +13,15 @@ number is not noted here since it will be used for rolling release.
 
 ### Changed
 
-- Dropped support for sniprun's rust dependency.
-- Dropped FlakeHub publishing.
-- Removed statistics data for simplicity.
 - If owner/repo names manifested in Awesome Neovim README (A) are
   different from those in their repositories (B), previously A was used.
   Now B takes precedence.
+
+### Removed
+
+- Support for sniprun's rust dependency
+- FlakeHub publishing
+- Statistics data and the relevant scripts
 
 ### Fixed
 
