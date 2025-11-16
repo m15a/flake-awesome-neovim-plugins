@@ -19,6 +19,7 @@ number is not noted here since it will be used for rolling release.
 
 ### Removed
 
+- Support for legacy Nix
 - Support for sniprun's rust dependency
 - FlakeHub publishing
 - Statistics data and the relevant scripts
