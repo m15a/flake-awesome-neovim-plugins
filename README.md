@@ -1,113 +1,108 @@
 # flake-awesome-neovim-plugins
 
-Nix flake of Awesome Neovim plugins.
+This repository provides Nix packages for Neovim plugins listed in the
+[Awesome Neovim] collection.
 
-[![CI][b1]][b2]
-[![Awesome Neovim plugins][an]][Awesome Neovim]
-[![Nixpkgs Vim/Neovim plugins][np]][Nixpkgs]
-
-[b1]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/check.yml?style=flat-square&logo=github&label=CI
-[b2]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/check.yml
-[an]: https://img.shields.io/badge/Awesome_Neovim_plugins-1029-57A143?style=flat-square
-[np]: https://img.shields.io/badge/Nixpkgs_Vim_plugins-1029-57A143?style=flat-square
-
-![Daily stats](data/stats/plot/daily.png)
-
-## Description
-
-This repository is a *mirror* of [Awesome Neovim], in a sense that
-it as a [Nix flake] provides all Neovim plugins in the Awesome Neovim
-collection.
+[![status]][check]
+[![Awesome Neovim plugins][nplugins]][Awesome Neovim]
 
 [Awesome Neovim]: https://github.com/rockerBOO/awesome-neovim
-[Nixpkgs]: https://github/NixOS/nixpkgs
-[Nix flake]: https://wiki.nixos.org/wiki/Flakes
+[status]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/check.yml?style=flat-square&logo=github&label=status
+[check]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/check.yml
+[nplugins]: https://img.shields.io/badge/Awesome_Neovim_plugins-1029-57A143?style=flat-square
 
-Packages are automatically updated once every day using GitHub Actions.
-This is done by parsing the `README.md` and collecting all plugins
-manifested therein.
+The packages are automatically updated daily by parsing the `README.md`
+of the [Awesome Neovim] repository and extracting all the plugins listed
+there.
 
-Since these packages are automatically generated, some of them could be
-broken due to lack of appropriate overrides (missing dependencies, build
-inputs, etc.). So, you should be careful if you want to use them.
+Since these packages are automatically generated, some of them might be
+broken due to missing dependencies, build inputs, or the need of
+specific overrides. Please use these packages with caution.
 
 ## Usage
 
-### Flake
-
-The overlay adds Awesome Neovim plugins to `pkgs.awesomeNeovimPlugins`.
-Use it as you normally do, like so:
+The overlay in this flake adds the Awesome Neovim plugins under the
+`awesomeNeovimPlugins` attribute. You can use it as you normally would.
+For example:
 
 ```nix
 {
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
-    awesome-neovim-plugins.url = "github:m15a/flake-awesome-neovim-plugins";
+    flake-awesome-neovim-plugins.url = "github:m15a/flake-awesome-neovim-plugins";
   };
-  outputs = { self, nixpkgs, flake-utils, awesome-neovim-plugins, ... }:
-  flake-utils.lib.eachDefaultSystem (system:
-  let
-    pkgs = import nixpkgs {
-      inherit system;
-      overlays = [ awesome-neovim-plugins.overlays.default ];
-    };
-  in {
-    packages = {
-      your-neovim = pkgs.neovim.override {
-        configure = {
-          packages.example = with pkgs.awesomeNeovimPlugins; {
-            start = [
-              ataraxis-lua
-            ];
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+      flake-awesome-neovim-plugins,
+      ...
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
+      let
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [ flake-awesome-neovim-plugins.overlays.default ];
+        };
+      in
+      {
+        packages = {
+          your-neovim = pkgs.neovim.override {
+            configure = {
+              packages.example = with pkgs.awesomeNeovimPlugins; {
+                start = [
+                  any-awesome-neovim-plugin-nvim
+                ];
+              };
+            };
           };
         };
-      };
-    };
-  });
+      }
+    );
 }
 ```
 
 ## Contributing
 
-### Add a new plugin to this flake
+### Add or remove a plugin
 
-Send a pull request to [Awesome Neovim] in which your favorite plugin
-is registered in their `README.md`. Done? Then, wait until the next
-plugin updating workflow runs.
+To add a new plugin to this flake, simply submit a pull request to
+the upstream [Awesome Neovim] repository to register your favorite
+plugin in their `README.md`. Once merged, the change will be reflected
+here after the next daily updating workflow run.
 
-### Remove a plugin from this flake
+Similarly, to remove a plugin, submit a pull request to [Awesome Neovim]
+to remove it from their `README.md`.
 
-Again, send a pull request to [Awesome Neovim] in which your plugin
-is removed from their `README.md`.
+### Fix a broken plugin build
 
-### Fix build of a plugin
-
-Send a pull request to this repository in which your fix is applied in
+If a plugin build is broken, please submit a pull request to this
+repository with your fix applied in either
+[`./nix/config.nix`](nix/config.nix) or
 [`./nix/overrides.nix`](nix/overrides.nix).
 
 ## Licenses
 
-Unless otherwise stated, this software is licensed under the
-[BSD 3-clause license](LICENSE).
+Unless explicitly stated otherwise, this software is licensed under
+the [BSD 3-clause license](LICENSE).
 
-A part of [`./nix/overrides.nix`](nix/overrides.nix) is modification
-from the original Nixpkgs' code, which is licensed under the MIT license.
-See the license terms in comments in the file.
+A portion of [`./nix/overrides.nix`](nix/overrides.nix) is modification
+of original Nixpkgs' code, which is licensed under the MIT license.
+The specific license terms can be found in the comments within that
+file.
 
-[`./data/plugins/awesome-neovim.json`](data/plugins/awesome-neovim.json)
-is collected from various code hosting services by using their API.
-Each part of the data has respective copyright and permission to use.
-For more information about the permissible data use and content rights,
-see each service's terms of use:
+The data in
+[`./data/awesome-neovim-plugins.json`](data/awesome-neovim-plugins.json)
+is collected from various code hosting services using their respective
+APIs. Each piece of data retains its original copyright and usage
+permission. For details on permissive data use and content rights,
+please refer to the terms of use for each service:
 
 - [GitHub](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
 - [GitLab](https://handbook.gitlab.com/handbook/legal/api-terms/)
 - [sourcehut](https://man.sr.ht/terms.md)
 - [Codeberg](https://codeberg.org/codeberg/org/src/branch/main/TermsOfUse.md)
-
-Datasets and images in [`./data/stats/`](data/stats/) are contributed
-by the same authors declared in the [software license](LICENSE), and
-licensed under the [Creative Commons Attribution-ShareAlike 4.0
-International license](https://creativecommons.org/licenses/by-sa/4.0/).
 
 <!-- vim:set tw=72 spell nowrap: -->
