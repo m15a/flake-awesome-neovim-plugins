@@ -1,5 +1,3 @@
-name: Check
-
 on:
   push:
     branches: [main]
@@ -8,17 +6,11 @@ on:
 
 jobs:
   check:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: DeterminateSystems/nix-installer-action@main
-      - uses: DeterminateSystems/magic-nix-cache-action@main
-
-      - name: Check flake and packages
-        env:
+      - uses: actions/checkout@v5
+      - uses: cachix/install-nix-action@v31
+      - env:
           NIXPKGS_ALLOW_UNFREE: 1
         run: |
-          nix flake check --impure
+          nix flake check --impure --all-systems

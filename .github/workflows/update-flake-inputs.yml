@@ -1,0 +1,25 @@
+on:
+  schedule:
+    - cron: "52 5 ? * THU"
+  workflow_dispatch:
+
+jobs:
+  update-flake-inputs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: cachix/install-nix-action@v31
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - run: |
+          prev_head="$(git rev-parse HEAD)"
+          nix flake update --commit-lock-file
+          if [ "$(git rev-parse HEAD)" != "$prev_head" ]; then
+            nix flake check --all-systems
+            git commit --amend -m "auto: update flake inputs" -m "$(git log -1 --format=%b)"
+          fi
+      - run: |
+          git push

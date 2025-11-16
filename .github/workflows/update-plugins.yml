@@ -1,0 +1,30 @@
+on:
+  schedule:
+    - cron: "3 17 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-plugins:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: cachix/install-nix-action@v31
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - env:
+          GITHUB_TOKEN: ${{ secrets.M15A_GITHUB_PAT }}
+          NIXPKGS_ALLOW_UNFREE: 1
+        run: |
+          nix run github:m15a/flake-awesome-neovim-plugins-updater
+          git add data/*.json REAME.md
+          if git diff-index --quiet HEAD --; then
+            : Nothing to commit
+          else
+            git commit -m "auto: update plugins"
+            nix flake check --impure --all-systems
+          fi
+      - run: |
+          git push
