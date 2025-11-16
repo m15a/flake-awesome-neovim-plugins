@@ -14,11 +14,13 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - run: |
+      - env:
+          NIXPKGS_ALLOW_UNFREE: 1
+        run: |
           prev_head="$(git rev-parse HEAD)"
           nix flake update --commit-lock-file
           if [ "$(git rev-parse HEAD)" != "$prev_head" ]; then
-            nix flake check --all-systems
+            nix flake check --impure --all-systems
             git commit --amend -m "auto: update flake inputs" -m "$(git log -1 --format=%b)"
           fi
       - run: |
