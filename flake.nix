@@ -1,5 +1,5 @@
 {
-  description = "Nix flake of Awesome Neovim plugins";
+  description = "A Nix flake providing the Awesome Neovim plugins";
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
