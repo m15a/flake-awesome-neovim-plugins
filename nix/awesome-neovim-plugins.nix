@@ -58,13 +58,11 @@ let
       };
     };
 
-  plugins = lib.strings.fromJSON (
-    lib.readFile ../data/awesome-neovim-plugins.json
+  plugins = lib.filter utils.isValidPlugin (
+    lib.strings.fromJSON (lib.readFile ../data/awesome-neovim-plugins.json)
   );
 
-  origin = builtins.listToAttrs (
-    map builder (lib.filter utils.isValidPlugin plugins)
-  );
+  origin = builtins.listToAttrs (map builder plugins);
 in
 {
   awesomeNeovimPlugins = lib.makeExtensible (_: lib.recurseIntoAttrs origin);
