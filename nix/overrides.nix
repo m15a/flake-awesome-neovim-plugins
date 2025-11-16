@@ -30,9 +30,15 @@ let
     in
     mapAttrs f (filterConfig {
       # Build failed with `E154: Duplicate tag`
-      apc-nvim = true;
-      pckr-nvim = true;
-      unruly-worker-nvim = true;
+      base16-pro-max-nvim = true;
+      fusen-nvim = true;
+      julwrites-llm-nvim = true;
+      llm-nvim = true;
+
+      # ERROR: noBrokenSymlinks: the symlink
+      # /nix/store/...-vimplugin-sos-nvim-2024-12-07-c1e0f90/perf/.luarc.json
+      # points to a missing target...
+      sos-nvim = true;
     });
 
   # Add homepage if missing or incorrect.
