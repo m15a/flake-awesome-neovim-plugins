@@ -21,7 +21,7 @@ jobs:
           NIXPKGS_ALLOW_UNFREE: 1
         run: |
           nix run github:m15a/flake-awesome-neovim-plugins-updater
-          git add data/*.json REAME.md
+          git add data/*.json README.md
           if git diff-index --quiet HEAD --; then
             : Nothing to commit
           else
