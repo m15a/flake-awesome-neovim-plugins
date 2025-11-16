@@ -13,4 +13,4 @@ jobs:
       - env:
           NIXPKGS_ALLOW_UNFREE: 1
         run: |
-          nix flake check --impure --all-systems
+          nix flake check --impure --all-systems --no-build

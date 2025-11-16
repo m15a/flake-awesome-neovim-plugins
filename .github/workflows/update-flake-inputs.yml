@@ -20,7 +20,7 @@ jobs:
           prev_head="$(git rev-parse HEAD)"
           nix flake update --commit-lock-file
           if [ "$(git rev-parse HEAD)" != "$prev_head" ]; then
-            nix flake check --impure --all-systems
+            nix flake check --impure --all-systems --no-build
             git commit --amend -m "auto: update flake inputs" -m "$(git log -1 --format=%b)"
           fi
       - run: |

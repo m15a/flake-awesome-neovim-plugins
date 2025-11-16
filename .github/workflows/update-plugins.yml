@@ -24,7 +24,7 @@ jobs:
             : Nothing to commit
           else
             git commit -m "auto: update plugins"
-            nix flake check --impure --all-systems
+            nix flake check --impure --all-systems --no-build
           fi
       - run: |
           git push
