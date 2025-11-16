@@ -1,3 +1,5 @@
+name: Update Flake Inputs
+
 on:
   schedule:
     - cron: "52 5 ? * THU"

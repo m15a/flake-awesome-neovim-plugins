@@ -1,3 +1,5 @@
+name: Update Plugins
+
 on:
   schedule:
     - cron: "3 17 * * *"
