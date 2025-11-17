@@ -79,9 +79,7 @@ to remove it from their `README.md`.
 ### Fix a broken plugin build
 
 If a plugin build is broken, please submit a pull request to this
-repository with your fix applied in either
-[`./nix/config.nix`](nix/config.nix) or
-[`./nix/overrides.nix`](nix/overrides.nix).
+repository with your fix applied in [`./nix/*.nix`](nix/).
 
 ## Licenses
 
