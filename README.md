@@ -34,7 +34,6 @@ For example:
   };
   outputs =
     {
-      self,
       nixpkgs,
       flake-utils,
       flake-awesome-neovim-plugins,
