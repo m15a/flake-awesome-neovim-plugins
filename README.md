@@ -28,6 +28,7 @@ For example:
 ```nix
 {
   inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     flake-awesome-neovim-plugins.url = "github:m15a/flake-awesome-neovim-plugins";
   };
@@ -48,14 +49,12 @@ For example:
         };
       in
       {
-        packages = {
-          your-neovim = pkgs.neovim.override {
-            configure = {
-              packages.example = with pkgs.awesomeNeovimPlugins; {
-                start = [
-                  any-awesome-neovim-plugin-nvim
-                ];
-              };
+        packages.default = pkgs.neovim.override {
+          configure = {
+            packages.example = with pkgs.awesomeNeovimPlugins; {
+              start = [
+                your-favorite-awesome-neovim-plugin
+              ];
             };
           };
         };
