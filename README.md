@@ -3,12 +3,12 @@
 This repository provides Nix packages for Neovim plugins listed in the
 [Awesome Neovim] collection.
 
-[![status]][check]
+[![check_badge]][check_status]
 [![Awesome Neovim plugins][nplugins]][Awesome Neovim]
 
 [Awesome Neovim]: https://github.com/rockerBOO/awesome-neovim
-[status]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/check.yml?style=flat-square&logo=github&label=status
-[check]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/check.yml
+[check_badge]: https://img.shields.io/github/actions/workflow/status/m15a/flake-awesome-neovim-plugins/check.yml?style=flat-square&logo=github&label=Check
+[check_status]: https://github.com/m15a/flake-awesome-neovim-plugins/actions/workflows/check.yml
 [NPLUGINS]: https://img.shields.io/badge/Awesome_Neovim_plugins-1029-57A143?style=flat-square
 
 The packages are automatically updated daily by parsing the `README.md`
