@@ -1,35 +1,40 @@
 {
   description = "A Nix flake providing the Awesome Neovim plugins";
 
-  inputs = {
-    flake-utils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-  };
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
   outputs =
-    {
-      self,
-      flake-utils,
-      nixpkgs,
-      ...
-    }:
+    { nixpkgs, ... }:
     let
-      inherit (flake-utils.lib) eachDefaultSystem filterPackages;
+      inherit (nixpkgs.lib)
+        genAttrs
+        mapAttrs
+        ;
+      inherit (import ./nix/lib.nix { inherit (nixpkgs) lib; })
+        mapAttrNames
+        filterVimPlugins
+        systems
+        ;
+
+      forSystems =
+        f:
+        genAttrs systems (
+          system:
+          f (
+            import nixpkgs {
+              inherit system;
+              overlays = [ overlay ];
+            }
+          )
+        );
+
+      overlay = import ./nix/overlay.nix;
     in
-    {
-      overlays.default = import ./nix/overlay.nix;
-    }
-    // eachDefaultSystem (
-      system:
-      let
-        pkgs = import nixpkgs {
-          inherit system;
-          overlays = [ self.overlays.default ];
-        };
-      in
-      rec {
-        packages = filterPackages system pkgs.awesomeNeovimPlugins;
-        checks = packages;
-      }
-    );
+    rec {
+      overlays.default = overlay;
+
+      packages = forSystems (pkgs: filterVimPlugins pkgs.awesomeNeovimPlugins);
+
+      checks = mapAttrs (_: ps: mapAttrNames (n: "check-${n}") ps) packages;
+    };
 }
