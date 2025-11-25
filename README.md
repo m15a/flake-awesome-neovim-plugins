@@ -29,36 +29,28 @@ For example:
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
     flake-awesome-neovim-plugins.url = "github:m15a/flake-awesome-neovim-plugins";
   };
   outputs =
+    { nixpkgs, flake-awesome-neovim-plugins, ... }:
+    let
+      system = "aarch64-darwin";
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [ flake-awesome-neovim-plugins.overlays.default ];
+      };
+    in
     {
-      nixpkgs,
-      flake-utils,
-      flake-awesome-neovim-plugins,
-      ...
-    }:
-    flake-utils.lib.eachDefaultSystem (
-      system:
-      let
-        pkgs = import nixpkgs {
-          inherit system;
-          overlays = [ flake-awesome-neovim-plugins.overlays.default ];
-        };
-      in
-      {
-        packages.default = pkgs.neovim.override {
-          configure = {
-            packages.example = with pkgs.awesomeNeovimPlugins; {
-              start = [
-                your-favorite-awesome-neovim-plugin
-              ];
-            };
+      packages.${system}.default = pkgs.neovim.override {
+        configure = {
+          packages.example = with pkgs.awesomeNeovimPlugins; {
+            start = [
+              your-favorite-awesome-neovim-plugin
+            ];
           };
         };
-      }
-    );
+      };
+    };
 }
 ```
 
