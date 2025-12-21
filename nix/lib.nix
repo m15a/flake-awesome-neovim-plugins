@@ -6,7 +6,6 @@ let
     ;
   inherit (lib)
     filterAttrs
-    mapAttrs
     mapAttrs'
     nameValuePair
     id
