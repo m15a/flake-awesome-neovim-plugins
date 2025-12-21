@@ -11,7 +11,7 @@ let
     id
     ;
 
-  attrs = rec {
+  attrsets = rec {
     mapAttrs2 =
       f: g: attrs:
       mapAttrs' (k: v: nameValuePair (f k) (g v)) attrs;
@@ -34,7 +34,7 @@ let
 in
 
 {
-  inherit (attrs)
+  inherit (attrsets)
     mapAttrs2
     mapAttrNames
     ;
