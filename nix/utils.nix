@@ -17,26 +17,10 @@ rec {
   removeSourceHutOwnerTilde =
     owner: if builtins.match "^~.+" owner != null then lib.strings.substring 1 (-1) owner else owner;
 
-  # Show any Nix value as JSON-like string.
-  show =
-    x:
-    if builtins.typeOf x == "set" then
-      let
-        contents = lib.attrsets.mapAttrsToList (k: v: "${k}: ${show v}") x;
-      in
-      "{ " + lib.concatStringsSep ", " contents + " }"
-    else
-      toString x;
-
   # Check if the given attrset has mandatory plugin attrs.
   isValidPlugin =
     repo:
-    if
-      repo ? "date" && repo ? "owner" && repo ? "repo" && repo ? "rev" && repo ? "sha256" && repo ? "url"
-    then
-      true
-    else
-      lib.warn ("Invalid plugin: " + show repo) false;
+    repo ? "date" && repo ? "owner" && repo ? "repo" && repo ? "rev" && repo ? "sha256" && repo ? "url";
 
   # If pname has prefix `telescope-`, it should be a telescope extension.
   looksLikeTelescopeExtension =
