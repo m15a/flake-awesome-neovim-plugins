@@ -23,7 +23,7 @@
   };
 
   # Add licenses if missing or incorrect.
-  licenses = (
+  licenses =
     with lib.licenses;
     {
       ataraxis-lua = gpl3;
@@ -74,8 +74,7 @@
         duplicate-nvim = fossil;
         lsp-timeout-nvim = fossil;
       }
-    )
-  );
+    );
 
   # Declare plugins that depend on plenary.nvim.
   plenaryConsumers = {
