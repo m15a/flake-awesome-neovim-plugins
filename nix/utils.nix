@@ -15,11 +15,7 @@ rec {
 
   # Remove sourcehut owner name's prefix `~` if any.
   removeSourceHutOwnerTilde =
-    owner:
-    if builtins.match "^~.+" owner != null then
-      lib.strings.substring 1 (-1) owner
-    else
-      owner;
+    owner: if builtins.match "^~.+" owner != null then lib.strings.substring 1 (-1) owner else owner;
 
   # Show any Nix value as JSON-like string.
   show =
@@ -49,21 +45,17 @@ rec {
 
   # If pname has prefix `telescope-`, it should be a telescope extension.
   looksLikeTelescopeExtension =
-    pname:
-    pname != "telescope-nvim" && builtins.match "(^|.+-)telescope-.+" pname != null;
+    pname: pname != "telescope-nvim" && builtins.match "(^|.+-)telescope-.+" pname != null;
 
   # Some plugins of different owners have an identical repo name.
   hasUniqueRepoIn =
     plugins: plugin:
     let
-      n = lib.lists.length (
-        lib.filter (p: toAttrName p.repo == toAttrName plugin.repo) plugins
-      );
+      n = lib.lists.length (lib.filter (p: toAttrName p.repo == toAttrName plugin.repo) plugins);
     in
     if n == 0 then throw "unseen plugin" else n == 1;
 
   # Some plugins need their owner name to make meaningful pname;
   # e.g., catppuccin/nvim.
-  hasMeaningfulRepo =
-    plugin: with plugin; repo != "vim" && repo != "nvim" && repo != "neovim";
+  hasMeaningfulRepo = plugin: with plugin; repo != "vim" && repo != "nvim" && repo != "neovim";
 }

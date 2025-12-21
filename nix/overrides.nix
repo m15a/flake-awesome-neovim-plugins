@@ -61,8 +61,7 @@ let
       f =
         pluginName: isConsumer:
         super.${pluginName}.overrideAttrs (old: {
-          dependencies =
-            (old.dependencies or [ ]) ++ optionals isConsumer [ self.plenary-nvim ];
+          dependencies = (old.dependencies or [ ]) ++ optionals isConsumer [ self.plenary-nvim ];
         });
     in
     mapAttrs f (filterConfig config.plenaryConsumers);
@@ -73,8 +72,7 @@ let
       f =
         pluginName: isConsumer:
         super.${pluginName}.overrideAttrs (old: {
-          dependencies =
-            (old.dependencies or [ ]) ++ optionals isConsumer [ self.nvim-lspconfig ];
+          dependencies = (old.dependencies or [ ]) ++ optionals isConsumer [ self.nvim-lspconfig ];
         });
     in
     mapAttrs f (filterConfig config.lspConfigConsumers);
@@ -85,8 +83,7 @@ let
       f =
         pluginName: isConsumer:
         super.${pluginName}.overrideAttrs (old: {
-          dependencies =
-            (old.dependencies or [ ]) ++ optionals isConsumer [ self.nvim-treesitter ];
+          dependencies = (old.dependencies or [ ]) ++ optionals isConsumer [ self.nvim-treesitter ];
         });
     in
     mapAttrs f (filterConfig config.treesitterConsumers);
@@ -112,8 +109,7 @@ let
       f =
         pluginName: isConsumer:
         super.${pluginName}.overrideAttrs (old: {
-          dependencies =
-            (old.dependencies or [ ]) ++ optionals isConsumer [ self.telescope-nvim ];
+          dependencies = (old.dependencies or [ ]) ++ optionals isConsumer [ self.telescope-nvim ];
         });
     in
     mapAttrs f (filterConfig config.telescopeConsumers);

@@ -13,10 +13,7 @@ let
       inherit (plugin) repo;
     in
     utils.toAttrName (
-      if hasUniqueRepo plugin && utils.hasMeaningfulRepo plugin then
-        repo
-      else
-        "${owner}-${repo}"
+      if hasUniqueRepo plugin && utils.hasMeaningfulRepo plugin then repo else "${owner}-${repo}"
     );
 
   builder =

@@ -23,9 +23,7 @@ let
   vim = rec {
     isVimPlugin = x: isAttrs x && (x.vimPlugin or false);
 
-    filterVimPlugins = filterAttrs (
-      _: v: (isVimPlugin v) && !(v.meta.broken or false)
-    );
+    filterVimPlugins = filterAttrs (_: v: (isVimPlugin v) && !(v.meta.broken or false));
   };
 
   systems = [
