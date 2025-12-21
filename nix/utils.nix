@@ -30,18 +30,13 @@ rec {
 
   # Check if the given attrset has mandatory plugin attrs.
   isValidPlugin =
-    plugin:
+    repo:
     if
-      plugin ? "date"
-      && plugin ? "owner"
-      && plugin ? "repo"
-      && plugin ? "rev"
-      && plugin ? "sha256"
-      && plugin ? "url"
+      repo ? "date" && repo ? "owner" && repo ? "repo" && repo ? "rev" && repo ? "sha256" && repo ? "url"
     then
       true
     else
-      lib.warn ("Invalid plugin: " + show plugin) false;
+      lib.warn ("Invalid plugin: " + show repo) false;
 
   # If pname has prefix `telescope-`, it should be a telescope extension.
   looksLikeTelescopeExtension =
@@ -49,13 +44,13 @@ rec {
 
   # Some plugins of different owners have an identical repo name.
   hasUniqueRepoIn =
-    plugins: plugin:
+    repos: repo:
     let
-      n = lib.lists.length (lib.filter (p: toAttrName p.repo == toAttrName plugin.repo) plugins);
+      n = lib.lists.length (lib.filter (p: toAttrName p.repo == toAttrName repo.repo) repos);
     in
     if n == 0 then throw "unseen plugin" else n == 1;
 
   # Some plugins need their owner name to make meaningful pname;
   # e.g., catppuccin/nvim.
-  hasMeaningfulRepo = plugin: with plugin; repo != "vim" && repo != "nvim" && repo != "neovim";
+  hasMeaningfulRepo = repo: with repo; repo != "vim" && repo != "nvim" && repo != "neovim";
 }

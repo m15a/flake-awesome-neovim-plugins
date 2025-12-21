@@ -4,7 +4,7 @@ let
   inherit (prev) lib;
   utils = import ./utils.nix { inherit lib; };
 
-  hasUniqueRepo = utils.hasUniqueRepoIn plugins;
+  hasUniqueRepo = utils.hasUniqueRepoIn repos;
 
   pnameOf =
     plugin:
@@ -55,11 +55,11 @@ let
       };
     };
 
-  plugins = lib.filter utils.isValidPlugin (
+  repos = lib.filter utils.isValidPlugin (
     lib.strings.fromJSON (lib.readFile ../data/awesome-neovim-plugins.json)
   );
 
-  origin = builtins.listToAttrs (map builder plugins);
+  origin = builtins.listToAttrs (map builder repos);
 in
 {
   awesomeNeovimPlugins = lib.makeExtensible (_: lib.recurseIntoAttrs origin);
