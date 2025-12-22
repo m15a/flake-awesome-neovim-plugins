@@ -82,7 +82,7 @@ The specific license terms can be found in the comments within that
 file.
 
 The data in
-[`./data/awesome-neovim-plugins.json`](data/awesome-neovim-plugins.json)
+[`./data/plugins.json`](data/plugins.json)
 is collected from various code hosting services using their respective
 APIs. Each piece of data retains its original copyright and usage
 permission. For details on permissive data use and content rights,

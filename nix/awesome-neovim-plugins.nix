@@ -56,7 +56,7 @@ let
     };
 
   repos = lib.filter utils.isValidPlugin (
-    lib.strings.fromJSON (lib.readFile ../data/awesome-neovim-plugins.json)
+    lib.strings.fromJSON (lib.readFile ../data/plugins.json)
   );
 
   origin = builtins.listToAttrs (map builder repos);
