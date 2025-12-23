@@ -10,28 +10,31 @@ let
     toAttrName
     ;
 
-  hasUniqueRepo = hasUniqueRepoIn repos;
+  hasUniqueRepo = hasUniqueRepoIn pluginsData;
 
   pnameOf =
-    plugin:
+    pluginData:
     let
-      owner = removeSourceHutOwnerTilde plugin.owner;
-      inherit (plugin) repo;
+      owner = removeSourceHutOwnerTilde pluginData.owner;
+      inherit (pluginData) repo;
     in
     toAttrName (
-      if hasUniqueRepo plugin && hasMeaningfulRepo plugin then repo else "${owner}-${repo}"
+      if hasUniqueRepo pluginData && hasMeaningfulRepo pluginData then
+        repo
+      else
+        "${owner}-${repo}"
     );
 
   builder =
-    plugin:
+    pluginData:
     let
-      inherit (plugin)
+      inherit (pluginData)
         date
         rev
         sha256
         url
         ;
-      pname = pnameOf plugin;
+      pname = pnameOf pluginData;
     in
     {
       name = pname;
@@ -40,32 +43,32 @@ let
         version = "${date}-${lib.strings.substring 0 7 rev}";
         src = final.fetchurl { inherit url sha256; };
         meta =
-          lib.optionalAttrs (plugin ? "description") {
-            inherit (plugin) description;
+          lib.optionalAttrs (pluginData ? "description") {
+            inherit (pluginData) description;
           }
-          // lib.optionalAttrs (plugin ? "homepage") {
-            inherit (plugin) homepage;
+          // lib.optionalAttrs (pluginData ? "homepage") {
+            inherit (pluginData) homepage;
           }
-          // lib.optionalAttrs (plugin ? "license") {
+          // lib.optionalAttrs (pluginData ? "license") {
             license =
               # trace: warning: getLicenseFromSpdxId: No license matches
               # the given SPDX ID: AGPL-3.0
               #
               # NOTE: cannot determine which is correct:
               #
-              # if plugin.license == "AGPL-3.0" then
+              # if pluginData.license == "AGPL-3.0" then
               #   lib.licenses.agpl3Only? or agpl3Plus?
               # else
-              lib.getLicenseFromSpdxId plugin.license;
+              lib.getLicenseFromSpdxId pluginData.license;
           };
       };
     };
 
-  repos = lib.filter isValidPlugin (
+  pluginsData = lib.filter isValidPlugin (
     lib.strings.fromJSON (lib.readFile ../data/plugins.json)
   );
 
-  origin = builtins.listToAttrs (map builder repos);
+  origin = builtins.listToAttrs (map builder pluginsData);
 in
 {
   awesomeNeovimPlugins = lib.makeExtensible (_: lib.recurseIntoAttrs origin);
