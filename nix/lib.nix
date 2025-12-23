@@ -36,7 +36,7 @@ let
       if n == 0 then throw "unseen plugin" else n == 1;
 
     # Check if the given attrset has mandatory plugin attrs.
-    isValidPlugin =
+    isPluginData =
       attrs:
       attrs ? "date"
       && attrs ? "owner"
@@ -93,7 +93,7 @@ in
   inherit (utils)
     hasMeaningfulRepo
     hasUniqueRepoIn
-    isValidPlugin
+    isPluginData
     looksLikeTelescopeExtension
     removeSourceHutOwnerTilde
     toAttrName

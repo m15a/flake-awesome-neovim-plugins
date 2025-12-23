@@ -5,7 +5,7 @@ let
   inherit (import ./lib.nix { inherit lib; })
     hasMeaningfulRepo
     hasUniqueRepoIn
-    isValidPlugin
+    isPluginData
     removeSourceHutOwnerTilde
     toAttrName
     ;
@@ -64,7 +64,7 @@ let
       };
     };
 
-  pluginsData = lib.filter isValidPlugin (
+  pluginsData = lib.filter isPluginData (
     lib.strings.fromJSON (lib.readFile ../data/plugins.json)
   );
 
