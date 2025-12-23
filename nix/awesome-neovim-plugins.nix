@@ -2,21 +2,24 @@ final: prev:
 
 let
   inherit (prev) lib;
-  utils = import ./utils.nix { inherit lib; };
+  inherit (import ./lib.nix { inherit lib; })
+    hasMeaningfulRepo
+    hasUniqueRepoIn
+    isValidPlugin
+    removeSourceHutOwnerTilde
+    toAttrName
+    ;
 
-  hasUniqueRepo = utils.hasUniqueRepoIn repos;
+  hasUniqueRepo = hasUniqueRepoIn repos;
 
   pnameOf =
     plugin:
     let
-      owner = utils.removeSourceHutOwnerTilde plugin.owner;
+      owner = removeSourceHutOwnerTilde plugin.owner;
       inherit (plugin) repo;
     in
-    utils.toAttrName (
-      if hasUniqueRepo plugin && utils.hasMeaningfulRepo plugin then
-        repo
-      else
-        "${owner}-${repo}"
+    toAttrName (
+      if hasUniqueRepo plugin && hasMeaningfulRepo plugin then repo else "${owner}-${repo}"
     );
 
   builder =
@@ -58,7 +61,7 @@ let
       };
     };
 
-  repos = lib.filter utils.isValidPlugin (
+  repos = lib.filter isValidPlugin (
     lib.strings.fromJSON (lib.readFile ../data/plugins.json)
   );
 

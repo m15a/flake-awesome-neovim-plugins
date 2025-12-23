@@ -11,7 +11,9 @@ let
     filterAttrs
     optionals
     ;
-  utils = import ./utils.nix { inherit lib; };
+  inherit (import ./lib.nix { inherit lib; })
+    looksLikeTelescopeExtension
+    ;
   config = import ./config.nix { inherit lib; };
 
   filterConfig = filterAttrs (name: _: hasAttr name prev.awesomeNeovimPlugins);
@@ -96,7 +98,7 @@ let
     let
       f =
         pluginName: pkg:
-        if utils.looksLikeTelescopeExtension pluginName then
+        if looksLikeTelescopeExtension pluginName then
           pkg.overrideAttrs (old: {
             dependencies = (old.dependencies or [ ]) ++ [ self.telescope-nvim ];
           })
