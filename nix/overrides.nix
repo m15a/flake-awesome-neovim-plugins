@@ -1,20 +1,20 @@
 final: prev:
 
 let
-  inherit (final) lib;
   inherit (builtins)
     hasAttr
     mapAttrs
     ;
-  inherit (lib)
+  inherit (final.lib)
     composeManyExtensions
     filterAttrs
     optionals
     ;
-  inherit (import ./lib.nix { inherit lib; })
+  inherit (import ./lib.nix { inherit (prev) lib; })
     looksLikeTelescopeExtension
     ;
-  config = import ./config.nix { inherit lib; };
+
+  config = import ./config.nix { inherit (prev) lib; };
 
   filterConfig = filterAttrs (name: _: hasAttr name prev.awesomeNeovimPlugins);
 

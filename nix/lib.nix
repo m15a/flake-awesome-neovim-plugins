@@ -1,22 +1,27 @@
-{ lib, ... }:
+{ lib }:
 
 let
   inherit (builtins)
+    filter
     isAttrs
+    length
+    match
+    replaceStrings
+    substring
     ;
   inherit (lib)
     filterAttrs
+    id
     mapAttrs'
     nameValuePair
-    id
     ;
 
   attrsets = rec {
+    mapAttrNames = f: attrs: mapAttrs2 f id attrs;
+
     mapAttrs2 =
       f: g: attrs:
       mapAttrs' (k: v: nameValuePair (f k) (g v)) attrs;
-
-    mapAttrNames = f: attrs: mapAttrs2 f id attrs;
   };
 
   utils = rec {
@@ -29,9 +34,7 @@ let
     hasUniqueRepoIn =
       pluginsData: pluginData:
       let
-        n = lib.lists.length (
-          lib.filter (p: toAttrName p.repo == toAttrName pluginData.repo) pluginsData
-        );
+        n = length (filter (p: toAttrName p.repo == toAttrName pluginData.repo) pluginsData);
       in
       if n == 0 then throw "unseen plugin" else n == 1;
 
@@ -47,19 +50,15 @@ let
 
     # If pname has prefix `telescope-`, it should be a telescope extension.
     looksLikeTelescopeExtension =
-      pname: pname != "telescope-nvim" && builtins.match "(^|.+-)telescope-.+" pname != null;
+      pname: pname != "telescope-nvim" && match "(^|.+-)telescope-.+" pname != null;
 
     # Remove sourcehut owner name's prefix `~` if any.
     removeSourceHutOwnerTilde =
-      owner:
-      if builtins.match "^~.+" owner != null then
-        lib.strings.substring 1 (-1) owner
-      else
-        owner;
+      owner: if match "^~.+" owner != null then substring 1 (-1) owner else owner;
 
     # Translate string, assuming plugin repo name, to Nix attr name.
     toAttrName =
-      lib.strings.replaceStrings
+      replaceStrings
         [
           "_"
           "."
@@ -71,25 +70,24 @@ let
   };
 
   vim = rec {
-    isVimPlugin = x: isAttrs x && (x.vimPlugin or false);
-
     filterVimPlugins = filterAttrs (_: v: (isVimPlugin v) && !(v.meta.broken or false));
+
+    isVimPlugin = x: isAttrs x && (x.vimPlugin or false);
   };
 
   systems = [
-    "x86_64-linux"
-    "x86_64-darwin"
-    "aarch64-linux"
     "aarch64-darwin"
+    "aarch64-linux"
+    "x86_64-darwin"
+    "x86_64-linux"
   ];
 in
 
 {
   inherit (attrsets)
-    mapAttrs2
     mapAttrNames
+    mapAttrs2
     ;
-
   inherit (utils)
     hasMeaningfulRepo
     hasUniqueRepoIn
@@ -98,11 +96,9 @@ in
     removeSourceHutOwnerTilde
     toAttrName
     ;
-
   inherit (vim)
-    isVimPlugin
     filterVimPlugins
+    isVimPlugin
     ;
-
   inherit systems;
 }

@@ -1,8 +1,20 @@
 final: prev:
 
 let
-  inherit (prev) lib;
-  inherit (import ./lib.nix { inherit lib; })
+  inherit (builtins)
+    filter
+    fromJSON
+    listToAttrs
+    readFile
+    substring
+    ;
+  inherit (prev.lib)
+    getLicenseFromSpdxId
+    makeExtensible
+    optionalAttrs
+    recurseIntoAttrs
+    ;
+  inherit (import ./lib.nix { inherit (prev) lib; })
     hasMeaningfulRepo
     hasUniqueRepoIn
     isPluginData
@@ -40,16 +52,16 @@ let
       name = pname;
       value = final.vimUtils.buildVimPlugin {
         inherit pname;
-        version = "${date}-${lib.strings.substring 0 7 rev}";
+        version = "${date}-${substring 0 7 rev}";
         src = final.fetchurl { inherit url sha256; };
         meta =
-          lib.optionalAttrs (pluginData ? "description") {
+          optionalAttrs (pluginData ? "description") {
             inherit (pluginData) description;
           }
-          // lib.optionalAttrs (pluginData ? "homepage") {
+          // optionalAttrs (pluginData ? "homepage") {
             inherit (pluginData) homepage;
           }
-          // lib.optionalAttrs (pluginData ? "license") {
+          // optionalAttrs (pluginData ? "license") {
             license =
               # trace: warning: getLicenseFromSpdxId: No license matches
               # the given SPDX ID: AGPL-3.0
@@ -59,17 +71,15 @@ let
               # if pluginData.license == "AGPL-3.0" then
               #   lib.licenses.agpl3Only? or agpl3Plus?
               # else
-              lib.getLicenseFromSpdxId pluginData.license;
+              getLicenseFromSpdxId pluginData.license;
           };
       };
     };
 
-  pluginsData = lib.filter isPluginData (
-    lib.strings.fromJSON (lib.readFile ../data/plugins.json)
-  );
+  pluginsData = filter isPluginData (fromJSON (readFile ../data/plugins.json));
 
-  origin = builtins.listToAttrs (map builder pluginsData);
+  origin = listToAttrs (map builder pluginsData);
 in
 {
-  awesomeNeovimPlugins = lib.makeExtensible (_: lib.recurseIntoAttrs origin);
+  awesomeNeovimPlugins = makeExtensible (_: recurseIntoAttrs origin);
 }

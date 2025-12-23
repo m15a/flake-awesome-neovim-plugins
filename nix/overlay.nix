@@ -1,9 +1,6 @@
 final: prev:
 
-let
-  inherit (prev) lib;
-in
-lib.composeManyExtensions [
+prev.lib.composeManyExtensions [
   (import ./awesome-neovim-plugins.nix)
   (import ./overrides.nix)
 ] final prev

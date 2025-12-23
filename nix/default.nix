@@ -5,8 +5,8 @@ let
     mapAttrs
     ;
   inherit (import ./lib.nix { inherit (nixpkgs) lib; })
-    mapAttrNames
     filterVimPlugins
+    mapAttrNames
     systems
     ;
 
