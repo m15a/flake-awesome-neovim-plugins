@@ -19,7 +19,7 @@ let
     hasUniqueRepoIn
     isPluginData
     removeSourceHutOwnerTilde
-    toAttrName
+    repoToAttrName
     ;
 
   hasUniqueRepo = hasUniqueRepoIn pluginsData;
@@ -30,7 +30,7 @@ let
       owner = removeSourceHutOwnerTilde pluginData.owner;
       inherit (pluginData) repo;
     in
-    toAttrName (
+    repoToAttrName (
       if hasUniqueRepo pluginData && hasMeaningfulRepo pluginData then
         repo
       else

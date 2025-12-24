@@ -34,7 +34,9 @@ let
     hasUniqueRepoIn =
       pluginsData: pluginData:
       let
-        n = length (filter (p: toAttrName p.repo == toAttrName pluginData.repo) pluginsData);
+        n = length (
+          filter (p: repoToAttrName p.repo == repoToAttrName pluginData.repo) pluginsData
+        );
       in
       if n == 0 then throw "unseen plugin" else n == 1;
 
@@ -57,7 +59,7 @@ let
       owner: if match "^~.+" owner != null then substring 1 (-1) owner else owner;
 
     # Translate string, assuming plugin repo name, to Nix attr name.
-    toAttrName =
+    repoToAttrName =
       replaceStrings
         [
           "_"
@@ -94,7 +96,7 @@ in
     isPluginData
     looksLikeTelescopeExtension
     removeSourceHutOwnerTilde
-    toAttrName
+    repoToAttrName
     ;
   inherit (vim)
     filterVimPlugins
