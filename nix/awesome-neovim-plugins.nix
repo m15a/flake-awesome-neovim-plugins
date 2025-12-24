@@ -78,8 +78,8 @@ let
 
   pluginsData = filter isPluginData (fromJSON (readFile ../data/plugins.json));
 
-  origin = listToAttrs (map builder pluginsData);
+  plugins = listToAttrs (map builder pluginsData);
 in
 {
-  awesomeNeovimPlugins = makeExtensible (_: recurseIntoAttrs origin);
+  awesomeNeovimPlugins = makeExtensible (_: recurseIntoAttrs plugins);
 }
