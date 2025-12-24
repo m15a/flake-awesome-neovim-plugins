@@ -35,13 +35,17 @@ rec {
     pkgs:
     pkgs.writeShellApplication {
       name = "flake-awesome-neovim-plugins-formatter";
-      runtimeInputs = [ pkgs.nixfmt ];
+      runtimeInputs = with pkgs; [
+        nixfmt
+        statix
+      ];
       text = ''
         mapfile -t files < <(git ls-files --exclude-standard)
         for file in "''${files[@]}"; do
             case "''${file##*.}" in
                 nix)
                     nixfmt -w88 "$file" &
+                    statix check "$file" &
                     ;;
             esac
         done
