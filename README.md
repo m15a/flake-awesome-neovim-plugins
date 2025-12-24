@@ -76,7 +76,7 @@ repository with your fix applied in [`./nix/*.nix`](nix/).
 Unless explicitly stated otherwise, this software is licensed under
 the [BSD 3-clause license](LICENSE).
 
-A portion of [`./nix/overrides.nix`](nix/overrides.nix) is modification
+A portion of [`./nix/config.nix`](nix/config.nix) is modification
 of original Nixpkgs' code, which is licensed under the MIT license.
 The specific license terms can be found in the comments within that
 file.
