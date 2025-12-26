@@ -11,6 +11,17 @@
     "url": "https://codeberg.org/jthvai/lavender.nvim/archive/50d8c9c19509ba5b03760e2d644128afc4215281.tar.gz"
   },
   {
+    "date": "2025-12-21",
+    "description": "A fast static note set generator with extra features",
+    "homepage": "https://codeberg.org/losch/ztl",
+    "owner": "losch",
+    "repo": "ztl",
+    "rev": "f73e64551d6de4c1d276ca6580635d3867c4ac69",
+    "sha256": "sha256-+2YW9f/Qt+eLTpJFiQPOEOZGQqg+BAPlI6e+u6Aqgjw=",
+    "site": "codeberg.org",
+    "url": "https://codeberg.org/losch/ztl/archive/f73e64551d6de4c1d276ca6580635d3867c4ac69.tar.gz"
+  },
+  {
     "date": "2022-04-28",
     "description": "Abbreviation reminder plugin for Neovim 0.5+",
     "license": "GPL-3.0",
@@ -704,26 +715,26 @@
     "url": "https://github.com/David-Kunz/jester/archive/6679cdc24e4bdb2d61d0e71e3c65011029f166ef.tar.gz"
   },
   {
-    "date": "2025-12-25",
+    "date": "2025-12-26",
     "description": "A Neovim plugin that sets the cwd to the project root, stores projects in a history file, includes a telescope picker, supports fzf-lua, and provides UI tools",
     "license": "Apache-2.0",
     "owner": "DrKJeff16",
     "repo": "project.nvim",
-    "rev": "25b854661dfb8f4d52a254e0452aa7df731c9e25",
-    "sha256": "sha256-zRMgki2tQzE8jWE4wUezV3mv8pd41SqGKORyLkqOxaY=",
+    "rev": "f5d726b5244b02515e43cf175b07eb5fff736d29",
+    "sha256": "sha256-ZZVch+4hvN28FG/4o30z6AwMtVuaYnMVP6aapj2edwc=",
     "site": "github.com",
-    "url": "https://github.com/DrKJeff16/project.nvim/archive/25b854661dfb8f4d52a254e0452aa7df731c9e25.tar.gz"
+    "url": "https://github.com/DrKJeff16/project.nvim/archive/f5d726b5244b02515e43cf175b07eb5fff736d29.tar.gz"
   },
   {
-    "date": "2025-12-15",
+    "date": "2025-12-25",
     "description": "WezTerm Lua config types for Lua Language Server, with Neovim and VSCode compatibility.",
     "license": "MIT",
     "owner": "DrKJeff16",
     "repo": "wezterm-types",
-    "rev": "a1000dd3b2763e539c45982d0b7de507b265882e",
-    "sha256": "sha256-b/tuJKKbStmT+Si8PWt5TJntpOYhDjWprB8hxk9jNq0=",
+    "rev": "0f631fb0cd648a5081c797f32e6658a114b4591d",
+    "sha256": "sha256-h+llDiMwKxJDQygXfQ2C5bQEUleSEsJWNJwbJNfWE74=",
     "site": "github.com",
-    "url": "https://github.com/DrKJeff16/wezterm-types/archive/a1000dd3b2763e539c45982d0b7de507b265882e.tar.gz"
+    "url": "https://github.com/DrKJeff16/wezterm-types/archive/0f631fb0cd648a5081c797f32e6658a114b4591d.tar.gz"
   },
   {
     "date": "2025-01-31",
@@ -1809,15 +1820,15 @@
     "url": "https://github.com/SCJangra/table-nvim/archive/287056dab467bce5c34d288c47467856db4f7457.tar.gz"
   },
   {
-    "date": "2025-10-24",
+    "date": "2025-12-25",
     "description": "The  bridge between Neovim and Jupyterlab",
     "license": "BSD-3-Clause",
     "owner": "SUSTech-data",
     "repo": "neopyter",
-    "rev": "ca88db21900ee5b6e8d6c8dae056c7a442eeb0c1",
-    "sha256": "sha256-kLylJrHpLhOtcCqmVKu3uC62EbR6zjWpnMyNggadXJc=",
+    "rev": "1b0801af2c3fddfa33d4452a6b9063e9b7e31fb9",
+    "sha256": "sha256-67Iv7IgI3l6BydNPCa6+/sftLlW11ryclLSgcg2sCpM=",
     "site": "github.com",
-    "url": "https://github.com/SUSTech-data/neopyter/archive/ca88db21900ee5b6e8d6c8dae056c7a442eeb0c1.tar.gz"
+    "url": "https://github.com/SUSTech-data/neopyter/archive/1b0801af2c3fddfa33d4452a6b9063e9b7e31fb9.tar.gz"
   },
   {
     "date": "2025-08-23",
@@ -1831,15 +1842,15 @@
     "url": "https://github.com/Saecki/crates.nvim/archive/ac9fa498a9edb96dc3056724ff69d5f40b898453.tar.gz"
   },
   {
-    "date": "2025-12-16",
-    "description": "Telescope extension to change between directories blazingly fast",
+    "date": "2025-12-26",
+    "description": "Minimalistic & highly extensible project manager for NeoVim. ",
     "license": "MIT",
     "owner": "SalOrak",
     "repo": "whaler.nvim",
-    "rev": "a17246f6fb18d26a0923e632301bb8fedc3245b1",
-    "sha256": "sha256-ycAPqqThbeimZTYav1RYKs/99ehjCdd5QKHFGNIhNw4=",
+    "rev": "0ae044ca35a8a8a6b3efd9445790f1b22716b469",
+    "sha256": "sha256-8hJFrlhUrfhC3cOOvd1jpGXyHqfJmOq9Ny5n851VWOM=",
     "site": "github.com",
-    "url": "https://github.com/SalOrak/whaler.nvim/archive/a17246f6fb18d26a0923e632301bb8fedc3245b1.tar.gz"
+    "url": "https://github.com/SalOrak/whaler.nvim/archive/0ae044ca35a8a8a6b3efd9445790f1b22716b469.tar.gz"
   },
   {
     "date": "2024-06-05",
@@ -1886,16 +1897,16 @@
     "url": "https://github.com/SidOfc/carbon.nvim/archive/47a4718f92646aa2f95d2671f7218f3d357d885c.tar.gz"
   },
   {
-    "date": "2025-12-18",
+    "date": "2025-12-26",
     "description": "Too lazy for write \"pip install -r requirements.txt\", or \"cargo add ...\".. or maybe.. \"luarocks install ..\" and writing it to requirements file? Thats plugin or you!",
     "homepage": "https://discord.gg/FWKj2cHuwA",
     "license": "MIT",
     "owner": "Silletr",
     "repo": "LazyDeveloperHelper",
-    "rev": "b476aa5c9c037d057a5cf8ffdb79849cda5c9a67",
-    "sha256": "sha256-pUQQkqY4k6H5Ze3Bk7ryHTLgoP8I0zPBtQTh3NgDqQA=",
+    "rev": "d722809b2813473e05aa778a9ad23c4435343b7d",
+    "sha256": "sha256-gqkxVNh6OqMGs68NqnTBbegmyCdbxEz4muttgaVelFU=",
     "site": "github.com",
-    "url": "https://github.com/Silletr/LazyDeveloperHelper/archive/b476aa5c9c037d057a5cf8ffdb79849cda5c9a67.tar.gz"
+    "url": "https://github.com/Silletr/LazyDeveloperHelper/archive/d722809b2813473e05aa778a9ad23c4435343b7d.tar.gz"
   },
   {
     "date": "2025-05-01",
@@ -2358,15 +2369,15 @@
     "url": "https://github.com/YaroSpace/lua-console.nvim/archive/9ce346626ef13b7123617587544fdf0f9f672002.tar.gz"
   },
   {
-    "date": "2025-12-24",
+    "date": "2025-12-25",
     "description": "The full Markdown editing experience in neovim",
     "license": "MIT",
     "owner": "YousefHadder",
     "repo": "markdown-plus.nvim",
-    "rev": "ef36b0012654d9c32ca37d3b1065b29e45fed81b",
-    "sha256": "sha256-X7Nolmu+LfKnyRfZH5ydt6R1TaxhsdZtZmnQyZ5zktA=",
+    "rev": "9ae1b048f939731ea1c5c04a9e1c7ee97205236c",
+    "sha256": "sha256-CPxgH3al4g69YGWXeEhSUT+ztxKvIhlhvX0ZarLSc2o=",
     "site": "github.com",
-    "url": "https://github.com/YousefHadder/markdown-plus.nvim/archive/ef36b0012654d9c32ca37d3b1065b29e45fed81b.tar.gz"
+    "url": "https://github.com/YousefHadder/markdown-plus.nvim/archive/9ae1b048f939731ea1c5c04a9e1c7ee97205236c.tar.gz"
   },
   {
     "date": "2025-04-15",
@@ -2970,10 +2981,10 @@
     "license": "GPL-3.0",
     "owner": "atomicptr",
     "repo": "defold.nvim",
-    "rev": "c7b5e2041ce35be58d18d6b24c9a54518ce7e697",
-    "sha256": "sha256-BMIKa+Iy9EKzrAfWWDFKAUvchb/YF4L7XbFspoEvN7M=",
+    "rev": "25ca77a787059c2a1dfd30066481c2a3de48ac5b",
+    "sha256": "sha256-tXGtV+1Ehjm5xAWg7GcLGtvgGllxz3kbiW1Bb8TL/CU=",
     "site": "github.com",
-    "url": "https://github.com/atomicptr/defold.nvim/archive/c7b5e2041ce35be58d18d6b24c9a54518ce7e697.tar.gz"
+    "url": "https://github.com/atomicptr/defold.nvim/archive/25ca77a787059c2a1dfd30066481c2a3de48ac5b.tar.gz"
   },
   {
     "date": "2025-11-25",
@@ -3594,15 +3605,15 @@
     "url": "https://github.com/chomosuke/term-edit.nvim/archive/29c4584c2cef44a3fdcc55860957d081b892a569.tar.gz"
   },
   {
-    "date": "2025-11-23",
+    "date": "2025-12-26",
     "description": "Low latency typst preview for Neovim",
     "license": "GPL-3.0",
     "owner": "chomosuke",
     "repo": "typst-preview.nvim",
-    "rev": "291972a39db85c5d2e76249748aba4206dfd3bc2",
-    "sha256": "sha256-9Z4l7vJ+jApbIy1tyAtBNfpHLBdvEVFko56NIKttcRg=",
+    "rev": "e123a7ab64e52d836e00dea9251e85b201f38966",
+    "sha256": "sha256-IrcWU8193Iege6BtnxvOr2IswKd/wppG7fhga+hapjI=",
     "site": "github.com",
-    "url": "https://github.com/chomosuke/typst-preview.nvim/archive/291972a39db85c5d2e76249748aba4206dfd3bc2.tar.gz"
+    "url": "https://github.com/chomosuke/typst-preview.nvim/archive/e123a7ab64e52d836e00dea9251e85b201f38966.tar.gz"
   },
   {
     "date": "2025-12-25",
@@ -3638,15 +3649,15 @@
     "url": "https://github.com/chrisgrieser/nvim-early-retirement/archive/35609953a8851b77fc5adb6a44865eafe28a8e86.tar.gz"
   },
   {
-    "date": "2025-12-25",
+    "date": "2025-12-26",
     "description": "Lightweight and quick file operations without being a full-blown file manager.",
     "license": "MIT",
     "owner": "chrisgrieser",
     "repo": "nvim-genghis",
-    "rev": "6439a2a8e3c92525c5c5ede8469359427e7664a5",
-    "sha256": "sha256-IZnzsS+pHPHcdbAad5WNAKx4V4xdQekOVFd8aJgs82k=",
+    "rev": "eb0ba0e80ac3430208d3216747b258504c8f9b08",
+    "sha256": "sha256-/SgnYnIKrr3I3xKleDI4dHRyB0Tk50q/iAJvIt1BRKU=",
     "site": "github.com",
-    "url": "https://github.com/chrisgrieser/nvim-genghis/archive/6439a2a8e3c92525c5c5ede8469359427e7664a5.tar.gz"
+    "url": "https://github.com/chrisgrieser/nvim-genghis/archive/eb0ba0e80ac3430208d3216747b258504c8f9b08.tar.gz"
   },
   {
     "date": "2025-12-25",
@@ -3704,15 +3715,15 @@
     "url": "https://github.com/chrisgrieser/nvim-recorder/archive/073a89b6c31c4f7a02ce9c0a16ce86331b320938.tar.gz"
   },
   {
-    "date": "2025-12-25",
+    "date": "2025-12-26",
     "description": "Search and replace in the current buffer with incremental preview, a convenient UI, and modern regex syntax.",
     "license": "MIT",
     "owner": "chrisgrieser",
     "repo": "nvim-rip-substitute",
-    "rev": "a329cf2a21e918faab2dcae88a5ec3148ce9c4d8",
-    "sha256": "sha256-btIQ0LdCgrwGvwmSvVakcIFR+rFHQ7W2kF4J4LOqjaE=",
+    "rev": "2122039ba254c3611946825f5b94b673d6e8ecbc",
+    "sha256": "sha256-RdXcvJXWGp+CNviy6aELnfHUACGNmOwSKd0BjsZCcBk=",
     "site": "github.com",
-    "url": "https://github.com/chrisgrieser/nvim-rip-substitute/archive/a329cf2a21e918faab2dcae88a5ec3148ce9c4d8.tar.gz"
+    "url": "https://github.com/chrisgrieser/nvim-rip-substitute/archive/2122039ba254c3611946825f5b94b673d6e8ecbc.tar.gz"
   },
   {
     "date": "2025-12-25",
@@ -3748,15 +3759,15 @@
     "url": "https://github.com/chrisgrieser/nvim-spider/archive/8ef683624e797f26ab6bff688fad272198fbe3cc.tar.gz"
   },
   {
-    "date": "2025-12-25",
+    "date": "2025-12-26",
     "description": "A lightweight bundle of commands focused on quick and streamlined git operations.",
     "license": "MIT",
     "owner": "chrisgrieser",
     "repo": "nvim-tinygit",
-    "rev": "0981217559400901e47a4ecb6789980c02c7d2c7",
-    "sha256": "sha256-ftYLYB6lOuyrzZfRZpsYdofIf915UHhh7eNTvBqyJuk=",
+    "rev": "ff38e47191ccf4f9b35d88cdb80f3fb90714b4d4",
+    "sha256": "sha256-P6FUSc2PbrLkxd0rWf1U9iZrXxKpCJ+qGBKufURVZjs=",
     "site": "github.com",
-    "url": "https://github.com/chrisgrieser/nvim-tinygit/archive/0981217559400901e47a4ecb6789980c02c7d2c7.tar.gz"
+    "url": "https://github.com/chrisgrieser/nvim-tinygit/archive/ff38e47191ccf4f9b35d88cdb80f3fb90714b4d4.tar.gz"
   },
   {
     "date": "2025-12-25",
@@ -3869,17 +3880,6 @@
     "sha256": "sha256-LjEV5FiQeyRlF5tEeGZVraapLeIaad9gEIRqH1svp0E=",
     "site": "github.com",
     "url": "https://github.com/comatory/gh-co.nvim/archive/024a0197184ff56fa73929ae45ce5c6cd38361b5.tar.gz"
-  },
-  {
-    "date": "2025-12-07",
-    "description": ":rose: a comfy neovim colorscheme for cozy morning coding.",
-    "license": "GPL-3.0",
-    "owner": "everviolet",
-    "repo": "nvim",
-    "rev": "ed86852e01f03853326c68961ff10bcaf8ff5f9c",
-    "sha256": "sha256-4pDRghMcvhvgn7fFsleiq/D8aKv0uln3vIAoKycx1H0=",
-    "site": "github.com",
-    "url": "https://github.com/comfysage/evergarden/archive/ed86852e01f03853326c68961ff10bcaf8ff5f9c.tar.gz"
   },
   {
     "date": "2025-09-10",
@@ -4180,15 +4180,15 @@
     "url": "https://github.com/davidgranstrom/scnvim/archive/b5beb7f0c6b8143291efcada93dfa25464f32b71.tar.gz"
   },
   {
-    "date": "2025-12-15",
+    "date": "2025-12-26",
     "description": "A code repository indexing tool to supercharge your LLM experience.",
     "license": "MIT",
     "owner": "Davidyz",
     "repo": "VectorCode",
-    "rev": "56f21eb1371c10e720e31b5621f8c9448da78748",
-    "sha256": "sha256-i8P0xNPKkRCQYK4JRJdPTFfXoKGqXwx4mSw2+nrZivY=",
+    "rev": "3eacce5ad1c8e439e7dbeab3a8d6bdb6b8aa1cab",
+    "sha256": "sha256-smmoDyOqzD/cs1443LsMJU0tS+ONIly449ZhacbmfiE=",
     "site": "github.com",
-    "url": "https://github.com/davidyz/vectorcode/archive/56f21eb1371c10e720e31b5621f8c9448da78748.tar.gz"
+    "url": "https://github.com/davidyz/vectorcode/archive/3eacce5ad1c8e439e7dbeab3a8d6bdb6b8aa1cab.tar.gz"
   },
   {
     "date": "2025-09-21",
@@ -4411,14 +4411,14 @@
     "url": "https://github.com/dracula/vim/archive/d4b0823100c702af127cba8dd5595a8f599041ec.tar.gz"
   },
   {
-    "date": "2022-10-14",
+    "date": "2025-12-26",
     "license": "MIT",
     "owner": "drybalka",
     "repo": "tree-climber.nvim",
-    "rev": "9b0c8c8358f575f924008945c74fd4f40d814cd7",
-    "sha256": "sha256-PRnjkaNq5lM+lkc2sp06IE+BinRXd0eNDoBZjDIWcE8=",
+    "rev": "9a6fdfb186f70b3e454031c20b9d50aac02ff500",
+    "sha256": "sha256-lsRBu5L/IV2fV0VXgl7gHIWfDKSFoEPMCzYNUYj3R0c=",
     "site": "github.com",
-    "url": "https://github.com/drybalka/tree-climber.nvim/archive/9b0c8c8358f575f924008945c74fd4f40d814cd7.tar.gz"
+    "url": "https://github.com/drybalka/tree-climber.nvim/archive/9a6fdfb186f70b3e454031c20b9d50aac02ff500.tar.gz"
   },
   {
     "date": "2025-10-02",
@@ -4630,6 +4630,17 @@
     "sha256": "sha256-RVLJct7MBLCtoIutfebHp84K3UN53s9N43oB/3e1hVc=",
     "site": "github.com",
     "url": "https://github.com/esmuellert/vscode-diff.nvim/archive/f2c6907410161f430e3301fb170fd1d2094174aa.tar.gz"
+  },
+  {
+    "date": "2025-12-07",
+    "description": ":rose: a comfy neovim colorscheme for cozy morning coding.",
+    "license": "GPL-3.0",
+    "owner": "everviolet",
+    "repo": "nvim",
+    "rev": "ed86852e01f03853326c68961ff10bcaf8ff5f9c",
+    "sha256": "sha256-4pDRghMcvhvgn7fFsleiq/D8aKv0uln3vIAoKycx1H0=",
+    "site": "github.com",
+    "url": "https://github.com/comfysage/evergarden/archive/ed86852e01f03853326c68961ff10bcaf8ff5f9c.tar.gz"
   },
   {
     "date": "2025-08-03",
@@ -5621,16 +5632,16 @@
     "url": "https://github.com/idanarye/nvim-moonicipal/archive/9ebe72787be2a3339bdc91e1c3eafe58a389c0c9.tar.gz"
   },
   {
-    "date": "2025-12-24",
+    "date": "2025-12-26",
     "description": "Visualize debugging sessions in neovim",
     "homepage": "https://igorlfs.github.io/nvim-dap-view/",
     "license": "MIT",
     "owner": "igorlfs",
     "repo": "nvim-dap-view",
-    "rev": "a0665a9b5bfbc84fab2d7f8dbec4a6ee84205049",
-    "sha256": "sha256-uDsYtGLp5Y2lsSM5ZdBCn1cXTTnodFyIhYd+VXHrcFo=",
+    "rev": "c09478f5a01c5c7290654580cc732a7adcfe36c3",
+    "sha256": "sha256-MydSf7xU0bPx/PGjxFTrvWTmOYgRBmB+VNbjOsXWkvs=",
     "site": "github.com",
-    "url": "https://github.com/igorlfs/nvim-dap-view/archive/a0665a9b5bfbc84fab2d7f8dbec4a6ee84205049.tar.gz"
+    "url": "https://github.com/igorlfs/nvim-dap-view/archive/c09478f5a01c5c7290654580cc732a7adcfe36c3.tar.gz"
   },
   {
     "date": "2025-09-09",
@@ -6433,15 +6444,15 @@
     "url": "https://github.com/kiyoon/haskell-scope-highlighting.nvim/archive/ab5e431929c00f13edddd8e21df36ad16a026b02.tar.gz"
   },
   {
-    "date": "2025-11-14",
+    "date": "2025-12-26",
     "description": "Selenium-automated Jupyter Notebook that is synchronised with Neovim in real-time.",
     "license": "MIT",
     "owner": "kiyoon",
     "repo": "jupynium.nvim",
-    "rev": "2b2d63423ed08820ab2bbba5c9ff8a9e74738ecf",
-    "sha256": "sha256-ctDfx3tk2N5hOMlDK/PzH2X9nm6P3vbQPoPzrLMl5ys=",
+    "rev": "46381138437c82effb5b97c9c332818bc6c83154",
+    "sha256": "sha256-hkvW+Lluxl/5jq6jkWgh/7bbXW9SBCA8K6VE5/0DKb4=",
     "site": "github.com",
-    "url": "https://github.com/kiyoon/jupynium.nvim/archive/2b2d63423ed08820ab2bbba5c9ff8a9e74738ecf.tar.gz"
+    "url": "https://github.com/kiyoon/jupynium.nvim/archive/46381138437c82effb5b97c9c332818bc6c83154.tar.gz"
   },
   {
     "date": "2025-08-12",
@@ -6676,15 +6687,15 @@
     "url": "https://github.com/ldelossa/vimdark/archive/ffd7240f8346cb61ab80eda84b78f8983a3c69bf.tar.gz"
   },
   {
-    "date": "2025-12-22",
+    "date": "2025-12-25",
     "description": "cached treesitter navigation on a big projects, an attempt to make navigation in large c# projects better",
     "license": "GPL-3.0",
     "owner": "leblocks",
     "repo": "hopcsharp.nvim",
-    "rev": "b150ed0c2c46dd1be0e2d863b53973d3fe9afb8c",
-    "sha256": "sha256-ggpFVScUQTutoRLdU0QRGJMXBbjwaq16wpC+f8yKy/I=",
+    "rev": "3ae779b227c398da68109a5ec6da617ce8719ea1",
+    "sha256": "sha256-XuqHwn6yZfgOc71vsh99ZdP7RDvjmPfSZbANpBgJuik=",
     "site": "github.com",
-    "url": "https://github.com/leblocks/hopcsharp.nvim/archive/b150ed0c2c46dd1be0e2d863b53973d3fe9afb8c.tar.gz"
+    "url": "https://github.com/leblocks/hopcsharp.nvim/archive/3ae779b227c398da68109a5ec6da617ce8719ea1.tar.gz"
   },
   {
     "date": "2025-12-17",
@@ -6698,26 +6709,26 @@
     "url": "https://github.com/leo-alvarenga/quoth.nvim/archive/483ac4622c4071cd50a86978ec1e0dfc4d1a8dcc.tar.gz"
   },
   {
-    "date": "2025-12-24",
+    "date": "2025-12-25",
     "description": "I got tired of opening my browser for Jira",
     "license": "MIT",
     "owner": "letieu",
     "repo": "jira.nvim",
-    "rev": "3341a3a203d7087f1b02f17b6f7355b3cedbe5de",
-    "sha256": "sha256-u39IVb+g18uX3ErIbuikkpRwbATRqgudDBAY56rJ/HU=",
+    "rev": "f365ecb7f35a0f73f5a4d41c24de63c269864187",
+    "sha256": "sha256-cY7evTV1xrEk4+eiS/9n83xoxPsEfgGrenqT25I3+0c=",
     "site": "github.com",
-    "url": "https://github.com/letieu/jira.nvim/archive/3341a3a203d7087f1b02f17b6f7355b3cedbe5de.tar.gz"
+    "url": "https://github.com/letieu/jira.nvim/archive/f365ecb7f35a0f73f5a4d41c24de63c269864187.tar.gz"
   },
   {
-    "date": "2025-11-28",
+    "date": "2025-12-26",
     "description": "Git integration for buffers",
     "license": "MIT",
     "owner": "lewis6991",
     "repo": "gitsigns.nvim",
-    "rev": "5813e4878748805f1518cee7abb50fd7205a3a48",
-    "sha256": "sha256-HwfsnrXLqiIvNH0OEYp+h3xWoT/fdUzbCRvuqaoFSUY=",
+    "rev": "fb38d3b06f696f05513205d3652cf2467fea8f0a",
+    "sha256": "sha256-bsD0qdsCW0pzOuHLiFfXQbfW7WRSG1YrL1flajuTsyM=",
     "site": "github.com",
-    "url": "https://github.com/lewis6991/gitsigns.nvim/archive/5813e4878748805f1518cee7abb50fd7205a3a48.tar.gz"
+    "url": "https://github.com/lewis6991/gitsigns.nvim/archive/fb38d3b06f696f05513205d3652cf2467fea8f0a.tar.gz"
   },
   {
     "date": "2025-09-25",
@@ -6932,6 +6943,17 @@
     "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/005b56001b2cb30bfa61b7986bc50657816ba4ba.tar.gz"
   },
   {
+    "date": "2025-12-26",
+    "description": "GitHub workflow for automatically generating Luarocks releases from tags and running busted tests",
+    "license": "AGPL-3.0",
+    "owner": "lumen-oss",
+    "repo": "luarocks-tag-release",
+    "rev": "7080183273e14df00ac4f5d049c9da31ba83a92f",
+    "sha256": "sha256-lLqYUHDvsPesBKhg/EqzATHGe2Cau+h4O1plfr9iL0M=",
+    "site": "github.com",
+    "url": "https://github.com/lumen-oss/luarocks-tag-release/archive/7080183273e14df00ac4f5d049c9da31ba83a92f.tar.gz"
+  },
+  {
     "date": "2025-11-30",
     "description": "🦥 A dead simple lazy-loading Lua library for Neovim plugins.",
     "license": "GPL-2.0",
@@ -6941,6 +6963,17 @@
     "sha256": "sha256-9lpfeeHajn2EvPwq329+oSKfoGS8RE/puLGpVuz+vB8=",
     "site": "github.com",
     "url": "https://github.com/lumen-oss/lz.n/archive/b36c73e1a9d1cb2c05b354b390da0d141c9fa09d.tar.gz"
+  },
+  {
+    "date": "2025-11-15",
+    "description": "🌒 Neovim plugin management inspired by Cargo, powered by luarocks",
+    "license": "GPL-3.0",
+    "owner": "lumen-oss",
+    "repo": "rocks.nvim",
+    "rev": "f2a2907365a73325502e1461c670b0f8c78cbbf8",
+    "sha256": "sha256-fJf3dpFPt54qw5AeK7GlR0HDQlz2ZXDz3YdCmavxXac=",
+    "site": "github.com",
+    "url": "https://github.com/nvim-neorocks/rocks.nvim/archive/f2a2907365a73325502e1461c670b0f8c78cbbf8.tar.gz"
   },
   {
     "date": "2025-04-18",
@@ -7116,6 +7149,17 @@
     "sha256": "sha256-mcyiZVJ1lh79kiB6IVVaH7LhrZn8jPN4fMmraJXk4Ro=",
     "site": "github.com",
     "url": "https://github.com/marko-cerovac/material.nvim/archive/8a34cb0d05e12a05b64edaf6ca1c3c7bde545628.tar.gz"
+  },
+  {
+    "date": "2025-11-14",
+    "description": "Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters.",
+    "license": "Apache-2.0",
+    "owner": "mason-org",
+    "repo": "mason.nvim",
+    "rev": "57e5a8addb8c71fb063ee4acda466c7cf6ad2800",
+    "sha256": "sha256-Ay6qIew4PjA2yow6eP2TZkJg9SNvGV7r9ZXG/fTB804=",
+    "site": "github.com",
+    "url": "https://github.com/williamboman/mason.nvim/archive/57e5a8addb8c71fb063ee4acda466c7cf6ad2800.tar.gz"
   },
   {
     "date": "2023-05-09",
@@ -7400,10 +7444,10 @@
     "license": "MIT",
     "owner": "mikavilpas",
     "repo": "blink-ripgrep.nvim",
-    "rev": "109088481b8ff0fcbdff99b79494348642e350db",
-    "sha256": "sha256-xMmCydy/WdC5MTxfgGrG9dNSvbJIOD7XCNQJJ7Xt/Xk=",
+    "rev": "051b6ce7daca3427086ac4b76c540282d2233ad9",
+    "sha256": "sha256-OYJO4rkAeIu9qmD767qsSFgf0ax2wUeP+pFtQrcHJ/g=",
     "site": "github.com",
-    "url": "https://github.com/mikavilpas/blink-ripgrep.nvim/archive/109088481b8ff0fcbdff99b79494348642e350db.tar.gz"
+    "url": "https://github.com/mikavilpas/blink-ripgrep.nvim/archive/051b6ce7daca3427086ac4b76c540282d2233ad9.tar.gz"
   },
   {
     "date": "2025-12-25",
@@ -7411,10 +7455,10 @@
     "license": "MIT",
     "owner": "mikavilpas",
     "repo": "yazi.nvim",
-    "rev": "28a7e22ea49161a96bf982acec6cf5dbaedbd854",
-    "sha256": "sha256-p0T7kYUS64n2qUivz3+D/kyGK851YT4+5mBYpVNn0X0=",
+    "rev": "7e2f49b72218f62fe73adbf221d85cd27ebf9f2b",
+    "sha256": "sha256-7/Yr6dcSKXMbQ6Pfb5qEXbVjLigp2VesnrUrVP16Oco=",
     "site": "github.com",
-    "url": "https://github.com/mikavilpas/yazi.nvim/archive/28a7e22ea49161a96bf982acec6cf5dbaedbd854.tar.gz"
+    "url": "https://github.com/mikavilpas/yazi.nvim/archive/7e2f49b72218f62fe73adbf221d85cd27ebf9f2b.tar.gz"
   },
   {
     "date": "2024-04-22",
@@ -7693,15 +7737,15 @@
     "url": "https://github.com/mrcjkb/rustaceanvim/archive/01c45937691914ce985a66f22bab34a1098aa26f.tar.gz"
   },
   {
-    "date": "2025-12-25",
+    "date": "2025-12-26",
     "description": "⚙️ Load project-local settings (like .vscode/settings.json) into Neovim 0.11+ native LSP settings easily.",
     "license": "Apache-2.0",
     "owner": "mrjones2014",
     "repo": "codesettings.nvim",
-    "rev": "55cd558e4b08a508680afd74327b6abfd8d9a5f6",
-    "sha256": "sha256-UD74nNvzln70PXe03k7N8kIe4o6Omu2PHj7VsFKT8Y0=",
+    "rev": "b68d26ec3f2e87ceef705406477c82b44fd13c31",
+    "sha256": "sha256-aC5lodOIhiNjK9FSr/VHoUb4IP/gjuz2TbK+guAY7zU=",
     "site": "github.com",
-    "url": "https://github.com/mrjones2014/codesettings.nvim/archive/55cd558e4b08a508680afd74327b6abfd8d9a5f6.tar.gz"
+    "url": "https://github.com/mrjones2014/codesettings.nvim/archive/b68d26ec3f2e87ceef705406477c82b44fd13c31.tar.gz"
   },
   {
     "date": "2025-03-20",
@@ -7853,10 +7897,10 @@
     "license": "MIT",
     "owner": "Necrom4",
     "repo": "calcium.nvim",
-    "rev": "820b30bc2dd8e4378f563209141e267b5a1c7952",
-    "sha256": "sha256-okU0iIhM3EPJa5FFpkXnEZlZD4nCjwCyCuhJofKH62E=",
+    "rev": "e7c8e3757e2d6e44c7653d3b8891cbc0a916950a",
+    "sha256": "sha256-KPpmo9axEHp/d4eJpDQCEIC8q1ApkA7C5vpVveQeO/c=",
     "site": "github.com",
-    "url": "https://github.com/necrom4/calcium.nvim/archive/820b30bc2dd8e4378f563209141e267b5a1c7952.tar.gz"
+    "url": "https://github.com/necrom4/calcium.nvim/archive/e7c8e3757e2d6e44c7653d3b8891cbc0a916950a.tar.gz"
   },
   {
     "date": "2025-11-11",
@@ -8420,28 +8464,6 @@
     "sha256": "sha256-2aqIATnrQlWH2FF6KYd9fWRu10eWaoECy0QJLz7LLcQ=",
     "site": "github.com",
     "url": "https://github.com/nvim-neorg/neorg/archive/de0bf99a95f4053862f0e63c8083b5e14f3ad6ec.tar.gz"
-  },
-  {
-    "date": "2025-12-25",
-    "description": "GitHub workflow for automatically generating Luarocks releases from tags and running busted tests",
-    "license": "AGPL-3.0",
-    "owner": "lumen-oss",
-    "repo": "luarocks-tag-release",
-    "rev": "be653ece343494b7de38d77ef9d84fcc3eb58764",
-    "sha256": "sha256-z2eQWHZJK5DdoRIaoofHCxpS+t1GMtg5pshGLBulvzo=",
-    "site": "github.com",
-    "url": "https://github.com/nvim-neorocks/luarocks-tag-release/archive/be653ece343494b7de38d77ef9d84fcc3eb58764.tar.gz"
-  },
-  {
-    "date": "2025-11-15",
-    "description": "🌒 Neovim plugin management inspired by Cargo, powered by luarocks",
-    "license": "GPL-3.0",
-    "owner": "lumen-oss",
-    "repo": "rocks.nvim",
-    "rev": "f2a2907365a73325502e1461c670b0f8c78cbbf8",
-    "sha256": "sha256-fJf3dpFPt54qw5AeK7GlR0HDQlz2ZXDz3YdCmavxXac=",
-    "site": "github.com",
-    "url": "https://github.com/nvim-neorocks/rocks.nvim/archive/f2a2907365a73325502e1461c670b0f8c78cbbf8.tar.gz"
   },
   {
     "date": "2025-11-08",
@@ -9487,15 +9509,15 @@
     "url": "https://github.com/ravsii/timers.nvim/archive/7608aa7038c5f97581328fc9268ac08e599849fe.tar.gz"
   },
   {
-    "date": "2025-12-10",
+    "date": "2025-12-26",
     "description": "Neovim plugin that allows you to create a Github Gist from the current file",
     "license": "MIT",
     "owner": "rawnly",
     "repo": "gist.nvim",
-    "rev": "94ad9668634c4932d0c8039b974f5cd6da0b841c",
-    "sha256": "sha256-VsToilbo3jkYGuUw8TEI4dahAMLfDLyCreeEIZhea0g=",
+    "rev": "2d4bc31d9a4081d72783901c469133459d5c22d0",
+    "sha256": "sha256-acDmbQFxiTspGDWSWg7b9bIp64gg/jf0fMJjhPu7z2k=",
     "site": "github.com",
-    "url": "https://github.com/rawnly/gist.nvim/archive/94ad9668634c4932d0c8039b974f5cd6da0b841c.tar.gz"
+    "url": "https://github.com/rawnly/gist.nvim/archive/2d4bc31d9a4081d72783901c469133459d5c22d0.tar.gz"
   },
   {
     "date": "2025-04-07",
@@ -9774,15 +9796,15 @@
     "url": "https://github.com/rmagatti/auto-session/archive/292492ab7af4bd8b9e37e28508bc8ce995722fd5.tar.gz"
   },
   {
-    "date": "2025-09-08",
+    "date": "2025-12-26",
     "description": "A small Neovim plugin for previewing definitions using floating windows.",
     "license": "Apache-2.0",
     "owner": "rmagatti",
     "repo": "goto-preview",
-    "rev": "cf561d10b4b104db20375c48b86cf36af9f96e00",
-    "sha256": "sha256-ZVzEkRlIyUFBNb2wNNdLZxBhDl7GZvVBlAg/YGEP8Yg=",
+    "rev": "d2d6923c9b9e0e43f0b9b566f261a8b1ae016540",
+    "sha256": "sha256-zG+f752wS6Ws5MEyttiZKxEc0F+ODw4blVE01Iz+ecQ=",
     "site": "github.com",
-    "url": "https://github.com/rmagatti/goto-preview/archive/cf561d10b4b104db20375c48b86cf36af9f96e00.tar.gz"
+    "url": "https://github.com/rmagatti/goto-preview/archive/d2d6923c9b9e0e43f0b9b566f261a8b1ae016540.tar.gz"
   },
   {
     "date": "2025-12-25",
@@ -9818,15 +9840,15 @@
     "url": "https://github.com/rockyzhang24/arctic.nvim/archive/46da33aeb3a8ee48533f41911b3aaf4f1541dd6f.tar.gz"
   },
   {
-    "date": "2025-12-24",
+    "date": "2025-12-26",
     "description": "HTTP client for Neovim with requests in pure Lua. Programmable, composable, extensible.",
     "license": "MIT",
     "owner": "rodrigoscc",
     "repo": "nurl.nvim",
-    "rev": "9b6a260da7e70c74c9526e3279a59d908471ecb2",
-    "sha256": "sha256-khZxPMIC8Uw+BNhigk6coz7vD6/3FtHsgEvIOt9sFIk=",
+    "rev": "cacf63baded10d1c2faac1cdb1e808a9fd4cfdac",
+    "sha256": "sha256-S6sgX1Y+vd+AxBj0czsMeKyAyHP4ucox/tblxFVd7hc=",
     "site": "github.com",
-    "url": "https://github.com/rodrigoscc/nurl.nvim/archive/9b6a260da7e70c74c9526e3279a59d908471ecb2.tar.gz"
+    "url": "https://github.com/rodrigoscc/nurl.nvim/archive/cacf63baded10d1c2faac1cdb1e808a9fd4cfdac.tar.gz"
   },
   {
     "date": "2025-12-02",
@@ -10180,15 +10202,15 @@
     "url": "https://github.com/scalameta/nvim-metals/archive/90dadd67bb1069ce1ba2a4dabf4e45da2807ba80.tar.gz"
   },
   {
-    "date": "2025-12-05",
+    "date": "2025-12-26",
     "description": "🤖💤 High-contrast, Futuristic & Vibrant Neovim Colorscheme",
     "license": "MIT",
     "owner": "scottmckendry",
     "repo": "cyberdream.nvim",
-    "rev": "a43b45423e8494898c353c0604e0b2e4e99bd056",
-    "sha256": "sha256-mmlwjJa9uxbqQmbyCnKwoEMXbhCNY1b84D37pDFngFs=",
+    "rev": "a956559cda735fbc9f0b39541529386322afaedd",
+    "sha256": "sha256-pRIudRg6PgYraOEQrvGH7WHnawoaMbHW2NqQiKpC6zg=",
     "site": "github.com",
-    "url": "https://github.com/scottmckendry/cyberdream.nvim/archive/a43b45423e8494898c353c0604e0b2e4e99bd056.tar.gz"
+    "url": "https://github.com/scottmckendry/cyberdream.nvim/archive/a956559cda735fbc9f0b39541529386322afaedd.tar.gz"
   },
   {
     "date": "2025-08-26",
@@ -10269,15 +10291,15 @@
     "url": "https://github.com/shortcuts/no-neck-pain.nvim/archive/27de16fde2d72a2dc8119e19ba0882f128fe0831.tar.gz"
   },
   {
-    "date": "2025-08-22",
+    "date": "2025-12-25",
     "description": "Directory browser plugin for Neovim, inspired by Ranger",
     "license": "Apache-2.0",
     "owner": "simonmclean",
     "repo": "triptych.nvim",
-    "rev": "f30e48d8861adc69de01d65099d7b8922fb34f54",
-    "sha256": "sha256-7HhyVvfcqygkn37HZknzGtAkr+vJYrtzpdr41ew+K00=",
+    "rev": "18746e1d2b804ffb5922f0f6999f8df88f3f8c90",
+    "sha256": "sha256-Jms1mSwFIpxcMfEXdM6wjBzXz28PyaNg/xC4RozkJvU=",
     "site": "github.com",
-    "url": "https://github.com/simonmclean/triptych.nvim/archive/f30e48d8861adc69de01d65099d7b8922fb34f54.tar.gz"
+    "url": "https://github.com/simonmclean/triptych.nvim/archive/18746e1d2b804ffb5922f0f6999f8df88f3f8c90.tar.gz"
   },
   {
     "date": "2024-06-13",
@@ -11346,17 +11368,6 @@
     "url": "https://github.com/walkersumida/fusen.nvim/archive/ff57476e167dd5437b6030616b7257e2a3b0619f.tar.gz"
   },
   {
-    "date": "2025-11-14",
-    "description": "Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters.",
-    "license": "Apache-2.0",
-    "owner": "mason-org",
-    "repo": "mason.nvim",
-    "rev": "57e5a8addb8c71fb063ee4acda466c7cf6ad2800",
-    "sha256": "sha256-Ay6qIew4PjA2yow6eP2TZkJg9SNvGV7r9ZXG/fTB804=",
-    "site": "github.com",
-    "url": "https://github.com/williamboman/mason.nvim/archive/57e5a8addb8c71fb063ee4acda466c7cf6ad2800.tar.gz"
-  },
-  {
     "date": "2025-05-27",
     "description": "Pipe from wezterm, kitty, and neovim terminals into your current neovim instance. Like `code -r` on steroids.",
     "homepage": "https://luarocks.org/modules/willothy/flatten.nvim",
@@ -11468,15 +11479,15 @@
     "url": "https://github.com/woosaaahh/sj.nvim/archive/7ca6186a9ce1588ded42cd9d67582ace0f9a9242.tar.gz"
   },
   {
-    "date": "2025-12-24",
+    "date": "2025-12-26",
     "description": " delete buffers without changing windows layout",
     "license": "GPL-3.0",
     "owner": "wsdjeg",
     "repo": "bufdel.nvim",
-    "rev": "fe9616b784eccb868a101b8bf6499cda786de347",
-    "sha256": "sha256-plSIcbqQTtD9kdGZfu+XoVaEa8wEZd0h5UxRTvmr+kc=",
+    "rev": "3c13db12226dd4246f5f7d026f0e30aeb714651f",
+    "sha256": "sha256-oJaQythV9WCxTY2UbxwXYoMM2NV4SLsV3v8atnzb9vY=",
     "site": "github.com",
-    "url": "https://github.com/wsdjeg/bufdel.nvim/archive/fe9616b784eccb868a101b8bf6499cda786de347.tar.gz"
+    "url": "https://github.com/wsdjeg/bufdel.nvim/archive/3c13db12226dd4246f5f7d026f0e30aeb714651f.tar.gz"
   },
   {
     "date": "2025-12-18",
@@ -12097,15 +12108,15 @@
     "url": "https://github.com/zootedb0t/citruszest.nvim/archive/ce6749e4c3a842679cc302ce1c2db76c2d07f700.tar.gz"
   },
   {
-    "date": "2025-12-24",
+    "date": "2025-12-26",
     "description": "lazy.nvim-like minimalist plugin manager, powered by neovim's built-in plugin manager",
     "license": "MIT",
     "owner": "zuqini",
     "repo": "zpack.nvim",
-    "rev": "b42d90d8256204a605ddc664916bcfc96aec4946",
-    "sha256": "sha256-uuBcdh4cwlyIh9n9j73AMGJpwmzBW0ALBxl1vHRyvKo=",
+    "rev": "d2bb878698d625468aba980961db25280d411951",
+    "sha256": "sha256-WkFbhjeNbKTPtwZFqtCaeRuV1Hq5YROgHQgcM8DtEI4=",
     "site": "github.com",
-    "url": "https://github.com/zuqini/zpack.nvim/archive/b42d90d8256204a605ddc664916bcfc96aec4946.tar.gz"
+    "url": "https://github.com/zuqini/zpack.nvim/archive/d2bb878698d625468aba980961db25280d411951.tar.gz"
   },
   {
     "date": "2024-08-11",
