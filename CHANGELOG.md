@@ -11,6 +11,15 @@ number is not noted here since it will be used for rolling release.
 
 ## [Unreleased]
 
+### Added
+
+- Extra meta data:
+  - `meta.lastCommitAt`: when the last commit was done
+  - `meta.createdAt`: when the repo was created
+  - `meta.updatedAt`: when the repo was updated/active
+  - `meta.archived`: whether the repo has been archived or not
+  - `meta.starsCount`: the number of users that have starred the repo
+
 ## [0.3.0] - 2025-11-16
 
 ### Changed

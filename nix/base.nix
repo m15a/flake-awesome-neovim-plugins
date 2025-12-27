@@ -72,6 +72,21 @@ let
               #   lib.licenses.agpl3Only? or agpl3Plus?
               # else
               getLicenseFromSpdxId pluginData.license;
+          }
+          // optionalAttrs (pluginData ? "timestamp") {
+            lastCommitAt = pluginData.timestamp;
+          }
+          // optionalAttrs (pluginData ? "created_at") {
+            createdAt = pluginData.created_at;
+          }
+          // optionalAttrs (pluginData ? "updated_at") {
+            updatedAt = pluginData.updated_at;
+          }
+          // optionalAttrs (pluginData ? "archived") {
+            archived = pluginData.archived;
+          }
+          // optionalAttrs (pluginData ? "stars_count") {
+            starsCount = pluginData.stars_count;
           };
       };
     };
