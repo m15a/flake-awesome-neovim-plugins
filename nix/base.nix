@@ -73,8 +73,8 @@ let
               # else
               getLicenseFromSpdxId pluginData.license;
           }
-          // optionalAttrs (pluginData ? "timestamp") {
-            lastCommitAt = pluginData.timestamp;
+          // optionalAttrs (pluginData ? "last_commit_at") {
+            lastCommitAt = pluginData.last_commit_at;
           }
           // optionalAttrs (pluginData ? "created_at") {
             createdAt = pluginData.created_at;
