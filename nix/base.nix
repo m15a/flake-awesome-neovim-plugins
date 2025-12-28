@@ -83,7 +83,7 @@ let
             updatedAt = pluginData.updated_at;
           }
           // optionalAttrs (pluginData ? "archived") {
-            archived = pluginData.archived;
+            inherit (pluginData) archived;
           }
           // optionalAttrs (pluginData ? "stars_count") {
             starsCount = pluginData.stars_count;
