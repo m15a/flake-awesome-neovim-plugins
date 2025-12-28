@@ -76,13 +76,6 @@ let
 
     isVimPlugin = x: isAttrs x && (x.vimPlugin or false);
   };
-
-  systems = [
-    "aarch64-darwin"
-    "aarch64-linux"
-    "x86_64-darwin"
-    "x86_64-linux"
-  ];
 in
 
 {
@@ -102,5 +95,4 @@ in
     filterVimPlugins
     isVimPlugin
     ;
-  inherit systems;
 }

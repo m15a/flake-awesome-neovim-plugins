@@ -1,4 +1,4 @@
-{ nixpkgs, ... }:
+{ nixpkgs, systems, ... }:
 let
   inherit (nixpkgs.lib)
     genAttrs
@@ -7,12 +7,11 @@ let
   inherit (import ./lib.nix { inherit (nixpkgs) lib; })
     filterVimPlugins
     mapAttrNames
-    systems
     ;
 
   forSystems =
     f:
-    genAttrs systems (
+    genAttrs (import systems) (
       system:
       f (
         import nixpkgs {
