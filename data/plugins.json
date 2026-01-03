@@ -32,7 +32,6 @@
     "date": "2025-11-18",
     "description": "Neovim colorscheme inspired by Srcery",
     "homepage": "https://codeberg.org/m15a/nvim-srcerite",
-    "last_commit_at": "2025-11-18T09:35:42+09:00",
     "owner": "m15a",
     "repo": "nvim-srcerite",
     "rev": "c3e023c33694f529283994e3a87b1f12847a0ab1",
@@ -136,8 +135,8 @@
     "rev": "23cfd42ba5ae9e97c180a4ef7f7effd14e6d79b7",
     "sha256": "sha256-ivQ854zjyo5j++8Qy+rn9mN/q3k3TDCLNYdbf6joWi4=",
     "site": "github.com",
-    "stars_count": 359,
-    "updated_at": "2025-12-16T06:57:34Z",
+    "stars_count": 360,
+    "updated_at": "2026-01-03T16:41:52Z",
     "url": "https://github.com/2KAbhishek/nerdy.nvim/archive/23cfd42ba5ae9e97c180a4ef7f7effd14e6d79b7.tar.gz"
   },
   {
@@ -493,16 +492,16 @@
     "created_at": "2023-01-21T15:54:53Z",
     "date": "2026-01-02",
     "description": "🌒  Nord for Neovim, but warmer and darker.  Supports a variety of plugins and other platforms.",
-    "last_commit_at": "2026-01-02T15:05:05Z",
+    "last_commit_at": "2026-01-02T22:52:30Z",
     "license": "MIT",
     "owner": "AlexvZyl",
     "repo": "nordic.nvim",
-    "rev": "c63087d2cb4d425d794cbbb3ad812af3cc69e9c3",
-    "sha256": "sha256-6jIhhJm+HlN64PX9M8U1ifVgy2J7IQEqBCd7h0rSreM=",
+    "rev": "4f0245ed32a32436b2c6ae1a03f625a93a8c077a",
+    "sha256": "sha256-LxjKoyBixqR6Xik/pikuIqWbliTlIksFaKe3azhcW64=",
     "site": "github.com",
-    "stars_count": 961,
-    "updated_at": "2026-01-02T15:05:10Z",
-    "url": "https://github.com/AlexvZyl/nordic.nvim/archive/c63087d2cb4d425d794cbbb3ad812af3cc69e9c3.tar.gz"
+    "stars_count": 963,
+    "updated_at": "2026-01-03T13:23:39Z",
+    "url": "https://github.com/AlexvZyl/nordic.nvim/archive/4f0245ed32a32436b2c6ae1a03f625a93a8c077a.tar.gz"
   },
   {
     "created_at": "2021-08-13T07:15:14Z",
@@ -584,8 +583,8 @@
     "rev": "ce202248134e3949aac375fd66c28e5207785b10",
     "sha256": "sha256-vKUbl6JdEsiKhSAR9UIhmu0zWgrjMaROuw4QzA7+AyE=",
     "site": "github.com",
-    "stars_count": 1482,
-    "updated_at": "2025-12-31T07:21:49Z",
+    "stars_count": 1483,
+    "updated_at": "2026-01-02T19:34:24Z",
     "url": "https://github.com/Bekaboo/dropbar.nvim/archive/ce202248134e3949aac375fd66c28e5207785b10.tar.gz"
   },
   {
@@ -670,8 +669,8 @@
     "rev": "45dfea066a6110abcbc3cd361457ac3cbaefd68b",
     "sha256": "sha256-z5cUGUGlCNijz6kK+XwF+cs+pmkK5tgZEyBBvycIm2I=",
     "site": "github.com",
-    "stars_count": 665,
-    "updated_at": "2026-01-01T13:32:53Z",
+    "stars_count": 666,
+    "updated_at": "2026-01-03T11:08:05Z",
     "url": "https://github.com/CRAG666/code_runner.nvim/archive/45dfea066a6110abcbc3cd361457ac3cbaefd68b.tar.gz"
   },
   {
@@ -706,7 +705,6 @@
     "created_at": "2023-09-14T01:16:57Z",
     "date": "2026-01-02",
     "description": "The blazingly fastest way to get to your projects",
-    "last_commit_at": "2026-01-02T01:51:55Z",
     "license": "Apache-2.0",
     "owner": "CWood-sdf",
     "repo": "spaceport.nvim",
@@ -826,23 +824,9 @@
     "rev": "9db5d3eaafe9fc3c91ce9ecfc416de2798982487",
     "sha256": "sha256-qK/BvMo86ks6+c7t6d6OiGCdGfLOezf1okQSp2IKUWI=",
     "site": "github.com",
-    "stars_count": 3492,
-    "updated_at": "2026-01-02T11:46:07Z",
+    "stars_count": 3491,
+    "updated_at": "2026-01-02T17:57:26Z",
     "url": "https://github.com/CopilotC-Nvim/CopilotChat.nvim/archive/9db5d3eaafe9fc3c91ce9ecfc416de2798982487.tar.gz"
-  },
-  {
-    "created_at": "2021-12-04T05:43:05Z",
-    "date": "2025-01-27",
-    "description": "Cosmic-UI is a simple wrapper around specific vim functionality. Built in order to provide a quick and easy way to create a Cosmic UI experience with Neovim!",
-    "license": "GPL-3.0",
-    "owner": "CosmicNvim",
-    "repo": "cosmic-ui",
-    "rev": "ab7de388576eaac02ce7bc2389e55b8e207aad12",
-    "sha256": "sha256-oyA8AwqOZU45+h540y/o2M7WxCfw623GMTKFzdOSa60=",
-    "site": "github.com",
-    "stars_count": 170,
-    "updated_at": "2025-08-16T19:46:28Z",
-    "url": "https://github.com/CosmicNvim/cosmic-ui/archive/ab7de388576eaac02ce7bc2389e55b8e207aad12.tar.gz"
   },
   {
     "created_at": "2022-11-24T13:47:04Z",
@@ -930,24 +914,23 @@
   },
   {
     "created_at": "2024-06-29T21:10:23Z",
-    "date": "2026-01-01",
+    "date": "2026-01-03",
     "description": "A Neovim plugin that sets the cwd to the project root, stores projects in a history file, includes a telescope picker, supports fzf-lua, and provides UI tools",
-    "last_commit_at": "2026-01-01T20:31:18Z",
+    "last_commit_at": "2026-01-03T03:28:50Z",
     "license": "Apache-2.0",
     "owner": "DrKJeff16",
     "repo": "project.nvim",
-    "rev": "1abc4a15bfe50d8590f3421b06ad2dd0607f91d7",
-    "sha256": "sha256-yNJbEbOaSQCdgVghstlt6P07FU1vf8J0ibJqwcwZ8k0=",
+    "rev": "b97f9674caed3da1f4a43446d8501a26d1591b6e",
+    "sha256": "sha256-/VT/TdSoVMzhlcy4ed3oB0ZOnkDcPiPjxVNw2NgkUWw=",
     "site": "github.com",
-    "stars_count": 105,
-    "updated_at": "2026-01-02T09:30:18Z",
-    "url": "https://github.com/DrKJeff16/project.nvim/archive/1abc4a15bfe50d8590f3421b06ad2dd0607f91d7.tar.gz"
+    "stars_count": 108,
+    "updated_at": "2026-01-03T09:59:02Z",
+    "url": "https://github.com/DrKJeff16/project.nvim/archive/b97f9674caed3da1f4a43446d8501a26d1591b6e.tar.gz"
   },
   {
     "created_at": "2023-08-16T04:24:15Z",
     "date": "2026-01-02",
     "description": "WezTerm Lua config types for Lua Language Server, with Neovim and VSCode compatibility.",
-    "last_commit_at": "2026-01-02T02:56:31Z",
     "license": "MIT",
     "owner": "DrKJeff16",
     "repo": "wezterm-types",
@@ -982,8 +965,8 @@
     "rev": "ba47d4b4c5ec308718641ba7402c143836f35aa9",
     "sha256": "sha256-W2u5V0cdPIB2HcV3G3dmLW/havF61RSt1kS2ydQjnl4=",
     "site": "github.com",
-    "stars_count": 3846,
-    "updated_at": "2026-01-02T12:18:19Z",
+    "stars_count": 3848,
+    "updated_at": "2026-01-03T16:46:06Z",
     "url": "https://github.com/EdenEast/nightfox.nvim/archive/ba47d4b4c5ec308718641ba7402c143836f35aa9.tar.gz"
   },
   {
@@ -1151,8 +1134,8 @@
     "rev": "6da0091836f36f82af558f0395ea50fd5a297d6d",
     "sha256": "sha256-Q5mKLzznICs0L1nqKKGV7zlo5xKnrNuXHa5BdgdN7ew=",
     "site": "github.com",
-    "stars_count": 311,
-    "updated_at": "2025-12-16T03:25:28Z",
+    "stars_count": 312,
+    "updated_at": "2026-01-03T00:52:59Z",
     "url": "https://github.com/FrenzyExists/aquarium-vim/archive/6da0091836f36f82af558f0395ea50fd5a297d6d.tar.gz"
   },
   {
@@ -1195,7 +1178,7 @@
     "sha256": "sha256-7yntymmZTT8tnGXehii0Ogj6XUaHroId/2a8WGCFlSw=",
     "site": "github.com",
     "stars_count": 843,
-    "updated_at": "2025-12-31T15:53:44Z",
+    "updated_at": "2026-01-03T08:54:21Z",
     "url": "https://github.com/HakonHarnes/img-clip.nvim/archive/b6ddfb97b5600d99afe3452d707444afda658aca.tar.gz"
   },
   {
@@ -1377,8 +1360,8 @@
     "rev": "e3ad0ffaaa3b3b7e2158cc72cd6dad2d19842c46",
     "sha256": "sha256-/mMMER3Xf5S727H+fgzH0M7Zfm+nBhqpJQeQasnGKew=",
     "site": "github.com",
-    "stars_count": 83,
-    "updated_at": "2025-12-27T15:37:26Z",
+    "stars_count": 82,
+    "updated_at": "2026-01-02T17:54:52Z",
     "url": "https://github.com/Kaiser-Yang/blink-cmp-git/archive/e3ad0ffaaa3b3b7e2158cc72cd6dad2d19842c46.tar.gz"
   },
   {
@@ -1439,18 +1422,18 @@
   },
   {
     "created_at": "2024-08-17T14:08:38Z",
-    "date": "2026-01-02",
+    "date": "2026-01-03",
     "description": "A large language model (LLM) plugin for Neovim, provides commands to interact with LLM (like ChatGPT, ChatGLM, kimi, deepseek, openrouter and local llms). Support Github models.",
-    "last_commit_at": "2026-01-02T15:09:13Z",
+    "last_commit_at": "2026-01-03T15:57:54Z",
     "license": "GPL-3.0",
     "owner": "Kurama622",
     "repo": "llm.nvim",
-    "rev": "163353f10c91871d72ab328d06f64b6fb43165f9",
-    "sha256": "sha256-lToD3LpjqEzerEksVzLzhLp7mxqu6ENnKenUQgzctOM=",
+    "rev": "876353a274cedc674d6ece7553d3d948e5c49520",
+    "sha256": "sha256-g/bbMilONbdmtRV9mtiSFaHvlzAc7GQPUgK3Czw3+Js=",
     "site": "github.com",
-    "stars_count": 434,
-    "updated_at": "2026-01-02T16:18:26Z",
-    "url": "https://github.com/Kurama622/llm.nvim/archive/163353f10c91871d72ab328d06f64b6fb43165f9.tar.gz"
+    "stars_count": 435,
+    "updated_at": "2026-01-03T15:58:15Z",
+    "url": "https://github.com/Kurama622/llm.nvim/archive/876353a274cedc674d6ece7553d3d948e5c49520.tar.gz"
   },
   {
     "created_at": "2021-03-19T13:27:06Z",
@@ -1463,7 +1446,7 @@
     "sha256": "sha256-ThJI57kJaq+TPDx9gjkMSb5B+W3asgH0JPJt4uhm1/4=",
     "site": "github.com",
     "stars_count": 4216,
-    "updated_at": "2026-01-02T04:16:43Z",
+    "updated_at": "2026-01-03T13:34:54Z",
     "url": "https://github.com/L3MON4D3/LuaSnip/archive/3732756842a2f7e0e76a7b0487e9692072857277.tar.gz"
   },
   {
@@ -1678,17 +1661,18 @@
   },
   {
     "created_at": "2024-04-28T18:15:17Z",
-    "date": "2025-12-23",
+    "date": "2026-01-02",
     "description": "Find And Replace plugin for neovim",
+    "last_commit_at": "2026-01-02T18:42:02Z",
     "license": "MIT",
     "owner": "MagicDuck",
     "repo": "grug-far.nvim",
-    "rev": "74eef260e1142264ab994fb9c88e4f420e9486d7",
-    "sha256": "sha256-wfPdGI7KxJfI2fneMCaqnY5NqdgWTex3fk9FEWXQGeo=",
+    "rev": "794f03c97afc7f4b03fb6ec5111be507df1850cf",
+    "sha256": "sha256-2TkFP2Q+FGTfi3tBJmLPs/SeeUeIECao8P39rNc6atg=",
     "site": "github.com",
-    "stars_count": 1690,
-    "updated_at": "2026-01-01T20:24:18Z",
-    "url": "https://github.com/MagicDuck/grug-far.nvim/archive/74eef260e1142264ab994fb9c88e4f420e9486d7.tar.gz"
+    "stars_count": 1691,
+    "updated_at": "2026-01-02T21:39:05Z",
+    "url": "https://github.com/MagicDuck/grug-far.nvim/archive/794f03c97afc7f4b03fb6ec5111be507df1850cf.tar.gz"
   },
   {
     "created_at": "2023-02-03T10:41:37Z",
@@ -1721,32 +1705,33 @@
   },
   {
     "created_at": "2024-03-18T04:13:43Z",
-    "date": "2025-12-16",
+    "date": "2026-01-02",
     "description": "Plugin to improve viewing Markdown files in Neovim",
+    "last_commit_at": "2026-01-02T20:14:49Z",
     "license": "MIT",
     "owner": "MeanderingProgrammer",
     "repo": "render-markdown.nvim",
-    "rev": "07d088bf8bdadd159eb807b90eaee86a4778383f",
-    "sha256": "sha256-2qxM9QqZxw5F8+Ek7IAvDFOay32k2SgItgCDN7e+yAc=",
+    "rev": "acddb80d9a12e33c03ca288de39c9963396f358a",
+    "sha256": "sha256-mR47u7+Qjz4UwAy3anOIhvPCLFRnonj7wZFhfx9ozA4=",
     "site": "github.com",
-    "stars_count": 3891,
-    "updated_at": "2026-01-02T08:53:55Z",
-    "url": "https://github.com/MeanderingProgrammer/render-markdown.nvim/archive/07d088bf8bdadd159eb807b90eaee86a4778383f.tar.gz"
+    "stars_count": 3894,
+    "updated_at": "2026-01-03T16:15:15Z",
+    "url": "https://github.com/MeanderingProgrammer/render-markdown.nvim/archive/acddb80d9a12e33c03ca288de39c9963396f358a.tar.gz"
   },
   {
     "created_at": "2025-05-27T20:34:50Z",
     "date": "2026-01-02",
     "description": "Original modules from nvim-treesitter master branch",
-    "last_commit_at": "2026-01-02T08:00:12Z",
+    "last_commit_at": "2026-01-02T19:37:47Z",
     "license": "Apache-2.0",
     "owner": "MeanderingProgrammer",
     "repo": "treesitter-modules.nvim",
-    "rev": "ed99b79c61fed4ec7be593d63ad094c1c9e2251c",
-    "sha256": "sha256-66Zzkn2DoekvUT1pjnPo8+BWTix2WmfkYgJ8fwxAPWE=",
+    "rev": "7efc486c933a361568855b10e0829aa2cda4b6b0",
+    "sha256": "sha256-xu8kbNHpslL2FLT0avPbWsYdYb8napzDCGy7WPjesZA=",
     "site": "github.com",
-    "stars_count": 118,
-    "updated_at": "2026-01-02T10:35:45Z",
-    "url": "https://github.com/MeanderingProgrammer/treesitter-modules.nvim/archive/ed99b79c61fed4ec7be593d63ad094c1c9e2251c.tar.gz"
+    "stars_count": 119,
+    "updated_at": "2026-01-02T19:41:06Z",
+    "url": "https://github.com/MeanderingProgrammer/treesitter-modules.nvim/archive/7efc486c933a361568855b10e0829aa2cda4b6b0.tar.gz"
   },
   {
     "created_at": "2022-11-28T20:54:57Z",
@@ -1828,8 +1813,8 @@
     "rev": "aa1102a7e15195c9cca22730b09224a7f7745ba8",
     "sha256": "sha256-oX3rVRNMg2wUSbhx5nEp0TVEvOU6DoI0aa9CcLyPpUM=",
     "site": "github.com",
-    "stars_count": 925,
-    "updated_at": "2026-01-01T04:29:29Z",
+    "stars_count": 926,
+    "updated_at": "2026-01-03T11:26:15Z",
     "url": "https://github.com/Mofiqul/vscode.nvim/archive/aa1102a7e15195c9cca22730b09224a7f7745ba8.tar.gz"
   },
   {
@@ -2024,8 +2009,8 @@
     "rev": "d8bf9102692250193b855acd9025a826f1af2729",
     "sha256": "sha256-2L13kAVgmdImcV9CNXVKVXfcY5h04E7+HopkSNMehTM=",
     "site": "github.com",
-    "stars_count": 5021,
-    "updated_at": "2026-01-02T12:03:15Z",
+    "stars_count": 5023,
+    "updated_at": "2026-01-03T11:55:56Z",
     "url": "https://github.com/NeogitOrg/neogit/archive/d8bf9102692250193b855acd9025a826f1af2729.tar.gz"
   },
   {
@@ -2111,22 +2096,8 @@
     "sha256": "sha256-u2lQM1/0kcdkcL4II79Gf0jEUg8WragpWTkCPcqlBW4=",
     "site": "github.com",
     "stars_count": 3155,
-    "updated_at": "2026-01-02T14:26:13Z",
+    "updated_at": "2026-01-03T09:39:52Z",
     "url": "https://github.com/OXY2DEV/markview.nvim/archive/18fc148c83925919d94f3fc8e5c74f2d108b9b44.tar.gz"
-  },
-  {
-    "created_at": "2025-04-03T06:01:59Z",
-    "date": "2025-12-07",
-    "description": "A blueprint/template/guide to customize Neovim's UI using Lua.",
-    "license": "MIT",
-    "owner": "OXY2DEV",
-    "repo": "ui.nvim",
-    "rev": "4670854550f82c51ef5b1640d3b2a36241f8d84b",
-    "sha256": "sha256-ZRn31U6krkrnQqGrNimRqRljEHWQg40sclEXoTki/Mo=",
-    "site": "github.com",
-    "stars_count": 151,
-    "updated_at": "2026-01-02T05:05:42Z",
-    "url": "https://github.com/OXY2DEV/ui.nvim/archive/4670854550f82c51ef5b1640d3b2a36241f8d84b.tar.gz"
   },
   {
     "created_at": "2019-11-11T23:05:32Z",
@@ -2148,15 +2119,14 @@
     "date": "2026-01-02",
     "description": "Interactive evaluation for Neovim (Clojure, Fennel, Scheme, Python, JavaScript, PHP, R, Lua, Rust and more!)",
     "homepage": "https://conjure.oli.me.uk",
-    "last_commit_at": "2026-01-02T11:12:46Z",
     "license": "Unlicense",
     "owner": "Olical",
     "repo": "conjure",
     "rev": "67705566318002cc0a88b075f695518a43aa0ca7",
     "sha256": "sha256-cyOQzuNPCir8bwTYm4O5mIDStC1VyKxIENwboNuwfj8=",
     "site": "github.com",
-    "stars_count": 2029,
-    "updated_at": "2026-01-02T11:12:55Z",
+    "stars_count": 2031,
+    "updated_at": "2026-01-03T04:18:20Z",
     "url": "https://github.com/Olical/conjure/archive/67705566318002cc0a88b075f695518a43aa0ca7.tar.gz"
   },
   {
@@ -2258,17 +2228,18 @@
   },
   {
     "created_at": "2021-03-12T19:32:23Z",
-    "date": "2025-12-11",
+    "date": "2026-01-03",
     "description": "Neovim plugin for building a sync base16 colorscheme. Includes support for Treesitter and LSP highlight groups.",
+    "last_commit_at": "2026-01-03T00:46:41Z",
     "license": "MIT",
     "owner": "RRethy",
     "repo": "base16-nvim",
-    "rev": "e05bcb99951d8ae4ecbf4ae053922fd2be6263a5",
-    "sha256": "sha256-bq50uOzBvt1ZZMJA5NCG90+65Ta7G2FV+y7L8nmUfaE=",
+    "rev": "e6b3b10263288096653c3cfbcb144790874ef1a7",
+    "sha256": "sha256-y5pqGvjD82YmcN3nWPCiZ39A0qJE8BLcxanQCd2vpWs=",
     "site": "github.com",
     "stars_count": 611,
-    "updated_at": "2025-12-16T21:41:39Z",
-    "url": "https://github.com/RRethy/base16-nvim/archive/e05bcb99951d8ae4ecbf4ae053922fd2be6263a5.tar.gz"
+    "updated_at": "2026-01-03T00:46:44Z",
+    "url": "https://github.com/RRethy/base16-nvim/archive/e6b3b10263288096653c3cfbcb144790874ef1a7.tar.gz"
   },
   {
     "created_at": "2021-06-01T02:06:53Z",
@@ -2295,7 +2266,7 @@
     "sha256": "sha256-TdVjzKTkCc5EHAG3NcyPZQTJ4TBjGD8m/P89NxINPe0=",
     "site": "github.com",
     "stars_count": 2419,
-    "updated_at": "2026-01-01T10:51:35Z",
+    "updated_at": "2026-01-02T20:37:12Z",
     "url": "https://github.com/RRethy/vim-illuminate/archive/0d1e93684da00ab7c057410fecfc24f434698898.tar.gz"
   },
   {
@@ -2308,8 +2279,8 @@
     "rev": "c37f154b97690c4925fef4e35ffdbf2c844b5f4e",
     "sha256": "sha256-ViA30VwHXxiUZox/EM+6xWg9nvn7L9xNqAl/BeekNcQ=",
     "site": "github.com",
-    "stars_count": 1295,
-    "updated_at": "2025-12-27T20:32:57Z",
+    "stars_count": 1296,
+    "updated_at": "2026-01-03T07:03:26Z",
     "url": "https://github.com/Robitx/gp.nvim/archive/c37f154b97690c4925fef4e35ffdbf2c844b5f4e.tar.gz"
   },
   {
@@ -2379,8 +2350,8 @@
     "rev": "ac9fa498a9edb96dc3056724ff69d5f40b898453",
     "sha256": "sha256-WIH8OujfGVFxsppZWDl2qZHBf9eqt7HIYoSTG8jBDGE=",
     "site": "github.com",
-    "stars_count": 1063,
-    "updated_at": "2025-12-31T12:13:17Z",
+    "stars_count": 1064,
+    "updated_at": "2026-01-03T16:25:45Z",
     "url": "https://github.com/Saecki/crates.nvim/archive/ac9fa498a9edb96dc3056724ff69d5f40b898453.tar.gz"
   },
   {
@@ -2455,18 +2426,19 @@
   },
   {
     "created_at": "2025-07-07T15:24:00Z",
-    "date": "2026-01-01",
+    "date": "2026-01-03",
     "description": "Too lazy for write \"pip install -r requirements.txt\", or \"cargo add ...\".. or maybe.. \"luarocks install ..\" and writing it to requirements file? Thats plugin or you!",
     "homepage": "https://discord.gg/FWKj2cHuwA",
+    "last_commit_at": "2026-01-03T15:28:10Z",
     "license": "MIT",
     "owner": "LazyDeveloperHelper",
     "repo": "LazyDeveloperHelper",
-    "rev": "fa2d3f2f785bd0bec37e114e4c693f00d03695c7",
-    "sha256": "sha256-RIAFYeJEldeg+y1kGfE+7e3zjtMbm0Lg9wiYQyFBI84=",
+    "rev": "c8389c05db4079af085648209135bd8d142ebf4b",
+    "sha256": "sha256-xMdW1g9mjtP6dtz69gxZw7ILlVetNy7Jo76Y3xhXSrA=",
     "site": "github.com",
     "stars_count": 9,
-    "updated_at": "2026-01-01T20:35:14Z",
-    "url": "https://github.com/Silletr/LazyDeveloperHelper/archive/fa2d3f2f785bd0bec37e114e4c693f00d03695c7.tar.gz"
+    "updated_at": "2026-01-03T15:28:18Z",
+    "url": "https://github.com/Silletr/LazyDeveloperHelper/archive/c8389c05db4079af085648209135bd8d142ebf4b.tar.gz"
   },
   {
     "created_at": "2023-03-20T11:28:42Z",
@@ -2492,8 +2464,8 @@
     "rev": "f5eba192f39b453675d115351808bd51276d9de5",
     "sha256": "sha256-cVO2tZipmuceQbAzpWYdG99fIcv90fnEJs898iNbfgE=",
     "site": "github.com",
-    "stars_count": 1623,
-    "updated_at": "2025-12-30T05:04:05Z",
+    "stars_count": 1622,
+    "updated_at": "2026-01-02T17:55:24Z",
     "url": "https://github.com/SmiteshP/nvim-navic/archive/f5eba192f39b453675d115351808bd51276d9de5.tar.gz"
   },
   {
@@ -2561,8 +2533,8 @@
     "rev": "d5aa1f0dbef93b7ed4219ef8c7bfae9691264ef7",
     "sha256": "sha256-nElKyIfxxwOnMkO3ruGcU6ISuNngf6CDKJ5s69c+/YE=",
     "site": "github.com",
-    "stars_count": 93,
-    "updated_at": "2025-12-29T03:43:51Z",
+    "stars_count": 94,
+    "updated_at": "2026-01-03T05:56:28Z",
     "url": "https://github.com/SunnyTamang/select-undo.nvim/archive/d5aa1f0dbef93b7ed4219ef8c7bfae9691264ef7.tar.gz"
   },
   {
@@ -2589,8 +2561,8 @@
     "rev": "266cb28a451448754eb8ae2a2a46d6ae526b33f8",
     "sha256": "sha256-VNfcLxAKhP3kL2+StH4Q/4T8RdvqFXwSNNohmAUxJNU=",
     "site": "github.com",
-    "stars_count": 647,
-    "updated_at": "2026-01-02T08:26:14Z",
+    "stars_count": 648,
+    "updated_at": "2026-01-03T13:13:42Z",
     "url": "https://github.com/TaDaa/vimade/archive/266cb28a451448754eb8ae2a2a46d6ae526b33f8.tar.gz"
   },
   {
@@ -2713,8 +2685,8 @@
     "rev": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3",
     "sha256": "sha256-kc/LGk4m08GMd7quwJED8bGvpI6UmVMSvmJP/R9H8t8=",
     "site": "github.com",
-    "stars_count": 8798,
-    "updated_at": "2026-01-02T09:48:28Z",
+    "stars_count": 8802,
+    "updated_at": "2026-01-03T16:20:53Z",
     "url": "https://github.com/ThePrimeagen/harpoon/archive/1bc17e3e42ea3c46b33c0bbad6a880792692a1b3.tar.gz"
   },
   {
@@ -2784,7 +2756,7 @@
     "sha256": "sha256-osp25AmuLANwe48J76JOuzhS9bdAlGudmJilC43IUm4=",
     "site": "github.com",
     "stars_count": 204,
-    "updated_at": "2025-12-17T12:03:41Z",
+    "updated_at": "2026-01-03T08:27:05Z",
     "url": "https://github.com/Tsuzat/NeoSolarized.nvim/archive/3c55ad358c062aa4879950c4f83b4deeac6b72df.tar.gz"
   },
   {
@@ -2797,8 +2769,8 @@
     "rev": "ccad56bb5eb7d29258980cfc0a716eb87bcad69e",
     "sha256": "sha256-taZGhwYsSrpvNX3vcLn0g6+h14CPh39TzRbdVakWvbY=",
     "site": "github.com",
-    "stars_count": 143,
-    "updated_at": "2025-12-13T18:54:08Z",
+    "stars_count": 144,
+    "updated_at": "2026-01-03T00:56:35Z",
     "url": "https://github.com/Verf/deepwhite.nvim/archive/ccad56bb5eb7d29258980cfc0a716eb87bcad69e.tar.gz"
   },
   {
@@ -2853,8 +2825,8 @@
     "rev": "1d5c3a32af3051e9403512e033ab05ccd4972953",
     "sha256": "sha256-1ZJORjivNMaTm44DncH1hxp4dlt40ELnR3txaQEL9ug=",
     "site": "github.com",
-    "stars_count": 1272,
-    "updated_at": "2026-01-02T09:02:20Z",
+    "stars_count": 1271,
+    "updated_at": "2026-01-03T13:35:14Z",
     "url": "https://github.com/Vigemus/iron.nvim/archive/1d5c3a32af3051e9403512e033ab05ccd4972953.tar.gz"
   },
   {
@@ -3057,17 +3029,18 @@
   },
   {
     "created_at": "2025-09-29T01:11:59Z",
-    "date": "2025-12-28",
+    "date": "2026-01-03",
     "description": "The full Markdown editing experience in neovim",
+    "last_commit_at": "2026-01-03T01:52:04Z",
     "license": "MIT",
     "owner": "YousefHadder",
     "repo": "markdown-plus.nvim",
-    "rev": "05084a442a3567f544b354dd12e356030a50894c",
-    "sha256": "sha256-9u3jacSDfwVy/l4xcGfTe/SCHuOde355CaAYo1cv4+Y=",
+    "rev": "ea31f098d13c0d95453acdc53e832c6f5c6adbdd",
+    "sha256": "sha256-7sKceJXl07K22k2EwFAEar7EFn14G+3q5ueYjPA6+cA=",
     "site": "github.com",
     "stars_count": 174,
-    "updated_at": "2026-01-01T06:05:41Z",
-    "url": "https://github.com/YousefHadder/markdown-plus.nvim/archive/05084a442a3567f544b354dd12e356030a50894c.tar.gz"
+    "updated_at": "2026-01-03T01:52:08Z",
+    "url": "https://github.com/YousefHadder/markdown-plus.nvim/archive/ea31f098d13c0d95453acdc53e832c6f5c6adbdd.tar.gz"
   },
   {
     "created_at": "2025-01-21T07:48:10Z",
@@ -3163,8 +3136,8 @@
     "rev": "9c6abdedc0407ca517745a5c8e34214fc7dafaf4",
     "sha256": "sha256-Y6m0+CtlEOKTwQzC/kPGgi3pxEosDZD1IDA92Hscs9E=",
     "site": "github.com",
-    "stars_count": 492,
-    "updated_at": "2025-12-26T07:56:02Z",
+    "stars_count": 491,
+    "updated_at": "2026-01-02T17:54:57Z",
     "url": "https://github.com/Zeioth/garbage-day.nvim/archive/9c6abdedc0407ca517745a5c8e34214fc7dafaf4.tar.gz"
   },
   {
@@ -3262,8 +3235,8 @@
     "rev": "3d5148e160ed9728b3275d37d06ea028cef5f43b",
     "sha256": "sha256-aCLvlf2kFBljQKG5oWpE4qiUbNA+HCTvTBFCzdM5Rhg=",
     "site": "github.com",
-    "stars_count": 574,
-    "updated_at": "2026-01-02T16:08:30Z",
+    "stars_count": 575,
+    "updated_at": "2026-01-03T03:46:13Z",
     "url": "https://github.com/aaronik/Treewalker.nvim/archive/3d5148e160ed9728b3275d37d06ea028cef5f43b.tar.gz"
   },
   {
@@ -3276,8 +3249,8 @@
     "rev": "9a3499480a8e53dcaa665e2836f287e3b7764009",
     "sha256": "sha256-zp4Q3uXy3eQg3wNE4RnvarLXmGQP/HLPUF1GDu2B+QA=",
     "site": "github.com",
-    "stars_count": 839,
-    "updated_at": "2026-01-02T01:06:22Z",
+    "stars_count": 838,
+    "updated_at": "2026-01-02T17:57:12Z",
     "url": "https://github.com/abecodes/tabout.nvim/archive/9a3499480a8e53dcaa665e2836f287e3b7764009.tar.gz"
   },
   {
@@ -3416,8 +3389,8 @@
     "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
     "sha256": "sha256-VMvQM3wgxzbmuIw/1dKIJX+TMEGA5mjxtAAWu+qdI8Q=",
     "site": "github.com",
-    "stars_count": 4179,
-    "updated_at": "2026-01-02T14:38:31Z",
+    "stars_count": 4180,
+    "updated_at": "2026-01-03T15:39:38Z",
     "url": "https://github.com/akinsho/bufferline.nvim/archive/655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3.tar.gz"
   },
   {
@@ -3473,8 +3446,8 @@
     "rev": "d17c99fb527ada98ffb0212ffc87ccda6fd4f7d9",
     "sha256": "sha256-7tFWCfHRm9SXAnvjlQnX4aJ0w5D6xlxAcoPSOks00SY=",
     "site": "github.com",
-    "stars_count": 206,
-    "updated_at": "2025-12-09T13:44:08Z",
+    "stars_count": 207,
+    "updated_at": "2026-01-03T14:13:01Z",
     "url": "https://github.com/alec-gibson/nvim-tetris/archive/d17c99fb527ada98ffb0212ffc87ccda6fd4f7d9.tar.gz"
   },
   {
@@ -3544,8 +3517,8 @@
     "rev": "5240d92b8386f5c05031be0e6cca5582a2faeb74",
     "sha256": "sha256-0/SrETVZyl0UzHmL7wdbqrRKpaCIcIxj8eynMd5gBcw=",
     "site": "github.com",
-    "stars_count": 37,
-    "updated_at": "2026-01-01T20:42:01Z",
+    "stars_count": 36,
+    "updated_at": "2026-01-03T08:53:17Z",
     "url": "https://github.com/altermo/iedit.nvim/archive/5240d92b8386f5c05031be0e6cca5582a2faeb74.tar.gz"
   },
   {
@@ -3684,8 +3657,8 @@
     "rev": "c7492552b23d0ab30325e90b56066ec51242adc8",
     "sha256": "sha256-Gk1G5dbaDRWOr9KkMBcZ8xS90A6+34niv4IOhPcXn8g=",
     "site": "github.com",
-    "stars_count": 624,
-    "updated_at": "2025-12-30T04:23:01Z",
+    "stars_count": 625,
+    "updated_at": "2026-01-03T07:03:52Z",
     "url": "https://github.com/anuvyklack/windows.nvim/archive/c7492552b23d0ab30325e90b56066ec51242adc8.tar.gz"
   },
   {
@@ -3698,8 +3671,8 @@
     "rev": "cbe8672a7b68be59310b96eaaf9d589490e64b1c",
     "sha256": "sha256-cpxIFsgL7xE5c4qgUFrSE6aaZMFGcsctzstMWOrYi2g=",
     "site": "github.com",
-    "stars_count": 86,
-    "updated_at": "2025-12-23T19:49:41Z",
+    "stars_count": 85,
+    "updated_at": "2026-01-02T23:55:24Z",
     "url": "https://github.com/apdot/doodle/archive/cbe8672a7b68be59310b96eaaf9d589490e64b1c.tar.gz"
   },
   {
@@ -3783,8 +3756,8 @@
     "rev": "2d4fcd6d3651bb299766391b48d87fac8cd4c9d7",
     "sha256": "sha256-bTiHhYgMsWySIl2cQDZCDKksULG4iOjtnmR84EP2Jmw=",
     "site": "github.com",
-    "stars_count": 65,
-    "updated_at": "2026-01-01T14:03:11Z",
+    "stars_count": 66,
+    "updated_at": "2026-01-03T10:21:20Z",
     "url": "https://github.com/askfiy/nvim-picgo/archive/2d4fcd6d3651bb299766391b48d87fac8cd4c9d7.tar.gz"
   },
   {
@@ -3833,16 +3806,16 @@
     "created_at": "2025-07-15T11:43:51Z",
     "date": "2026-01-02",
     "description": "Batteries-included development environment for the Defold game engine, powered by Neovim",
-    "last_commit_at": "2026-01-02T16:02:51Z",
+    "last_commit_at": "2026-01-02T18:14:18Z",
     "license": "GPL-3.0",
     "owner": "atomicptr",
     "repo": "defold.nvim",
-    "rev": "68313c21e3b554b0c113c56a389ee613163a61ed",
-    "sha256": "sha256-OLvYVKx2DXQhV2YF7UHG5mif9Rc3JzGOhMYBhYuskQw=",
+    "rev": "b2fabd56d598e97bf32b0f4353e95e6bbe8a370b",
+    "sha256": "sha256-/UoEP3HCyygxFBrIz5FEaLmzDxbhe/NpGj66TMpj3V0=",
     "site": "github.com",
-    "stars_count": 16,
-    "updated_at": "2026-01-02T16:02:59Z",
-    "url": "https://github.com/atomicptr/defold.nvim/archive/68313c21e3b554b0c113c56a389ee613163a61ed.tar.gz"
+    "stars_count": 17,
+    "updated_at": "2026-01-02T18:25:39Z",
+    "url": "https://github.com/atomicptr/defold.nvim/archive/b2fabd56d598e97bf32b0f4353e95e6bbe8a370b.tar.gz"
   },
   {
     "created_at": "2023-07-13T14:34:36Z",
@@ -3937,8 +3910,8 @@
     "rev": "cb938c25edaac38d362555f19244a9cb85d561e8",
     "sha256": "sha256-38ucp+yynS4QKJ4SqElvGZyVMnviFWvBEsJSzG1WLQw=",
     "site": "github.com",
-    "stars_count": 503,
-    "updated_at": "2026-01-02T05:42:45Z",
+    "stars_count": 502,
+    "updated_at": "2026-01-02T17:57:38Z",
     "url": "https://github.com/aznhe21/actions-preview.nvim/archive/cb938c25edaac38d362555f19244a9cb85d561e8.tar.gz"
   },
   {
@@ -3951,8 +3924,8 @@
     "rev": "23b1ee028e688ca09500aaf9e80b735ad6ec0de6",
     "sha256": "sha256-8Eg44oxCZliAhdr3sGFnWPlTD/muENcEjYfcKnFA6so=",
     "site": "github.com",
-    "stars_count": 298,
-    "updated_at": "2025-12-25T17:31:08Z",
+    "stars_count": 299,
+    "updated_at": "2026-01-03T08:35:38Z",
     "url": "https://github.com/azorng/goose.nvim/archive/23b1ee028e688ca09500aaf9e80b735ad6ec0de6.tar.gz"
   },
   {
@@ -3988,7 +3961,6 @@
     "date": "2026-01-01",
     "description": "🛍 JSON schemas for Neovim",
     "homepage": "https://schemastore.org",
-    "last_commit_at": "2026-01-01T21:00:37Z",
     "license": "Apache-2.0",
     "owner": "b0o",
     "repo": "SchemaStore.nvim",
@@ -4374,8 +4346,8 @@
     "rev": "8d410c06fad32cc0e3849318e056b308fbaafede",
     "sha256": "sha256-JdQVte6ZzHh6zNzSbS6h4RwdaW7jBTIoY0bR5Lv7jVQ=",
     "site": "github.com",
-    "stars_count": 373,
-    "updated_at": "2025-12-31T01:48:38Z",
+    "stars_count": 374,
+    "updated_at": "2026-01-03T10:54:53Z",
     "url": "https://github.com/brenton-leighton/multiple-cursors.nvim/archive/8d410c06fad32cc0e3849318e056b308fbaafede.tar.gz"
   },
   {
@@ -4396,7 +4368,6 @@
     "created_at": "2024-07-24T10:30:05Z",
     "date": "2026-01-02",
     "description": "A Live Preview Plugin for Neovim that allows you to view Markdown, HTML (along with CSS, JavaScript), AsciiDoc, SVG files in a web browser with live updates.",
-    "last_commit_at": "2026-01-02T04:59:50Z",
     "license": "GPL-3.0",
     "owner": "brianhuster",
     "repo": "live-preview.nvim",
@@ -4501,8 +4472,8 @@
     "rev": "44c0b24b395e8937e19adb2a6e6f3d210cdf7fdc",
     "sha256": "sha256-J4uMoRPqIzhCqz7t99+PQUVKHw6r9wakyhsy8b9qoh0=",
     "site": "github.com",
-    "stars_count": 119,
-    "updated_at": "2026-01-02T11:51:45Z",
+    "stars_count": 121,
+    "updated_at": "2026-01-03T17:13:31Z",
     "url": "https://github.com/carlos-algms/agentic.nvim/archive/44c0b24b395e8937e19adb2a6e6f3d210cdf7fdc.tar.gz"
   },
   {
@@ -4521,17 +4492,18 @@
   },
   {
     "created_at": "2021-08-18T01:14:49Z",
-    "date": "2025-12-14",
+    "date": "2026-01-03",
     "description": "🍨 Soothing pastel theme for (Neo)vim",
+    "last_commit_at": "2026-01-03T13:27:35Z",
     "license": "MIT",
     "owner": "catppuccin",
     "repo": "nvim",
-    "rev": "ce8d176faa4643e026e597ae3c31db59b63cef09",
-    "sha256": "sha256-iFTk470qrQTDWaDuxtiSUwbHkhyzLf9UsNi7/BKYowU=",
+    "rev": "6efc53e42cfc97700f19043105bf73ba83c4ae7d",
+    "sha256": "sha256-ez9Z33cb98edgf6jmPWkQqioFbY3e26N0ICySpkhrU8=",
     "site": "github.com",
-    "stars_count": 7071,
-    "updated_at": "2026-01-02T16:24:04Z",
-    "url": "https://github.com/catppuccin/nvim/archive/ce8d176faa4643e026e597ae3c31db59b63cef09.tar.gz"
+    "stars_count": 7076,
+    "updated_at": "2026-01-03T13:27:40Z",
+    "url": "https://github.com/catppuccin/nvim/archive/6efc53e42cfc97700f19043105bf73ba83c4ae7d.tar.gz"
   },
   {
     "created_at": "2022-10-24T04:18:27Z",
@@ -4600,8 +4572,8 @@
     "rev": "f353e8c08c50f39e99a9ed474172df7eddd89b72",
     "sha256": "sha256-ts/3+HC/r/ylRuJyrVslgCW9YnM+xlxdyNTj06AzV4g=",
     "site": "github.com",
-    "stars_count": 1118,
-    "updated_at": "2025-12-29T19:18:01Z",
+    "stars_count": 1119,
+    "updated_at": "2026-01-02T19:51:50Z",
     "url": "https://github.com/chentoast/marks.nvim/archive/f353e8c08c50f39e99a9ed474172df7eddd89b72.tar.gz"
   },
   {
@@ -4615,8 +4587,8 @@
     "rev": "67d6b066e8490725718b79f643966f4eafc7da3c",
     "sha256": "sha256-lcuKwmloiCklgH1vNVMWaY6/olbHIJ4ueE5G+qV0gHk=",
     "site": "github.com",
-    "stars_count": 1351,
-    "updated_at": "2025-12-31T21:57:09Z",
+    "stars_count": 1352,
+    "updated_at": "2026-01-02T19:46:58Z",
     "url": "https://github.com/chipsenkbeil/distant.nvim/archive/67d6b066e8490725718b79f643966f4eafc7da3c.tar.gz"
   },
   {
@@ -4643,23 +4615,24 @@
     "rev": "bf5d5eaf23bbfcca9f98a24ed29bd084abf89bf2",
     "sha256": "sha256-ertW4OzTAwqCycxaP1Rpsxus65pGD00A2VjEpHWaNuo=",
     "site": "github.com",
-    "stars_count": 772,
-    "updated_at": "2026-01-02T07:37:11Z",
+    "stars_count": 773,
+    "updated_at": "2026-01-03T16:36:58Z",
     "url": "https://github.com/chomosuke/typst-preview.nvim/archive/bf5d5eaf23bbfcca9f98a24ed29bd084abf89bf2.tar.gz"
   },
   {
     "created_at": "2023-12-30T15:20:58Z",
-    "date": "2025-12-30",
+    "date": "2026-01-03",
     "description": "Smart and highly customizable insertion of various kinds of log statements.",
+    "last_commit_at": "2026-01-03T16:15:12Z",
     "license": "MIT",
     "owner": "chrisgrieser",
     "repo": "nvim-chainsaw",
-    "rev": "2d6e2ba780536e954b6eb26609b2cdafc9d6bb46",
-    "sha256": "sha256-43PEDaM4lChXRa1qAvvqzfEIRkpRGJR7DYjB/B4e2WA=",
+    "rev": "98714dd80fd15c011908fa24e24b09f8bd23eef8",
+    "sha256": "sha256-y5vfO/84U6hg5XXuMxV/LWM0cX0Qx25e+nVfE52y2JA=",
     "site": "github.com",
     "stars_count": 132,
-    "updated_at": "2025-12-30T11:07:50Z",
-    "url": "https://github.com/chrisgrieser/nvim-chainsaw/archive/2d6e2ba780536e954b6eb26609b2cdafc9d6bb46.tar.gz"
+    "updated_at": "2026-01-03T16:15:21Z",
+    "url": "https://github.com/chrisgrieser/nvim-chainsaw/archive/98714dd80fd15c011908fa24e24b09f8bd23eef8.tar.gz"
   },
   {
     "archived": true,
@@ -4840,8 +4813,8 @@
     "rev": "5bc18cccc30edbe7fd4c4eee87783d4374629b2a",
     "sha256": "sha256-xLMFlSbMnTxb8PF++fq/QkfR07d91Im6uFm0Q2YoJuQ=",
     "site": "github.com",
-    "stars_count": 200,
-    "updated_at": "2025-12-30T11:08:01Z",
+    "stars_count": 201,
+    "updated_at": "2026-01-03T01:38:51Z",
     "url": "https://github.com/chrisgrieser/nvim-tinygit/archive/5bc18cccc30edbe7fd4c4eee87783d4374629b2a.tar.gz"
   },
   {
@@ -5000,20 +4973,6 @@
     "stars_count": 188,
     "updated_at": "2026-01-02T11:12:43Z",
     "url": "https://github.com/cpea2506/one_monokai.nvim/archive/047a0239831458866945d5c2d111ff1d282d1966.tar.gz"
-  },
-  {
-    "created_at": "2023-03-08T05:37:39Z",
-    "date": "2025-07-13",
-    "description": "Toggles smoothly between number and relative number, supports various number combinations",
-    "license": "MIT",
-    "owner": "cpea2506",
-    "repo": "relative-toggle.nvim",
-    "rev": "669743be90a3a3c5fc0eceec478042e2bc7541a4",
-    "sha256": "sha256-fe8PAGjwu/y25no3KWC7MEoiINg0FjXlPKQXRX+/KlU=",
-    "site": "github.com",
-    "stars_count": 34,
-    "updated_at": "2025-07-25T07:27:49Z",
-    "url": "https://github.com/cpea2506/relative-toggle.nvim/archive/669743be90a3a3c5fc0eceec478042e2bc7541a4.tar.gz"
   },
   {
     "created_at": "2021-03-08T02:16:05Z",
@@ -5213,17 +5172,18 @@
   },
   {
     "created_at": "2024-12-14T13:05:29Z",
-    "date": "2025-12-10",
+    "date": "2026-01-03",
     "description": "a neovim plug for easy update plugins using lazy.nvim",
+    "last_commit_at": "2026-01-03T06:53:53Z",
     "license": "MIT",
     "owner": "cxwx",
     "repo": "lazyUrlUpdate.nvim",
-    "rev": "37f415f08fc44a0d7282747fe0b3dca9f1151794",
-    "sha256": "sha256-9gY25ByuXNjO2sUbWbfFGn9zGs+gH3s8OVOikHlG1rk=",
+    "rev": "4b310ee61982bd8c0ed76b45db03a782c3e6a826",
+    "sha256": "sha256-M6pElcJXLjs0zFwUeSSy/rMLzSIhA7Amh5iF6Vgrq28=",
     "site": "github.com",
     "stars_count": 3,
-    "updated_at": "2025-12-10T02:22:04Z",
-    "url": "https://github.com/cxwx/lazyUrlUpdate.nvim/archive/37f415f08fc44a0d7282747fe0b3dca9f1151794.tar.gz"
+    "updated_at": "2026-01-03T06:54:13Z",
+    "url": "https://github.com/cxwx/lazyUrlUpdate.nvim/archive/4b310ee61982bd8c0ed76b45db03a782c3e6a826.tar.gz"
   },
   {
     "created_at": "2022-02-05T02:22:09Z",
@@ -5279,7 +5239,7 @@
     "sha256": "sha256-9SWFAG2WxV5rtfgnVap88XNsJLt/wwjZZj4lrQjNpHI=",
     "site": "github.com",
     "stars_count": 1603,
-    "updated_at": "2025-12-30T10:23:53Z",
+    "updated_at": "2026-01-03T14:06:40Z",
     "url": "https://github.com/danymat/neogen/archive/d7f9461727751fb07f82011051338a9aba07581d.tar.gz"
   },
   {
@@ -5334,8 +5294,8 @@
     "rev": "1717b1ad657c94bec3fc2bdebb0c55452d9fe46d",
     "sha256": "sha256-uqrzI6J2gayIcGad9N65IzL+dA4XOaJo4Opn+MCGixc=",
     "site": "github.com",
-    "stars_count": 196,
-    "updated_at": "2026-01-01T11:31:12Z",
+    "stars_count": 197,
+    "updated_at": "2026-01-03T15:35:07Z",
     "url": "https://github.com/datsfilipe/vesper.nvim/archive/1717b1ad657c94bec3fc2bdebb0c55452d9fe46d.tar.gz"
   },
   {
@@ -5377,8 +5337,8 @@
     "rev": "3eacce5ad1c8e439e7dbeab3a8d6bdb6b8aa1cab",
     "sha256": "sha256-smmoDyOqzD/cs1443LsMJU0tS+ONIly449ZhacbmfiE=",
     "site": "github.com",
-    "stars_count": 762,
-    "updated_at": "2025-12-31T15:18:20Z",
+    "stars_count": 764,
+    "updated_at": "2026-01-03T08:57:22Z",
     "url": "https://github.com/davidyz/vectorcode/archive/3eacce5ad1c8e439e7dbeab3a8d6bdb6b8aa1cab.tar.gz"
   },
   {
@@ -5565,18 +5525,18 @@
   },
   {
     "created_at": "2024-12-02T14:33:02Z",
-    "date": "2026-01-01",
+    "date": "2026-01-03",
     "description": "A tool-use-focused LLM plugin for neovim.",
-    "last_commit_at": "2026-01-01T22:08:31Z",
+    "last_commit_at": "2026-01-03T02:32:55Z",
     "license": "MIT",
     "owner": "dlants",
     "repo": "magenta.nvim",
-    "rev": "2e582c07e5214e7f189d48a0a8b168315fcacb91",
-    "sha256": "sha256-ttX6BaYbJj1saD2gdsPQ6wUKGsu+EYprImstqzahu8A=",
+    "rev": "8c8c0cf834dd1f4217dc88eb6ec8e34f4b33bc46",
+    "sha256": "sha256-vCYktzC4KgooOjDgiKm78jLUy5H6n8Ekdx98oUKSAXM=",
     "site": "github.com",
     "stars_count": 419,
-    "updated_at": "2026-01-02T06:21:14Z",
-    "url": "https://github.com/dlants/magenta.nvim/archive/2e582c07e5214e7f189d48a0a8b168315fcacb91.tar.gz"
+    "updated_at": "2026-01-03T02:33:02Z",
+    "url": "https://github.com/dlants/magenta.nvim/archive/8c8c0cf834dd1f4217dc88eb6ec8e34f4b33bc46.tar.gz"
   },
   {
     "created_at": "2023-10-09T02:29:13Z",
@@ -5587,8 +5547,8 @@
     "rev": "c1e6a5529009e855eb102a668549679548757a05",
     "sha256": "sha256-dZa25xf0EantbZoa2QAcNU6AgjrMfSGGxezekfxFZLQ=",
     "site": "github.com",
-    "stars_count": 402,
-    "updated_at": "2025-12-29T18:30:54Z",
+    "stars_count": 403,
+    "updated_at": "2026-01-03T10:35:43Z",
     "url": "https://github.com/dmmulroy/ts-error-translator.nvim/archive/c1e6a5529009e855eb102a668549679548757a05.tar.gz"
   },
   {
@@ -5601,8 +5561,8 @@
     "rev": "eecf551d69bf683603c77bd31a031873261d0147",
     "sha256": "sha256-tPSTRnm+PxZCBE54yu5vrBXi49v9FkgdMIQl/3o2pOk=",
     "site": "github.com",
-    "stars_count": 512,
-    "updated_at": "2025-12-19T04:37:50Z",
+    "stars_count": 513,
+    "updated_at": "2026-01-02T19:18:19Z",
     "url": "https://github.com/dmmulroy/tsc.nvim/archive/eecf551d69bf683603c77bd31a031873261d0147.tar.gz"
   },
   {
@@ -5615,8 +5575,8 @@
     "rev": "f6af8353c3cb02ddde1588f24f27ff8b3a4037cf",
     "sha256": "sha256-y8jWwxRxLg/fdRuA/W65BT1kpz6ukB2fI8c0ULHCO8k=",
     "site": "github.com",
-    "stars_count": 1207,
-    "updated_at": "2026-01-02T15:31:06Z",
+    "stars_count": 1208,
+    "updated_at": "2026-01-03T11:44:05Z",
     "url": "https://github.com/dmtrKovalenko/fff.nvim/archive/f6af8353c3cb02ddde1588f24f27ff8b3a4037cf.tar.gz"
   },
   {
@@ -5713,8 +5673,8 @@
     "rev": "877bc27f627110583b5cfc888e9c527d0eb9ba9e",
     "sha256": "sha256-9mR96VDU2GEGBWs5kIGRvNIraRqU7PbdEVONFOI2KVA=",
     "site": "github.com",
-    "stars_count": 9,
-    "updated_at": "2026-01-01T13:36:25Z",
+    "stars_count": 11,
+    "updated_at": "2026-01-03T09:50:00Z",
     "url": "https://github.com/dybdeskarphet/gruvbox-minimal.nvim/archive/877bc27f627110583b5cfc888e9c527d0eb9ba9e.tar.gz"
   },
   {
@@ -5736,7 +5696,6 @@
     "created_at": "2025-06-17T12:57:29Z",
     "date": "2026-01-02",
     "description": "neowiki.nvim: modern vimwiki successor for instant notes & GTD 🚀📝",
-    "last_commit_at": "2026-01-02T12:21:07Z",
     "license": "MIT",
     "owner": "echaya",
     "repo": "neowiki.nvim",
@@ -5758,8 +5717,8 @@
     "rev": "db7695c7c70fcacd290712deef659bca464634ee",
     "sha256": "sha256-RTV2ke1TsmDdVWaGn3CUEpCVWrwU2oJmL46W3ThoI/o=",
     "site": "github.com",
-    "stars_count": 101,
-    "updated_at": "2025-12-08T00:43:21Z",
+    "stars_count": 102,
+    "updated_at": "2026-01-02T18:36:17Z",
     "url": "https://github.com/ecthelionvi/NeoColumn.nvim/archive/db7695c7c70fcacd290712deef659bca464634ee.tar.gz"
   },
   {
@@ -5857,8 +5816,8 @@
     "rev": "5e0a460d8e0f7f669c158dedd5f9ae2bcac31437",
     "sha256": "sha256-Jh7NtTInEh/l0RjnjYYzR/ojldSMkSYLLEOdNctwwGU=",
     "site": "github.com",
-    "stars_count": 2407,
-    "updated_at": "2026-01-01T08:24:51Z",
+    "stars_count": 2411,
+    "updated_at": "2026-01-03T11:52:32Z",
     "url": "https://github.com/ellisonleao/gruvbox.nvim/archive/5e0a460d8e0f7f669c158dedd5f9ae2bcac31437.tar.gz"
   },
   {
@@ -5948,31 +5907,33 @@
   },
   {
     "created_at": "2025-10-23T05:28:45Z",
-    "date": "2025-12-20",
+    "date": "2026-01-02",
     "description": "A Neovim plugin that provides VSCode-style side-by-side diff rendering with two-tier highlighting (line + character level) using VSCode's algorithm implemented in C.",
+    "last_commit_at": "2026-01-02T19:46:28Z",
     "license": "MIT",
     "owner": "esmuellert",
     "repo": "vscode-diff.nvim",
-    "rev": "f2c6907410161f430e3301fb170fd1d2094174aa",
-    "sha256": "sha256-RVLJct7MBLCtoIutfebHp84K3UN53s9N43oB/3e1hVc=",
+    "rev": "75dc3805f4aaad2c29681de10bd3c83cef48947f",
+    "sha256": "sha256-vlrlo8L4haXA5W5txg7VtQxfmNR1102g1QJD2WJ+kCo=",
     "site": "github.com",
-    "stars_count": 846,
-    "updated_at": "2026-01-02T16:55:58Z",
-    "url": "https://github.com/esmuellert/vscode-diff.nvim/archive/f2c6907410161f430e3301fb170fd1d2094174aa.tar.gz"
+    "stars_count": 849,
+    "updated_at": "2026-01-03T00:21:46Z",
+    "url": "https://github.com/esmuellert/vscode-diff.nvim/archive/75dc3805f4aaad2c29681de10bd3c83cef48947f.tar.gz"
   },
   {
     "created_at": "2023-09-13T07:40:58Z",
-    "date": "2025-12-30",
+    "date": "2026-01-03",
     "description": ":rose: a comfy neovim colorscheme for cozy morning coding.",
+    "last_commit_at": "2026-01-03T14:02:55Z",
     "license": "GPL-3.0",
     "owner": "everviolet",
     "repo": "nvim",
-    "rev": "260ec2597830c8b3077d5cd7e2c0e46936326119",
-    "sha256": "sha256-/QV3nolu0NV+y8hByrGibvAczs155pUPfQ/8j8mowBU=",
+    "rev": "f882d4424e9113a227e838d01472d2f8f3794953",
+    "sha256": "sha256-MHxjLnQfry/y0olcMBfG4kTegjYTNdsylZlBhnXGhfs=",
     "site": "github.com",
     "stars_count": 545,
-    "updated_at": "2026-01-02T00:57:05Z",
-    "url": "https://github.com/everviolet/nvim/archive/260ec2597830c8b3077d5cd7e2c0e46936326119.tar.gz"
+    "updated_at": "2026-01-03T14:03:40Z",
+    "url": "https://github.com/everviolet/nvim/archive/f882d4424e9113a227e838d01472d2f8f3794953.tar.gz"
   },
   {
     "created_at": "2022-02-08T23:27:50Z",
@@ -6069,8 +6030,8 @@
     "rev": "cac07cf2d1937038f6627a450bef4664f096b120",
     "sha256": "sha256-D3tPRgR4rfJKL4tmgMdaVdF8a3QYsdndMj/AWUrWl4c=",
     "site": "github.com",
-    "stars_count": 141,
-    "updated_at": "2025-12-25T06:43:28Z",
+    "stars_count": 142,
+    "updated_at": "2026-01-03T02:03:59Z",
     "url": "https://github.com/fei6409/log-highlight.nvim/archive/cac07cf2d1937038f6627a450bef4664f096b120.tar.gz"
   },
   {
@@ -6168,8 +6129,8 @@
     "rev": "fcea7ff883235d9024dc41e638f164a450c14ca2",
     "sha256": "sha256-iLJ8bpt0zsSuDeg6adD0NKS94D6MHREnNmXJSmOcMGw=",
     "site": "github.com",
-    "stars_count": 3792,
-    "updated_at": "2026-01-02T10:40:43Z",
+    "stars_count": 3793,
+    "updated_at": "2026-01-03T14:55:17Z",
     "url": "https://github.com/folke/flash.nvim/archive/fcea7ff883235d9024dc41e638f164a450c14ca2.tar.gz"
   },
   {
@@ -6183,8 +6144,8 @@
     "rev": "306a05526ada86a7b30af95c5cc81ffba93fef97",
     "sha256": "sha256-oy+pWLzCyqfh2NA39JmNgwW+0hyVoOfMtF8jsVH7hr8=",
     "site": "github.com",
-    "stars_count": 19835,
-    "updated_at": "2026-01-02T17:17:44Z",
+    "stars_count": 19841,
+    "updated_at": "2026-01-03T16:11:17Z",
     "url": "https://github.com/folke/lazy.nvim/archive/306a05526ada86a7b30af95c5cc81ffba93fef97.tar.gz"
   },
   {
@@ -6200,20 +6161,6 @@
     "stars_count": 1407,
     "updated_at": "2026-01-02T15:57:33Z",
     "url": "https://github.com/folke/lazydev.nvim/archive/5231c62aa83c2f8dc8e7ba957aa77098cda1257d.tar.gz"
-  },
-  {
-    "created_at": "2022-09-21T19:32:33Z",
-    "date": "2025-11-03",
-    "description": "💥 Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.",
-    "license": "Apache-2.0",
-    "owner": "folke",
-    "repo": "noice.nvim",
-    "rev": "7bfd942445fb63089b59f97ca487d605e715f155",
-    "sha256": "sha256-oVMTj0wiKfkhZN9TkiQsU+wTr/hSkPOeMhHBDlChDb4=",
-    "site": "github.com",
-    "stars_count": 5523,
-    "updated_at": "2026-01-02T11:58:41Z",
-    "url": "https://github.com/folke/noice.nvim/archive/7bfd942445fb63089b59f97ca487d605e715f155.tar.gz"
   },
   {
     "created_at": "2021-07-02T06:54:30Z",
@@ -6239,8 +6186,8 @@
     "rev": "fe7cfe9800a182274d0f868a74b7263b8c0c020b",
     "sha256": "sha256-9ygS8KCWZs6XmWV8DqEfFS/6gqlcv1yJ0Q62LCE3RuM=",
     "site": "github.com",
-    "stars_count": 6783,
-    "updated_at": "2026-01-02T17:07:00Z",
+    "stars_count": 6786,
+    "updated_at": "2026-01-03T16:37:21Z",
     "url": "https://github.com/folke/snacks.nvim/archive/fe7cfe9800a182274d0f868a74b7263b8c0c020b.tar.gz"
   },
   {
@@ -6253,8 +6200,8 @@
     "rev": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668",
     "sha256": "sha256-1Wl+M/Sy5JcTAKdVarA2QFXzTKOcleujAJuuBjvuV2Y=",
     "site": "github.com",
-    "stars_count": 3990,
-    "updated_at": "2026-01-02T10:41:50Z",
+    "stars_count": 3989,
+    "updated_at": "2026-01-03T17:19:45Z",
     "url": "https://github.com/folke/todo-comments.nvim/archive/31e3c38ce9b29781e4422fc0322eb0a21f4e8668.tar.gz"
   },
   {
@@ -6267,8 +6214,8 @@
     "rev": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd",
     "sha256": "sha256-Jk4sADxPs1RLodT7u9G/0uK3jaxiTFph/FMpbqs/GqU=",
     "site": "github.com",
-    "stars_count": 7705,
-    "updated_at": "2026-01-02T14:28:32Z",
+    "stars_count": 7707,
+    "updated_at": "2026-01-03T13:02:52Z",
     "url": "https://github.com/folke/tokyonight.nvim/archive/5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd.tar.gz"
   },
   {
@@ -6281,8 +6228,8 @@
     "rev": "bd67efe408d4816e25e8491cc5ad4088e708a69a",
     "sha256": "sha256-u5/a7dl48Pea3m+hpNfu8+gJz72XZeoOsNjYacCVbLU=",
     "site": "github.com",
-    "stars_count": 6606,
-    "updated_at": "2026-01-01T22:15:07Z",
+    "stars_count": 6607,
+    "updated_at": "2026-01-03T14:10:29Z",
     "url": "https://github.com/folke/trouble.nvim/archive/bd67efe408d4816e25e8491cc5ad4088e708a69a.tar.gz"
   },
   {
@@ -6295,8 +6242,8 @@
     "rev": "664e752f4a219801265cc3fc18782b457b58c1e1",
     "sha256": "sha256-i7Xg9E/QBAP0LjHmUJabDXgoGxY9s3PmfR8Sk7EtXVQ=",
     "site": "github.com",
-    "stars_count": 1487,
-    "updated_at": "2025-12-30T00:11:02Z",
+    "stars_count": 1488,
+    "updated_at": "2026-01-03T01:03:10Z",
     "url": "https://github.com/folke/twilight.nvim/archive/664e752f4a219801265cc3fc18782b457b58c1e1.tar.gz"
   },
   {
@@ -6309,8 +6256,8 @@
     "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
     "sha256": "sha256-1NbWXs9pm1fY8IUZVjw6wJo05SXlWVbZ61kCMns/agc=",
     "site": "github.com",
-    "stars_count": 6823,
-    "updated_at": "2026-01-02T14:38:46Z",
+    "stars_count": 6824,
+    "updated_at": "2026-01-03T11:00:54Z",
     "url": "https://github.com/folke/which-key.nvim/archive/3aab2147e74890957785941f0c1ad87d0a44c15a.tar.gz"
   },
   {
@@ -6323,8 +6270,8 @@
     "rev": "8564ce6d29ec7554eb9df578efa882d33b3c23a7",
     "sha256": "sha256-EBaB3iKm/csrDvP1d6VycpKaj+UtnojtMJGwCL+6e+M=",
     "site": "github.com",
-    "stars_count": 2077,
-    "updated_at": "2025-12-30T12:08:34Z",
+    "stars_count": 2079,
+    "updated_at": "2026-01-03T14:36:57Z",
     "url": "https://github.com/folke/zen-mode.nvim/archive/8564ce6d29ec7554eb9df578efa882d33b3c23a7.tar.gz"
   },
   {
@@ -6337,8 +6284,8 @@
     "rev": "7db44d0bb760120142cc1e8f43e44976de59c2f6",
     "sha256": "sha256-O75u/wOzNUvd83wn2LZg6NMt4vu1EoJ+M7StctqUa/0=",
     "site": "github.com",
-    "stars_count": 376,
-    "updated_at": "2025-12-15T23:47:23Z",
+    "stars_count": 375,
+    "updated_at": "2026-01-02T17:54:50Z",
     "url": "https://github.com/frabjous/knap/archive/7db44d0bb760120142cc1e8f43e44976de59c2f6.tar.gz"
   },
   {
@@ -6493,8 +6440,8 @@
     "rev": "04fc42b94305d94948c9c197f679336668af3292",
     "sha256": "sha256-bNH7491Pyf4tMzA4Iv80tRFmp+K6/lN5ntDx7BvABNY=",
     "site": "github.com",
-    "stars_count": 1183,
-    "updated_at": "2026-01-01T10:42:52Z",
+    "stars_count": 1184,
+    "updated_at": "2026-01-03T07:05:37Z",
     "url": "https://github.com/gbprod/yanky.nvim/archive/04fc42b94305d94948c9c197f679336668af3292.tar.gz"
   },
   {
@@ -6632,8 +6579,8 @@
     "rev": "f19d43590c4b6d31188ee1ea2954d2b7558a9e11",
     "sha256": "sha256-kJJsvV0aIpF8IoTydeiIVpiL7W0RL1Olp1GLeL5cI6E=",
     "site": "github.com",
-    "stars_count": 4985,
-    "updated_at": "2026-01-02T15:46:06Z",
+    "stars_count": 4987,
+    "updated_at": "2026-01-03T06:45:16Z",
     "url": "https://github.com/ggandor/leap.nvim/archive/f19d43590c4b6d31188ee1ea2954d2b7558a9e11.tar.gz"
   },
   {
@@ -6665,33 +6612,19 @@
     "url": "https://github.com/gh-liu/fold_line.nvim/archive/10c37a5be956be93e54557539d6408c0365996ff.tar.gz"
   },
   {
-    "created_at": "2022-04-02T18:38:03Z",
-    "date": "2025-07-24",
-    "description": "Neovim plugin that offers context when cycling buffers in the form of a customizable notification window.",
-    "license": "MIT",
-    "owner": "ghillb",
-    "repo": "cybu.nvim",
-    "rev": "c8a8c71cd0e38d4165b02819dfdc32dedc35a6b6",
-    "sha256": "sha256-M1tQbAKa9oa3StCyb2wUuZoBxb6mx3MJuCg5A1+Mecg=",
-    "site": "github.com",
-    "stars_count": 321,
-    "updated_at": "2025-12-27T21:28:15Z",
-    "url": "https://github.com/ghillb/cybu.nvim/archive/c8a8c71cd0e38d4165b02819dfdc32dedc35a6b6.tar.gz"
-  },
-  {
     "created_at": "2025-11-08T09:07:43Z",
-    "date": "2026-01-02",
+    "date": "2026-01-03",
     "description": "Triforce is a Neovim plugin with beautiful UI that adds a bit of RPG flavor to your coding — XP, levels, and achievements while you work.",
-    "last_commit_at": "2026-01-02T16:09:23Z",
+    "last_commit_at": "2026-01-03T05:59:20Z",
     "license": "MIT",
     "owner": "gisketch",
     "repo": "triforce.nvim",
-    "rev": "73d8575fde246ebf3aca539f7c43870f78f7c4bf",
-    "sha256": "sha256-B2wdn53SuphEDxiYB9QBWB9VOd/R26WSjZUfaL1pEK4=",
+    "rev": "a8d9f84852dba3e2da620ca27a053e7e3307f24c",
+    "sha256": "sha256-EA2vlnL+EwDdu7kdlDPJ3Jyvkexf8mirgn8hclEQFm4=",
     "site": "github.com",
     "stars_count": 218,
-    "updated_at": "2026-01-02T16:09:27Z",
-    "url": "https://github.com/gisketch/triforce.nvim/archive/73d8575fde246ebf3aca539f7c43870f78f7c4bf.tar.gz"
+    "updated_at": "2026-01-03T05:59:45Z",
+    "url": "https://github.com/gisketch/triforce.nvim/archive/a8d9f84852dba3e2da620ca27a053e7e3307f24c.tar.gz"
   },
   {
     "created_at": "2025-06-15T21:02:56Z",
@@ -6730,8 +6663,8 @@
     "rev": "3979b01cb05734331c7873049001d3f2bb8477f4",
     "sha256": "sha256-AWyP54ClAzhF79d7iUoMcIK6jpVOxe8+5RlM4h+8oEg=",
     "site": "github.com",
-    "stars_count": 2302,
-    "updated_at": "2025-12-31T09:56:28Z",
+    "stars_count": 2305,
+    "updated_at": "2026-01-03T15:50:17Z",
     "url": "https://github.com/goolord/alpha-nvim/archive/3979b01cb05734331c7873049001d3f2bb8477f4.tar.gz"
   },
   {
@@ -6799,8 +6732,8 @@
     "rev": "a6b9752b0084a20c37786b54eef2095bb31daff7",
     "sha256": "sha256-Ahb1jZprWXnfZ1wlHttq4dmjC87xs8UKfU2Z7fi+h5Y=",
     "site": "github.com",
-    "stars_count": 355,
-    "updated_at": "2025-12-31T13:46:33Z",
+    "stars_count": 356,
+    "updated_at": "2026-01-02T17:33:30Z",
     "url": "https://github.com/gruvw/strudel.nvim/archive/a6b9752b0084a20c37786b54eef2095bb31daff7.tar.gz"
   },
   {
@@ -6875,17 +6808,18 @@
   },
   {
     "created_at": "2023-10-25T14:49:20Z",
-    "date": "2025-12-20",
+    "date": "2026-01-03",
     "description": "A Neovim plugin for CSV file editing.",
+    "last_commit_at": "2026-01-03T14:35:36Z",
     "license": "MIT",
     "owner": "hat0uma",
     "repo": "csvview.nvim",
-    "rev": "1f409951516db0d5babaa1f44842a9a882babdd3",
-    "sha256": "sha256-l+o68XW9F5N9QJeoocymLDe7fOwxIqDnNrqRGhDGKhk=",
+    "rev": "da4106db5c44bfdccd0f76142c0f2740bcae8e5c",
+    "sha256": "sha256-qGIX7RPXHUFaGi2qgcfYIQE+S0LRGDzKHOhBcsQGFi4=",
     "site": "github.com",
-    "stars_count": 512,
-    "updated_at": "2026-01-01T14:27:10Z",
-    "url": "https://github.com/hat0uma/csvview.nvim/archive/1f409951516db0d5babaa1f44842a9a882babdd3.tar.gz"
+    "stars_count": 516,
+    "updated_at": "2026-01-03T15:13:53Z",
+    "url": "https://github.com/hat0uma/csvview.nvim/archive/da4106db5c44bfdccd0f76142c0f2740bcae8e5c.tar.gz"
   },
   {
     "created_at": "2023-06-13T15:36:40Z",
@@ -7078,8 +7012,8 @@
     "rev": "cbc7b02bb99fae35cb42f514762b89b5126651ef",
     "sha256": "sha256-XArhEoSzerlp2sSSTHZrCDTPEhiHgjHCwm51U4ElXZ8=",
     "site": "github.com",
-    "stars_count": 1491,
-    "updated_at": "2025-12-25T13:00:05Z",
+    "stars_count": 1490,
+    "updated_at": "2026-01-03T13:35:08Z",
     "url": "https://github.com/hrsh7th/cmp-nvim-lsp/archive/cbc7b02bb99fae35cb42f514762b89b5126651ef.tar.gz"
   },
   {
@@ -7128,7 +7062,6 @@
     "created_at": "2021-06-29T18:01:04Z",
     "date": "2026-01-02",
     "description": "A completion plugin for neovim coded in Lua.",
-    "last_commit_at": "2026-01-02T15:36:42Z",
     "license": "MIT",
     "owner": "hrsh7th",
     "repo": "nvim-cmp",
@@ -7136,7 +7069,7 @@
     "sha256": "sha256-zgus9eKOh5tz5MteTHH80FwQ/L0MM4ksnXriUXxHCcU=",
     "site": "github.com",
     "stars_count": 9261,
-    "updated_at": "2026-01-02T15:36:47Z",
+    "updated_at": "2026-01-03T13:34:46Z",
     "url": "https://github.com/hrsh7th/nvim-cmp/archive/85bbfad83f804f11688d1ab9486b459e699292d6.tar.gz"
   },
   {
@@ -7163,8 +7096,8 @@
     "rev": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee",
     "sha256": "sha256-A8p8DxhimQ7LeuupYHLlGshttlgNaTxFlChPnUX46MU=",
     "site": "github.com",
-    "stars_count": 7611,
-    "updated_at": "2026-01-02T08:15:03Z",
+    "stars_count": 7610,
+    "updated_at": "2026-01-03T17:17:09Z",
     "url": "https://github.com/iamcco/markdown-preview.nvim/archive/a923f5fc5ba36a3b17e289dc35dc17f66d0548ee.tar.gz"
   },
   {
@@ -7183,17 +7116,18 @@
   },
   {
     "created_at": "2021-07-11T03:16:56Z",
-    "date": "2025-12-31",
+    "date": "2026-01-03",
     "description": "Improved fzf.vim written in lua",
+    "last_commit_at": "2026-01-03T01:28:50Z",
     "license": "MIT",
     "owner": "ibhagwan",
     "repo": "fzf-lua",
-    "rev": "19d7020b700879759d7f834fc717dde086f673a7",
-    "sha256": "sha256-4yEGnIWEExUrXuiWWZ0rV83Mcvwwb8BLrtOrIzy6mJA=",
+    "rev": "ab0d0135746c564ca31cd2c8a84c170802be6d16",
+    "sha256": "sha256-Sdg+n1Ed/9tofFs+HZviSNoy8mvjiLDvB2EUELLaMto=",
     "site": "github.com",
-    "stars_count": 3967,
-    "updated_at": "2026-01-02T04:38:13Z",
-    "url": "https://github.com/ibhagwan/fzf-lua/archive/19d7020b700879759d7f834fc717dde086f673a7.tar.gz"
+    "stars_count": 3969,
+    "updated_at": "2026-01-03T11:32:31Z",
+    "url": "https://github.com/ibhagwan/fzf-lua/archive/ab0d0135746c564ca31cd2c8a84c170802be6d16.tar.gz"
   },
   {
     "created_at": "2022-11-18T17:19:32Z",
@@ -7248,8 +7182,8 @@
     "rev": "4f73b98b4db88a953f1998175a4daaea2bf52d28",
     "sha256": "sha256-zjLHtiEnS6OC46aUQ3QVqL5ZDgELlNbL39JqfmxGOM0=",
     "site": "github.com",
-    "stars_count": 582,
-    "updated_at": "2026-01-01T14:52:13Z",
+    "stars_count": 584,
+    "updated_at": "2026-01-03T12:07:09Z",
     "url": "https://github.com/igorlfs/nvim-dap-view/archive/4f73b98b4db88a953f1998175a4daaea2bf52d28.tar.gz"
   },
   {
@@ -7282,16 +7216,17 @@
   },
   {
     "created_at": "2024-08-13T21:52:24Z",
-    "date": "2025-10-29",
+    "date": "2026-01-03",
+    "last_commit_at": "2026-01-03T05:54:01Z",
     "license": "MIT",
     "owner": "inhesrom",
     "repo": "remote-ssh.nvim",
-    "rev": "3caf35ad6e571786c8b2ddfdb59d2e04e824c896",
-    "sha256": "sha256-eq7KQM2zW/EigV6Vfq6gM6vQYEi0L5R9I9YeFdJ4jpE=",
+    "rev": "58dab3510dfe9a02de581ed74abba9a2baa74d94",
+    "sha256": "sha256-+Lz/ZNuAzWtXiMmUtNvkZbXtkneGjyEd0ZaxM+4ktk4=",
     "site": "github.com",
     "stars_count": 82,
-    "updated_at": "2025-12-30T23:53:23Z",
-    "url": "https://github.com/inhesrom/remote-ssh.nvim/archive/3caf35ad6e571786c8b2ddfdb59d2e04e824c896.tar.gz"
+    "updated_at": "2026-01-03T05:54:06Z",
+    "url": "https://github.com/inhesrom/remote-ssh.nvim/archive/58dab3510dfe9a02de581ed74abba9a2baa74d94.tar.gz"
   },
   {
     "created_at": "2025-07-14T07:19:45Z",
@@ -7427,8 +7362,8 @@
     "rev": "fc5677069a62f2df5826d8fc396810a856f2334e",
     "sha256": "sha256-JF77R94+Ae8UcxkUe3EzhuolAcb8M+FqC+VXIRbektw=",
     "site": "github.com",
-    "stars_count": 4006,
-    "updated_at": "2025-12-31T13:55:49Z",
+    "stars_count": 4008,
+    "updated_at": "2026-01-03T07:03:25Z",
     "url": "https://github.com/jackMort/ChatGPT.nvim/archive/fc5677069a62f2df5826d8fc396810a856f2334e.tar.gz"
   },
   {
@@ -7441,8 +7376,8 @@
     "rev": "c982cc8375f062e9f98e96a408e0f7ad0c80d4db",
     "sha256": "sha256-fpkhuAYDe2Wum0wVSUeMKfGYfu+e/J6+Ct4CYSKEP3g=",
     "site": "github.com",
-    "stars_count": 1329,
-    "updated_at": "2026-01-02T16:12:22Z",
+    "stars_count": 1331,
+    "updated_at": "2026-01-03T15:30:43Z",
     "url": "https://github.com/jake-stewart/multicursor.nvim/archive/c982cc8375f062e9f98e96a408e0f7ad0c80d4db.tar.gz"
   },
   {
@@ -7455,8 +7390,8 @@
     "rev": "d459bd7ce68910272038ed037c028180161fd14d",
     "sha256": "sha256-MMHwMf93UQE6P7apjVgyDR7ts1bsi0X9VY0MZ+9c92M=",
     "site": "github.com",
-    "stars_count": 768,
-    "updated_at": "2026-01-01T23:17:58Z",
+    "stars_count": 769,
+    "updated_at": "2026-01-03T10:16:26Z",
     "url": "https://github.com/jakewvincent/mkdnflow.nvim/archive/d459bd7ce68910272038ed037c028180161fd14d.tar.gz"
   },
   {
@@ -7568,8 +7503,8 @@
     "rev": "87eeca2bd4d90a94eed1ef0dbc66885117e7bacb",
     "sha256": "sha256-PKFqDsXU01AFaw59GkCpI27ugnfZFgDnWdsEkblsxMI=",
     "site": "github.com",
-    "stars_count": 534,
-    "updated_at": "2025-12-30T14:19:31Z",
+    "stars_count": 535,
+    "updated_at": "2026-01-03T10:31:02Z",
     "url": "https://github.com/jbyuki/one-small-step-for-vimkind/archive/87eeca2bd4d90a94eed1ef0dbc66885117e7bacb.tar.gz"
   },
   {
@@ -7988,8 +7923,8 @@
     "rev": "c8d29979cb0cb3a2437a8e0ae683fd82f340d3b8",
     "sha256": "sha256-v9v9PcAcdkMSbTS9VR4pO3I2HfdH4t02aknL5ad/qaE=",
     "site": "github.com",
-    "stars_count": 1939,
-    "updated_at": "2026-01-01T04:01:33Z",
+    "stars_count": 1942,
+    "updated_at": "2026-01-03T11:03:46Z",
     "url": "https://github.com/karb94/neoscroll.nvim/archive/c8d29979cb0cb3a2437a8e0ae683fd82f340d3b8.tar.gz"
   },
   {
@@ -8016,8 +7951,8 @@
     "rev": "6c271de0552ade67a26dc16aad7998dbd9e0757c",
     "sha256": "sha256-F0yNSVZwcPNcsMDrW5HdhElt6NYLZgj0GiptEA0diPA=",
     "site": "github.com",
-    "stars_count": 24,
-    "updated_at": "2025-12-12T02:25:56Z",
+    "stars_count": 23,
+    "updated_at": "2026-01-03T14:32:24Z",
     "url": "https://github.com/karshPrime/tmux-compile.nvim/archive/6c271de0552ade67a26dc16aad7998dbd9e0757c.tar.gz"
   },
   {
@@ -8044,8 +7979,8 @@
     "rev": "fdd3f91800b3983e27bc9fcfb99cfa7293d7f11a",
     "sha256": "sha256-CfuqaLgBgGJWrX6h/TwrUVoAv3UHaQ2gqm561sUPMso=",
     "site": "github.com",
-    "stars_count": 1936,
-    "updated_at": "2026-01-02T09:24:59Z",
+    "stars_count": 1935,
+    "updated_at": "2026-01-03T09:22:49Z",
     "url": "https://github.com/kawre/leetcode.nvim/archive/fdd3f91800b3983e27bc9fcfb99cfa7293d7f11a.tar.gz"
   },
   {
@@ -8072,8 +8007,8 @@
     "rev": "a04ad0dbc725134edbee3a5eea29290976695357",
     "sha256": "sha256-1ChMAUHuWNIXvEv/KC/lfQNol2YV8PJh4wsLf7h5Jvo=",
     "site": "github.com",
-    "stars_count": 2135,
-    "updated_at": "2026-01-02T12:32:58Z",
+    "stars_count": 2136,
+    "updated_at": "2026-01-03T07:50:12Z",
     "url": "https://github.com/kdheepak/lazygit.nvim/archive/a04ad0dbc725134edbee3a5eea29290976695357.tar.gz"
   },
   {
@@ -8128,8 +8063,8 @@
     "rev": "ba2b365969d7c2c6301d48e13aeee59568765529",
     "sha256": "sha256-YnhzTIC5pMInoW+ZMI1+/NP8cMNME6e+nrC4gaHpjb4=",
     "site": "github.com",
-    "stars_count": 1973,
-    "updated_at": "2026-01-01T22:41:10Z",
+    "stars_count": 1974,
+    "updated_at": "2026-01-03T05:20:54Z",
     "url": "https://github.com/kevinhwang91/nvim-bqf/archive/ba2b365969d7c2c6301d48e13aeee59568765529.tar.gz"
   },
   {
@@ -8156,8 +8091,8 @@
     "rev": "72d54c31079d38d8dfc5456131b1d0fb5c0264b0",
     "sha256": "sha256-HrCSIdDEApH0S2+Uu51hYluh5d2/5sy77JrKeeWLTd4=",
     "site": "github.com",
-    "stars_count": 2848,
-    "updated_at": "2026-01-02T10:39:20Z",
+    "stars_count": 2849,
+    "updated_at": "2026-01-02T22:46:43Z",
     "url": "https://github.com/kevinhwang91/nvim-ufo/archive/72d54c31079d38d8dfc5456131b1d0fb5c0264b0.tar.gz"
   },
   {
@@ -8198,8 +8133,8 @@
     "rev": "4213e5b0de4fe96c8f00d8d8ad854ebf80f07211",
     "sha256": "sha256-V7bSbZ7H9Ur0zwaJN7DJc16fSHUBUtf89j5asD64ew4=",
     "site": "github.com",
-    "stars_count": 232,
-    "updated_at": "2026-01-02T13:52:55Z",
+    "stars_count": 233,
+    "updated_at": "2026-01-03T02:38:34Z",
     "url": "https://github.com/kiddos/gemini.nvim/archive/4213e5b0de4fe96c8f00d8d8ad854ebf80f07211.tar.gz"
   },
   {
@@ -8282,8 +8217,8 @@
     "rev": "46381138437c82effb5b97c9c332818bc6c83154",
     "sha256": "sha256-hkvW+Lluxl/5jq6jkWgh/7bbXW9SBCA8K6VE5/0DKb4=",
     "site": "github.com",
-    "stars_count": 721,
-    "updated_at": "2025-12-30T10:31:12Z",
+    "stars_count": 722,
+    "updated_at": "2026-01-03T15:33:58Z",
     "url": "https://github.com/kiyoon/jupynium.nvim/archive/46381138437c82effb5b97c9c332818bc6c83154.tar.gz"
   },
   {
@@ -8394,8 +8329,8 @@
     "rev": "dda517694889a5d238d7aa407403984da9f80cc0",
     "sha256": "sha256-c49RrosdIKtc+EPJD2ZiXZd1Q0jJeIUdUYUgypU5IAU=",
     "site": "github.com",
-    "stars_count": 1197,
-    "updated_at": "2026-01-02T15:05:45Z",
+    "stars_count": 1198,
+    "updated_at": "2026-01-03T13:24:12Z",
     "url": "https://github.com/kndndrj/nvim-dbee/archive/dda517694889a5d238d7aa407403984da9f80cc0.tar.gz"
   },
   {
@@ -8505,8 +8440,8 @@
     "rev": "1098d7b3c34adcfa7feb3289ee434529abd4afd1",
     "sha256": "sha256-qxagBMpueEwKhrxwAWa3/fRK6XAlLVDvQPWarkQ/RPc=",
     "site": "github.com",
-    "stars_count": 4047,
-    "updated_at": "2025-12-31T18:46:10Z",
+    "stars_count": 4048,
+    "updated_at": "2026-01-02T18:02:46Z",
     "url": "https://github.com/kylechui/nvim-surround/archive/1098d7b3c34adcfa7feb3289ee434529abd4afd1.tar.gz"
   },
   {
@@ -8610,17 +8545,18 @@
   },
   {
     "created_at": "2025-12-21T11:23:14Z",
-    "date": "2026-01-01",
+    "date": "2026-01-03",
     "description": "I got tired of opening my browser for Jira",
+    "last_commit_at": "2026-01-03T09:38:15Z",
     "license": "MIT",
     "owner": "letieu",
     "repo": "jira.nvim",
-    "rev": "6d9da12241c80527e7474feb5b468886f2bc1f1b",
-    "sha256": "sha256-Hw5H6De563sRHpKvtjsgpxYDzQDDK2WYFC90RIlYxIc=",
+    "rev": "f851b950901253f55876a933fc6b605b0acaf11f",
+    "sha256": "sha256-7ow4WDcF2ydqNPdc7WAjV93ehvhc6U7t23HIRSrn/7A=",
     "site": "github.com",
-    "stars_count": 141,
-    "updated_at": "2026-01-02T10:45:44Z",
-    "url": "https://github.com/letieu/jira.nvim/archive/6d9da12241c80527e7474feb5b468886f2bc1f1b.tar.gz"
+    "stars_count": 160,
+    "updated_at": "2026-01-03T17:09:53Z",
+    "url": "https://github.com/letieu/jira.nvim/archive/f851b950901253f55876a933fc6b605b0acaf11f.tar.gz"
   },
   {
     "created_at": "2020-10-18T10:14:43Z",
@@ -8632,8 +8568,8 @@
     "rev": "6bd29494e3f79ff08be1d35bc1926ed23c22ed9a",
     "sha256": "sha256-Aoy1uMguB4ydcL9M6ZeDqYeSojocjGCtROm9gAMDwdU=",
     "site": "github.com",
-    "stars_count": 6440,
-    "updated_at": "2026-01-02T14:38:24Z",
+    "stars_count": 6441,
+    "updated_at": "2026-01-03T16:22:24Z",
     "url": "https://github.com/lewis6991/gitsigns.nvim/archive/6bd29494e3f79ff08be1d35bc1926ed23c22ed9a.tar.gz"
   },
   {
@@ -8660,8 +8596,8 @@
     "rev": "d6c681e3b01e45a899eae5569d0cf08849479683",
     "sha256": "sha256-yM5ROfZNciOK2THVg/lx8GFA1KNv0bah3pmwwkz5v8U=",
     "site": "github.com",
-    "stars_count": 687,
-    "updated_at": "2026-01-01T23:38:48Z",
+    "stars_count": 690,
+    "updated_at": "2026-01-03T09:14:53Z",
     "url": "https://github.com/lewis6991/satellite.nvim/archive/d6c681e3b01e45a899eae5569d0cf08849479683.tar.gz"
   },
   {
@@ -8845,8 +8781,8 @@
     "rev": "0ff33e81b6b6e207fce9accd79142631615d0a8d",
     "sha256": "sha256-ljvU6c8KOMqvSn5pl/HcKYP2iBRRpW5gRdL7+O57qDM=",
     "site": "github.com",
-    "stars_count": 84,
-    "updated_at": "2025-12-18T19:15:51Z",
+    "stars_count": 85,
+    "updated_at": "2026-01-03T02:32:44Z",
     "url": "https://github.com/lopi-py/luau-lsp.nvim/archive/0ff33e81b6b6e207fce9accd79142631615d0a8d.tar.gz"
   },
   {
@@ -8909,18 +8845,18 @@
   },
   {
     "created_at": "2023-01-13T10:30:53Z",
-    "date": "2026-01-02",
+    "date": "2026-01-03",
     "description": "GitHub workflow for automatically generating Luarocks releases from tags and running busted tests",
-    "last_commit_at": "2026-01-02T05:46:22Z",
+    "last_commit_at": "2026-01-03T05:43:04Z",
     "license": "AGPL-3.0",
     "owner": "lumen-oss",
     "repo": "luarocks-tag-release",
-    "rev": "58f6eb75279e371b34018240eb2acbfa555c171f",
-    "sha256": "sha256-8f6AHJrhMLBprAimd+hbkcpvFgvyqTcSizOdj3nbtF0=",
+    "rev": "673c7cfa7442c8cf522e6508bffc0aefcd99304d",
+    "sha256": "sha256-Bxrlucl0/DX6nGfV/3XMMXXUT/gjgPbYZ0rmoXrfNWE=",
     "site": "github.com",
     "stars_count": 53,
-    "updated_at": "2026-01-02T05:46:27Z",
-    "url": "https://github.com/lumen-oss/luarocks-tag-release/archive/58f6eb75279e371b34018240eb2acbfa555c171f.tar.gz"
+    "updated_at": "2026-01-03T05:43:08Z",
+    "url": "https://github.com/lumen-oss/luarocks-tag-release/archive/673c7cfa7442c8cf522e6508bffc0aefcd99304d.tar.gz"
   },
   {
     "created_at": "2024-01-05T13:38:49Z",
@@ -9031,7 +8967,7 @@
     "sha256": "sha256-EQMEjT2RiXCdfDHuI8JLX3nrRfqDu8rCxQC4MPb08xs=",
     "site": "github.com",
     "stars_count": 3584,
-    "updated_at": "2026-01-02T11:55:08Z",
+    "updated_at": "2026-01-02T20:56:45Z",
     "url": "https://github.com/m4xshen/hardtime.nvim/archive/b4e431934af1fe224a3a801f632c008278cb7628.tar.gz"
   },
   {
@@ -9169,23 +9105,9 @@
     "rev": "57e5a8addb8c71fb063ee4acda466c7cf6ad2800",
     "sha256": "sha256-Ay6qIew4PjA2yow6eP2TZkJg9SNvGV7r9ZXG/fTB804=",
     "site": "github.com",
-    "stars_count": 9877,
-    "updated_at": "2026-01-02T14:36:56Z",
+    "stars_count": 9879,
+    "updated_at": "2026-01-03T13:34:44Z",
     "url": "https://github.com/williamboman/mason.nvim/archive/57e5a8addb8c71fb063ee4acda466c7cf6ad2800.tar.gz"
-  },
-  {
-    "created_at": "2021-05-30T21:43:11Z",
-    "date": "2023-05-09",
-    "description": "Just Another Buffer Switcher for Neovim",
-    "license": "GPL-3.0",
-    "owner": "matbme",
-    "repo": "JABS.nvim",
-    "rev": "b6dbd1a3e1b8cef3d6ebfafe96c2230ca341b65f",
-    "sha256": "sha256-/ajhPoo2reN/V2O5Nfz1C2NsBOUgCxDBKSX2DV0ry8Y=",
-    "site": "github.com",
-    "stars_count": 283,
-    "updated_at": "2025-10-06T16:49:29Z",
-    "url": "https://github.com/matbme/JABS.nvim/archive/b6dbd1a3e1b8cef3d6ebfafe96c2230ca341b65f.tar.gz"
   },
   {
     "created_at": "2023-12-13T14:05:50Z",
@@ -9337,23 +9259,9 @@
     "rev": "a279f667168e742df059caf1f1f4daf1de24f4f8",
     "sha256": "sha256-ok3uFIgriMWFxlc8ox9O21JdKjZamy0QGRfJJ4ZwqAM=",
     "site": "github.com",
-    "stars_count": 290,
-    "updated_at": "2025-12-29T16:04:14Z",
+    "stars_count": 291,
+    "updated_at": "2026-01-03T11:53:01Z",
     "url": "https://github.com/maxmx03/fluoromachine.nvim/archive/a279f667168e742df059caf1f1f4daf1de24f4f8.tar.gz"
-  },
-  {
-    "created_at": "2024-03-09T19:15:13Z",
-    "date": "2025-11-24",
-    "description": "Imitate VSCode's \"Render Whitespace\" feature in visual mode",
-    "license": "MIT",
-    "owner": "mcauley-penney",
-    "repo": "visual-whitespace.nvim",
-    "rev": "2c2de32bb97620bcf4b3b78879c185315ee971dc",
-    "sha256": "sha256-RkSjd1b01XUzABCMP6uzR4iOYSx/I7liozLs+YD/uzs=",
-    "site": "github.com",
-    "stars_count": 418,
-    "updated_at": "2025-12-31T22:04:35Z",
-    "url": "https://github.com/mcauley-penney/visual-whitespace.nvim/archive/2c2de32bb97620bcf4b3b78879c185315ee971dc.tar.gz"
   },
   {
     "created_at": "2024-03-09T12:07:12Z",
@@ -9365,8 +9273,8 @@
     "rev": "b2eacf2672d447957b55687648207517394dbe78",
     "sha256": "sha256-d04Kn4apjcqxX4PYPRfwujUVEpWgDjp7tiVSvRA1bsA=",
     "site": "github.com",
-    "stars_count": 13,
-    "updated_at": "2025-12-20T11:49:48Z",
+    "stars_count": 14,
+    "updated_at": "2026-01-03T10:21:47Z",
     "url": "https://github.com/melMass/echo.nvim/archive/b2eacf2672d447957b55687648207517394dbe78.tar.gz"
   },
   {
@@ -9380,8 +9288,8 @@
     "rev": "5cd188489bcc7eb512f0a30581ad972070f8e5cd",
     "sha256": "sha256-B+WBgtB+5MnxyE6nxBZkOEzpDO8OsikXIu+cJHy35Lg=",
     "site": "github.com",
-    "stars_count": 396,
-    "updated_at": "2026-01-01T14:34:59Z",
+    "stars_count": 397,
+    "updated_at": "2026-01-03T16:52:25Z",
     "url": "https://github.com/mellow-theme/mellow.nvim/archive/5cd188489bcc7eb512f0a30581ad972070f8e5cd.tar.gz"
   },
   {
@@ -9403,15 +9311,14 @@
     "date": "2026-01-02",
     "description": "Debug Adapter Protocol client implementation for Neovim",
     "homepage": "https://codeberg.org/mfussenegger/nvim-dap",
-    "last_commit_at": "2026-01-02T06:37:30Z",
     "license": "GPL-3.0",
     "owner": "mfussenegger",
     "repo": "nvim-dap",
     "rev": "7bb46cc612bb127d7b0e3e9ed695267d830824ec",
     "sha256": "sha256-8dJUzwqkQ4++eULvhiNsJjcnnHMe3sVc/memv02jY3U=",
     "site": "github.com",
-    "stars_count": 6852,
-    "updated_at": "2026-01-02T16:14:43Z",
+    "stars_count": 6856,
+    "updated_at": "2026-01-03T17:22:59Z",
     "url": "https://github.com/mfussenegger/nvim-dap/archive/7bb46cc612bb127d7b0e3e9ed695267d830824ec.tar.gz"
   },
   {
@@ -9425,8 +9332,8 @@
     "rev": "f73731b543f5971e0da9665eb1d7ceffe1fde71f",
     "sha256": "sha256-bBe2gy8izN7L5PoSbmqeUT4HGiM3FDB6//jKzGFuO9o=",
     "site": "github.com",
-    "stars_count": 1416,
-    "updated_at": "2026-01-02T02:18:52Z",
+    "stars_count": 1417,
+    "updated_at": "2026-01-03T13:35:35Z",
     "url": "https://github.com/mfussenegger/nvim-jdtls/archive/f73731b543f5971e0da9665eb1d7ceffe1fde71f.tar.gz"
   },
   {
@@ -9439,8 +9346,8 @@
     "rev": "1f19dacd945a7b1a57f29f32b2d7168384df3d36",
     "sha256": "sha256-WFVijHda0cagPyWH+l8uaG10HK+JPmlagy4NpjHXchw=",
     "site": "github.com",
-    "stars_count": 2590,
-    "updated_at": "2026-01-02T13:42:42Z",
+    "stars_count": 2591,
+    "updated_at": "2026-01-03T03:05:43Z",
     "url": "https://github.com/mfussenegger/nvim-lint/archive/1f19dacd945a7b1a57f29f32b2d7168384df3d36.tar.gz"
   },
   {
@@ -9530,31 +9437,31 @@
     "created_at": "2024-11-03T09:32:37Z",
     "date": "2026-01-02",
     "description": "Ripgrep/gitgrep source for the blink.cmp Neovim completion plugin",
-    "last_commit_at": "2026-01-02T12:05:57Z",
+    "last_commit_at": "2026-01-02T22:04:17Z",
     "license": "MIT",
     "owner": "mikavilpas",
     "repo": "blink-ripgrep.nvim",
-    "rev": "6ae4ce46d14320ccfaae213275d2259ae0e54add",
-    "sha256": "sha256-EPuAEqZuZtZ1JshOnsUjZK8AL79WcYEOL59rE1zUzFk=",
+    "rev": "2e14682667d332520de254c2b21f6e77ae2c1b87",
+    "sha256": "sha256-r5U5YAukv6kR1lhi+nvyoZMD20+GrIHjaebXcBNN1WI=",
     "site": "github.com",
-    "stars_count": 104,
-    "updated_at": "2026-01-02T12:06:01Z",
-    "url": "https://github.com/mikavilpas/blink-ripgrep.nvim/archive/6ae4ce46d14320ccfaae213275d2259ae0e54add.tar.gz"
+    "stars_count": 103,
+    "updated_at": "2026-01-02T22:04:21Z",
+    "url": "https://github.com/mikavilpas/blink-ripgrep.nvim/archive/2e14682667d332520de254c2b21f6e77ae2c1b87.tar.gz"
   },
   {
     "created_at": "2024-02-25T13:33:19Z",
     "date": "2026-01-02",
     "description": "A Neovim Plugin for the yazi terminal file manager",
-    "last_commit_at": "2026-01-02T12:05:18Z",
+    "last_commit_at": "2026-01-02T19:39:41Z",
     "license": "MIT",
     "owner": "mikavilpas",
     "repo": "yazi.nvim",
-    "rev": "aaf3d74d3de8b693b13da47b45b7f7ffcd5751c7",
-    "sha256": "sha256-94RmM9QQPTKWY2W6kEDp50HcIOZxC1fg8Mfl0LH/geM=",
+    "rev": "e0394785918dc391e9d2e863a15f3b5caf033747",
+    "sha256": "sha256-wjAih0k69+uOcS8/W9sSO4AuOw1iveBk+FNaTtc2r1k=",
     "site": "github.com",
-    "stars_count": 1471,
-    "updated_at": "2026-01-02T14:38:20Z",
-    "url": "https://github.com/mikavilpas/yazi.nvim/archive/aaf3d74d3de8b693b13da47b45b7f7ffcd5751c7.tar.gz"
+    "stars_count": 1476,
+    "updated_at": "2026-01-03T07:26:10Z",
+    "url": "https://github.com/mikavilpas/yazi.nvim/archive/e0394785918dc391e9d2e863a15f3b5caf033747.tar.gz"
   },
   {
     "created_at": "2024-04-08T14:28:41Z",
@@ -9580,8 +9487,8 @@
     "rev": "36d19dc85c0a1d0193e7c52d41129c4aa28b72e8",
     "sha256": "sha256-FL2crgvWl89XduujGG+8T1FkKXZOBRNu0A8uGjzjj2c=",
     "site": "github.com",
-    "stars_count": 791,
-    "updated_at": "2026-01-01T01:53:12Z",
+    "stars_count": 792,
+    "updated_at": "2026-01-03T16:39:01Z",
     "url": "https://github.com/mikesmithgh/kitty-scrollback.nvim/archive/36d19dc85c0a1d0193e7c52d41129c4aa28b72e8.tar.gz"
   },
   {
@@ -9594,8 +9501,8 @@
     "rev": "fc483f1e8afdbb6dbe9c8cb1b00d51f8f9c8f7f1",
     "sha256": "sha256-pRB0oOJPeDesUESKVhVNVflbx4RMG0K4LGKz4MsEccE=",
     "site": "github.com",
-    "stars_count": 922,
-    "updated_at": "2026-01-02T16:18:25Z",
+    "stars_count": 926,
+    "updated_at": "2026-01-03T14:34:05Z",
     "url": "https://github.com/milanglacier/minuet-ai.nvim/archive/fc483f1e8afdbb6dbe9c8cb1b00d51f8f9c8f7f1.tar.gz"
   },
   {
@@ -9651,8 +9558,8 @@
     "rev": "d8d55f5b62a6c12bc7756eb0b997a776eafd086e",
     "sha256": "sha256-PkR38m8xm+0aWlVkAqiAhAIW0j5sjr8H38T3ZBXyKrM=",
     "site": "github.com",
-    "stars_count": 909,
-    "updated_at": "2025-12-31T06:34:37Z",
+    "stars_count": 910,
+    "updated_at": "2026-01-02T18:40:47Z",
     "url": "https://github.com/mistricky/codesnap.nvim/archive/d8d55f5b62a6c12bc7756eb0b997a776eafd086e.tar.gz"
   },
   {
@@ -9666,8 +9573,8 @@
     "rev": "cd3eaa83b8d60533837202dede73238334d71832",
     "sha256": "sha256-mtJZmMdrX6LTfv0C9DIiYJVqtK5CsSdJVw8FXBN8mho=",
     "site": "github.com",
-    "stars_count": 1818,
-    "updated_at": "2026-01-02T10:03:33Z",
+    "stars_count": 1820,
+    "updated_at": "2026-01-03T05:42:11Z",
     "url": "https://github.com/mistweaverco/kulala.nvim/archive/cd3eaa83b8d60533837202dede73238334d71832.tar.gz"
   },
   {
@@ -9848,8 +9755,8 @@
     "rev": "6d3f482e70e088834de97be013508cf94be2b9b8",
     "sha256": "sha256-CD1Xv9yjJuHjERhx9onBlOWrcBTgnmopfSKxYSl40BU=",
     "site": "github.com",
-    "stars_count": 95,
-    "updated_at": "2025-12-26T22:29:52Z",
+    "stars_count": 96,
+    "updated_at": "2026-01-03T01:12:14Z",
     "url": "https://github.com/mozanunal/sllm.nvim/archive/6d3f482e70e088834de97be013508cf94be2b9b8.tar.gz"
   },
   {
@@ -9912,15 +9819,14 @@
     "created_at": "2025-10-02T02:51:08Z",
     "date": "2026-01-02",
     "description": "⚙️ Load project-local settings (like .vscode/settings.json) into Neovim 0.11+ native LSP settings easily.",
-    "last_commit_at": "2026-01-02T16:38:41Z",
     "license": "Apache-2.0",
     "owner": "mrjones2014",
     "repo": "codesettings.nvim",
     "rev": "f9efb5a83bbadae95645e984e0df36b847aed394",
     "sha256": "sha256-pYPNs4iBmvmunVKZ+bEt3r6Y0Y6rOwZmZfpahT0FVEc=",
     "site": "github.com",
-    "stars_count": 44,
-    "updated_at": "2026-01-02T16:38:44Z",
+    "stars_count": 45,
+    "updated_at": "2026-01-03T17:24:09Z",
     "url": "https://github.com/mrjones2014/codesettings.nvim/archive/f9efb5a83bbadae95645e984e0df36b847aed394.tar.gz"
   },
   {
@@ -9942,15 +9848,14 @@
     "created_at": "2022-03-19T18:49:00Z",
     "date": "2026-01-02",
     "description": "🧠 Smart, seamless, directional navigation and resizing of Neovim + terminal multiplexer splits. Supports Zellij, Tmux, Wezterm, and Kitty. Think about splits in terms of \"up/down/left/right\".",
-    "last_commit_at": "2026-01-02T16:37:09Z",
     "license": "MIT",
     "owner": "mrjones2014",
     "repo": "smart-splits.nvim",
     "rev": "d2629b2451649946c95bcc11ea5eaf15c96b23ef",
     "sha256": "sha256-qSh8zpCGJI62As2/GROzkHOy7G8F6r22kSPLRVFtyzg=",
     "site": "github.com",
-    "stars_count": 1492,
-    "updated_at": "2026-01-02T16:37:13Z",
+    "stars_count": 1493,
+    "updated_at": "2026-01-03T05:20:48Z",
     "url": "https://github.com/mrjones2014/smart-splits.nvim/archive/d2629b2451649946c95bcc11ea5eaf15c96b23ef.tar.gz"
   },
   {
@@ -9977,8 +9882,8 @@
     "rev": "b2ca716282d3d4e048865dfd1aabc3a8760d03b4",
     "sha256": "sha256-c5FpxpWgUWfGlgx9JjctLRPYJSWB5yDTcF2SSe8s9LQ=",
     "site": "github.com",
-    "stars_count": 1683,
-    "updated_at": "2026-01-02T04:39:11Z",
+    "stars_count": 1684,
+    "updated_at": "2026-01-03T00:45:04Z",
     "url": "https://github.com/ms-jpq/chadtree/archive/b2ca716282d3d4e048865dfd1aabc3a8760d03b4.tar.gz"
   },
   {
@@ -9991,8 +9896,8 @@
     "rev": "d8b71757358038fa151fb45c493c3a1e8c3629a3",
     "sha256": "sha256-GqSbD39xIhGigwgUQW8Tt7wLRZihPwB7LzD6DmWRodE=",
     "site": "github.com",
-    "stars_count": 3759,
-    "updated_at": "2026-01-02T07:26:14Z",
+    "stars_count": 3758,
+    "updated_at": "2026-01-02T17:57:22Z",
     "url": "https://github.com/ms-jpq/coq_nvim/archive/d8b71757358038fa151fb45c493c3a1e8c3629a3.tar.gz"
   },
   {
@@ -10091,7 +9996,7 @@
     "sha256": "sha256-wqfXsF+OchGKWLyqg2gxllEViZUOK4Q2bONfnEIelLY=",
     "site": "github.com",
     "stars_count": 3,
-    "updated_at": "2025-12-25T04:32:07Z",
+    "updated_at": "2026-01-03T11:54:33Z",
     "url": "https://github.com/nbeversl/urtext_neovim/archive/46a2ce4611b9232b79dc0ba9e8be0277590392b4.tar.gz"
   },
   {
@@ -10185,15 +10090,14 @@
     "created_at": "2019-11-13T17:12:28Z",
     "date": "2026-01-02",
     "description": "Quickstart configs for Nvim LSP",
-    "last_commit_at": "2026-01-02T05:39:42Z",
     "license": "Apache-2.0",
     "owner": "neovim",
     "repo": "nvim-lspconfig",
     "rev": "ac04ec3c2af08e9821b4eb64ede86072b9b213bf",
     "sha256": "sha256-4ROzk3gW3gJ8vR3lCmizUPv3UMIkPx9JYbQwIz6pgZg=",
     "site": "github.com",
-    "stars_count": 13167,
-    "updated_at": "2026-01-02T16:22:04Z",
+    "stars_count": 13171,
+    "updated_at": "2026-01-03T14:45:03Z",
     "url": "https://github.com/neovim/nvim-lspconfig/archive/ac04ec3c2af08e9821b4eb64ede86072b9b213bf.tar.gz"
   },
   {
@@ -10298,7 +10202,6 @@
     "created_at": "2025-07-07T13:38:21Z",
     "date": "2025-12-31",
     "description": "Cursor style Inline editing plugin for neovim.",
-    "last_commit_at": "2025-12-31T13:35:31Z",
     "license": "MIT",
     "owner": "nishu-murmu",
     "repo": "cursor-inline",
@@ -10590,20 +10493,6 @@
     "url": "https://github.com/njayman/season.nvim/archive/748d80622149a5363eb9b65c8882044b003e8cb8.tar.gz"
   },
   {
-    "created_at": "2022-04-15T21:42:10Z",
-    "date": "2025-02-11",
-    "description": "Toggles relativenumbers when not needed",
-    "license": "GPL-3.0",
-    "owner": "nkakouros-original",
-    "repo": "numbers.nvim",
-    "rev": "53a4775539439754208ed4e0bd2e8354c165e66d",
-    "sha256": "sha256-IXQvpbMfD6Mac/7DaZX0TLqIjCF49BUYOYSKEUzwBGw=",
-    "site": "github.com",
-    "stars_count": 38,
-    "updated_at": "2025-12-13T20:24:17Z",
-    "url": "https://github.com/nkakouros-original/numbers.nvim/archive/53a4775539439754208ed4e0bd2e8354c165e66d.tar.gz"
-  },
-  {
     "created_at": "2019-10-04T23:27:52Z",
     "date": "2019-10-16",
     "description": "Programmatic lua library for setting base16 themes in Neovim.",
@@ -10697,8 +10586,8 @@
     "rev": "e30b7f2008e52442154b66f7c519bfd2f1e32acb",
     "sha256": "sha256-AEIyPh6LuHsi0RzeU/zffiDGDK+c/whKw+5Bfmv3dLI=",
     "site": "github.com",
-    "stars_count": 4546,
-    "updated_at": "2026-01-02T14:38:21Z",
+    "stars_count": 4545,
+    "updated_at": "2026-01-03T03:30:27Z",
     "url": "https://github.com/numToStr/Comment.nvim/archive/e30b7f2008e52442154b66f7c519bfd2f1e32acb.tar.gz"
   },
   {
@@ -10739,8 +10628,8 @@
     "rev": "539e84f5a652d96917f0afc1341c20f0d59dd789",
     "sha256": "sha256-Uhl9J1GPdgGytqfhsIIKclOcjv9NdQ4fQzm4WBWUJOA=",
     "site": "github.com",
-    "stars_count": 1320,
-    "updated_at": "2026-01-01T09:25:13Z",
+    "stars_count": 1322,
+    "updated_at": "2026-01-03T15:15:46Z",
     "url": "https://github.com/nvim-flutter/flutter-tools.nvim/archive/539e84f5a652d96917f0afc1341c20f0d59dd789.tar.gz"
   },
   {
@@ -10767,8 +10656,8 @@
     "rev": "d196b25eda89ae957110f2966d1753889dc197b2",
     "sha256": "sha256-GhUmp7N6FOHV1t09tpBR/c/ZjyMlwnrWrtdkFNUIzeA=",
     "site": "github.com",
-    "stars_count": 1517,
-    "updated_at": "2026-01-02T09:32:26Z",
+    "stars_count": 1520,
+    "updated_at": "2026-01-03T13:55:14Z",
     "url": "https://github.com/nvim-java/nvim-java/archive/d196b25eda89ae957110f2966d1753889dc197b2.tar.gz"
   },
   {
@@ -10781,8 +10670,8 @@
     "rev": "54f48eb5017632d81d0fd40112065f1d062d0629",
     "sha256": "sha256-Hk6yLL7T0hqLzRqs17H+yo0xs0OwCTl2WSxEbh3e8PA=",
     "site": "github.com",
-    "stars_count": 657,
-    "updated_at": "2025-12-25T01:10:02Z",
+    "stars_count": 658,
+    "updated_at": "2026-01-02T19:31:48Z",
     "url": "https://github.com/nvim-lua/lsp-status.nvim/archive/54f48eb5017632d81d0fd40112065f1d062d0629.tar.gz"
   },
   {
@@ -10795,8 +10684,8 @@
     "rev": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
     "sha256": "sha256-gH7/0Wmm9cMK7ARG0tUF58QUdIVDShn4N4/kUVLTRiM=",
     "site": "github.com",
-    "stars_count": 3338,
-    "updated_at": "2026-01-02T14:38:06Z",
+    "stars_count": 3339,
+    "updated_at": "2026-01-03T14:23:00Z",
     "url": "https://github.com/nvim-lua/plenary.nvim/archive/b9fd5226c2f76c951fc8ed5923d85e4de065e509.tar.gz"
   },
   {
@@ -10809,39 +10698,40 @@
     "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
     "sha256": "sha256-wedeGuDgPMrc6y7ikjALa5sTfp1kIQrwWqz7sN/nOHw=",
     "site": "github.com",
-    "stars_count": 7626,
-    "updated_at": "2026-01-02T14:38:36Z",
+    "stars_count": 7630,
+    "updated_at": "2026-01-03T12:30:48Z",
     "url": "https://github.com/nvim-lualine/lualine.nvim/archive/47f91c416daef12db467145e16bed5bbfe00add8.tar.gz"
   },
   {
     "created_at": "2021-06-18T08:43:57Z",
-    "date": "2026-01-02",
+    "date": "2026-01-03",
     "description": "Library of 40+ independent Lua modules improving Neovim experience with minimal effort",
     "homepage": "https://nvim-mini.org/mini.nvim/",
-    "last_commit_at": "2026-01-02T15:56:39Z",
+    "last_commit_at": "2026-01-03T12:24:49Z",
     "license": "MIT",
     "owner": "nvim-mini",
     "repo": "mini.nvim",
-    "rev": "2809a06d24fe528c572c7ceca4f0a82fecb02ea8",
-    "sha256": "sha256-4KAw3h4nzafOio4dFiWMNZrNBrRDORu+rQySSjSGio4=",
+    "rev": "5d8d141cb113e9d235c9215475b26b0d20612150",
+    "sha256": "sha256-h0VFs2WQviJqRIiZop8cEI/5bPki0eGOMMsEwBO440U=",
     "site": "github.com",
-    "stars_count": 8537,
-    "updated_at": "2026-01-02T16:42:52Z",
-    "url": "https://github.com/nvim-mini/mini.nvim/archive/2809a06d24fe528c572c7ceca4f0a82fecb02ea8.tar.gz"
+    "stars_count": 8541,
+    "updated_at": "2026-01-03T16:02:00Z",
+    "url": "https://github.com/nvim-mini/mini.nvim/archive/5d8d141cb113e9d235c9215475b26b0d20612150.tar.gz"
   },
   {
     "created_at": "2021-12-12T13:38:23Z",
-    "date": "2025-12-29",
+    "date": "2026-01-03",
     "description": "Neovim plugin to manage the file system and other tree like structures.",
+    "last_commit_at": "2026-01-03T10:30:30Z",
     "license": "MIT",
     "owner": "nvim-neo-tree",
     "repo": "neo-tree.nvim",
-    "rev": "4925f31285940af2805f5bfe52dcffa2037ecab2",
-    "sha256": "sha256-D4hUZDH+I7q0e6ar4SgqfV/ArMRiB0UF+FfqREkCdVg=",
+    "rev": "38c8e49bf6731a27eb612834ec88c606532b7fea",
+    "sha256": "sha256-fofSQqrM0ghsi37iy+F191QNTer68MyZt54QpNXUrkY=",
     "site": "github.com",
-    "stars_count": 5117,
-    "updated_at": "2026-01-02T13:39:15Z",
-    "url": "https://github.com/nvim-neo-tree/neo-tree.nvim/archive/4925f31285940af2805f5bfe52dcffa2037ecab2.tar.gz"
+    "stars_count": 5121,
+    "updated_at": "2026-01-03T16:39:08Z",
+    "url": "https://github.com/nvim-neo-tree/neo-tree.nvim/archive/38c8e49bf6731a27eb612834ec88c606532b7fea.tar.gz"
   },
   {
     "created_at": "2021-04-11T17:35:43Z",
@@ -10853,8 +10743,8 @@
     "rev": "de0bf99a95f4053862f0e63c8083b5e14f3ad6ec",
     "sha256": "sha256-2aqIATnrQlWH2FF6KYd9fWRu10eWaoECy0QJLz7LLcQ=",
     "site": "github.com",
-    "stars_count": 7163,
-    "updated_at": "2026-01-02T16:20:35Z",
+    "stars_count": 7165,
+    "updated_at": "2026-01-03T03:39:14Z",
     "url": "https://github.com/nvim-neorg/neorg/archive/de0bf99a95f4053862f0e63c8083b5e14f3ad6ec.tar.gz"
   },
   {
@@ -10867,8 +10757,8 @@
     "rev": "deadfb1af5ce458742671ad3a013acb9a6b41178",
     "sha256": "sha256-hSBrsfEIrZjVYnY76VxUPT/zZnhqDVfXcRG2yYqno8Q=",
     "site": "github.com",
-    "stars_count": 2994,
-    "updated_at": "2026-01-01T12:56:28Z",
+    "stars_count": 2993,
+    "updated_at": "2026-01-02T17:57:28Z",
     "url": "https://github.com/nvim-neotest/neotest/archive/deadfb1af5ce458742671ad3a013acb9a6b41178.tar.gz"
   },
   {
@@ -10895,8 +10785,8 @@
     "rev": "cf75da1a91071c6c041075eae4ca2326f9d1f52a",
     "sha256": "sha256-qFb0RF4TGOLxJHsDzbjzbv8snWGHe+36H47ZdjgGheE=",
     "site": "github.com",
-    "stars_count": 3620,
-    "updated_at": "2026-01-02T14:28:15Z",
+    "stars_count": 3623,
+    "updated_at": "2026-01-03T08:06:17Z",
     "url": "https://github.com/nvim-orgmode/orgmode/archive/cf75da1a91071c6c041075eae4ca2326f9d1f52a.tar.gz"
   },
   {
@@ -10951,8 +10841,8 @@
     "rev": "0826c7a730bc4d36068f7c85cf4c5b3fd9fb570a",
     "sha256": "sha256-gT4rIHbIirSzVG8xPIaykF8VE1jMCjNz8JMqUWY862Y=",
     "site": "github.com",
-    "stars_count": 519,
-    "updated_at": "2026-01-02T14:38:00Z",
+    "stars_count": 520,
+    "updated_at": "2026-01-03T04:39:18Z",
     "url": "https://github.com/nvim-telescope/telescope-media-files.nvim/archive/0826c7a730bc4d36068f7c85cf4c5b3fd9fb570a.tar.gz"
   },
   {
@@ -10965,8 +10855,8 @@
     "rev": "3333a52ff548ba0a68af6d8da1e54f9cd96e9179",
     "sha256": "sha256-tm2ycoYLwba82gTZuOF2UgK/hi5SgC1ZUhbfi1JwR/s=",
     "site": "github.com",
-    "stars_count": 18836,
-    "updated_at": "2026-01-02T15:27:14Z",
+    "stars_count": 18842,
+    "updated_at": "2026-01-03T13:57:29Z",
     "url": "https://github.com/nvim-telescope/telescope.nvim/archive/3333a52ff548ba0a68af6d8da1e54f9cd96e9179.tar.gz"
   },
   {
@@ -10980,7 +10870,7 @@
     "sha256": "sha256-IoAw/tHJpraajaKutgMvhllSrJ6egY5pX3ZG/OwBYDA=",
     "site": "github.com",
     "stars_count": 8284,
-    "updated_at": "2026-01-02T14:38:29Z",
+    "updated_at": "2026-01-03T13:34:49Z",
     "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/b8b44b6a2494d086a9177251a119f9daec6cace8.tar.gz"
   },
   {
@@ -10993,24 +10883,24 @@
     "rev": "6788013bb9cb784e606ada44206b0e755e4323d7",
     "sha256": "sha256-QWaVBpFK4qQrB7z0+vF1CWamrUTUB8CDvjdqQkKIx4Q=",
     "site": "github.com",
-    "stars_count": 2564,
-    "updated_at": "2026-01-02T14:38:27Z",
+    "stars_count": 2567,
+    "updated_at": "2026-01-03T15:39:31Z",
     "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/6788013bb9cb784e606ada44206b0e755e4323d7.tar.gz"
   },
   {
     "created_at": "2020-04-18T15:24:10Z",
-    "date": "2026-01-02",
+    "date": "2026-01-03",
     "description": "Nvim Treesitter configurations and abstraction layer",
-    "last_commit_at": "2026-01-02T15:37:00Z",
+    "last_commit_at": "2026-01-03T17:15:14Z",
     "license": "Apache-2.0",
     "owner": "nvim-treesitter",
     "repo": "nvim-treesitter",
-    "rev": "737088f8571293f6a1ef8cd6c858d5daf9a38162",
-    "sha256": "sha256-2D5A9LoozJsU8YsbG7PSYoVl/3bXMfHSYeK7CZq3+L0=",
+    "rev": "300b906a9514d5e0ce02911d371445382fe35a31",
+    "sha256": "sha256-IEb+6RkG8iIZ5izEoF+84qfN73rAhc7NEfffqB4vO+I=",
     "site": "github.com",
-    "stars_count": 13020,
-    "updated_at": "2026-01-02T15:37:05Z",
-    "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/737088f8571293f6a1ef8cd6c858d5daf9a38162.tar.gz"
+    "stars_count": 13021,
+    "updated_at": "2026-01-03T17:15:19Z",
+    "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/300b906a9514d5e0ce02911d371445382fe35a31.tar.gz"
   },
   {
     "created_at": "2020-10-19T09:32:33Z",
@@ -11022,8 +10912,8 @@
     "rev": "64dd4cf3f6fd0ab17622c5ce15c91fc539c3f24a",
     "sha256": "sha256-g5w+3lIWeBzofeVs9ZZIGDYuQjzrQmCy6m/zY9V7gL8=",
     "site": "github.com",
-    "stars_count": 3070,
-    "updated_at": "2026-01-01T22:11:53Z",
+    "stars_count": 3073,
+    "updated_at": "2026-01-03T17:07:42Z",
     "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/64dd4cf3f6fd0ab17622c5ce15c91fc539c3f24a.tar.gz"
   },
   {
@@ -11119,8 +11009,8 @@
     "rev": "8efe00d6aed9db6449969f889170f1a7e43101a1",
     "sha256": "sha256-mBtuZwNvojGP5T0USu69ZJfd8SKEH4fUhjGejMk2CDM=",
     "site": "github.com",
-    "stars_count": 3728,
-    "updated_at": "2025-12-30T12:41:49Z",
+    "stars_count": 3729,
+    "updated_at": "2026-01-03T09:12:18Z",
     "url": "https://github.com/nvimdev/lspsaga.nvim/archive/8efe00d6aed9db6449969f889170f1a7e43101a1.tar.gz"
   },
   {
@@ -11162,7 +11052,7 @@
     "sha256": "sha256-6z8BJX0RT6OKengBWDfQkMXywrW81sO7xhdclZbhHIU=",
     "site": "github.com",
     "stars_count": 3198,
-    "updated_at": "2026-01-01T18:28:11Z",
+    "updated_at": "2026-01-03T17:11:54Z",
     "url": "https://github.com/nvimtools/none-ls.nvim/archive/0b457958cb958c16850b5a1fb38bbcd982909181.tar.gz"
   },
   {
@@ -11272,24 +11162,24 @@
     "rev": "9f85f6090322f39b11ae04a343d4eb9d12a86897",
     "sha256": "sha256-ocmz/jpagFARp8/aP+usHUvyNSLgAhiZLGjwIEhdEh4=",
     "site": "github.com",
-    "stars_count": 1500,
-    "updated_at": "2026-01-02T14:39:40Z",
+    "stars_count": 1501,
+    "updated_at": "2026-01-03T06:08:02Z",
     "url": "https://github.com/nyoom-engineering/oxocarbon.nvim/archive/9f85f6090322f39b11ae04a343d4eb9d12a86897.tar.gz"
   },
   {
     "created_at": "2025-02-28T17:13:06Z",
-    "date": "2026-01-02",
+    "date": "2026-01-03",
     "description": "Obsidian 🤝 Neovim (actively maintained version)",
-    "last_commit_at": "2026-01-02T16:12:30Z",
+    "last_commit_at": "2026-01-03T14:11:20Z",
     "license": "Apache-2.0",
     "owner": "obsidian-nvim",
     "repo": "obsidian.nvim",
-    "rev": "95ab825e7722b456d2f21b72705814de2d05069e",
-    "sha256": "sha256-ikofz5Y+s4bAUsOn7+hB1C4s8X8W2P8wNTwywz2aPnM=",
+    "rev": "cc9f7b2588577a1961c563b8baa90f636e2d61b7",
+    "sha256": "sha256-9KTUSRdcgZ0+W1mMsw+AthNWjUS03iNgAVsEGduWBW8=",
     "site": "github.com",
-    "stars_count": 1384,
-    "updated_at": "2026-01-02T16:12:35Z",
-    "url": "https://github.com/obsidian-nvim/obsidian.nvim/archive/95ab825e7722b456d2f21b72705814de2d05069e.tar.gz"
+    "stars_count": 1383,
+    "updated_at": "2026-01-03T14:46:56Z",
+    "url": "https://github.com/obsidian-nvim/obsidian.nvim/archive/cc9f7b2588577a1961c563b8baa90f636e2d61b7.tar.gz"
   },
   {
     "created_at": "2022-08-18T15:26:32Z",
@@ -11408,15 +11298,14 @@
     "date": "2026-01-02",
     "description": "✨ AI Coding, Vim Style",
     "homepage": "https://codecompanion.olimorris.dev",
-    "last_commit_at": "2026-01-02T17:24:16Z",
     "license": "Apache-2.0",
     "owner": "olimorris",
     "repo": "codecompanion.nvim",
     "rev": "b6fcc25ced5628d3d960e6e4bc287ce8fc9a1710",
     "sha256": "sha256-2on3HeT5TsxRCc3ub9KktUXG1YxbFF+QR6Q2qPCQhFk=",
     "site": "github.com",
-    "stars_count": 5869,
-    "updated_at": "2026-01-02T17:24:20Z",
+    "stars_count": 5867,
+    "updated_at": "2026-01-03T14:57:33Z",
     "url": "https://github.com/olimorris/codecompanion.nvim/archive/b6fcc25ced5628d3d960e6e4bc287ce8fc9a1710.tar.gz"
   },
   {
@@ -11527,8 +11416,8 @@
     "rev": "86ed124c2f7e118670649701288e024444bf91e5",
     "sha256": "sha256-ew/DaHq3HRCMCxJ/wa6uUtr2IXa7pz4rzM5QTCT186E=",
     "site": "github.com",
-    "stars_count": 328,
-    "updated_at": "2026-01-02T04:51:27Z",
+    "stars_count": 329,
+    "updated_at": "2026-01-03T17:17:14Z",
     "url": "https://github.com/oxfist/night-owl.nvim/archive/86ed124c2f7e118670649701288e024444bf91e5.tar.gz"
   },
   {
@@ -11610,8 +11499,8 @@
     "rev": "f8e87b96cd6362ef8579be456afee3b38fd7e2a8",
     "sha256": "sha256-uSm49iIIogG+wjJlicUwX/t58AE+qdrPjusR7rnzaTo=",
     "site": "github.com",
-    "stars_count": 1017,
-    "updated_at": "2026-01-02T03:30:44Z",
+    "stars_count": 1018,
+    "updated_at": "2026-01-02T19:22:04Z",
     "url": "https://github.com/petertriho/nvim-scrollbar/archive/f8e87b96cd6362ef8579be456afee3b38fd7e2a8.tar.gz"
   },
   {
@@ -11729,17 +11618,18 @@
   },
   {
     "created_at": "2023-08-14T09:56:15Z",
-    "date": "2025-12-01",
+    "date": "2026-01-03",
     "description": "Delicious diagnostic debugging in Neovim 🤤",
+    "last_commit_at": "2026-01-03T16:16:04Z",
     "license": "WTFPL",
     "owner": "piersolenski",
     "repo": "wtf.nvim",
-    "rev": "a50e7ae1eafe0a7c1b2871ac4185cad33bc94393",
-    "sha256": "sha256-zYTXJMBvJaaRUp35TAZHDUwHMfkPzwVvXSmyOF4crCQ=",
+    "rev": "766b70ed84b0503706e82ce390c5e12e2f3f6368",
+    "sha256": "sha256-x4IXHJcDrngon1h6ecDqyc8yvC//6YTaeK0g4kQrfbo=",
     "site": "github.com",
     "stars_count": 570,
-    "updated_at": "2025-12-29T15:46:37Z",
-    "url": "https://github.com/piersolenski/wtf.nvim/archive/a50e7ae1eafe0a7c1b2871ac4185cad33bc94393.tar.gz"
+    "updated_at": "2026-01-03T16:16:09Z",
+    "url": "https://github.com/piersolenski/wtf.nvim/archive/766b70ed84b0503706e82ce390c5e12e2f3f6368.tar.gz"
   },
   {
     "created_at": "2025-02-19T08:10:51Z",
@@ -11899,7 +11789,6 @@
     "created_at": "2024-03-14T23:12:23Z",
     "date": "2026-01-02",
     "description": "Neovim plugin improving access to clipboard history",
-    "last_commit_at": "2026-01-02T15:01:43Z",
     "license": "MIT",
     "owner": "ptdewey",
     "repo": "yankbank-nvim",
@@ -11920,8 +11809,8 @@
     "rev": "4a3a4fc5a9d3a372c91041f5b846f33b8d6b31fa",
     "sha256": "sha256-0WB9d64yYo6Vshj2BZotNf0+xsbcbkLg5fVBbeermio=",
     "site": "github.com",
-    "stars_count": 3050,
-    "updated_at": "2026-01-02T01:41:23Z",
+    "stars_count": 3049,
+    "updated_at": "2026-01-02T17:57:19Z",
     "url": "https://github.com/pwntester/octo.nvim/archive/4a3a4fc5a9d3a372c91041f5b846f33b8d6b31fa.tar.gz"
   },
   {
@@ -11949,7 +11838,7 @@
     "sha256": "sha256-4H5GCPbPzwdtLdRMqbPNaFY8PJ1dVZA+KQpbWiMpJow=",
     "site": "github.com",
     "stars_count": 484,
-    "updated_at": "2025-12-31T08:15:11Z",
+    "updated_at": "2026-01-03T03:47:28Z",
     "url": "https://github.com/quarto-dev/quarto-nvim/archive/0e9491509b38efbd83d3f41dbfacc7fc4bd40191.tar.gz"
   },
   {
@@ -12032,8 +11921,8 @@
     "rev": "d9d12d4bfb9a4c5b8b8bdf7f612551df6972946c",
     "sha256": "sha256-dkQhzCLZVjqPY61Ag/7WmbgxloA2nxbBysfDHof1J3U=",
     "site": "github.com",
-    "stars_count": 1522,
-    "updated_at": "2026-01-02T10:59:30Z",
+    "stars_count": 1521,
+    "updated_at": "2026-01-02T17:56:45Z",
     "url": "https://github.com/rachartier/tiny-inline-diagnostic.nvim/archive/d9d12d4bfb9a4c5b8b8bdf7f612551df6972946c.tar.gz"
   },
   {
@@ -12116,8 +12005,8 @@
     "rev": "4ce6258b31420aa4fd64b35b7f7cf42dffef7403",
     "sha256": "sha256-D1KOcyoq8VlnzcUB0wV2lmeOHE7T1wENpfK1K0cZINg=",
     "site": "github.com",
-    "stars_count": 420,
-    "updated_at": "2025-12-30T13:12:02Z",
+    "stars_count": 421,
+    "updated_at": "2026-01-03T00:55:14Z",
     "url": "https://github.com/ramojus/mellifluous.nvim/archive/4ce6258b31420aa4fd64b35b7f7cf42dffef7403.tar.gz"
   },
   {
@@ -12229,8 +12118,8 @@
     "rev": "41a18f0c05534c375bafec7ed05cdb409c4abcc6",
     "sha256": "sha256-SadpqUJ8zROJMXoZsZfgvXzKEV3VnoyDUJkbATnWtbA=",
     "site": "github.com",
-    "stars_count": 2572,
-    "updated_at": "2026-01-02T10:30:48Z",
+    "stars_count": 2571,
+    "updated_at": "2026-01-02T17:57:20Z",
     "url": "https://github.com/ray-x/go.nvim/archive/41a18f0c05534c375bafec7ed05cdb409c4abcc6.tar.gz"
   },
   {
@@ -12257,8 +12146,8 @@
     "rev": "7d3bb0a641f516f1c7fd2e47852580dadbd7a430",
     "sha256": "sha256-G188mDXYY0tMwJhxdbMzxhXARBzrl13fPn8tciw/ewc=",
     "site": "github.com",
-    "stars_count": 2320,
-    "updated_at": "2025-12-25T14:55:12Z",
+    "stars_count": 2321,
+    "updated_at": "2026-01-03T08:48:25Z",
     "url": "https://github.com/ray-x/lsp_signature.nvim/archive/7d3bb0a641f516f1c7fd2e47852580dadbd7a430.tar.gz"
   },
   {
@@ -12313,23 +12202,9 @@
     "rev": "cf91d5e2d07c72903d052f5207511bf7ecdb7122",
     "sha256": "sha256-b1g/s/ejkTlvGUCXpGto7HaAf6oag4OwYtZmH0D4TCg=",
     "site": "github.com",
-    "stars_count": 3231,
-    "updated_at": "2025-12-30T16:37:43Z",
+    "stars_count": 3232,
+    "updated_at": "2026-01-03T13:35:04Z",
     "url": "https://github.com/rcarriga/nvim-dap-ui/archive/cf91d5e2d07c72903d052f5207511bf7ecdb7122.tar.gz"
-  },
-  {
-    "created_at": "2021-07-30T23:19:09Z",
-    "date": "2025-09-06",
-    "description": "A fancy, configurable, notification manager for NeoVim",
-    "license": "MIT",
-    "owner": "rcarriga",
-    "repo": "nvim-notify",
-    "rev": "8701bece920b38ea289b457f902e2ad184131a5d",
-    "sha256": "sha256-56T/jxCo51MubEL9tBnRADGf87OXb+VzWveCu4g4BAQ=",
-    "site": "github.com",
-    "stars_count": 3494,
-    "updated_at": "2026-01-02T16:13:23Z",
-    "url": "https://github.com/rcarriga/nvim-notify/archive/8701bece920b38ea289b457f902e2ad184131a5d.tar.gz"
   },
   {
     "created_at": "2022-01-01T15:50:03Z",
@@ -12341,8 +12216,8 @@
     "rev": "fae936abb5e0345b85c3a03ecf38525b0828b992",
     "sha256": "sha256-lC4ypgITJx5awusgMXi8rfKe7eFWQxqW1cMm4xEhdjg=",
     "site": "github.com",
-    "stars_count": 1226,
-    "updated_at": "2026-01-01T11:41:04Z",
+    "stars_count": 1227,
+    "updated_at": "2026-01-03T14:39:04Z",
     "url": "https://github.com/rebelot/heirline.nvim/archive/fae936abb5e0345b85c3a03ecf38525b0828b992.tar.gz"
   },
   {
@@ -12356,7 +12231,7 @@
     "sha256": "sha256-zpNCNK+YhPqjRWuTlMcF5hJdcC4RgNY3bS9/j5o+9bk=",
     "site": "github.com",
     "stars_count": 5751,
-    "updated_at": "2026-01-02T15:55:09Z",
+    "updated_at": "2026-01-03T15:19:50Z",
     "url": "https://github.com/rebelot/kanagawa.nvim/archive/aef7f5cec0a40dbe7f3304214850c472e2264b10.tar.gz"
   },
   {
@@ -12383,8 +12258,8 @@
     "rev": "714d5512aaec5565d55652480c16c26f8d95645d",
     "sha256": "sha256-Eyg6oPsD7mWLRGporFIQ/BUP/WNDZe4xzOhkItFPidY=",
     "site": "github.com",
-    "stars_count": 1992,
-    "updated_at": "2025-12-31T12:58:17Z",
+    "stars_count": 1993,
+    "updated_at": "2026-01-02T22:15:09Z",
     "url": "https://github.com/rest-nvim/rest.nvim/archive/714d5512aaec5565d55652480c16c26f8d95645d.tar.gz"
   },
   {
@@ -12468,7 +12343,7 @@
     "sha256": "sha256-VCAhbjEZxLY7WcUEykn7w46pDDeHBDI63N5RlvyWOik=",
     "site": "github.com",
     "stars_count": 1731,
-    "updated_at": "2025-12-30T16:12:19Z",
+    "updated_at": "2026-01-03T17:15:23Z",
     "url": "https://github.com/rktjmp/lush.nvim/archive/9c60ec2279d62487d942ce095e49006af28eed6e.tar.gz"
   },
   {
@@ -12579,8 +12454,8 @@
     "rev": "b68f1e66736840e837c2a77ebff59c932fcb70c7",
     "sha256": "sha256-zG3alCZ1+mbkbWlumQyldi066QmELbjBiJdrWy/YVZ4=",
     "site": "github.com",
-    "stars_count": 617,
-    "updated_at": "2026-01-02T13:27:25Z",
+    "stars_count": 618,
+    "updated_at": "2026-01-02T23:05:15Z",
     "url": "https://github.com/rmehri01/onenord.nvim/archive/b68f1e66736840e837c2a77ebff59c932fcb70c7.tar.gz"
   },
   {
@@ -12662,8 +12537,8 @@
     "rev": "7e9420ee16e3b3eecc9b3fc53ff75448435e94bd",
     "sha256": "sha256-vWCUKKWfAjci3d1uLr9lFGmi/lIfW5tCX/B2UrV1LZc=",
     "site": "github.com",
-    "stars_count": 30,
-    "updated_at": "2025-12-29T15:38:20Z",
+    "stars_count": 31,
+    "updated_at": "2026-01-03T17:10:48Z",
     "url": "https://github.com/romus204/referencer.nvim/archive/7e9420ee16e3b3eecc9b3fc53ff75448435e94bd.tar.gz"
   },
   {
@@ -12760,8 +12635,8 @@
     "rev": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90",
     "sha256": "sha256-E5DaVqGdViGzB1/JMthedQOUTDU/zl+9mW1jQ0ZGHkA=",
     "site": "github.com",
-    "stars_count": 773,
-    "updated_at": "2025-12-25T12:53:48Z",
+    "stars_count": 772,
+    "updated_at": "2026-01-03T13:35:25Z",
     "url": "https://github.com/saadparwaiz1/cmp_luasnip/archive/98d9cb5c2c38532bd9bdb481067b20fea8f32e90.tar.gz"
   },
   {
@@ -12790,8 +12665,8 @@
     "rev": "10c164bbdf065f9781b6cc2f7d068c016276055b",
     "sha256": "sha256-0WcpO1jSGfM5gf1XSuWbr/xqfvgfd797yEiUBOy7EUU=",
     "site": "github.com",
-    "stars_count": 5751,
-    "updated_at": "2026-01-02T12:57:31Z",
+    "stars_count": 5757,
+    "updated_at": "2026-01-03T17:13:07Z",
     "url": "https://github.com/saghen/blink.cmp/archive/10c164bbdf065f9781b6cc2f7d068c016276055b.tar.gz"
   },
   {
@@ -12818,8 +12693,8 @@
     "rev": "93ff30292d34116444ff9db5264f6ccd34f3f71f",
     "sha256": "sha256-ZWgwQJshomiDkVpFK8YmRcpx5OkiLSPnQ+cRKXsjgBs=",
     "site": "github.com",
-    "stars_count": 170,
-    "updated_at": "2025-12-30T12:42:08Z",
+    "stars_count": 171,
+    "updated_at": "2026-01-03T16:34:55Z",
     "url": "https://github.com/saghen/blink.indent/archive/93ff30292d34116444ff9db5264f6ccd34f3f71f.tar.gz"
   },
   {
@@ -12887,8 +12762,8 @@
     "rev": "b90025cc84dbb9c46df5a2ae540d3f01cf85af74",
     "sha256": "sha256-bxvUhiZfCPvJerajLbRCuyJ3Ox0z3WbMkbT3eR6Dp8c=",
     "site": "github.com",
-    "stars_count": 3758,
-    "updated_at": "2026-01-02T12:59:06Z",
+    "stars_count": 3760,
+    "updated_at": "2026-01-02T21:02:56Z",
     "url": "https://github.com/sainnhe/everforest/archive/b90025cc84dbb9c46df5a2ae540d3f01cf85af74.tar.gz"
   },
   {
@@ -12901,8 +12776,8 @@
     "rev": "cc47341018320a2c82262958a1af889e5eeacd6e",
     "sha256": "sha256-UeWHVr4XekXBK5XW5BQukrXCrthSnoIsYgwhsAQc9i4=",
     "site": "github.com",
-    "stars_count": 2417,
-    "updated_at": "2026-01-01T14:32:34Z",
+    "stars_count": 2418,
+    "updated_at": "2026-01-03T16:46:51Z",
     "url": "https://github.com/sainnhe/gruvbox-material/archive/cc47341018320a2c82262958a1af889e5eeacd6e.tar.gz"
   },
   {
@@ -13027,8 +12902,8 @@
     "rev": "971344d1fe1fd93580961815e7b7c8853c3605e4",
     "sha256": "sha256-Gaoj4WTBTShzMtvw84ow43Ur8CV0G0h1LwyThCPNP00=",
     "site": "github.com",
-    "stars_count": 709,
-    "updated_at": "2026-01-01T22:53:02Z",
+    "stars_count": 710,
+    "updated_at": "2026-01-03T15:22:54Z",
     "url": "https://github.com/savq/paq-nvim/archive/971344d1fe1fd93580961815e7b7c8853c3605e4.tar.gz"
   },
   {
@@ -13084,8 +12959,8 @@
     "rev": "a956559cda735fbc9f0b39541529386322afaedd",
     "sha256": "sha256-pRIudRg6PgYraOEQrvGH7WHnawoaMbHW2NqQiKpC6zg=",
     "site": "github.com",
-    "stars_count": 1227,
-    "updated_at": "2026-01-02T14:34:03Z",
+    "stars_count": 1232,
+    "updated_at": "2026-01-03T16:07:38Z",
     "url": "https://github.com/scottmckendry/cyberdream.nvim/archive/a956559cda735fbc9f0b39541529386322afaedd.tar.gz"
   },
   {
@@ -13155,8 +13030,8 @@
     "rev": "80c1e5321505aeb22b7a9f23eb82f1e193c12470",
     "sha256": "sha256-7VMLwPkBMH8kCeQlkbwWjC9Z2wE18TzywvebKawW7Q4=",
     "site": "github.com",
-    "stars_count": 965,
-    "updated_at": "2025-12-29T12:26:05Z",
+    "stars_count": 964,
+    "updated_at": "2026-01-02T23:38:26Z",
     "url": "https://github.com/shaunsingh/nord.nvim/archive/80c1e5321505aeb22b7a9f23eb82f1e193c12470.tar.gz"
   },
   {
@@ -13169,8 +13044,8 @@
     "rev": "3bc2bd7aef28fbed6643534a0fdd0f19966544bc",
     "sha256": "sha256-5Tp+IifOeYBQkPWsAdEAvndLb7eUfVEQlJ+TG9m1spo=",
     "site": "github.com",
-    "stars_count": 876,
-    "updated_at": "2025-12-31T13:16:42Z",
+    "stars_count": 875,
+    "updated_at": "2026-01-02T17:57:43Z",
     "url": "https://github.com/shellRaining/hlchunk.nvim/archive/3bc2bd7aef28fbed6643534a0fdd0f19966544bc.tar.gz"
   },
   {
@@ -13183,8 +13058,8 @@
     "rev": "e5d1abf50010a1fb4285493202467aa982b459c2",
     "sha256": "sha256-tCxveZbWb7EGIL9CbZf/KpbruHy7fao/257mtxZlcIA=",
     "site": "github.com",
-    "stars_count": 881,
-    "updated_at": "2025-12-31T13:27:08Z",
+    "stars_count": 882,
+    "updated_at": "2026-01-03T04:52:55Z",
     "url": "https://github.com/shortcuts/no-neck-pain.nvim/archive/e5d1abf50010a1fb4285493202467aa982b459c2.tar.gz"
   },
   {
@@ -13212,7 +13087,7 @@
     "sha256": "sha256-uCcLJKyTGlghBa0V0PAVHSfyNYlq0Yuemn7BZdS6ChI=",
     "site": "github.com",
     "stars_count": 5195,
-    "updated_at": "2026-01-02T16:34:14Z",
+    "updated_at": "2026-01-03T16:24:41Z",
     "url": "https://github.com/sindrets/diffview.nvim/archive/4516612fe98ff56ae0415a259ff6361a89419b0a.tar.gz"
   },
   {
@@ -13230,20 +13105,6 @@
     "url": "https://github.com/sindrets/winshift.nvim/archive/37468ed6f385dfb50402368669766504c0e15583.tar.gz"
   },
   {
-    "created_at": "2022-07-04T10:24:08Z",
-    "date": "2025-11-21",
-    "description": "Neovim plugin to automatically toggle between relative and absolute line numbers. Written in Lua.",
-    "license": "MIT",
-    "owner": "sitiom",
-    "repo": "nvim-numbertoggle",
-    "rev": "796af12a1e2aed6faba9be08e6fb5d472bab29de",
-    "sha256": "sha256-PVUX8LBIFbiZZ6Co4FYZgEReqoMymtBUy5VAjx8Ds5I=",
-    "site": "github.com",
-    "stars_count": 212,
-    "updated_at": "2025-12-22T15:25:59Z",
-    "url": "https://github.com/sitiom/nvim-numbertoggle/archive/796af12a1e2aed6faba9be08e6fb5d472bab29de.tar.gz"
-  },
-  {
     "created_at": "2024-05-20T10:19:15Z",
     "date": "2025-10-06",
     "description": "a delightful and customizable mostly monochrome colorscheme thats soft on the eyes and supports treesitter, lsp, and heaps of neovim plugins.",
@@ -13253,8 +13114,8 @@
     "rev": "70dd682e564784893b984deb51dd5ddd263c8cc7",
     "sha256": "sha256-aPOULPi3FdGVPlu/5ID9Hk0tSgCvzYCS8mVfG5Ar4fE=",
     "site": "github.com",
-    "stars_count": 511,
-    "updated_at": "2026-01-02T16:28:49Z",
+    "stars_count": 512,
+    "updated_at": "2026-01-03T07:15:55Z",
     "url": "https://github.com/slugbyte/lackluster.nvim/archive/70dd682e564784893b984deb51dd5ddd263c8cc7.tar.gz"
   },
   {
@@ -13295,8 +13156,8 @@
     "rev": "2597bccb57d1b570fbdbd4adf88b955f7ade715b",
     "sha256": "sha256-pYwol1bI5epH82xoBPE5KOhmuyp+xjOS5w+9kAqIOWg=",
     "site": "github.com",
-    "stars_count": 811,
-    "updated_at": "2026-01-01T12:41:04Z",
+    "stars_count": 810,
+    "updated_at": "2026-01-02T17:55:25Z",
     "url": "https://github.com/smjonas/inc-rename.nvim/archive/2597bccb57d1b570fbdbd4adf88b955f7ade715b.tar.gz"
   },
   {
@@ -13351,8 +13212,8 @@
     "rev": "72225ea9e4443c3f4b9df91d0193e07c4ee8d382",
     "sha256": "sha256-2c7iiz370p7BDc1ffwYN9rPIOFIIzfuS0Zi//WaaEwA=",
     "site": "github.com",
-    "stars_count": 624,
-    "updated_at": "2025-12-23T06:50:40Z",
+    "stars_count": 625,
+    "updated_at": "2026-01-02T19:12:00Z",
     "url": "https://github.com/smoka7/multicursors.nvim/archive/72225ea9e4443c3f4b9df91d0193e07c4ee8d382.tar.gz"
   },
   {
@@ -13444,7 +13305,6 @@
     "created_at": "2025-06-14T13:43:44Z",
     "date": "2026-01-02",
     "description": "IME giúp bạn gõ tiếng việt trực tiếp trong neovim một cách native",
-    "last_commit_at": "2026-01-02T03:51:33Z",
     "license": "Apache-2.0",
     "owner": "sontungexpt",
     "repo": "vietnamese.nvim",
@@ -13521,8 +13381,8 @@
     "rev": "c85bdbb25db096fbcf616bc4e1357bd61fe2c199",
     "sha256": "sha256-q5aQHkK2tp6Rj57SYTipqXleCHjiRLSmgr7d7ygodAs=",
     "site": "github.com",
-    "stars_count": 1557,
-    "updated_at": "2026-01-02T16:44:45Z",
+    "stars_count": 1561,
+    "updated_at": "2026-01-03T09:24:43Z",
     "url": "https://github.com/sphamba/smear-cursor.nvim/archive/c85bdbb25db096fbcf616bc4e1357bd61fe2c199.tar.gz"
   },
   {
@@ -13578,8 +13438,8 @@
     "rev": "da0ceef62eb58b9bec1975017beb2f28c3b1e72c",
     "sha256": "sha256-cZODaEmQOPaPiRWQO2P/OfytLoJMkiXgQEALmv23sXQ=",
     "site": "github.com",
-    "stars_count": 2176,
-    "updated_at": "2026-01-02T07:08:33Z",
+    "stars_count": 2177,
+    "updated_at": "2026-01-03T09:27:18Z",
     "url": "https://github.com/stevearc/aerial.nvim/archive/da0ceef62eb58b9bec1975017beb2f28c3b1e72c.tar.gz"
   },
   {
@@ -13592,8 +13452,8 @@
     "rev": "8314f4c9e205e7f30b62147069729f9a1227d8bf",
     "sha256": "sha256-Qm/gPi9e+m7qUk8tCBnQTxDh3Ez5IRE4GA1OhKefEsU=",
     "site": "github.com",
-    "stars_count": 4794,
-    "updated_at": "2026-01-02T14:37:08Z",
+    "stars_count": 4795,
+    "updated_at": "2026-01-03T00:44:26Z",
     "url": "https://github.com/stevearc/conform.nvim/archive/8314f4c9e205e7f30b62147069729f9a1227d8bf.tar.gz"
   },
   {
@@ -13606,23 +13466,22 @@
     "rev": "81b8a91735ad5cd24a6b3137f14a89f19176364f",
     "sha256": "sha256-n4Wvz4Aa7tFX9GURwk0DOQ7T8QKqMY6kSAs3S0hQgm8=",
     "site": "github.com",
-    "stars_count": 6065,
-    "updated_at": "2026-01-02T16:28:39Z",
+    "stars_count": 6068,
+    "updated_at": "2026-01-03T16:51:46Z",
     "url": "https://github.com/stevearc/oil.nvim/archive/81b8a91735ad5cd24a6b3137f14a89f19176364f.tar.gz"
   },
   {
     "created_at": "2022-05-18T00:03:58Z",
     "date": "2026-01-02",
     "description": "A task runner and job management plugin for Neovim",
-    "last_commit_at": "2026-01-02T02:37:02Z",
     "license": "MIT",
     "owner": "stevearc",
     "repo": "overseer.nvim",
     "rev": "3cde0d84bdae56cd119cbf835f764fa30cec384c",
     "sha256": "sha256-jnC5Je/KZsLu7kJvI9wH6v90wtoivPzRCoRZUD1l3QU=",
     "site": "github.com",
-    "stars_count": 1778,
-    "updated_at": "2026-01-02T16:18:03Z",
+    "stars_count": 1779,
+    "updated_at": "2026-01-02T22:47:54Z",
     "url": "https://github.com/stevearc/overseer.nvim/archive/3cde0d84bdae56cd119cbf835f764fa30cec384c.tar.gz"
   },
   {
@@ -13635,8 +13494,8 @@
     "rev": "771437c3e3672dba9233156e1c2e2fc1888a5fff",
     "sha256": "sha256-+VYVua2IBxLzzB8YvNCjIqavZI6lG8yphexUMIOh/zE=",
     "site": "github.com",
-    "stars_count": 885,
-    "updated_at": "2026-01-02T16:48:03Z",
+    "stars_count": 886,
+    "updated_at": "2026-01-03T16:20:17Z",
     "url": "https://github.com/stevearc/quicker.nvim/archive/771437c3e3672dba9233156e1c2e2fc1888a5fff.tar.gz"
   },
   {
@@ -13735,8 +13594,8 @@
     "rev": "0c01fd2ac2ab33918073f57c63bcb2ae5a31d8de",
     "sha256": "sha256-P3r58bdoZx8F/2SuKDmA2omDXP086W2s45TKV5DHFls=",
     "site": "github.com",
-    "stars_count": 166,
-    "updated_at": "2025-11-23T14:57:30Z",
+    "stars_count": 165,
+    "updated_at": "2026-01-03T16:52:46Z",
     "url": "https://github.com/svrana/neosolarized.nvim/archive/0c01fd2ac2ab33918073f57c63bcb2ae5a31d8de.tar.gz"
   },
   {
@@ -13797,17 +13656,18 @@
   },
   {
     "created_at": "2021-03-21T05:46:20Z",
-    "date": "2025-12-31",
+    "date": "2026-01-03",
     "description": "A plugin for setting Neovim LSP with JSON or YAML files",
+    "last_commit_at": "2026-01-03T17:02:10Z",
     "license": "MIT",
     "owner": "tamago324",
     "repo": "nlsp-settings.nvim",
-    "rev": "4882d0b1fb12a3da563c2881b30a5353429b310b",
-    "sha256": "sha256-Q9Lf1PjOCkHRMjlHOkja+cvyFCuX+pu3KdvwGalFVyo=",
+    "rev": "be75b4b87a5ac30ba20f6bc0b7287ec5e4b7ce98",
+    "sha256": "sha256-4+RMbJrVZl0A8RBNvFsNESm9KS4Cpi8NMu6F9UXN4uc=",
     "site": "github.com",
     "stars_count": 335,
-    "updated_at": "2026-01-01T06:04:17Z",
-    "url": "https://github.com/tamago324/nlsp-settings.nvim/archive/4882d0b1fb12a3da563c2881b30a5353429b310b.tar.gz"
+    "updated_at": "2026-01-03T17:02:14Z",
+    "url": "https://github.com/tamago324/nlsp-settings.nvim/archive/be75b4b87a5ac30ba20f6bc0b7287ec5e4b7ce98.tar.gz"
   },
   {
     "created_at": "2021-04-12T06:26:09Z",
@@ -14001,8 +13861,8 @@
     "rev": "25d3656a187c9596647b73abb71521f0339616c7",
     "sha256": "sha256-P9TVRO4iCs1mXXNfts7V5NCBv9FoMvN6wNE0CftucNU=",
     "site": "github.com",
-    "stars_count": 345,
-    "updated_at": "2025-12-31T04:44:15Z",
+    "stars_count": 346,
+    "updated_at": "2026-01-03T16:43:58Z",
     "url": "https://github.com/thesimonho/kanagawa-paper.nvim/archive/25d3656a187c9596647b73abb71521f0339616c7.tar.gz"
   },
   {
@@ -14070,8 +13930,8 @@
     "rev": "8b968581e5c19d22a861d5f3fe5dbd83394fa681",
     "sha256": "sha256-watZk9jkcPBU2xuhIjTDN/iZxTZKuhs/MFNsIhkZhmQ=",
     "site": "github.com",
-    "stars_count": 754,
-    "updated_at": "2026-01-01T06:54:39Z",
+    "stars_count": 755,
+    "updated_at": "2026-01-03T13:26:31Z",
     "url": "https://github.com/tjdevries/colorbuddy.nvim/archive/8b968581e5c19d22a861d5f3fe5dbd83394fa681.tar.gz"
   },
   {
@@ -14181,8 +14041,8 @@
     "rev": "0aedeb88a01b4fe93937f4f1a5ba7632d4a88a79",
     "sha256": "sha256-GtFih8e53ZnWST7dpbcw7ynCiEFXX2p262N7v0pzDuI=",
     "site": "github.com",
-    "stars_count": 180,
-    "updated_at": "2026-01-02T05:45:16Z",
+    "stars_count": 179,
+    "updated_at": "2026-01-03T15:00:05Z",
     "url": "https://github.com/topaxi/pipeline.nvim/archive/0aedeb88a01b4fe93937f4f1a5ba7632d4a88a79.tar.gz"
   },
   {
@@ -14198,20 +14058,6 @@
     "stars_count": 821,
     "updated_at": "2025-12-29T07:56:11Z",
     "url": "https://github.com/toppair/peek.nvim/archive/5820d937d5414baea5f586dc2a3d912a74636e5b.tar.gz"
-  },
-  {
-    "created_at": "2022-03-12T01:27:26Z",
-    "date": "2022-11-21",
-    "description": "Buffer, mark, tabpage, colorscheme switcher for Neovim",
-    "license": "MIT",
-    "owner": "toppair",
-    "repo": "reach.nvim",
-    "rev": "f86830357941cca8a31f19601153087ea9524d22",
-    "sha256": "sha256-ReNQF8AJp1CwgW7tp3R78M+GfCoHLJT7+066PGB6ZTg=",
-    "site": "github.com",
-    "stars_count": 245,
-    "updated_at": "2025-11-10T01:10:48Z",
-    "url": "https://github.com/toppair/reach.nvim/archive/f86830357941cca8a31f19601153087ea9524d22.tar.gz"
   },
   {
     "created_at": "2024-09-11T00:23:26Z",
@@ -14251,8 +14097,8 @@
     "rev": "2aae2687207029b3611a0e19a289f9e1c7efbe16",
     "sha256": "sha256-lbeK636LYxvF9Gt5HA89sEL6HXout/dU0N2cWxMRJ0Y=",
     "site": "github.com",
-    "stars_count": 1293,
-    "updated_at": "2025-12-30T04:37:26Z",
+    "stars_count": 1295,
+    "updated_at": "2026-01-03T11:19:11Z",
     "url": "https://github.com/tris203/precognition.nvim/archive/2aae2687207029b3611a0e19a289f9e1c7efbe16.tar.gz"
   },
   {
@@ -14384,16 +14230,16 @@
     "created_at": "2025-08-18T20:40:11Z",
     "date": "2026-01-02",
     "description": "🌵 A collection of 13 desert-inspired Neovim colorschemes: one for every color of the rainbow.",
-    "last_commit_at": "2026-01-02T05:10:40Z",
+    "last_commit_at": "2026-01-02T21:30:18Z",
     "license": "MIT",
     "owner": "uhs-robert",
     "repo": "oasis.nvim",
-    "rev": "5f43af3079b17ca07d902f55e3ea9f395fc07584",
-    "sha256": "sha256-NVGPt56e0aTfbx7h2ljtZChjQ559EEMge/Aw+YOZUoA=",
+    "rev": "7aace8f532db0dc77a37d75cf334bfbc7644a55e",
+    "sha256": "sha256-zF1LCy7K2kQ1NlSOydvGKdMA/V47ZeUuxp24kto3LyQ=",
     "site": "github.com",
-    "stars_count": 94,
-    "updated_at": "2026-01-02T05:11:21Z",
-    "url": "https://github.com/uhs-robert/oasis.nvim/archive/5f43af3079b17ca07d902f55e3ea9f395fc07584.tar.gz"
+    "stars_count": 93,
+    "updated_at": "2026-01-03T14:56:20Z",
+    "url": "https://github.com/uhs-robert/oasis.nvim/archive/7aace8f532db0dc77a37d75cf334bfbc7644a55e.tar.gz"
   },
   {
     "created_at": "2025-02-14T16:02:34Z",
@@ -14419,8 +14265,8 @@
     "rev": "afc95b6696a0a568a5a186a7e563f6c9947d0d79",
     "sha256": "sha256-RgDi43fiAHt1Gp54Zffup20tFh2hw6VnNnBccvjxtmE=",
     "site": "github.com",
-    "stars_count": 405,
-    "updated_at": "2025-12-30T08:39:13Z",
+    "stars_count": 406,
+    "updated_at": "2026-01-02T23:05:30Z",
     "url": "https://github.com/uloco/bluloco.nvim/archive/afc95b6696a0a568a5a186a7e563f6c9947d0d79.tar.gz"
   },
   {
@@ -14489,8 +14335,8 @@
     "rev": "52e407af634cd5d3add0dc916c517865850113a4",
     "sha256": "sha256-9FiV7uJZezj8TYZDCYg2bK9czeM9akGaK3/up+JAxrc=",
     "site": "github.com",
-    "stars_count": 585,
-    "updated_at": "2025-12-27T18:44:16Z",
+    "stars_count": 584,
+    "updated_at": "2026-01-02T17:55:33Z",
     "url": "https://github.com/vuki656/package-info.nvim/archive/52e407af634cd5d3add0dc916c517865850113a4.tar.gz"
   },
   {
@@ -14518,8 +14364,8 @@
     "rev": "7483e9ce335d22a9e52f83804134d621094b5fe7",
     "sha256": "sha256-GlQKTbJQgNHOcTHwNKE4VnVKD1ikfqkI2NQGHavfrOM=",
     "site": "github.com",
-    "stars_count": 526,
-    "updated_at": "2026-01-02T16:12:32Z",
+    "stars_count": 527,
+    "updated_at": "2026-01-03T09:45:09Z",
     "url": "https://github.com/vyfor/cord.nvim/archive/7483e9ce335d22a9e52f83804134d621094b5fe7.tar.gz"
   },
   {
@@ -14589,8 +14435,8 @@
     "rev": "72527798e75b5e34757491947c2cb853ce21dc0e",
     "sha256": "sha256-XO6XUiRbQL1eQ+yeq1iqEiArES49PlggRX14CGKwd0Q=",
     "site": "github.com",
-    "stars_count": 684,
-    "updated_at": "2025-12-23T04:53:48Z",
+    "stars_count": 685,
+    "updated_at": "2026-01-02T19:23:40Z",
     "url": "https://github.com/willothy/flatten.nvim/archive/72527798e75b5e34757491947c2cb853ce21dc0e.tar.gz"
   },
   {
@@ -14617,8 +14463,8 @@
     "rev": "9fbed130683b7b6f73198c09e35ba4b33f547c08",
     "sha256": "sha256-UpkOOQv2DZIfWSomLfrfmxBD1ZEhTcIbk3IYYkcOlgM=",
     "site": "github.com",
-    "stars_count": 616,
-    "updated_at": "2025-12-23T20:31:28Z",
+    "stars_count": 618,
+    "updated_at": "2026-01-03T14:11:09Z",
     "url": "https://github.com/willothy/nvim-cokeline/archive/9fbed130683b7b6f73198c09e35ba4b33f547c08.tar.gz"
   },
   {
@@ -14953,8 +14799,8 @@
     "rev": "627f2e1cac91de0d1d4dd7472b506a30f41b2b7d",
     "sha256": "sha256-3s/bD4vkVLoQob7n+r93My8b46ADgUS7TGTwH2nNG+8=",
     "site": "github.com",
-    "stars_count": 470,
-    "updated_at": "2026-01-02T13:26:11Z",
+    "stars_count": 471,
+    "updated_at": "2026-01-03T02:09:14Z",
     "url": "https://github.com/xero/miasma.nvim/archive/627f2e1cac91de0d1d4dd7472b506a30f41b2b7d.tar.gz"
   },
   {
@@ -14981,8 +14827,8 @@
     "rev": "b51a659459df8d078201aefc995db8175ed55e84",
     "sha256": "sha256-uvh5K+LLKS3cz0oKUOeN2R7qfQDLN9R1toHapD4szi4=",
     "site": "github.com",
-    "stars_count": 433,
-    "updated_at": "2025-12-31T12:17:14Z",
+    "stars_count": 432,
+    "updated_at": "2026-01-02T17:55:38Z",
     "url": "https://github.com/xzbdmw/colorful-menu.nvim/archive/b51a659459df8d078201aefc995db8175ed55e84.tar.gz"
   },
   {
@@ -15023,8 +14869,8 @@
     "rev": "d9e8de2b0fd485182b759e5e7eec82014bc43f72",
     "sha256": "sha256-N5PlYZZALrD1Km8t79O59guUxzyKh5zWB5/3K5cHIos=",
     "site": "github.com",
-    "stars_count": 67,
-    "updated_at": "2025-12-23T08:10:56Z",
+    "stars_count": 68,
+    "updated_at": "2026-01-02T19:52:02Z",
     "url": "https://github.com/y3owk1n/time-machine.nvim/archive/d9e8de2b0fd485182b759e5e7eec82014bc43f72.tar.gz"
   },
   {
@@ -15206,15 +15052,14 @@
     "rev": "7a9fbbd4ddc9affc6a33bff644b1af7c0f908e74",
     "sha256": "sha256-t34uzdTghDJpqv2PaWDOs8c7tAQJjywl/plOgqf0hWY=",
     "site": "github.com",
-    "stars_count": 16982,
-    "updated_at": "2026-01-02T15:18:15Z",
+    "stars_count": 16992,
+    "updated_at": "2026-01-03T14:37:25Z",
     "url": "https://github.com/yetone/avante.nvim/archive/7a9fbbd4ddc9affc6a33bff644b1af7c0f908e74.tar.gz"
   },
   {
     "created_at": "2025-10-26T16:29:02Z",
     "date": "2026-01-02",
     "description": "Simple and improved Markdown note taking.",
-    "last_commit_at": "2026-01-02T14:43:33Z",
     "license": "MIT",
     "owner": "ymich9963",
     "repo": "mdnotes.nvim",
@@ -15249,8 +15094,8 @@
     "rev": "a8d965f158cff222713a3b3ab341445d331e6e3a",
     "sha256": "sha256-K9aXbtejYH0yBhtpJfDacStU80eqdTJP7+N0Sud7L8w=",
     "site": "github.com",
-    "stars_count": 167,
-    "updated_at": "2025-12-08T03:40:43Z",
+    "stars_count": 168,
+    "updated_at": "2026-01-03T05:47:00Z",
     "url": "https://github.com/yorickpeterse/nvim-window/archive/a8d965f158cff222713a3b3ab341445d331e6e3a.tar.gz"
   },
   {
@@ -15334,8 +15179,8 @@
     "rev": "bfa58f4b279d21cb515b28023e1b68ec908584b2",
     "sha256": "sha256-ZDBACUODroVUw6Xm7wtfvcMWS2sUIgbI7Wuf0Ye3Op4=",
     "site": "github.com",
-    "stars_count": 340,
-    "updated_at": "2026-01-01T16:32:01Z",
+    "stars_count": 342,
+    "updated_at": "2026-01-03T15:24:04Z",
     "url": "https://github.com/zaldih/themery.nvim/archive/bfa58f4b279d21cb515b28023e1b68ec908584b2.tar.gz"
   },
   {
@@ -15348,8 +15193,8 @@
     "rev": "e78d1ffebdf6ccb6fd8be4e6898030c1cf5f9b64",
     "sha256": "sha256-h801D2e8HUg/uge9ItTgbde9MKx4GY15sa3JbhlpUjI=",
     "site": "github.com",
-    "stars_count": 3911,
-    "updated_at": "2026-01-02T07:08:36Z",
+    "stars_count": 3914,
+    "updated_at": "2026-01-03T11:53:41Z",
     "url": "https://github.com/zbirenbaum/copilot.lua/archive/e78d1ffebdf6ccb6fd8be4e6898030c1cf5f9b64.tar.gz"
   },
   {
@@ -15404,8 +15249,8 @@
     "rev": "4635a3f46d1066975d1074cd9f61f93cb1e32f64",
     "sha256": "sha256-Z9jADXLsCz7kdUhUVu8EFArUHIbsmmCNw3pzObtf9gQ=",
     "site": "github.com",
-    "stars_count": 1040,
-    "updated_at": "2026-01-02T01:33:31Z",
+    "stars_count": 1042,
+    "updated_at": "2026-01-03T14:56:55Z",
     "url": "https://github.com/zenbones-theme/zenbones.nvim/archive/4635a3f46d1066975d1074cd9f61f93cb1e32f64.tar.gz"
   },
   {
@@ -15434,8 +15279,8 @@
     "rev": "8df80d0dc2d66e53b08740361a600746a6e4edcf",
     "sha256": "sha256-L8WuZf7Z3Nl1GaeyVIBwzsjKGhYm87lhsWSUwXB6o4w=",
     "site": "github.com",
-    "stars_count": 773,
-    "updated_at": "2025-12-29T04:02:11Z",
+    "stars_count": 772,
+    "updated_at": "2026-01-03T13:35:20Z",
     "url": "https://github.com/zk-org/zk-nvim/archive/8df80d0dc2d66e53b08740361a600746a6e4edcf.tar.gz"
   },
   {
@@ -15519,22 +15364,23 @@
     "sha256": "sha256-rcU8tMTSjt4bX7SPPgFXCDCN5W1jnZJHzp3rN2flvQs=",
     "site": "github.com",
     "stars_count": 243,
-    "updated_at": "2025-12-19T04:26:42Z",
+    "updated_at": "2026-01-03T15:16:42Z",
     "url": "https://github.com/zootedb0t/citruszest.nvim/archive/ce6749e4c3a842679cc302ce1c2db76c2d07f700.tar.gz"
   },
   {
     "created_at": "2025-12-14T00:22:43Z",
-    "date": "2025-12-31",
+    "date": "2026-01-03",
     "description": "thin layer over native 'vim.pack`, adding support for lazy-loading and lazy.nvim specs",
+    "last_commit_at": "2026-01-03T03:14:26Z",
     "license": "MIT",
     "owner": "zuqini",
     "repo": "zpack.nvim",
-    "rev": "b331e1dda54511085a778d2881dd246b8ed58800",
-    "sha256": "sha256-mVc71RwhV+/JOtqSQVFhFOEGwzwjZYW4AE1TNshvRz0=",
+    "rev": "0559fe4d640378b170dc0a666ee6f964cb65e2e7",
+    "sha256": "sha256-I9/5EQrXI+3/tTeHtssxamQfFS7nweR19C61E+bwigA=",
     "site": "github.com",
     "stars_count": 57,
-    "updated_at": "2026-01-01T02:50:45Z",
-    "url": "https://github.com/zuqini/zpack.nvim/archive/b331e1dda54511085a778d2881dd246b8ed58800.tar.gz"
+    "updated_at": "2026-01-03T03:14:30Z",
+    "url": "https://github.com/zuqini/zpack.nvim/archive/0559fe4d640378b170dc0a666ee6f964cb65e2e7.tar.gz"
   },
   {
     "created_at": "2024-01-21T19:01:52.092Z",
