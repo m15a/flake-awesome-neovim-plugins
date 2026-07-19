@@ -20,6 +20,10 @@ number is not noted here since it will be used for rolling release.
   - `meta.archived`: whether the repo has been archived or not
   - `meta.starsCount`: the number of users that have starred the repo
 
+### Removed
+
+- Support for x86_64-darwin
+
 ## [0.3.0] - 2025-11-16
 
 ### Changed
